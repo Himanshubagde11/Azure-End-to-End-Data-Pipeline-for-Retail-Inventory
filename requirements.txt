@@ -1,0 +1,12 @@
+# Nexora Inventory Intelligence — Python Dependencies
+# Core Pipeline, Data Quality Framework, Mock REST API, and Local Warehouse Tests:
+# -> Run on Python 3.8+ standard library (zero external dependencies required)
+
+# Optional dependencies for generating architecture diagrams and dashboard mockups:
+matplotlib>=3.7.0
+pillow>=10.0.0
+numpy>=1.24.0
+
+# Optional dependencies for connecting to live Azure SQL Database from Python:
+# pyodbc>=5.0.0
+# azure-identity>=1.15.0
