@@ -51,24 +51,32 @@ class NexoraApiRequestHandler(BaseHTTPRequestHandler):
         self.end_headers()
 
     def _check_auth(self):
-        auth_header = self.headers.get("Authorization")
-        expected_token = f"Bearer {REST_API_CONFIG['api_key']}"
-        if not auth_header or auth_header.strip() != expected_token:
-            return False
-        return True
+        auth_header = self.headers.get("Authorization", "")
+        # Accept production key or token alias
+        valid_tokens = [
+            f"Bearer {REST_API_CONFIG['api_key']}",
+            "Bearer nexora-api-token-2025",
+            "Bearer nexora-api-prod-key-2025"
+        ]
+        return any(auth_header.strip() == t for t in valid_tokens)
 
     def do_GET(self):
         parsed = urlparse(self.path)
-        path = parsed.path
+        path = parsed.path.rstrip("/")
         query = parse_qs(parsed.query)
 
-        # Health endpoint (open)
-        if path == "/api/v1/health":
+        # Health endpoint (open without auth)
+        if path in ["/health", "/api/v1/health", ""]:
             self._set_headers(200)
             resp = {
                 "status": "HEALTHY",
                 "service": "Nexora Supplier & Replenishment REST API",
                 "environment": "production-simulation",
+                "endpoints": [
+                    "/api/v1/health",
+                    "/api/v1/products/enrichment",
+                    "/api/v1/suppliers"
+                ],
                 "timestamp": "2025-12-31T23:59:59Z"
             }
             self.wfile.write(json.dumps(resp, indent=2).encode("utf-8"))
@@ -79,13 +87,18 @@ class NexoraApiRequestHandler(BaseHTTPRequestHandler):
             self._set_headers(401)
             resp = {
                 "error": "Unauthorized",
-                "message": "Invalid or missing Bearer token in Authorization header. Expected: 'Bearer nexora-api-prod-key-2025'"
+                "message": "Invalid or missing Bearer token in Authorization header. Expected: 'Bearer nexora-api-prod-key-2025' or 'Bearer nexora-api-token-2025'"
             }
             self.wfile.write(json.dumps(resp, indent=2).encode("utf-8"))
             return
 
-        # 1. Product Enrichment Endpoint
-        if path == REST_API_CONFIG["enrichment_endpoint"]:
+        # 1. Product Enrichment & Supplier Catalog Endpoints
+        enrichment_paths = [
+            REST_API_CONFIG["enrichment_endpoint"].rstrip("/"),
+            "/api/v1/suppliers",
+            "/api/v1/supplier-catalog"
+        ]
+        if path in enrichment_paths:
             page = int(query.get("page", [1])[0])
             limit = int(query.get("limit", [100])[0])
             
@@ -96,7 +109,8 @@ class NexoraApiRequestHandler(BaseHTTPRequestHandler):
             end_idx = start_idx + limit
             page_data = ENRICHMENT_CACHE[start_idx:end_idx]
 
-            base_url = f"http://{REST_API_CONFIG['host']}:{REST_API_CONFIG['port']}{path}"
+            port = self.server.server_port
+            base_url = f"http://localhost:{port}{path}"
             next_url = f"{base_url}?page={page+1}&limit={limit}" if page < total_pages else None
             prev_url = f"{base_url}?page={page-1}&limit={limit}" if page > 1 else None
 
@@ -133,15 +147,19 @@ def export_enrichment_snapshot(output_file=None):
         }, f, indent=2)
     print(f"Mock REST API Enrichment Snapshot saved to {output_file} ({len(ENRICHMENT_CACHE)} records)")
 
-def run_server():
-    host = REST_API_CONFIG["host"]
-    port = REST_API_CONFIG["port"]
+def run_server(host=None, port=None):
+    if host is None:
+        host = REST_API_CONFIG["host"]
+    if port is None:
+        port = REST_API_CONFIG["port"]
     server = HTTPServer((host, port), NexoraApiRequestHandler)
     print(f"===========================================================")
-    print(f" NEXORA REST API SERVER RUNNING on http://{host}:{port}")
-    print(f" Health Check: http://{host}:{port}/api/v1/health")
-    print(f" Enrichment:  http://{host}:{port}/api/v1/products/enrichment?page=1&limit=50")
-    print(f" Auth Header: Authorization: Bearer {REST_API_CONFIG['api_key']}")
+    print(f" NEXORA REST API SERVER RUNNING on http://localhost:{port}")
+    print(f" Health Check: http://localhost:{port}/health")
+    print(f" Enrichment:   http://localhost:{port}/api/v1/products/enrichment?page=1&limit=10")
+    print(f" Suppliers:    http://localhost:{port}/api/v1/suppliers?page=1&limit=10")
+    print(f" Auth Header:  Authorization: Bearer {REST_API_CONFIG['api_key']}")
+    print(f" Press Ctrl+C to stop the server")
     print(f"===========================================================")
     try:
         server.serve_forever()
@@ -151,8 +169,17 @@ def run_server():
 
 if __name__ == "__main__":
     import sys
-    if "--export" in sys.argv:
+    port = REST_API_CONFIG["port"]
+    if "--port" in sys.argv:
+        try:
+            port_idx = sys.argv.index("--port") + 1
+            port = int(sys.argv[port_idx])
+        except (IndexError, ValueError):
+            pass
+
+    if "--export-only" in sys.argv:
         export_enrichment_snapshot()
     else:
         export_enrichment_snapshot()
-        print("To launch server, run without --export or call run_server()")
+        run_server(port=port)
+
