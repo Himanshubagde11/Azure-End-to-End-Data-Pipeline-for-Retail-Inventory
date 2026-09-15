@@ -2,7 +2,7 @@
 CLARIVENS INVENTORY INTELLIGENCE
 Module: schema_validator.py
 Description: Validates column existence, missing columns, and data type conformity
-Author: Senior Data Engineer / Azure Data Architect
+Author: Himanshu Bagde (Azure Data Engineer & Cloud Analytics Architect)
 Organization: CLARIVENS RETAIL GROUP
 """
 

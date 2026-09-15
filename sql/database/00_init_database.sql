@@ -2,7 +2,7 @@
 -- CLARIVENS INVENTORY INTELLIGENCE
 -- Script: 00_init_database.sql
 -- Description: Creates schemas and initializes warehouse environment
--- Author: Senior Data Engineer / Azure Data Architect
+-- Author: Himanshu Bagde (Azure Data Engineer & Cloud Analytics Architect)
 -- Organization: CLARIVENS RETAIL GROUP
 -- ============================================================================
 

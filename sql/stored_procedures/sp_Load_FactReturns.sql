@@ -2,7 +2,7 @@
 -- CLARIVENS INVENTORY INTELLIGENCE
 -- Procedure: sp_Load_FactReturns
 -- Description: Transforms and loads customer returns from stg.Returns into dw.FactReturns
--- Author: Senior Data Engineer / Azure Data Architect
+-- Author: Himanshu Bagde (Azure Data Engineer & Cloud Analytics Architect)
 -- Organization: CLARIVENS RETAIL GROUP
 -- ============================================================================
 

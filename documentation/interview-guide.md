@@ -1,4 +1,5 @@
 # CLARIVENS INVENTORY INTELLIGENCE — SENIOR INTERVIEW GUIDE
+**Project Author & Architect:** Himanshu Bagde (Azure Data Engineer & Cloud Analytics Architect)  
 **Role Focus:** Senior Data Engineer / Azure Data Architect / Analytics Engineer  
 **Organization:** CLARIVENS RETAIL GROUP  
 **Platform:** Azure Retail Inventory Data Pipeline & Analytics Platform

@@ -5,6 +5,7 @@
 # CLARIVENS INVENTORY INTELLIGENCE
 ### An End-to-End Azure Retail Inventory Data Pipeline & Analytics Platform
 
+[![Architected & Built By](https://img.shields.io/badge/Architected%20%26%20Built%20By-Himanshu%20Bagde-FF6A00?logo=github&logoColor=white)](https://github.com/Himanshubagde11)
 [![Azure Data Factory](https://img.shields.io/badge/Azure%20Data%20Factory-v2-0078D4?logo=azure-data-factory&logoColor=white)](https://azure.microsoft.com/en-us/products/data-factory)
 [![Azure SQL Database](https://img.shields.io/badge/Azure%20SQL-Database-0078D4?logo=microsoft-azure&logoColor=white)](https://azure.microsoft.com/en-us/products/azure-sql/database)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
@@ -17,7 +18,7 @@
 
 ## 1. Project Overview
 
-**Clarivens Inventory Intelligence** is an enterprise-grade, production-style retail data engineering and business intelligence platform built for **CLARIVENS RETAIL GROUP**, a multi-format retail enterprise operating 36 physical stores across 9 Indian states (Maharashtra, Karnataka, Gujarat, Telangana, Delhi, Tamil Nadu, West Bengal, Rajasthan, Uttar Pradesh).
+**Clarivens Inventory Intelligence** is an enterprise-grade, production-style retail data engineering and business intelligence platform designed and architected by **Himanshu Bagde** for **CLARIVENS RETAIL GROUP**, a multi-format retail enterprise operating 36 physical stores across 9 Indian states (Maharashtra, Karnataka, Gujarat, Telangana, Delhi, Tamil Nadu, West Bengal, Rajasthan, Uttar Pradesh).
 
 The platform ingests over **178,000+ transactional and inventory records** across 12 calendar months of 2025 from cloud storage and vendor REST APIs, runs automated Python Data Quality gates to protect warehouse integrity, orchestrates incremental loading into an **Azure SQL Database Star Schema**, and powers an executive **Power BI Analytics Suite**.
 
@@ -306,3 +307,19 @@ clarivens-inventory-intelligence/
 - **Why Python Validation?** Quantifies quality with a numeric score (0–100%) and multi-tier alerting rather than binary SQL constraint crashes.
 
 For full technical Q&A, review [documentation/interview-guide.md](documentation/interview-guide.md).
+
+---
+
+## 12. Project Author & Cloud Architect
+
+**Himanshu Bagde**  
+*Azure Data Engineer & Cloud Analytics Architect*
+
+- **GitHub Profile:** [@Himanshubagde11](https://github.com/Himanshubagde11)  
+- **Project Repository:** [Azure-End-to-End-Data-Pipeline-for-Retail-Inventory](https://github.com/Himanshubagde11/Azure-End-to-End-Data-Pipeline-for-Retail-Inventory)  
+- **End-to-End Scope & Engineering Contributions:**
+  - **Cloud Architecture & Orchestration:** Designed full multi-hop medallion data architecture (Staging `stg` → Dimensional Star Schema `dw` → Observability `audit`) orchestrated via 11 Azure Data Factory pipelines with retry, tumbling window, and scheduled triggers.
+  - **Data Quality & Governance:** Authored the modular 4-tier Python Data Quality framework (Schema, Nullability, Uniqueness, Business Consistency) enforcing a 99.93% quality gate.
+  - **Relational Data Warehouse:** Built complete Azure SQL Database T-SQL DDL, clustered columnstore indexes, and incremental MERGE stored procedures governed by high-watermark ETL control.
+  - **Business Intelligence & DAX Modeling:** Designed the enterprise Power BI dimensional semantic model, 25+ production DAX KPIs, and 6 executive dashboard reports.
+  - **Observability & Command Center:** Developed the standalone interactive preview portal and local execution runners for automated validation.

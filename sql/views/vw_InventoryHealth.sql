@@ -3,7 +3,7 @@
 -- View: vw_InventoryHealth
 -- Description: Consolidated semantic view combining inventory snapshots, product dimensions,
 --              and store locations with stockout risk indicators for Power BI
--- Author: Senior Data Engineer / Azure Data Architect
+-- Author: Himanshu Bagde (Azure Data Engineer & Cloud Analytics Architect)
 -- Organization: CLARIVENS RETAIL GROUP
 -- ============================================================================
 

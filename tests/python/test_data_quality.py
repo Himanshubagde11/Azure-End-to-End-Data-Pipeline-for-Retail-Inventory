@@ -2,7 +2,7 @@
 CLARIVENS INVENTORY INTELLIGENCE
 Test Suite: test_data_quality.py
 Description: Pytest and unittest test cases for modular Python Data Quality Framework
-Author: Senior Data Engineer / Azure Data Architect
+Author: Himanshu Bagde (Azure Data Engineer & Cloud Analytics Architect)
 Organization: CLARIVENS RETAIL GROUP
 """
 

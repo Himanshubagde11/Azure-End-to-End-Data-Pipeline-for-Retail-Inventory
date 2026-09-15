@@ -2,7 +2,7 @@
 -- CLARIVENS INVENTORY INTELLIGENCE
 -- Script: 02_dim_tables.sql
 -- Description: Creates Star Schema dimension tables in the 'dw' schema
--- Author: Senior Data Engineer / Azure Data Architect
+-- Author: Himanshu Bagde (Azure Data Engineer & Cloud Analytics Architect)
 -- Organization: CLARIVENS RETAIL GROUP
 -- ============================================================================
 

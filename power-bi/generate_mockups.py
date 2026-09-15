@@ -1,7 +1,7 @@
 """
 CLARIVENS ENTERPRISE DATA INTELLIGENCE
 High-Fidelity Power BI Dashboard Mockup Generator
-Author: Senior Data Engineer / Azure Data Architect / Power BI Specialist
+Author: Himanshu Bagde (Azure Data Engineer & Cloud Analytics Architect)
 Organization: CLARIVENS DATA PLATFORMS
 
 Renders pixel-perfect, dark enterprise dashboard screenshots for all 6 Power BI pages:

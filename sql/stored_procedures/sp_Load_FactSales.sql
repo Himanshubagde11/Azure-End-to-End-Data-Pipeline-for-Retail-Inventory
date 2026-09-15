@@ -2,7 +2,7 @@
 -- CLARIVENS INVENTORY INTELLIGENCE
 -- Procedure: sp_Load_FactSales
 -- Description: Incrementally loads clean sales records from stg.Sales into dw.FactSales
--- Author: Senior Data Engineer / Azure Data Architect
+-- Author: Himanshu Bagde (Azure Data Engineer & Cloud Analytics Architect)
 -- Organization: CLARIVENS RETAIL GROUP
 -- ============================================================================
 

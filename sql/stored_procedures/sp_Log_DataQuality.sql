@@ -2,7 +2,7 @@
 -- CLARIVENS INVENTORY INTELLIGENCE
 -- Procedure: sp_Log_DataQuality
 -- Description: Records structured validation results from the Python Data Quality Engine
--- Author: Senior Data Engineer / Azure Data Architect
+-- Author: Himanshu Bagde (Azure Data Engineer & Cloud Analytics Architect)
 -- Organization: CLARIVENS RETAIL GROUP
 -- ============================================================================
 

@@ -2,7 +2,7 @@
 CLARIVENS INVENTORY INTELLIGENCE
 Module: pipeline_validator.py
 Description: Pipeline integration runner designed for Azure Data Factory Batch/Custom Activity or local orchestration
-Author: Senior Data Engineer / Azure Data Architect
+Author: Himanshu Bagde (Azure Data Engineer & Cloud Analytics Architect)
 Organization: CLARIVENS RETAIL GROUP
 """
 

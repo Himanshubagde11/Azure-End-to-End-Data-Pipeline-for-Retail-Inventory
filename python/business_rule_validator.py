@@ -2,7 +2,7 @@
 CLARIVENS INVENTORY INTELLIGENCE
 Module: business_rule_validator.py
 Description: Validates mathematical integrity, range checks, referential integrity, and domain rules
-Author: Senior Data Engineer / Azure Data Architect
+Author: Himanshu Bagde (Azure Data Engineer & Cloud Analytics Architect)
 Organization: CLARIVENS RETAIL GROUP
 """
 

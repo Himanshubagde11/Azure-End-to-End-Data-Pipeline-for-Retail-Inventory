@@ -3,7 +3,7 @@
 -- Test Suite: test_warehouse_integrity.sql
 -- Description: Automated SQL test suite validating dimensional integrity,
 --              surrogate key uniqueness, zero orphan foreign keys, and business bounds
--- Author: Senior Data Engineer / Azure Data Architect
+-- Author: Himanshu Bagde (Azure Data Engineer & Cloud Analytics Architect)
 -- Organization: CLARIVENS RETAIL GROUP
 -- ============================================================================
 

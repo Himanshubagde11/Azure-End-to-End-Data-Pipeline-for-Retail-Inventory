@@ -1,7 +1,7 @@
 """
 CLARIVENS INVENTORY INTELLIGENCE
 Mock REST API Server & Data Generator
-Author: Senior Data Engineer / Azure Data Architect
+Author: Himanshu Bagde (Azure Data Engineer & Cloud Analytics Architect)
 Organization: CLARIVENS RETAIL GROUP
 
 Implements a production-style REST API simulating an external Supplier & Market Intelligence Feed:

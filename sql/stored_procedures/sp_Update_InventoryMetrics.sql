@@ -3,7 +3,7 @@
 -- Procedure: sp_Update_InventoryMetrics
 -- Description: Computes rolling 30-day Average Daily Sales, Days of Inventory, 
 --              Stockout Risk classification (CRITICAL, HIGH, MEDIUM, LOW), and Reorder triggers
--- Author: Senior Data Engineer / Azure Data Architect
+-- Author: Himanshu Bagde (Azure Data Engineer & Cloud Analytics Architect)
 -- Organization: CLARIVENS RETAIL GROUP
 -- ============================================================================
 

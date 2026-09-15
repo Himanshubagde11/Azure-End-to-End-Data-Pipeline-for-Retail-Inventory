@@ -1,7 +1,7 @@
 """
 CLARIVENS INVENTORY INTELLIGENCE
 Local End-to-End Execution & Testing Runner
-Author: Senior Data Engineer / Azure Data Architect
+Author: Himanshu Bagde (Azure Data Engineer & Cloud Analytics Architect)
 Organization: CLARIVENS RETAIL GROUP
 
 Enables complete zero-cloud execution and verification:

@@ -2,7 +2,7 @@
 CLARIVENS INVENTORY INTELLIGENCE
 Module: null_validator.py
 Description: Validates completeness and absence of null/empty values on mandatory fields
-Author: Senior Data Engineer / Azure Data Architect
+Author: Himanshu Bagde (Azure Data Engineer & Cloud Analytics Architect)
 Organization: CLARIVENS RETAIL GROUP
 """
 

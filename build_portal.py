@@ -107,6 +107,8 @@ def generate_html():
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Himanshu Bagde">
+    <meta name="description" content="Clarivens Inventory Intelligence — Enterprise Azure Retail Data Pipeline & Analytics Platform architected and engineered by Himanshu Bagde">
     <title>Clarivens — Enterprise Azure Data Intelligence Platform</title>
     <link rel="icon" type="image/png" href="{favicon_data_uri}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1072,11 +1074,17 @@ def generate_html():
                     <span class="brand-sub">Enterprise Data Intelligence</span>
                 </div>
             </div>
-            <div class="status-pill">
-                <span class="pulse-orange"></span>
-                <span>LIVE WAREHOUSE</span>
-                <span class="status-sep">/</span>
-                <span class="status-count">178,851 records</span>
+            <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+                <div class="status-pill" style="border-color: rgba(255, 106, 0, 0.45); background: rgba(255, 106, 0, 0.08);">
+                    <span style="color: var(--orange); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Architect:</span>
+                    <span style="color: var(--text-primary); font-weight: 600;">Himanshu Bagde</span>
+                </div>
+                <div class="status-pill">
+                    <span class="pulse-orange"></span>
+                    <span>LIVE WAREHOUSE</span>
+                    <span class="status-sep">/</span>
+                    <span class="status-count">178,851 records</span>
+                </div>
             </div>
         </div>
     </header>
@@ -1306,7 +1314,7 @@ Gross Margin % = DIVIDE([Total Gross Profit], [Total Revenue], 0)</div>
                 <div>
                     <div class="header-badge-row">
                         <span class="badge-tag">DATA ENGINEERING INTERVIEW</span>
-                        <span class="header-sub-meta">STAR framework • Architecture rationale • Operational trade-offs</span>
+                        <span class="header-sub-meta">STAR framework • Architecture rationale • Designed by Himanshu Bagde</span>
                     </div>
                     <h2 class="section-title">Technical Interview Architecture Story</h2>
                 </div>
@@ -1315,7 +1323,7 @@ Gross Margin % = DIVIDE([Total Gross Profit], [Total Revenue], 0)</div>
                 <div class="interview-card">
                     <h3>🎯 Project Pitch & Executive Summary</h3>
                     <p>
-                        <em>"Clarivens Enterprise Data Intelligence is a production-grade Azure retail analytics platform designed for multi-store operations. It ingests 178k+ transactions across POS, ERP, and Supplier feeds, enforces a high-watermark incremental loading pattern, validates data through a modular Python Data Quality framework (achieving 99.93% accuracy), and computes predictive stockout indicators in Azure SQL to power an executive Power BI reporting suite."</em>
+                        <em>"Clarivens Enterprise Data Intelligence is a production-grade Azure retail analytics platform designed and engineered by <strong>Himanshu Bagde</strong> for multi-store operations. It ingests 178k+ transactions across POS, ERP, and Supplier feeds, enforces a high-watermark incremental loading pattern, validates data through a modular Python Data Quality framework (achieving 99.93% accuracy), and computes predictive stockout indicators in Azure SQL to power an executive Power BI reporting suite."</em>
                     </p>
                 </div>
                 <div class="interview-card">
@@ -1347,7 +1355,7 @@ Gross Margin % = DIVIDE([Total Gross Profit], [Total Revenue], 0)</div>
     <footer>
         <div class="master-container footer-inner">
             <span><strong>CLARIVENS</strong> • Enterprise Data Intelligence Platform</span>
-            <span>Azure • Data Engineering • Analytics • Business Intelligence</span>
+            <span>Created & Architected by <strong>Himanshu Bagde</strong> • Azure Data Engineering & Analytics</span>
         </div>
     </footer>
 

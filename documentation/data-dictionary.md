@@ -1,4 +1,5 @@
 # CLARIVENS INVENTORY INTELLIGENCE — DATA DICTIONARY
+**Architect & Lead Engineer:** Himanshu Bagde (Azure Data Engineer & Cloud Analytics Architect)  
 **Organization:** CLARIVENS RETAIL GROUP  
 **Platform:** Azure Retail Inventory Data Pipeline & Analytics Platform  
 **Version:** 1.0.0 (Production Architecture)

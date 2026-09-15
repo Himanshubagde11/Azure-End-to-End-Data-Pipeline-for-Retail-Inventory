@@ -3,7 +3,7 @@
 -- View: vw_PipelineHealth
 -- Description: Aggregates pipeline execution statuses, data quality pass rates,
 --              and rejected record metrics for Power BI Page 6 (Pipeline Health)
--- Author: Senior Data Engineer / Azure Data Architect
+-- Author: Himanshu Bagde (Azure Data Engineer & Cloud Analytics Architect)
 -- Organization: CLARIVENS RETAIL GROUP
 -- ============================================================================
 

@@ -1,4 +1,5 @@
 # CLARIVENS INVENTORY INTELLIGENCE — PIPELINE DOCUMENTATION
+**Architect & Lead Engineer:** Himanshu Bagde (Azure Data Engineer & Cloud Analytics Architect)  
 **Organization:** CLARIVENS RETAIL GROUP  
 **Platform:** Azure Data Factory (ADF) & Azure SQL Warehouse  
 **Version:** 1.0.0 (Production Architecture)

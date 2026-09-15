@@ -1,7 +1,7 @@
 """
 CLARIVENS ENTERPRISE DATA INTELLIGENCE
 Architecture & Flow Diagram Generator
-Author: Senior Data Engineer / Azure Data Architect
+Author: Himanshu Bagde (Azure Data Engineer & Cloud Analytics Architect)
 Organization: CLARIVENS DATA PLATFORMS
 
 Generates 3 presentation-ready architectural diagrams:

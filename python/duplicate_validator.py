@@ -2,7 +2,7 @@
 CLARIVENS INVENTORY INTELLIGENCE
 Module: duplicate_validator.py
 Description: Validates uniqueness of primary keys and composite grain definitions
-Author: Senior Data Engineer / Azure Data Architect
+Author: Himanshu Bagde (Azure Data Engineer & Cloud Analytics Architect)
 Organization: CLARIVENS RETAIL GROUP
 """
 

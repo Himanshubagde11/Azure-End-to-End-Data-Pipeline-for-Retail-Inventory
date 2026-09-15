@@ -1,7 +1,7 @@
 """
 CLARIVENS INVENTORY INTELLIGENCE
 Data Generation Engine
-Author: Senior Data Engineer / Azure Data Architect
+Author: Himanshu Bagde (Azure Data Engineer & Cloud Analytics Architect)
 Organization: CLARIVENS RETAIL GROUP
 
 Generates realistic enterprise retail data for 2025 covering:

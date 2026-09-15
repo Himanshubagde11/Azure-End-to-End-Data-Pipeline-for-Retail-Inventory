@@ -1,4 +1,5 @@
 # CLARIVENS INVENTORY INTELLIGENCE — DATA QUALITY RULES SPECIFICATION
+**Architect & Lead Engineer:** Himanshu Bagde (Azure Data Engineer & Cloud Analytics Architect)  
 **Organization:** CLARIVENS RETAIL GROUP  
 **Platform:** Python Data Quality & Validation Framework  
 **Version:** 1.0.0 (Production Architecture)

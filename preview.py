@@ -1,5 +1,6 @@
 """
 CLARIVENS ENTERPRISE DATA INTELLIGENCE — LOCAL PORTAL LAUNCHER
+Author: Himanshu Bagde (Azure Data Engineer & Cloud Analytics Architect)
 Launches the executive interactive preview portal on a local lightweight web server
 and automatically opens it in your default browser.
 """

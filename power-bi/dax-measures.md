@@ -1,4 +1,5 @@
 # CLARIVENS INVENTORY INTELLIGENCE — PRODUCTION DAX MEASURES SPECIFICATION
+**Architect & Lead Engineer:** Himanshu Bagde (Azure Data Engineer & Cloud Analytics Architect)  
 **Organization:** CLARIVENS RETAIL GROUP  
 **Platform:** Power BI DAX Calculation Engine  
 **Version:** 1.0.0 (Production Architecture)

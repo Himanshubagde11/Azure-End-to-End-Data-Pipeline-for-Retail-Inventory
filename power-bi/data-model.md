@@ -1,4 +1,5 @@
 # CLARIVENS INVENTORY INTELLIGENCE — POWER BI SEMANTIC DATA MODEL
+**Architect & Lead Engineer:** Himanshu Bagde (Azure Data Engineer & Cloud Analytics Architect)  
 **Organization:** CLARIVENS RETAIL GROUP  
 **Platform:** Power BI Enterprise Semantic Model  
 **Version:** 1.0.0 (Production Architecture)

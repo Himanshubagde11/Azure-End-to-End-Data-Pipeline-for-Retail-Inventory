@@ -1,4 +1,5 @@
 # CLARIVENS INVENTORY INTELLIGENCE — SYSTEM ARCHITECTURE SPECIFICATION
+**Architect & Lead Engineer:** Himanshu Bagde  
 **Organization:** CLARIVENS RETAIL GROUP  
 **Platform:** Azure Retail Inventory Data Pipeline & Analytics Platform  
 **Version:** 1.0.0 (Production Architecture)
