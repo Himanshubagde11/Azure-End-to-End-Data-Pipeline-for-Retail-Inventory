@@ -1,6 +1,6 @@
-# NEXORA INVENTORY INTELLIGENCE — SENIOR INTERVIEW GUIDE
+# CLARIVENS INVENTORY INTELLIGENCE — SENIOR INTERVIEW GUIDE
 **Role Focus:** Senior Data Engineer / Azure Data Architect / Analytics Engineer  
-**Organization:** NEXORA RETAIL GROUP  
+**Organization:** CLARIVENS RETAIL GROUP  
 **Platform:** Azure Retail Inventory Data Pipeline & Analytics Platform
 
 ---

@@ -1,4 +1,4 @@
-# NEXORA INVENTORY INTELLIGENCE
+# CLARIVENS INVENTORY INTELLIGENCE
 ### An End-to-End Azure Retail Inventory Data Pipeline & Analytics Platform
 
 [![Azure Data Factory](https://img.shields.io/badge/Azure%20Data%20Factory-v2-0078D4?logo=azure-data-factory&logoColor=white)](https://azure.microsoft.com/en-us/products/data-factory)
@@ -13,7 +13,7 @@
 
 ## 1. Project Overview
 
-**Nexora Inventory Intelligence** is an enterprise-grade, production-style retail data engineering and business intelligence platform built for **NEXORA RETAIL GROUP**, a multi-format retail enterprise operating 36 physical stores across 9 Indian states (Maharashtra, Karnataka, Gujarat, Telangana, Delhi, Tamil Nadu, West Bengal, Rajasthan, Uttar Pradesh).
+**Clarivens Inventory Intelligence** is an enterprise-grade, production-style retail data engineering and business intelligence platform built for **CLARIVENS RETAIL GROUP**, a multi-format retail enterprise operating 36 physical stores across 9 Indian states (Maharashtra, Karnataka, Gujarat, Telangana, Delhi, Tamil Nadu, West Bengal, Rajasthan, Uttar Pradesh).
 
 The platform ingests over **178,000+ transactional and inventory records** across 12 calendar months of 2025 from cloud storage and vendor REST APIs, runs automated Python Data Quality gates to protect warehouse integrity, orchestrates incremental loading into an **Azure SQL Database Star Schema**, and powers an executive **Power BI Analytics Suite**.
 
@@ -115,7 +115,7 @@ Before records are merged from staging into the warehouse, the **Python Data Qua
 
 ```
 ==========================================================================================
- NEXORA INVENTORY INTELLIGENCE — DATA QUALITY & VALIDATION REPORT
+ CLARIVENS INVENTORY INTELLIGENCE — DATA QUALITY & VALIDATION REPORT
  Run ID: LOCAL_E2E_20260915_121456 | Timestamp: 2026-09-15T06:47:42
 ==========================================================================================
 Table        | Check Type     | Rule Name                          | Pass %   | Status
@@ -177,7 +177,7 @@ Implemented in `dw.sp_Update_InventoryMetrics`:
 
 ## 8. Power BI Analytics Suite
 
-The Power BI solution incorporates our custom **Enterprise Dark Theme (`theme.json`)** with electric cyan and vibrant blue accents:
+The Power BI solution incorporates our custom **Clarivens Enterprise Black & Orange Theme (`theme.json`)** with signature orange intelligence accents:
 
 ### Page 1: Executive Overview
 High-level KPIs (Revenue, Units, Profit, Margin %, Inventory Value, Stockout Alerts), monthly revenue trend, revenue share by category, regional cluster rankings.
@@ -231,7 +231,7 @@ python power-bi/generate_mockups.py
 ## 10. Repository Directory Structure
 
 ```
-nexora-inventory-intelligence/
+clarivens-inventory-intelligence/
 ├── README.md
 ├── architecture/
 │   ├── architecture-diagram.png

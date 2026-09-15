@@ -60,6 +60,6 @@
     "parameters": {
       "p_RunID": { "type": "string", "defaultValue": "MANUAL_RUN" }
     },
-    "annotations": ["Nexora", "Ingestion", "Stores"]
+    "annotations": ["Clarivens", "Ingestion", "Stores"]
   }
 }

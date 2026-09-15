@@ -1,9 +1,9 @@
 """
-NEXORA INVENTORY INTELLIGENCE
+CLARIVENS INVENTORY INTELLIGENCE
 Module: null_validator.py
 Description: Validates completeness and absence of null/empty values on mandatory fields
 Author: Senior Data Engineer / Azure Data Architect
-Organization: NEXORA RETAIL GROUP
+Organization: CLARIVENS RETAIL GROUP
 """
 
 import pandas as pd

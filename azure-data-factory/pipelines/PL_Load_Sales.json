@@ -84,6 +84,6 @@
       "p_TargetTable": { "type": "string", "defaultValue": "Sales" },
       "p_RunID": { "type": "string", "defaultValue": "MANUAL_RUN" }
     },
-    "annotations": ["Nexora", "Incremental", "Sales", "Generic"]
+    "annotations": ["Clarivens", "Incremental", "Sales", "Generic"]
   }
 }

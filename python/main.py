@@ -1,8 +1,8 @@
 """
-NEXORA INVENTORY INTELLIGENCE
+CLARIVENS INVENTORY INTELLIGENCE
 CLI Entrypoint for Data Validation & Quality Framework
 Author: Senior Data Engineer / Azure Data Architect
-Organization: NEXORA RETAIL GROUP
+Organization: CLARIVENS RETAIL GROUP
 """
 
 import sys
@@ -18,7 +18,7 @@ from mock_api import export_enrichment_snapshot
 
 def parse_arguments():
     parser = argparse.ArgumentParser(
-        description="Nexora Inventory Intelligence — Data Quality & Pipeline Validation Framework"
+        description="Clarivens Inventory Intelligence — Data Quality & Pipeline Validation Framework"
     )
     parser.add_argument(
         "--check-all",
@@ -47,8 +47,8 @@ def main():
     args = parse_arguments()
 
     print("==========================================================================")
-    print(" NEXORA INVENTORY INTELLIGENCE — DATA QUALITY ENGINE")
-    print(" NEXORA RETAIL GROUP — Enterprise Retail Data Platform")
+    print(" CLARIVENS INVENTORY INTELLIGENCE — DATA QUALITY ENGINE")
+    print(" CLARIVENS RETAIL GROUP — Enterprise Retail Data Platform")
     print("==========================================================================")
 
     if args.export_api:

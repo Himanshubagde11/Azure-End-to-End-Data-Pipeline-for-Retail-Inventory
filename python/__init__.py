@@ -1,3 +1,3 @@
 """
-Nexora Inventory Intelligence - Core Python Package
+Clarivens Inventory Intelligence - Core Python Package
 """

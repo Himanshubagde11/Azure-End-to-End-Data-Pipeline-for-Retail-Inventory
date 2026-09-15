@@ -1,7 +1,7 @@
 {
   "name": "PL_Master_Retail_Inventory",
   "properties": {
-    "description": "Master Orchestrator Pipeline for Nexora Inventory Intelligence. Coordinates ingestion, Python DQ validation, warehouse transformation, and centralized audit logging.",
+    "description": "Master Orchestrator Pipeline for Clarivens Inventory Intelligence. Coordinates ingestion, Python DQ validation, warehouse transformation, and centralized audit logging.",
     "activities": [
       {
         "name": "Log_Pipeline_Start",
@@ -218,6 +218,6 @@
     "parameters": {
       "p_TriggerType": { "type": "string", "defaultValue": "Scheduled" }
     },
-    "annotations": ["Nexora", "Master", "Production"]
+    "annotations": ["Clarivens", "Master", "Production"]
   }
 }

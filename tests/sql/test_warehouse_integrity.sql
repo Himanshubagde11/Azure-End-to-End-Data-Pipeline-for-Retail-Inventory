@@ -1,15 +1,15 @@
 -- ============================================================================
--- NEXORA INVENTORY INTELLIGENCE
+-- CLARIVENS INVENTORY INTELLIGENCE
 -- Test Suite: test_warehouse_integrity.sql
 -- Description: Automated SQL test suite validating dimensional integrity,
 --              surrogate key uniqueness, zero orphan foreign keys, and business bounds
 -- Author: Senior Data Engineer / Azure Data Architect
--- Organization: NEXORA RETAIL GROUP
+-- Organization: CLARIVENS RETAIL GROUP
 -- ============================================================================
 
 SET NOCOUNT ON;
 PRINT '==========================================================================';
-PRINT ' NEXORA INVENTORY INTELLIGENCE — WAREHOUSE INTEGRITY TEST SUITE';
+PRINT ' CLARIVENS INVENTORY INTELLIGENCE — WAREHOUSE INTEGRITY TEST SUITE';
 PRINT '==========================================================================';
 
 -- Test 1: Dimension Table Row Counts (Must not be empty)

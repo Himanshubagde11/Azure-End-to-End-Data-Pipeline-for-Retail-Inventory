@@ -1,9 +1,9 @@
 """
-NEXORA INVENTORY INTELLIGENCE
+CLARIVENS INVENTORY INTELLIGENCE
 Test Suite: test_data_quality.py
 Description: Pytest and unittest test cases for modular Python Data Quality Framework
 Author: Senior Data Engineer / Azure Data Architect
-Organization: NEXORA RETAIL GROUP
+Organization: CLARIVENS RETAIL GROUP
 """
 
 import unittest

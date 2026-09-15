@@ -1,9 +1,9 @@
 -- ============================================================================
--- NEXORA INVENTORY INTELLIGENCE
+-- CLARIVENS INVENTORY INTELLIGENCE
 -- Script: 02_dim_tables.sql
 -- Description: Creates Star Schema dimension tables in the 'dw' schema
 -- Author: Senior Data Engineer / Azure Data Architect
--- Organization: NEXORA RETAIL GROUP
+-- Organization: CLARIVENS RETAIL GROUP
 -- ============================================================================
 
 DROP TABLE IF EXISTS dw.DimProduct;

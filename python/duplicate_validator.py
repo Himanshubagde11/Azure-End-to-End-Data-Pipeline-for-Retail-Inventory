@@ -1,9 +1,9 @@
 """
-NEXORA INVENTORY INTELLIGENCE
+CLARIVENS INVENTORY INTELLIGENCE
 Module: duplicate_validator.py
 Description: Validates uniqueness of primary keys and composite grain definitions
 Author: Senior Data Engineer / Azure Data Architect
-Organization: NEXORA RETAIL GROUP
+Organization: CLARIVENS RETAIL GROUP
 """
 
 import pandas as pd

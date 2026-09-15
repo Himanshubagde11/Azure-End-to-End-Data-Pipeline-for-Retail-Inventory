@@ -1,9 +1,9 @@
 -- ============================================================================
--- NEXORA INVENTORY INTELLIGENCE
+-- CLARIVENS INVENTORY INTELLIGENCE
 -- Script: 03_fact_tables.sql
 -- Description: Creates Star Schema fact tables in the 'dw' schema
 -- Author: Senior Data Engineer / Azure Data Architect
--- Organization: NEXORA RETAIL GROUP
+-- Organization: CLARIVENS RETAIL GROUP
 -- ============================================================================
 
 DROP TABLE IF EXISTS dw.FactReturns;

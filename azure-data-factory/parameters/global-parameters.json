@@ -10,7 +10,7 @@
     },
     "DataLakeStorageAccount": {
       "type": "string",
-      "value": "sanexoradatalakeprod"
+      "value": "saclarivensdatalakeprod"
     },
     "MaxCopyRetryCount": {
       "type": "int",
@@ -18,7 +18,7 @@
     },
     "AlertNotificationEmail": {
       "type": "string",
-      "value": "dataops@nexoraretail.in"
+      "value": "dataops@clarivensretail.in"
     }
   }
 }

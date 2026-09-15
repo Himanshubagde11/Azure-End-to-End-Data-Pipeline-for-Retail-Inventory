@@ -2,7 +2,7 @@
   "name": "TR_Monthly_Sales_TumblingWindow",
   "properties": {
     "description": "Tumbling window trigger executing incremental monthly sales ingestion slices with automatic backfill and concurrency management",
-    "annotations": ["Nexora", "Monthly", "TumblingWindow"],
+    "annotations": ["Clarivens", "Monthly", "TumblingWindow"],
     "runtimeState": "Started",
     "pipeline": {
       "pipelineReference": {

@@ -57,6 +57,6 @@
     "parameters": {
       "p_RunID": { "type": "string", "defaultValue": "MANUAL_RUN" }
     },
-    "annotations": ["Nexora", "Ingestion", "Returns"]
+    "annotations": ["Clarivens", "Ingestion", "Returns"]
   }
 }

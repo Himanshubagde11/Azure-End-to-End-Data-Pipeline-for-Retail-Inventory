@@ -1,5 +1,5 @@
-# NEXORA INVENTORY INTELLIGENCE — DATA QUALITY RULES SPECIFICATION
-**Organization:** NEXORA RETAIL GROUP  
+# CLARIVENS INVENTORY INTELLIGENCE — DATA QUALITY RULES SPECIFICATION
+**Organization:** CLARIVENS RETAIL GROUP  
 **Platform:** Python Data Quality & Validation Framework  
 **Version:** 1.0.0 (Production Architecture)
 
@@ -7,7 +7,7 @@
 
 ## 1. Quality Architecture & Framework Philosophy
 
-Data quality is not treated as an afterthought or a one-off SQL script. In the **Nexora Inventory Intelligence** platform, the Python validation engine functions as an automated **Quality Gate** sitting between raw data lake staging (`stg`) and the enterprise Star Schema (`dw`).
+Data quality is not treated as an afterthought or a one-off SQL script. In the **Clarivens Inventory Intelligence** platform, the Python validation engine functions as an automated **Quality Gate** sitting between raw data lake staging (`stg`) and the enterprise Star Schema (`dw`).
 
 ```mermaid
 flowchart LR

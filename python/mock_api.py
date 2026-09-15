@@ -1,13 +1,13 @@
 """
-NEXORA INVENTORY INTELLIGENCE
+CLARIVENS INVENTORY INTELLIGENCE
 Mock REST API Server & Data Generator
 Author: Senior Data Engineer / Azure Data Architect
-Organization: NEXORA RETAIL GROUP
+Organization: CLARIVENS RETAIL GROUP
 
 Implements a production-style REST API simulating an external Supplier & Market Intelligence Feed:
 - Endpoint: /api/v1/supplier-catalog
 - Endpoint: /api/v1/products/enrichment
-- Authentication: Bearer Token (Authorization: Bearer nexora-api-prod-key-2025)
+- Authentication: Bearer Token (Authorization: Bearer clarivens-api-prod-key-2025)
 - Pagination: page & limit parameters with nextPageUrl and metadata
 - Response: JSON format adhering to enterprise REST standards
 """
@@ -42,11 +42,11 @@ def load_catalog_data():
 
 ENRICHMENT_CACHE = load_catalog_data()
 
-class NexoraApiRequestHandler(BaseHTTPRequestHandler):
+class ClarivensApiRequestHandler(BaseHTTPRequestHandler):
     def _set_headers(self, status_code=200, content_type="application/json"):
         self.send_response(status_code)
         self.send_header("Content-Type", content_type)
-        self.send_header("X-Nexora-API-Version", "1.2.0")
+        self.send_header("X-Clarivens-API-Version", "1.2.0")
         self.send_header("Access-Control-Allow-Origin", "*")
         self.end_headers()
 
@@ -55,8 +55,8 @@ class NexoraApiRequestHandler(BaseHTTPRequestHandler):
         # Accept production key or token alias
         valid_tokens = [
             f"Bearer {REST_API_CONFIG['api_key']}",
-            "Bearer nexora-api-token-2025",
-            "Bearer nexora-api-prod-key-2025"
+            "Bearer clarivens-api-token-2025",
+            "Bearer clarivens-api-prod-key-2025"
         ]
         return any(auth_header.strip() == t for t in valid_tokens)
 
@@ -70,7 +70,7 @@ class NexoraApiRequestHandler(BaseHTTPRequestHandler):
             self._set_headers(200)
             resp = {
                 "status": "HEALTHY",
-                "service": "Nexora Supplier & Replenishment REST API",
+                "service": "Clarivens Supplier & Replenishment REST API",
                 "environment": "production-simulation",
                 "endpoints": [
                     "/api/v1/health",
@@ -87,7 +87,7 @@ class NexoraApiRequestHandler(BaseHTTPRequestHandler):
             self._set_headers(401)
             resp = {
                 "error": "Unauthorized",
-                "message": "Invalid or missing Bearer token in Authorization header. Expected: 'Bearer nexora-api-prod-key-2025' or 'Bearer nexora-api-token-2025'"
+                "message": "Invalid or missing Bearer token in Authorization header. Expected: 'Bearer clarivens-api-prod-key-2025' or 'Bearer clarivens-api-token-2025'"
             }
             self.wfile.write(json.dumps(resp, indent=2).encode("utf-8"))
             return
@@ -152,9 +152,9 @@ def run_server(host=None, port=None):
         host = REST_API_CONFIG["host"]
     if port is None:
         port = REST_API_CONFIG["port"]
-    server = HTTPServer((host, port), NexoraApiRequestHandler)
+    server = HTTPServer((host, port), ClarivensApiRequestHandler)
     print(f"===========================================================")
-    print(f" NEXORA REST API SERVER RUNNING on http://localhost:{port}")
+    print(f" CLARIVENS REST API SERVER RUNNING on http://localhost:{port}")
     print(f" Health Check: http://localhost:{port}/health")
     print(f" Enrichment:   http://localhost:{port}/api/v1/products/enrichment?page=1&limit=10")
     print(f" Suppliers:    http://localhost:{port}/api/v1/suppliers?page=1&limit=10")

@@ -1,35 +1,35 @@
 {
-  "name": "Nexora Enterprise Dark",
+  "name": "Clarivens Enterprise Black & Orange",
   "dataColors": [
-    "#48CAE4",
-    "#0077B6",
-    "#2EC4B6",
-    "#7209B7",
-    "#FFB703",
-    "#F72585",
-    "#E63946",
-    "#8D99AE",
-    "#52B788",
-    "#B5179E"
+    "#FF6A00",
+    "#FF7A00",
+    "#FF8A1F",
+    "#FFB067",
+    "#E4E4E7",
+    "#A1A1AA",
+    "#71717A",
+    "#52525B",
+    "#3F3F46",
+    "#27272A"
   ],
-  "background": "#0B132B",
-  "foreground": "#1C2541",
-  "tableAccent": "#48CAE4",
+  "background": "#050505",
+  "foreground": "#111114",
+  "tableAccent": "#FF6A00",
   "visualStyles": {
     "*": {
       "*": {
         "background": [
           {
             "show": true,
-            "color": { "solid": { "color": "#1C2541" } },
+            "color": { "solid": { "color": "#111114" } },
             "transparency": 10
           }
         ],
         "border": [
           {
             "show": true,
-            "color": { "solid": { "color": "#2E3D5C" } },
-            "radius": 6
+            "color": { "solid": { "color": "#27272A" } },
+            "radius": 8
           }
         ],
         "dropShadow": [
@@ -43,7 +43,7 @@
         "title": [
           {
             "show": true,
-            "fontColor": { "solid": { "color": "#F8F9FA" } },
+            "fontColor": { "solid": { "color": "#FFFFFF" } },
             "fontSize": 12,
             "fontFamily": "Segoe UI",
             "bold": true,
@@ -56,58 +56,8 @@
       "*": {
         "background": [
           {
-            "color": { "solid": { "color": "#0B132B" } },
+            "color": { "solid": { "color": "#050505" } },
             "transparency": 0
-          }
-        ]
-      }
-    },
-    "card": {
-      "*": {
-        "labels": [
-          {
-            "color": { "solid": { "color": "#48CAE4" } },
-            "fontSize": 24,
-            "fontFamily": "Segoe UI",
-            "bold": true
-          }
-        ],
-        "categoryLabels": [
-          {
-            "color": { "solid": { "color": "#8D99AE" } },
-            "fontSize": 10,
-            "fontFamily": "Segoe UI"
-          }
-        ]
-      }
-    },
-    "tableEx": {
-      "*": {
-        "grid": [
-          {
-            "gridVertical": false,
-            "gridHorizontal": true,
-            "gridHorizontalColor": { "solid": { "color": "#2E3D5C" } },
-            "rowPadding": 6
-          }
-        ],
-        "columnHeaders": [
-          {
-            "fontColor": { "solid": { "color": "#48CAE4" } },
-            "backColor": { "solid": { "color": "#141E33" } },
-            "fontFamily": "Segoe UI",
-            "fontSize": 11,
-            "bold": true
-          }
-        ],
-        "values": [
-          {
-            "fontColorPrimary": { "solid": { "color": "#F8F9FA" } },
-            "backColorPrimary": { "solid": { "color": "#1C2541" } },
-            "fontColorSecondary": { "solid": { "color": "#F8F9FA" } },
-            "backColorSecondary": { "solid": { "color": "#182239" } },
-            "fontFamily": "Segoe UI",
-            "fontSize": 10
           }
         ]
       }

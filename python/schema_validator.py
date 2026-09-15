@@ -1,9 +1,9 @@
 """
-NEXORA INVENTORY INTELLIGENCE
+CLARIVENS INVENTORY INTELLIGENCE
 Module: schema_validator.py
 Description: Validates column existence, missing columns, and data type conformity
 Author: Senior Data Engineer / Azure Data Architect
-Organization: NEXORA RETAIL GROUP
+Organization: CLARIVENS RETAIL GROUP
 """
 
 import pandas as pd

@@ -1,8 +1,8 @@
 """
-NEXORA INVENTORY INTELLIGENCE
+CLARIVENS INVENTORY INTELLIGENCE
 Data Generation Engine
 Author: Senior Data Engineer / Azure Data Architect
-Organization: NEXORA RETAIL GROUP
+Organization: CLARIVENS RETAIL GROUP
 
 Generates realistic enterprise retail data for 2025 covering:
 - 9 Categories, 1,200 Products
@@ -113,7 +113,7 @@ def generate_stores():
 
             stores.append({
                 "StoreID": store_id,
-                "StoreName": f"Nexora {loc['City']} {stype} #{i+1}",
+                "StoreName": f"Clarivens {loc['City']} {stype} #{i+1}",
                 "City": loc["City"],
                 "State": loc["State"],
                 "Region": loc["Region"],
@@ -704,8 +704,8 @@ def generate_purchases_and_returns(stores_df, products_df, suppliers_df):
 
 def main():
     print("=================================================================")
-    print(" NEXORA INVENTORY INTELLIGENCE — DATA GENERATION ENGINE")
-    print(" NEXORA RETAIL GROUP — Enterprise Retail Data Platform")
+    print(" CLARIVENS INVENTORY INTELLIGENCE — DATA GENERATION ENGINE")
+    print(" CLARIVENS RETAIL GROUP — Enterprise Retail Data Platform")
     print("=================================================================")
     cats_df = generate_categories()
     stores_df = generate_stores()

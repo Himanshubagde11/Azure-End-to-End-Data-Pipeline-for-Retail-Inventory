@@ -1,5 +1,5 @@
 """
-NEXORA INVENTORY INTELLIGENCE
+CLARIVENS ENTERPRISE DATA INTELLIGENCE
 Build Portal: Generates the ultra-premium Enterprise Data Intelligence Command Center (preview.html)
 Aesthetic: Cinematic Black + Orange + Liquid Glassmorphism
 """
@@ -9,7 +9,7 @@ import json
 import sqlite3
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DB_PATH = os.path.join(BASE_DIR, "audit_logs", "nexora_warehouse_local.db")
+DB_PATH = os.path.join(BASE_DIR, "audit_logs", "clarivens_warehouse_local.db")
 
 def extract_portal_data():
     conn = sqlite3.connect(DB_PATH)
@@ -96,7 +96,7 @@ def generate_html():
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexora Inventory Intelligence — Enterprise Command Center</title>
+    <title>Clarivens — Enterprise Azure Data Intelligence Platform</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -196,13 +196,14 @@ def generate_html():
         .brand-logo {{
             width: 38px;
             height: 38px;
-            background: linear-gradient(135deg, #1C1C1F, #0A0A0A);
-            border: 1px solid var(--glass-border-hover);
-            border-radius: var(--radius-sm);
+            background: #0C0C0E;
+            border: 1px solid rgba(255, 106, 0, 0.45);
+            border-radius: 9px;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 0 15px rgba(255, 106, 0, 0.2);
+            box-shadow: 0 0 16px rgba(255, 106, 0, 0.22), inset 0 1px 1px rgba(255, 176, 103, 0.25);
+            position: relative;
         }}
 
         .brand-text {{
@@ -1037,15 +1038,14 @@ def generate_html():
         <div class="master-container header-inner">
             <div class="brand">
                 <div class="brand-logo">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#FF7A00" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M2 17L12 22L22 17" stroke="#FF6A00" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M2 12L12 17L22 12" stroke="#FF8A1F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                        <path d="M16.5 8.2C15.5 7.1 14.1 6.5 12.2 6.5C8.8 6.5 6.5 9 6.5 12C6.5 15 8.8 17.5 12.2 17.5C14.1 17.5 15.5 16.9 16.5 15.8" stroke="#FF7A00" stroke-width="2.6" stroke-linecap="round"/>
+                        <path d="M12.2 6.5C14.1 6.5 15.5 7.1 16.5 8.2" stroke="#FFB067" stroke-width="2.6" stroke-linecap="round"/>
                     </svg>
                 </div>
                 <div class="brand-text">
-                    <span class="brand-title">NEXORA</span>
-                    <span class="brand-sub">Inventory Intelligence</span>
+                    <span class="brand-title">CLARIVENS</span>
+                    <span class="brand-sub">Enterprise Data Intelligence</span>
                 </div>
             </div>
             <div class="status-pill">
@@ -1291,7 +1291,7 @@ Gross Margin % = DIVIDE([Total Gross Profit], [Total Revenue], 0)</div>
                 <div class="interview-card">
                     <h3>🎯 Project Pitch & Executive Summary</h3>
                     <p>
-                        <em>"Nexora Inventory Intelligence is an enterprise-grade Azure data platform designed for multi-store retail operations. It ingests 178k+ transactions across POS, ERP, and Supplier feeds, enforces a high-watermark incremental loading pattern, validates data through a modular Python Data Quality framework (achieving 99.93% accuracy), and computes predictive stockout indicators in Azure SQL to power an executive Power BI reporting suite."</em>
+                        <em>"Clarivens Enterprise Data Intelligence is a production-grade Azure retail analytics platform designed for multi-store operations. It ingests 178k+ transactions across POS, ERP, and Supplier feeds, enforces a high-watermark incremental loading pattern, validates data through a modular Python Data Quality framework (achieving 99.93% accuracy), and computes predictive stockout indicators in Azure SQL to power an executive Power BI reporting suite."</em>
                     </p>
                 </div>
                 <div class="interview-card">
@@ -1322,8 +1322,8 @@ Gross Margin % = DIVIDE([Total Gross Profit], [Total Revenue], 0)</div>
     <!-- Footer -->
     <footer>
         <div class="master-container footer-inner">
-            <span><strong>Nexora Inventory Intelligence</strong> • Enterprise Azure Retail Data Pipeline & Analytics Platform</span>
-            <span>Architected with Azure Data Factory, Azure SQL Database & Power BI</span>
+            <span><strong>CLARIVENS</strong> • Enterprise Data Intelligence Platform</span>
+            <span>Azure • Data Engineering • Analytics • Business Intelligence</span>
         </div>
     </footer>
 
@@ -1332,32 +1332,32 @@ Gross Margin % = DIVIDE([Total Gross Profit], [Total Revenue], 0)</div>
 
         const pbiPages = {{
             '01_executive_overview': {{
-                title: 'Executive Overview',
+                title: 'Clarivens Executive Intelligence',
                 desc: 'High-level business telemetry covering revenue trajectory, gross profit margins, inventory value, and regional performance ranking across 36 stores.',
                 dax: 'Total Revenue = SUM(dw_FactSales[Revenue])\\nGross Margin % = DIVIDE([Total Gross Profit], [Total Revenue], 0)'
             }},
             '02_inventory_intelligence': {{
-                title: 'Inventory Intelligence & Risk',
+                title: 'Clarivens Inventory Intelligence & Risk',
                 desc: 'Predictive stockout analysis, Days of Inventory (DOI), Average Daily Sales (ADS), and classified replenishment tiers (Critical, High, Medium, Low).',
                 dax: 'Days of Inventory = DIVIDE(SUM(dw_FactInventory[ClosingStock]), [Average Daily Sales], 0)\\nStockout Risk = IF([Days of Inventory] <= 3, "CRITICAL", IF([Days of Inventory] <= 7, "HIGH", "NORMAL"))'
             }},
             '03_sales_analytics': {{
-                title: 'Sales & Revenue Analytics',
+                title: 'Clarivens Sales & Revenue Analytics',
                 desc: 'Omni-channel sales performance, seasonal retail seasonality, category margin matrices, and discount sensitivity curves.',
                 dax: 'YoY Revenue Growth = VAR PriorYear = CALCULATE([Total Revenue], SAMEPERIODLASTYEAR(dw_DimDate[FullDate])) RETURN DIVIDE([Total Revenue] - PriorYear, PriorYear, 0)'
             }},
             '04_store_performance': {{
-                title: 'Store Performance & Spatial',
+                title: 'Clarivens Store Performance & Spatial',
                 desc: 'Comparative store throughput, sales per square foot efficiency, regional fulfillment, and return rate profiling across 36 retail stores.',
                 dax: 'Sales Per SqFt = DIVIDE([Total Revenue], SUM(dw_DimStore[SquareFootage]), 0)\\nReturn Rate % = DIVIDE([Total Return Quantity], [Total Sales Quantity], 0)'
             }},
             '05_product_supplier_analysis': {{
-                title: 'Product & Supplier Intelligence',
+                title: 'Clarivens Product & Supplier Intelligence',
                 desc: 'Vendor lead-time reliability scores, gross margin contribution quadrants, and ABC inventory classification.',
                 dax: 'Supplier On-Time Rate % = DIVIDE(COUNTROWS(FILTER(dw_FactPurchases, dw_FactPurchases[DeliveryDelayDays] <= 0)), COUNTROWS(dw_FactPurchases), 0)'
             }},
             '06_data_pipeline_health': {{
-                title: 'Data Pipeline & Quality Health',
+                title: 'Clarivens Data Pipeline Observability',
                 desc: 'Telemetry dashboard for Azure Data Factory executions, watermark state tracking, and automated Data Quality Engine audit logs.',
                 dax: 'Quality Pass Rate % = DIVIDE(SUM(audit_DataQualityLog[RecordsPassed]), SUM(audit_DataQualityLog[RecordsEvaluated]), 0)'
             }}

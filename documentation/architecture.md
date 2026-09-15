@@ -1,5 +1,5 @@
-# NEXORA INVENTORY INTELLIGENCE — SYSTEM ARCHITECTURE SPECIFICATION
-**Organization:** NEXORA RETAIL GROUP  
+# CLARIVENS INVENTORY INTELLIGENCE — SYSTEM ARCHITECTURE SPECIFICATION
+**Organization:** CLARIVENS RETAIL GROUP  
 **Platform:** Azure Retail Inventory Data Pipeline & Analytics Platform  
 **Version:** 1.0.0 (Production Architecture)
 
@@ -7,7 +7,7 @@
 
 ## 1. Executive Summary
 
-**Nexora Inventory Intelligence** is an enterprise data engineering and analytics solution designed to ingest, validate, curate, and visualize retail inventory, purchasing, sales velocity, and stockout risk across 36 multi-format stores in India.
+**Clarivens Inventory Intelligence** is an enterprise data engineering and analytics solution designed to ingest, validate, curate, and visualize retail inventory, purchasing, sales velocity, and stockout risk across 36 multi-format stores in India.
 
 The platform processes multi-source data feeds from raw cloud storage (ADLS Gen2 / Azure Blob) and external vendor REST APIs, runs automated Python Data Quality gates to protect warehouse integrity, loads curated star-schema dimensional models via incremental watermarking, and powers an executive Power BI reporting suite.
 
@@ -78,7 +78,7 @@ Raw data files are never written directly to business-critical dimensional table
 - Graceful error containment: defective batches can be reviewed in staging without corrupting historical analytics.
 
 ### 4.2 Incremental Watermarking Strategy
-Full table reloads on 120,000+ transaction rows cause unnecessary DTU/vCore consumption and blocking locks. Nexora implements high-watermark incremental ingestion via `audit.ETL_Control`:
+Full table reloads on 120,000+ transaction rows cause unnecessary DTU/vCore consumption and blocking locks. Clarivens implements high-watermark incremental ingestion via `audit.ETL_Control`:
 1. `PL_Load_Sales` performs a lookup on `audit.ETL_Control` to retrieve `LastWatermarkValue` (e.g. `'2025-10-31'`).
 2. Only records matching `SaleDate > LastWatermarkValue` are staged and merged into `dw.FactSales`.
 3. Following successful execution, `audit.ETL_Control` is updated atomically to `MAX(SaleDate)`.

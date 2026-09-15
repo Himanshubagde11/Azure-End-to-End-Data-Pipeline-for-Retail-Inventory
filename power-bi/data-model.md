@@ -1,5 +1,5 @@
-# NEXORA INVENTORY INTELLIGENCE — POWER BI SEMANTIC DATA MODEL
-**Organization:** NEXORA RETAIL GROUP  
+# CLARIVENS INVENTORY INTELLIGENCE — POWER BI SEMANTIC DATA MODEL
+**Organization:** CLARIVENS RETAIL GROUP  
 **Platform:** Power BI Enterprise Semantic Model  
 **Version:** 1.0.0 (Production Architecture)
 

@@ -1,9 +1,9 @@
 -- ============================================================================
--- NEXORA INVENTORY INTELLIGENCE
+-- CLARIVENS INVENTORY INTELLIGENCE
 -- Procedure: sp_Load_DimProduct
 -- Description: Transforms and loads products from stg.Products and stg.RestApi_ProductEnrichment into dw.DimProduct
 -- Author: Senior Data Engineer / Azure Data Architect
--- Organization: NEXORA RETAIL GROUP
+-- Organization: CLARIVENS RETAIL GROUP
 -- ============================================================================
 
 CREATE OR ALTER PROCEDURE dw.sp_Load_DimProduct
@@ -29,7 +29,7 @@ BEGIN
                     WHEN s.SupplierID IS NOT NULL THEN TRIM(p.SupplierID)
                     ELSE 'SUP001' -- Fallback to default trusted primary supplier
                 END AS SupplierID,
-                ISNULL(TRIM(p.Brand), 'Nexora Select') AS Brand,
+                ISNULL(TRIM(p.Brand), 'Clarivens Select') AS Brand,
                 ISNULL(p.UnitCost, 150.00) AS UnitCost,
                 -- Handle null unit price by applying standard markup on unit cost
                 ISNULL(p.UnitPrice, ROUND(ISNULL(p.UnitCost, 150.00) * 1.35, 2)) AS UnitPrice,

@@ -1,5 +1,5 @@
-# NEXORA INVENTORY INTELLIGENCE — DEPLOYMENT & OPERATION GUIDE
-**Organization:** NEXORA RETAIL GROUP  
+# CLARIVENS INVENTORY INTELLIGENCE — DEPLOYMENT & OPERATION GUIDE
+**Organization:** CLARIVENS RETAIL GROUP  
 **Platform:** Azure Retail Inventory Data Pipeline & Analytics Platform  
 **Version:** 1.0.0 (Production Architecture)
 
@@ -62,9 +62,9 @@ power-bi/screenshots/
 ### 3.1 Step 1: Resource Group & Storage Provisioning
 ```bash
 # Set environment variables
-RESOURCE_GROUP="rg-nexora-inventory-prod"
+RESOURCE_GROUP="rg-clarivens-inventory-prod"
 LOCATION="centralindia"
-STORAGE_ACCOUNT="sanexoradatalakeprod"
+STORAGE_ACCOUNT="saclarivensdatalakeprod"
 
 # 1. Create Resource Group
 az group create --name $RESOURCE_GROUP --location $LOCATION
@@ -95,9 +95,9 @@ az storage blob upload-batch \
 
 ### 3.3 Step 3: Provision Azure SQL Database
 ```bash
-SQL_SERVER="nexora-sql-server-prod"
-SQL_DB="sqldb-nexora-inventory-prod"
-ADMIN_USER="nexora_admin"
+SQL_SERVER="clarivens-sql-server-prod"
+SQL_DB="sqldb-clarivens-inventory-prod"
+ADMIN_USER="clarivens_admin"
 
 # 1. Create Logical SQL Server
 az sql server create \
@@ -105,7 +105,7 @@ az sql server create \
     --resource-group $RESOURCE_GROUP \
     --location $LOCATION \
     --admin-user $ADMIN_USER \
-    --admin-password "NexoraSecureP@ssw0rd2025!"
+    --admin-password "ClarivensSecureP@ssw0rd2025!"
 
 # 2. Configure Firewall Rule to Allow Azure Services
 az sql server firewall-rule create \
@@ -137,7 +137,7 @@ Connect to the database via SQL Server Management Studio (SSMS), Azure Data Stud
 
 ### 3.5 Step 5: Provision Azure Data Factory
 ```bash
-ADF_NAME="adf-nexora-inventory-prod"
+ADF_NAME="adf-clarivens-inventory-prod"
 
 az datafactory create \
     --resource-group $RESOURCE_GROUP \
@@ -148,12 +148,12 @@ az datafactory create \
 ### 3.6 Step 6: Grant ADF Managed Identity Access to Azure SQL
 ```sql
 -- In Azure SQL Database, create a contained database user for ADF Managed Identity
-CREATE USER [adf-nexora-inventory-prod] FROM EXTERNAL PROVIDER;
-ALTER ROLE db_datareader ADD MEMBER [adf-nexora-inventory-prod];
-ALTER ROLE db_datawriter ADD MEMBER [adf-nexora-inventory-prod];
-ALTER ROLE db_ddladmin ADD MEMBER [adf-nexora-inventory-prod];
-GRANT EXECUTE ON SCHEMA::dw TO [adf-nexora-inventory-prod];
-GRANT EXECUTE ON SCHEMA::audit TO [adf-nexora-inventory-prod];
+CREATE USER [adf-clarivens-inventory-prod] FROM EXTERNAL PROVIDER;
+ALTER ROLE db_datareader ADD MEMBER [adf-clarivens-inventory-prod];
+ALTER ROLE db_datawriter ADD MEMBER [adf-clarivens-inventory-prod];
+ALTER ROLE db_ddladmin ADD MEMBER [adf-clarivens-inventory-prod];
+GRANT EXECUTE ON SCHEMA::dw TO [adf-clarivens-inventory-prod];
+GRANT EXECUTE ON SCHEMA::audit TO [adf-clarivens-inventory-prod];
 ```
 
 ### 3.7 Step 7: Import ADF Artifacts
@@ -166,7 +166,7 @@ Import the JSON definitions from `azure-data-factory/` into ADF Studio or deploy
 ### 3.8 Step 8: Connect Power BI to Azure SQL Database
 1. Launch **Power BI Desktop**.
 2. Select **Get Data** -> **Azure SQL Database**.
-3. Server: `nexora-sql-server-prod.database.windows.net`, Database: `sqldb-nexora-inventory-prod`.
+3. Server: `clarivens-sql-server-prod.database.windows.net`, Database: `sqldb-clarivens-inventory-prod`.
 4. Select `dw.DimDate`, `dw.DimProduct`, `dw.DimStore`, `dw.DimSupplier`, `dw.DimCategory`, `dw.FactSales`, `dw.FactInventory`, `dw.FactPurchases`, `dw.FactReturns`, and `audit.vw_PipelineHealth`.
 5. Import `power-bi/theme.json` via **View** -> **Themes** -> **Browse for Themes**.
 6. Create DAX measures from `power-bi/dax-measures.md`.

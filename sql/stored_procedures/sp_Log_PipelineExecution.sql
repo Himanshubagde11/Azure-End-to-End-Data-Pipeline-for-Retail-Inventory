@@ -1,9 +1,9 @@
 -- ============================================================================
--- NEXORA INVENTORY INTELLIGENCE
+-- CLARIVENS INVENTORY INTELLIGENCE
 -- Procedure: sp_Log_PipelineExecution
 -- Description: Centralized procedure to log execution state from ADF, Python, or SQL procedures
 -- Author: Senior Data Engineer / Azure Data Architect
--- Organization: NEXORA RETAIL GROUP
+-- Organization: CLARIVENS RETAIL GROUP
 -- ============================================================================
 
 CREATE OR ALTER PROCEDURE audit.sp_Log_PipelineExecution

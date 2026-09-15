@@ -1,9 +1,9 @@
 -- ============================================================================
--- NEXORA INVENTORY INTELLIGENCE
+-- CLARIVENS INVENTORY INTELLIGENCE
 -- Script: 05_warehouse_indexes.sql
 -- Description: Creates performance indexes on Star Schema facts and dimensions
 -- Author: Senior Data Engineer / Azure Data Architect
--- Organization: NEXORA RETAIL GROUP
+-- Organization: CLARIVENS RETAIL GROUP
 -- ============================================================================
 
 -- FactSales Indexes

@@ -1,9 +1,9 @@
 -- ============================================================================
--- NEXORA INVENTORY INTELLIGENCE
+-- CLARIVENS INVENTORY INTELLIGENCE
 -- Procedure: sp_Load_DimDate
 -- Description: Generates calendar dates from 2024-01-01 to 2026-12-31 with retail attributes
 -- Author: Senior Data Engineer / Azure Data Architect
--- Organization: NEXORA RETAIL GROUP
+-- Organization: CLARIVENS RETAIL GROUP
 -- ============================================================================
 
 CREATE OR ALTER PROCEDURE dw.sp_Load_DimDate

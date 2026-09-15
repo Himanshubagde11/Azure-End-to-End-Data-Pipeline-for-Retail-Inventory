@@ -1,8 +1,8 @@
 """
-NEXORA INVENTORY INTELLIGENCE
+CLARIVENS INVENTORY INTELLIGENCE
 Local End-to-End Execution & Testing Runner
 Author: Senior Data Engineer / Azure Data Architect
-Organization: NEXORA RETAIL GROUP
+Organization: CLARIVENS RETAIL GROUP
 
 Enables complete zero-cloud execution and verification:
 1. Ingests raw CSVs & Mock REST API into local relational staging tables
@@ -397,7 +397,7 @@ def load_star_schema(conn, run_id):
         COALESCE(c.CategoryName, TRIM(p.CategoryName)),
         COALESCE(c.Department, 'Merchandise'),
         CASE WHEN s.SupplierID IS NOT NULL THEN TRIM(p.SupplierID) ELSE 'SUP001' END,
-        COALESCE(TRIM(p.Brand), 'Nexora Brand'),
+        COALESCE(TRIM(p.Brand), 'Clarivens Brand'),
         COALESCE(p.UnitCost, 150.0),
         COALESCE(p.UnitPrice, ROUND(p.UnitCost * 1.35, 2)),
         COALESCE(p.ReorderLevel, 50),
@@ -610,7 +610,7 @@ def main():
     run_id = f"LOCAL_E2E_{start_time.strftime('%Y%m%d_%H%M%S')}"
 
     print("==========================================================================")
-    print(" NEXORA INVENTORY INTELLIGENCE — LOCAL PIPELINE & WAREHOUSE RUNNER")
+    print(" CLARIVENS INVENTORY INTELLIGENCE — LOCAL PIPELINE & WAREHOUSE RUNNER")
     print(f" Run ID: {run_id} | Database: {LOCAL_DB_PATH}")
     print("==========================================================================")
 

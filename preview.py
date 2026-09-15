@@ -1,5 +1,5 @@
 """
-NEXORA INVENTORY INTELLIGENCE — LOCAL PORTAL LAUNCHER
+CLARIVENS ENTERPRISE DATA INTELLIGENCE — LOCAL PORTAL LAUNCHER
 Launches the executive interactive preview portal on a local lightweight web server
 and automatically opens it in your default browser.
 """
@@ -12,7 +12,7 @@ from http.server import HTTPServer, SimpleHTTPRequestHandler
 PORT = 5050
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-class NexoraPortalHandler(SimpleHTTPRequestHandler):
+class ClarivensPortalHandler(SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=BASE_DIR, **kwargs)
 
@@ -23,7 +23,7 @@ class NexoraPortalHandler(SimpleHTTPRequestHandler):
 def launch_portal():
     url = f"http://localhost:{PORT}/preview.html"
     print("=" * 70)
-    print("  NEXORA INVENTORY INTELLIGENCE — LOCAL EXECUTIVE PORTAL")
+    print("  CLARIVENS ENTERPRISE DATA INTELLIGENCE — LOCAL EXECUTIVE PORTAL")
     print("=" * 70)
     print(f"  [STARTING] Serving portal from: {BASE_DIR}")
     print(f"  [ACCESS URL] {url}")
@@ -37,7 +37,7 @@ def launch_portal():
         print(f"  [NOTE] Could not auto-launch browser: {e}")
         print(f"  Please open {url} manually.")
 
-    server = HTTPServer(("127.0.0.1", PORT), NexoraPortalHandler)
+    server = HTTPServer(("127.0.0.1", PORT), ClarivensPortalHandler)
     try:
         server.serve_forever()
     except KeyboardInterrupt:

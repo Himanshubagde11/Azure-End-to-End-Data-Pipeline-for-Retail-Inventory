@@ -76,6 +76,6 @@
     "parameters": {
       "p_RunID": { "type": "string", "defaultValue": "MANUAL_RUN" }
     },
-    "annotations": ["Nexora", "REST", "Replenishment"]
+    "annotations": ["Clarivens", "REST", "Replenishment"]
   }
 }

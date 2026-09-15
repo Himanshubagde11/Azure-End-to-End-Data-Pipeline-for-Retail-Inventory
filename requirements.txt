@@ -1,4 +1,4 @@
-# Nexora Inventory Intelligence — Python Dependencies
+# Clarivens Inventory Intelligence — Python Dependencies
 # Core Pipeline, Data Quality Framework, Mock REST API, and Local Warehouse Tests:
 # -> Run on Python 3.8+ standard library (zero external dependencies required)
 

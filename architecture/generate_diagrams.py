@@ -1,13 +1,15 @@
 """
-NEXORA INVENTORY INTELLIGENCE
+CLARIVENS ENTERPRISE DATA INTELLIGENCE
 Architecture & Flow Diagram Generator
 Author: Senior Data Engineer / Azure Data Architect
-Organization: NEXORA RETAIL GROUP
+Organization: CLARIVENS DATA PLATFORMS
 
 Generates 3 presentation-ready architectural diagrams:
 1. architecture-diagram.png: Full Cloud Architecture (ADLS, ADF, Azure SQL, Python DQ, Power BI, Monitoring)
 2. data-flow.png: End-to-End Data Pipeline Flow & Quality Gates
 3. star-schema.png: Star Schema Dimensional Model ERD
+
+Theme: Clarivens Black + Orange + Liquid Glassmorphism
 """
 
 import os
@@ -16,16 +18,23 @@ import matplotlib.patches as patches
 
 OUTPUT_DIR = os.path.dirname(__file__)
 
-BG_COLOR = "#0B132B"
-CARD_BG = "#1C2541"
-BORDER_COLOR = "#2E3D5C"
-CYAN = "#48CAE4"
-BLUE = "#0077B6"
-TEAL = "#2EC4B6"
-AMBER = "#FFB703"
-RED = "#E63946"
-WHITE = "#F8F9FA"
-MUTED = "#8D99AE"
+# Clarivens Enterprise Color Palette
+BG_COLOR = "#050505"
+CARD_BG = "#0E0E12"
+CARD_INNER = "#141418"
+BORDER_COLOR = "#222226"
+
+ORANGE = "#FF6A00"
+ORANGE_BRIGHT = "#FF7A00"
+ORANGE_SOFT = "#FF8A1F"
+ORANGE_HIGHLIGHT = "#FFB067"
+
+AMBER = "#F59E0B"
+GREEN = "#10B981"
+RED = "#EF4444"
+WHITE = "#FFFFFF"
+MUTED = "#8E8E93"
+GRAY_LIGHT = "#E4E4E7"
 
 def create_architecture_diagram():
     print("Generating architecture-diagram.png...")
@@ -33,57 +42,70 @@ def create_architecture_diagram():
     ax.set_facecolor(BG_COLOR)
     ax.axis("off")
 
+    # Minimal Geometric C logo mark
+    logo_bg = patches.FancyBboxPatch((0.038, 0.932), 0.016, 0.038, boxstyle="round,pad=0.003,rounding_size=0.005",
+                                     transform=ax.transAxes, facecolor="#141418", edgecolor=ORANGE, linewidth=1.2)
+    ax.add_patch(logo_bg)
+    ax.text(0.046, 0.951, "C", transform=ax.transAxes, color=ORANGE_BRIGHT, fontsize=11, fontweight="bold", ha="center", va="center")
+
     # Header
-    ax.text(0.04, 0.95, "NEXORA INVENTORY INTELLIGENCE", color=CYAN, fontsize=16, fontweight="bold")
-    ax.text(0.04, 0.92, "Production End-to-End Architecture: Azure Data Factory, Azure SQL Database, Python DQ & Power BI", color=MUTED, fontsize=10)
+    ax.text(0.062, 0.956, "CLARIVENS ENTERPRISE DATA INTELLIGENCE", color=WHITE, fontsize=15, fontweight="bold")
+    ax.text(0.062, 0.932, "Production End-to-End Architecture: Azure Data Factory, Azure SQL Database, Python DQ & Power BI", color=ORANGE_SOFT, fontsize=9.5)
 
     # 4 Architecture Columns / Swimlanes
     columns = [
-        ("1. INGESTION & SOURCES", 0.04, 0.20, [
-            ("CSV Files (ADLS Gen2)", "12 Monthly Sales (120k+ rows)\n12 Weekly Inventory (42k+ rows)\nProducts, Stores, Suppliers\nPurchases & Returns"),
-            ("Mock REST API", "Supplier Catalog & SLAs\nDynamic Replenishment Feed\nBearer Token Auth & Pagination")
+        ("1. INGESTION & SOURCES", 0.038, 0.205, [
+            ("CSV Feeds (ADLS Gen2)", "12 Monthly Sales (120k+ rows)\n12 Weekly Inventory (42k+ rows)\nMaster Products, Stores, Suppliers\nPO Purchases & Return Events"),
+            ("Mock REST API Feed", "Supplier Catalog & Replenishment SLAs\nDynamic Price & Safety Stock Feed\nBearer Token Auth & Pagination")
         ]),
-        ("2. ORCHESTRATION & DQ", 0.27, 0.22, [
-            ("Azure Data Factory v2", "PL_Master_Retail_Inventory\n11 Parameterized Child Pipelines\nSchedule & Tumbling Triggers\nCopy Activities with Retries"),
-            ("Python Data Quality Gate", "12 Validation Rules\nSchema, Nulls, Duplicates\nMath Stock Balance Equation\nCalculates DQ Score (Gate >= 95%)")
+        ("2. ORCHESTRATION & DQ", 0.275, 0.22, [
+            ("Azure Data Factory v2", "PL_Master_Retail_Inventory\n11 Parameterized Child Pipelines\nTumbling & Schedule Triggers\nAutomated Retries & Logging"),
+            ("Python Data Quality Gate", "12 Modular Validation Rules (75 checks)\nSchema, Nulls, Duplicates, Math\nAutomated Cleansing & Reconcile\nQuality Gate Enforcement (>= 98%)")
         ]),
-        ("3. STORAGE & WAREHOUSE", 0.52, 0.22, [
-            ("Staging Layer (stg.*)", "Raw Landing Tables\nIngestion Auditing Timestamps\nPre-Copy Truncate & Bulk Insert"),
-            ("Star Schema Warehouse (dw.*)", "FactSales, FactInventory, FactPurchases\nDimDate, DimProduct, DimStore\nDimSupplier, DimCategory\nSCD Type 1/2 & Surrogate Keys")
+        ("3. STORAGE & WAREHOUSE", 0.525, 0.22, [
+            ("Staging Layer (stg schema)", "Raw Landing Tables\nIngestion Auditing Timestamps\nPre-Copy Truncate & Bulk Insert"),
+            ("Star Schema Warehouse (dw)", "FactSales, FactInventory, FactPurchases\nDimDate, DimProduct, DimStore\nDimSupplier, DimCategory\nSCD Type 1/2 & Surrogate Keys")
         ]),
-        ("4. ANALYTICS & OBSERVABILITY", 0.77, 0.20, [
-            ("Power BI Analytics Suite", "6 Executive & Operational Pages\nInventory Intelligence Risk Matrix\n25+ DAX Measures & Themes\nDrillthrough & Slicers"),
-            ("Centralized Audit & Control", "audit.PipelineExecutionLog\naudit.DataQualityLog\naudit.ETL_Control (Watermarking)")
+        ("4. ANALYTICS & OBSERVABILITY", 0.775, 0.20, [
+            ("Power BI Analytics Suite", "6 Executive & Operational Pages\nInventory Stockout Risk Matrix\n25+ DAX Measures & Liquid Theme\nInteractive Slicers & Tooltips"),
+            ("Audit & Governance", "audit.PipelineExecutionLog\naudit.DataQualityLog\naudit.ETL_Control (High-Watermark)")
         ])
     ]
 
     for col_title, x, w, boxes in columns:
-        # Outer container
-        rect_col = patches.FancyBboxPatch((x, 0.05), w, 0.83, boxstyle="round,pad=0.015",
-                                         facecolor=CARD_BG, edgecolor=BORDER_COLOR, linewidth=1.5)
+        # Outer container (Liquid Glass Card)
+        rect_col = patches.FancyBboxPatch((x, 0.05), w, 0.84, boxstyle="round,pad=0.012,rounding_size=0.015",
+                                          facecolor=CARD_BG, edgecolor=BORDER_COLOR, linewidth=1.2)
         ax.add_patch(rect_col)
-        ax.text(x + 0.015, 0.84, col_title, color=CYAN, fontsize=10, fontweight="bold")
+        
+        # Orange top indicator
+        col_accent = patches.Rectangle((x + 0.01, 0.887), w - 0.02, 0.003, transform=ax.transAxes, facecolor=ORANGE, alpha=0.8)
+        ax.add_patch(col_accent)
+        
+        ax.text(x + 0.014, 0.855, col_title, color=ORANGE_BRIGHT, fontsize=9.5, fontweight="bold")
 
         # Inner components
         y_box = 0.50
         for title, desc in boxes:
-            rect_b = patches.FancyBboxPatch((x + 0.012, y_box), w - 0.024, 0.30, boxstyle="round,pad=0.01",
-                                           facecolor="#141E33", edgecolor=BORDER_COLOR, linewidth=1)
+            rect_b = patches.FancyBboxPatch((x + 0.01, y_box), w - 0.02, 0.31, boxstyle="round,pad=0.008,rounding_size=0.01",
+                                            facecolor=CARD_INNER, edgecolor=BORDER_COLOR, linewidth=1)
             ax.add_patch(rect_b)
-            ax.text(x + 0.022, y_box + 0.25, title, color=WHITE, fontsize=10, fontweight="bold")
-            ax.text(x + 0.022, y_box + 0.04, desc, color=MUTED, fontsize=8, linespacing=1.6)
+            
+            # Subtle orange border highlight on inner box
+            ax.text(x + 0.02, y_box + 0.26, title, color=WHITE, fontsize=9.5, fontweight="bold")
+            ax.text(x + 0.02, y_box + 0.04, desc, color=MUTED, fontsize=8, linespacing=1.65)
             y_box -= 0.38
 
-    # Connecting Arrows
-    arrow_props = dict(arrowstyle="->,head_width=0.4,head_length=0.6", color=CYAN, lw=2)
-    ax.annotate("", xy=(0.27, 0.65), xytext=(0.24, 0.65), arrowprops=arrow_props)
-    ax.annotate("", xy=(0.52, 0.65), xytext=(0.49, 0.65), arrowprops=arrow_props)
-    ax.annotate("", xy=(0.77, 0.65), xytext=(0.74, 0.65), arrowprops=arrow_props)
+    # Connecting Flow Arrows (Clarivens Orange)
+    arrow_props = dict(arrowstyle="->,head_width=0.45,head_length=0.7", color=ORANGE, lw=2.5)
+    ax.annotate("", xy=(0.275, 0.65), xytext=(0.245, 0.65), arrowprops=arrow_props)
+    ax.annotate("", xy=(0.525, 0.65), xytext=(0.495, 0.65), arrowprops=arrow_props)
+    ax.annotate("", xy=(0.775, 0.65), xytext=(0.745, 0.65), arrowprops=arrow_props)
 
-    # Bottom Audit feedback loop arrow
-    ax.annotate("", xy=(0.38, 0.20), xytext=(0.77, 0.20),
-                arrowprops=dict(arrowstyle="->,head_width=0.4,head_length=0.6", color=AMBER, lw=1.5, ls="--"))
-    ax.text(0.55, 0.22, "Telemetry & Watermark Feedback", color=AMBER, fontsize=8, ha="center")
+    # Bottom Audit feedback loop arrow (Clarivens Orange Soft)
+    ax.annotate("", xy=(0.38, 0.18), xytext=(0.775, 0.18),
+                arrowprops=dict(arrowstyle="->,head_width=0.4,head_length=0.6", color=ORANGE_SOFT, lw=1.5, ls="--"))
+    ax.text(0.575, 0.20, "Telemetry, Audit Logs & Watermark State Feedback", color=ORANGE_SOFT, fontsize=8, fontweight="bold", ha="center")
 
     plt.savefig(os.path.join(OUTPUT_DIR, "architecture-diagram.png"), dpi=200, bbox_inches="tight")
     plt.close()
@@ -95,38 +117,51 @@ def create_data_flow_diagram():
     ax.set_facecolor(BG_COLOR)
     ax.axis("off")
 
-    ax.text(0.04, 0.95, "NEXORA INVENTORY INTELLIGENCE — END-TO-END DATA FLOW", color=CYAN, fontsize=16, fontweight="bold")
-    ax.text(0.04, 0.92, "Sequential Ingestion, Quality Evaluation, Incremental Watermarking & Star Schema Load", color=MUTED, fontsize=10)
+    # Logo
+    logo_bg = patches.FancyBboxPatch((0.038, 0.932), 0.016, 0.038, boxstyle="round,pad=0.003,rounding_size=0.005",
+                                     transform=ax.transAxes, facecolor="#141418", edgecolor=ORANGE, linewidth=1.2)
+    ax.add_patch(logo_bg)
+    ax.text(0.046, 0.951, "C", transform=ax.transAxes, color=ORANGE_BRIGHT, fontsize=11, fontweight="bold", ha="center", va="center")
+
+    ax.text(0.062, 0.956, "CLARIVENS ENTERPRISE DATA INTELLIGENCE — END-TO-END DATA FLOW", color=WHITE, fontsize=15, fontweight="bold")
+    ax.text(0.062, 0.932, "Sequential Ingestion, Quality Evaluation, Incremental Watermarking & Star Schema Load", color=ORANGE_SOFT, fontsize=9.5)
 
     steps = [
-        ("Step 1: Ingestion", "ADLS Gen2 CSVs & REST API\nIngested into stg.* tables\nADF Copy Activities with retries", 0.05, 0.50, CYAN),
-        ("Step 2: Quality Gate", "Python Validation Engine\nEvaluates 12 core rules\nScore >= 95% required to pass", 0.28, 0.50, AMBER),
-        ("Step 3: Stored Procs", "dw.sp_Load_FactSales\ndw.sp_Load_FactInventory\nCleanses & links surrogate keys", 0.51, 0.50, BLUE),
-        ("Step 4: Metric Engine", "sp_Update_InventoryMetrics\nCalculates ADS & Days of Inventory\nTags Critical / High Risk", 0.74, 0.50, TEAL)
+        ("Step 1: Raw Ingestion", "ADLS Gen2 CSVs & REST API\nIngested into stg.* tables\nADF Copy Activities with retries", 0.04, 0.50, ORANGE_BRIGHT),
+        ("Step 2: Quality Gate", "Python Validation Engine\nEvaluates 12 core rule categories\nQuality score >= 98% gate", 0.28, 0.50, ORANGE),
+        ("Step 3: Dimensional ETL", "dw.sp_Load_FactSales\ndw.sp_Load_FactInventory\nResolves surrogate keys & deduplicates", 0.52, 0.50, ORANGE_SOFT),
+        ("Step 4: Metric Engine", "sp_Update_InventoryMetrics\nCalculates ADS & Days of Inventory\nFlags Critical/High Stockout alerts", 0.76, 0.50, ORANGE_HIGHLIGHT)
     ]
 
     for title, desc, x, y, col in steps:
-        rect = patches.FancyBboxPatch((x, y - 0.12), 0.20, 0.28, boxstyle="round,pad=0.015",
-                                     facecolor=CARD_BG, edgecolor=col, linewidth=2)
+        rect = patches.FancyBboxPatch((x, y - 0.12), 0.20, 0.28, boxstyle="round,pad=0.012,rounding_size=0.012",
+                                      facecolor=CARD_BG, edgecolor=col, linewidth=1.8)
         ax.add_patch(rect)
-        ax.text(x + 0.015, y + 0.11, title, color=col, fontsize=11, fontweight="bold")
-        ax.text(x + 0.015, y - 0.08, desc, color=WHITE, fontsize=8.5, linespacing=1.6)
+        
+        # Inner header accent
+        ax.text(x + 0.015, y + 0.105, title, color=col, fontsize=10.5, fontweight="bold")
+        ax.text(x + 0.015, y - 0.08, desc, color=WHITE, fontsize=8.5, linespacing=1.65)
 
-    # Arrows between main steps
-    for start_x in [0.25, 0.48, 0.71]:
-        ax.annotate("", xy=(start_x + 0.03, 0.52), xytext=(start_x, 0.52),
-                    arrowprops=dict(arrowstyle="->,head_width=0.4,head_length=0.6", color=CYAN, lw=2.5))
+    # Orange Data Flow Connectors
+    for start_x in [0.24, 0.48, 0.72]:
+        ax.annotate("", xy=(start_x + 0.04, 0.52), xytext=(start_x, 0.52),
+                    arrowprops=dict(arrowstyle="->,head_width=0.45,head_length=0.7", color=ORANGE, lw=2.5))
 
     # Lower Observability Box
-    rect_obs = patches.FancyBboxPatch((0.05, 0.10), 0.89, 0.20, boxstyle="round,pad=0.015",
-                                      facecolor="#141E33", edgecolor=BORDER_COLOR, linewidth=1.5)
+    rect_obs = patches.FancyBboxPatch((0.04, 0.10), 0.92, 0.21, boxstyle="round,pad=0.012,rounding_size=0.012",
+                                      facecolor=CARD_INNER, edgecolor=BORDER_COLOR, linewidth=1.2)
     ax.add_patch(rect_obs)
-    ax.text(0.07, 0.25, "CENTRALIZED OBSERVABILITY & HIGH-WATERMARK CONTROLS", color=CYAN, fontsize=11, fontweight="bold")
-    ax.text(0.07, 0.15,
-            "• audit.ETL_Control: High-watermark mechanism tracking LastWatermarkValue (SaleDate) to ensure only Delta transactions are ingested.\n"
+    
+    # Orange top line
+    obs_accent = patches.Rectangle((0.05, 0.307), 0.90, 0.002, transform=ax.transAxes, facecolor=ORANGE, alpha=0.8)
+    ax.add_patch(obs_accent)
+    
+    ax.text(0.06, 0.265, "CENTRALIZED OBSERVABILITY & HIGH-WATERMARK CONTROLS", color=ORANGE_BRIGHT, fontsize=10.5, fontweight="bold")
+    ax.text(0.06, 0.145,
+            "• audit.ETL_Control: High-watermark mechanism tracking LastWatermarkValue (SaleDate) to ensure only Delta transactions are processed.\n"
             "• audit.DataQualityLog: Structured record of every validation check (RuleName, TotalRecords, FailedRecords, PassPercentage, Status).\n"
-            "• audit.PipelineExecutionLog: Full activity execution telemetry (RunID, ActivityName, RowsProcessed, RowsFailed, ErrorMessage).",
-            color=MUTED, fontsize=9, linespacing=1.5)
+            "• audit.PipelineExecutionLog: Full activity execution telemetry (RunID, ActivityName, RowsProcessed, RowsFailed, Duration, Status).",
+            color=MUTED, fontsize=8.5, linespacing=1.6)
 
     plt.savefig(os.path.join(OUTPUT_DIR, "data-flow.png"), dpi=200, bbox_inches="tight")
     plt.close()
@@ -138,10 +173,16 @@ def create_star_schema_diagram():
     ax.set_facecolor(BG_COLOR)
     ax.axis("off")
 
-    ax.text(0.04, 0.95, "NEXORA INVENTORY INTELLIGENCE — STAR SCHEMA DATA MODEL", color=CYAN, fontsize=16, fontweight="bold")
-    ax.text(0.04, 0.92, "Enterprise Dimensional Architecture in Azure SQL Database (dw schema)", color=MUTED, fontsize=10)
+    # Logo
+    logo_bg = patches.FancyBboxPatch((0.038, 0.932), 0.016, 0.038, boxstyle="round,pad=0.003,rounding_size=0.005",
+                                     transform=ax.transAxes, facecolor="#141418", edgecolor=ORANGE, linewidth=1.2)
+    ax.add_patch(logo_bg)
+    ax.text(0.046, 0.951, "C", transform=ax.transAxes, color=ORANGE_BRIGHT, fontsize=11, fontweight="bold", ha="center", va="center")
 
-    # Central Fact Tables
+    ax.text(0.062, 0.956, "CLARIVENS ENTERPRISE DATA INTELLIGENCE — STAR SCHEMA DATA MODEL", color=WHITE, fontsize=15, fontweight="bold")
+    ax.text(0.062, 0.932, "Enterprise Dimensional Architecture in Azure SQL Database (dw schema)", color=ORANGE_SOFT, fontsize=9.5)
+
+    # Central Fact Tables (Orange Highlighted)
     facts = [
         ("dw.FactSales", 0.38, 0.55, 0.24, 0.32, [
             ("SalesSK (PK)", True), ("SaleID", False), ("DateKey (FK)", True),
@@ -156,7 +197,7 @@ def create_star_schema_diagram():
         ])
     ]
 
-    # Surrounding Dimension Tables
+    # Surrounding Dimension Tables (Dark Glass with Clean Borders)
     dimensions = [
         ("dw.DimProduct", 0.06, 0.55, 0.22, 0.32, [
             ("ProductSK (PK)", True), ("ProductID", False), ("ProductName", False),
@@ -179,17 +220,24 @@ def create_star_schema_diagram():
     ]
 
     def draw_table_card(title, x, y, w, h, cols, is_fact=False):
-        header_col = BLUE if is_fact else BORDER_COLOR
-        rect = patches.FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.01",
-                                     facecolor=CARD_BG, edgecolor=CYAN if is_fact else BORDER_COLOR, linewidth=1.5)
+        edge_col = ORANGE if is_fact else BORDER_COLOR
+        bg_col = CARD_BG
+        rect = patches.FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.008,rounding_size=0.01",
+                                      facecolor=bg_col, edgecolor=edge_col, linewidth=1.5 if is_fact else 1)
         ax.add_patch(rect)
-        rect_hdr = patches.Rectangle((x, y + h - 0.04), w, 0.04, facecolor="#141E33", edgecolor=BORDER_COLOR)
+        
+        # Header banner
+        hdr_bg = "#18181C" if is_fact else "#101014"
+        rect_hdr = patches.Rectangle((x, y + h - 0.04), w, 0.04, facecolor=hdr_bg, edgecolor=edge_col, linewidth=0.5)
         ax.add_patch(rect_hdr)
-        ax.text(x + 0.01, y + h - 0.025, title, color=CYAN if is_fact else WHITE, fontsize=9.5, fontweight="bold")
+        
+        # Header text
+        title_col = ORANGE_BRIGHT if is_fact else WHITE
+        ax.text(x + 0.012, y + h - 0.025, title, color=title_col, fontsize=9.5, fontweight="bold")
 
         curr_y = y + h - 0.07
         for cname, is_key in cols:
-            k_col = CYAN if is_key else WHITE
+            k_col = ORANGE if is_key else WHITE
             fontw = "bold" if is_key else "normal"
             ax.text(x + 0.015, curr_y, cname, color=k_col, fontsize=8, fontweight=fontw)
             curr_y -= 0.027
@@ -200,8 +248,8 @@ def create_star_schema_diagram():
     for title, x, y, w, h, cols in dimensions:
         draw_table_card(title, x, y, w, h, cols, is_fact=False)
 
-    # Relationship connectors
-    conn_props = dict(arrowstyle="<->", color=CYAN, lw=1.5, ls="--")
+    # Relationship connectors (Orange dashed lines)
+    conn_props = dict(arrowstyle="<->", color=ORANGE_SOFT, lw=1.5, ls="--")
     # DimProduct to FactSales
     ax.annotate("", xy=(0.38, 0.72), xytext=(0.28, 0.72), arrowprops=conn_props)
     # DimDate to FactSales
@@ -221,8 +269,8 @@ def create_star_schema_diagram():
 
 def main():
     print("==========================================================================")
-    print(" NEXORA INVENTORY INTELLIGENCE — ARCHITECTURE DIAGRAM GENERATOR")
-    print(" Rendering Presentation-Ready Architecture Diagrams")
+    print(" CLARIVENS ENTERPRISE DATA INTELLIGENCE — ARCHITECTURE DIAGRAM GENERATOR")
+    print(" Rendering Presentation-Ready Black & Orange Architecture Diagrams")
     print("==========================================================================")
     create_architecture_diagram()
     create_data_flow_diagram()

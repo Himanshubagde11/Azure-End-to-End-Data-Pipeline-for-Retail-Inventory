@@ -1,9 +1,9 @@
 -- ============================================================================
--- NEXORA INVENTORY INTELLIGENCE
+-- CLARIVENS INVENTORY INTELLIGENCE
 -- View: vw_StorePerformance
 -- Description: Aggregates revenue, margin, sales velocity, and inventory metrics by store and geography
 -- Author: Senior Data Engineer / Azure Data Architect
--- Organization: NEXORA RETAIL GROUP
+-- Organization: CLARIVENS RETAIL GROUP
 -- ============================================================================
 
 CREATE OR ALTER VIEW dw.vw_StorePerformance

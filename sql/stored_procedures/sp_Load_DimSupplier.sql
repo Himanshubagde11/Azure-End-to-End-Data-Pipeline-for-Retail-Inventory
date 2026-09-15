@@ -1,9 +1,9 @@
 -- ============================================================================
--- NEXORA INVENTORY INTELLIGENCE
+-- CLARIVENS INVENTORY INTELLIGENCE
 -- Procedure: sp_Load_DimSupplier
 -- Description: Merges raw supplier data from stg.Suppliers into dw.DimSupplier
 -- Author: Senior Data Engineer / Azure Data Architect
--- Organization: NEXORA RETAIL GROUP
+-- Organization: CLARIVENS RETAIL GROUP
 -- ============================================================================
 
 CREATE OR ALTER PROCEDURE dw.sp_Load_DimSupplier

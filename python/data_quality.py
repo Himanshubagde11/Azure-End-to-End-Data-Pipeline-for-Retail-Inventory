@@ -1,9 +1,9 @@
 """
-NEXORA INVENTORY INTELLIGENCE
+CLARIVENS INVENTORY INTELLIGENCE
 Module: data_quality.py
 Description: Master Data Quality Orchestration Engine calculating enterprise DQ scores
 Author: Senior Data Engineer / Azure Data Architect
-Organization: NEXORA RETAIL GROUP
+Organization: CLARIVENS RETAIL GROUP
 """
 
 import os
@@ -102,7 +102,7 @@ class DataQualityEngine:
         """
         summary = self.compute_summary()
         print("\n" + "=" * 90)
-        print(" NEXORA INVENTORY INTELLIGENCE — DATA QUALITY & VALIDATION REPORT")
+        print(" CLARIVENS INVENTORY INTELLIGENCE — DATA QUALITY & VALIDATION REPORT")
         print(f" Run ID: {self.run_id} | Timestamp: {summary['timestamp']}")
         print("=" * 90)
         print(f"{'Table':<12} | {'Check Type':<14} | {'Rule Name':<34} | {'Pass %':<8} | {'Status'}")

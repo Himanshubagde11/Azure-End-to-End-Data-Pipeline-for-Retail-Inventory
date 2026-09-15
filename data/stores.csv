@@ -1,42 +1,42 @@
 StoreID,StoreName,City,State,Region,StoreType,OpeningDate,Manager,SquareFeet,IsActive
-STR001,Nexora Mumbai Supermarket #1,Mumbai,Maharashtra,West,Supermarket,2018-11-24,Vikram Singh,16012,1
-STR002,Nexora Mumbai Express #2,Mumbai,Maharashtra,West,Express,2019-04-17,Aarav Verma,4260,1
-STR003,Nexora Mumbai Supermarket #3,Mumbai,Maharashtra,West,Supermarket,2021-10-09,Rahul Mehta,23731,1
-STR004,Nexora Mumbai Supermarket #4,Mumbai,Maharashtra,West,Supermarket,2019-04-25,Ananya Iyer,23438,1
-STR005,Nexora Mumbai Hypermarket #5,Mumbai,Maharashtra,West,Hypermarket,2022-05-26,Amit Nair,37449,1
-STR006,Nexora Mumbai Flagship #6,Mumbai,Maharashtra,West,Flagship,2020-11-20,Rohan Reddy,50054,1
-STR007,Nexora Pune Express #1,Pune,Maharashtra,West,Express,2019-05-03,Aarav Gupta,4569,1
-STR008,Nexora Pune Express #2,Pune,Maharashtra,West,Express,2024-06-06,Siddharth Gupta,6277,1
-STR009,Nexora Pune Hypermarket #3,Pune,Maharashtra,West,Hypermarket,2019-09-24,Sunita Gupta,33748,1
-STR010,Nexora Pune Hypermarket #4,Pune,Maharashtra,West,Hypermarket,2020-01-08,Neha Gupta,37433,1
-STR011,Nexora Nagpur Supermarket #1,Nagpur,Maharashtra,West,Supermarket,2022-12-11,Rohan Mehta,18572,1
-STR012,Nexora Nagpur Hypermarket #2,Nagpur,Maharashtra,West,Hypermarket,2019-04-24,Vikram Iyer,37964,1
-STR013,Nexora Nashik Supermarket #1,Nashik,Maharashtra,West,Supermarket,2019-03-17,Rahul Nair,19019,1
-STR014,Nexora Nashik Hypermarket #2,Nashik,Maharashtra,West,Hypermarket,2024-11-14,Rajesh Patel,26543,1
-STR015,Nexora Bengaluru Supermarket #1,Bengaluru,Karnataka,South,Supermarket,2022-01-22,Priya Iyer,21763,1
-STR016,Nexora Bengaluru Supermarket #2,Bengaluru,Karnataka,South,Supermarket,2021-03-15,Rohan Iyer,16371,1
-STR017,Nexora Bengaluru Flagship #3,Bengaluru,Karnataka,South,Flagship,2024-11-10,Priya Verma,58661,1
-STR018,Nexora Bengaluru Supermarket #4,Bengaluru,Karnataka,South,Supermarket,2019-09-25,Ananya Choudhury,15258,1
-STR019,Nexora Bengaluru Express #5,Bengaluru,Karnataka,South,Express,2020-05-08,Aarav Verma,8002,1
-STR020,Nexora Bengaluru Flagship #6,Bengaluru,Karnataka,South,Flagship,2024-02-25,Karan Kulkarni,63770,1
-STR021,Nexora Ahmedabad Supermarket #1,Ahmedabad,Gujarat,West,Supermarket,2020-09-28,Priya Patel,22809,1
-STR022,Nexora Ahmedabad Supermarket #2,Ahmedabad,Gujarat,West,Supermarket,2021-11-21,Karan Iyer,23959,1
-STR023,Nexora Ahmedabad Hypermarket #3,Ahmedabad,Gujarat,West,Hypermarket,2018-06-01,Neha Mehta,41959,1
-STR024,Nexora Hyderabad Supermarket #1,Hyderabad,Telangana,South,Supermarket,2023-01-08,Rohan Singh,15608,1
-STR025,Nexora Hyderabad Flagship #2,Hyderabad,Telangana,South,Flagship,2023-08-07,Neha Iyer,36029,1
-STR026,Nexora Hyderabad Supermarket #3,Hyderabad,Telangana,South,Supermarket,2021-07-07,Neha Choudhury,21440,1
-STR027,Nexora Hyderabad Flagship #4,Hyderabad,Telangana,South,Flagship,2024-12-02,Rahul Kulkarni,56593,1
-STR028,Nexora Delhi Supermarket #1,Delhi,Delhi,North,Supermarket,2024-02-08,Karan Nair,12993,1
-STR029,Nexora Delhi Hypermarket #2,Delhi,Delhi,North,Hypermarket,2021-04-28,Vikram Iyer,39700,1
-STR030,Nexora Delhi Express #3,Delhi,Delhi,North,Express,2024-01-03,Rajesh Reddy,4414,1
-STR031,Nexora Delhi Express #4,Delhi,Delhi,North,Express,2019-07-02,Siddharth Kulkarni,7329,1
-STR032,Nexora Chennai Hypermarket #1,Chennai,Tamil Nadu,South,Hypermarket,2023-12-26,Pooja Deshmukh,37793,1
-STR033,Nexora Chennai Supermarket #2,Chennai,Tamil Nadu,South,Supermarket,2018-10-24,Pooja Mehta,14536,1
-STR034,Nexora Chennai Supermarket #3,Chennai,Tamil Nadu,South,Supermarket,2022-09-06,Sunita Kulkarni,12936,1
-STR035,Nexora Kolkata Flagship #1,Kolkata,West Bengal,East,Flagship,2023-04-13,Sunita Verma,51640,1
-STR036,Nexora Kolkata Flagship #2,Kolkata,West Bengal,East,Flagship,2022-02-14,Sunita Sharma,64172,1
-STR037,Nexora Kolkata Supermarket #3,Kolkata,West Bengal,East,Supermarket,2023-06-08,Neha Gupta,17183,1
-STR038,Nexora Jaipur Hypermarket #1,Jaipur,Rajasthan,North,Hypermarket,2018-01-15,Divya Choudhury,34830,1
-STR039,Nexora Jaipur Supermarket #2,Jaipur,Rajasthan,North,Supermarket,2020-03-12,Neha Reddy,13200,1
-STR040,Nexora Lucknow Express #1,Lucknow,Uttar Pradesh,North,Express,2024-09-23,Vikram Kulkarni,6334,1
-STR041,Nexora Lucknow Hypermarket #2,Lucknow,Uttar Pradesh,North,Hypermarket,2018-03-09,Pooja Gupta,42332,1
+STR001,Clarivens Mumbai Supermarket #1,Mumbai,Maharashtra,West,Supermarket,2018-11-24,Vikram Singh,16012,1
+STR002,Clarivens Mumbai Express #2,Mumbai,Maharashtra,West,Express,2019-04-17,Aarav Verma,4260,1
+STR003,Clarivens Mumbai Supermarket #3,Mumbai,Maharashtra,West,Supermarket,2021-10-09,Rahul Mehta,23731,1
+STR004,Clarivens Mumbai Supermarket #4,Mumbai,Maharashtra,West,Supermarket,2019-04-25,Ananya Iyer,23438,1
+STR005,Clarivens Mumbai Hypermarket #5,Mumbai,Maharashtra,West,Hypermarket,2022-05-26,Amit Nair,37449,1
+STR006,Clarivens Mumbai Flagship #6,Mumbai,Maharashtra,West,Flagship,2020-11-20,Rohan Reddy,50054,1
+STR007,Clarivens Pune Express #1,Pune,Maharashtra,West,Express,2019-05-03,Aarav Gupta,4569,1
+STR008,Clarivens Pune Express #2,Pune,Maharashtra,West,Express,2024-06-06,Siddharth Gupta,6277,1
+STR009,Clarivens Pune Hypermarket #3,Pune,Maharashtra,West,Hypermarket,2019-09-24,Sunita Gupta,33748,1
+STR010,Clarivens Pune Hypermarket #4,Pune,Maharashtra,West,Hypermarket,2020-01-08,Neha Gupta,37433,1
+STR011,Clarivens Nagpur Supermarket #1,Nagpur,Maharashtra,West,Supermarket,2022-12-11,Rohan Mehta,18572,1
+STR012,Clarivens Nagpur Hypermarket #2,Nagpur,Maharashtra,West,Hypermarket,2019-04-24,Vikram Iyer,37964,1
+STR013,Clarivens Nashik Supermarket #1,Nashik,Maharashtra,West,Supermarket,2019-03-17,Rahul Nair,19019,1
+STR014,Clarivens Nashik Hypermarket #2,Nashik,Maharashtra,West,Hypermarket,2024-11-14,Rajesh Patel,26543,1
+STR015,Clarivens Bengaluru Supermarket #1,Bengaluru,Karnataka,South,Supermarket,2022-01-22,Priya Iyer,21763,1
+STR016,Clarivens Bengaluru Supermarket #2,Bengaluru,Karnataka,South,Supermarket,2021-03-15,Rohan Iyer,16371,1
+STR017,Clarivens Bengaluru Flagship #3,Bengaluru,Karnataka,South,Flagship,2024-11-10,Priya Verma,58661,1
+STR018,Clarivens Bengaluru Supermarket #4,Bengaluru,Karnataka,South,Supermarket,2019-09-25,Ananya Choudhury,15258,1
+STR019,Clarivens Bengaluru Express #5,Bengaluru,Karnataka,South,Express,2020-05-08,Aarav Verma,8002,1
+STR020,Clarivens Bengaluru Flagship #6,Bengaluru,Karnataka,South,Flagship,2024-02-25,Karan Kulkarni,63770,1
+STR021,Clarivens Ahmedabad Supermarket #1,Ahmedabad,Gujarat,West,Supermarket,2020-09-28,Priya Patel,22809,1
+STR022,Clarivens Ahmedabad Supermarket #2,Ahmedabad,Gujarat,West,Supermarket,2021-11-21,Karan Iyer,23959,1
+STR023,Clarivens Ahmedabad Hypermarket #3,Ahmedabad,Gujarat,West,Hypermarket,2018-06-01,Neha Mehta,41959,1
+STR024,Clarivens Hyderabad Supermarket #1,Hyderabad,Telangana,South,Supermarket,2023-01-08,Rohan Singh,15608,1
+STR025,Clarivens Hyderabad Flagship #2,Hyderabad,Telangana,South,Flagship,2023-08-07,Neha Iyer,36029,1
+STR026,Clarivens Hyderabad Supermarket #3,Hyderabad,Telangana,South,Supermarket,2021-07-07,Neha Choudhury,21440,1
+STR027,Clarivens Hyderabad Flagship #4,Hyderabad,Telangana,South,Flagship,2024-12-02,Rahul Kulkarni,56593,1
+STR028,Clarivens Delhi Supermarket #1,Delhi,Delhi,North,Supermarket,2024-02-08,Karan Nair,12993,1
+STR029,Clarivens Delhi Hypermarket #2,Delhi,Delhi,North,Hypermarket,2021-04-28,Vikram Iyer,39700,1
+STR030,Clarivens Delhi Express #3,Delhi,Delhi,North,Express,2024-01-03,Rajesh Reddy,4414,1
+STR031,Clarivens Delhi Express #4,Delhi,Delhi,North,Express,2019-07-02,Siddharth Kulkarni,7329,1
+STR032,Clarivens Chennai Hypermarket #1,Chennai,Tamil Nadu,South,Hypermarket,2023-12-26,Pooja Deshmukh,37793,1
+STR033,Clarivens Chennai Supermarket #2,Chennai,Tamil Nadu,South,Supermarket,2018-10-24,Pooja Mehta,14536,1
+STR034,Clarivens Chennai Supermarket #3,Chennai,Tamil Nadu,South,Supermarket,2022-09-06,Sunita Kulkarni,12936,1
+STR035,Clarivens Kolkata Flagship #1,Kolkata,West Bengal,East,Flagship,2023-04-13,Sunita Verma,51640,1
+STR036,Clarivens Kolkata Flagship #2,Kolkata,West Bengal,East,Flagship,2022-02-14,Sunita Sharma,64172,1
+STR037,Clarivens Kolkata Supermarket #3,Kolkata,West Bengal,East,Supermarket,2023-06-08,Neha Gupta,17183,1
+STR038,Clarivens Jaipur Hypermarket #1,Jaipur,Rajasthan,North,Hypermarket,2018-01-15,Divya Choudhury,34830,1
+STR039,Clarivens Jaipur Supermarket #2,Jaipur,Rajasthan,North,Supermarket,2020-03-12,Neha Reddy,13200,1
+STR040,Clarivens Lucknow Express #1,Lucknow,Uttar Pradesh,North,Express,2024-09-23,Vikram Kulkarni,6334,1
+STR041,Clarivens Lucknow Hypermarket #2,Lucknow,Uttar Pradesh,North,Hypermarket,2018-03-09,Pooja Gupta,42332,1

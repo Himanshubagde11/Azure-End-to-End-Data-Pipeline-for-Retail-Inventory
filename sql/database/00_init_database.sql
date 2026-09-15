@@ -1,9 +1,9 @@
 -- ============================================================================
--- NEXORA INVENTORY INTELLIGENCE
+-- CLARIVENS INVENTORY INTELLIGENCE
 -- Script: 00_init_database.sql
 -- Description: Creates schemas and initializes warehouse environment
 -- Author: Senior Data Engineer / Azure Data Architect
--- Organization: NEXORA RETAIL GROUP
+-- Organization: CLARIVENS RETAIL GROUP
 -- ============================================================================
 
 -- Note: In Azure SQL Database, the database is pre-created via the Azure Portal/CLI.
@@ -30,5 +30,5 @@ BEGIN
 END
 GO
 
-PRINT 'Database schemas initialized successfully for Nexora Inventory Intelligence.';
+PRINT 'Database schemas initialized successfully for Clarivens Inventory Intelligence.';
 GO

@@ -1,10 +1,10 @@
 -- ============================================================================
--- NEXORA INVENTORY INTELLIGENCE
+-- CLARIVENS INVENTORY INTELLIGENCE
 -- View: vw_InventoryHealth
 -- Description: Consolidated semantic view combining inventory snapshots, product dimensions,
 --              and store locations with stockout risk indicators for Power BI
 -- Author: Senior Data Engineer / Azure Data Architect
--- Organization: NEXORA RETAIL GROUP
+-- Organization: CLARIVENS RETAIL GROUP
 -- ============================================================================
 
 CREATE OR ALTER VIEW dw.vw_InventoryHealth

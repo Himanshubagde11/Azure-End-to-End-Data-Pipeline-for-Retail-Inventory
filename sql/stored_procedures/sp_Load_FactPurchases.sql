@@ -1,9 +1,9 @@
 -- ============================================================================
--- NEXORA INVENTORY INTELLIGENCE
+-- CLARIVENS INVENTORY INTELLIGENCE
 -- Procedure: sp_Load_FactPurchases
 -- Description: Transforms and loads procurement orders from stg.Purchases into dw.FactPurchases
 -- Author: Senior Data Engineer / Azure Data Architect
--- Organization: NEXORA RETAIL GROUP
+-- Organization: CLARIVENS RETAIL GROUP
 -- ============================================================================
 
 CREATE OR ALTER PROCEDURE dw.sp_Load_FactPurchases

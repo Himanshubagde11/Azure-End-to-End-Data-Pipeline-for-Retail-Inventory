@@ -1,5 +1,5 @@
-# NEXORA INVENTORY INTELLIGENCE — DATA DICTIONARY
-**Organization:** NEXORA RETAIL GROUP  
+# CLARIVENS INVENTORY INTELLIGENCE — DATA DICTIONARY
+**Organization:** CLARIVENS RETAIL GROUP  
 **Platform:** Azure Retail Inventory Data Pipeline & Analytics Platform  
 **Version:** 1.0.0 (Production Architecture)
 
@@ -7,7 +7,7 @@
 
 ## 1. Overview & Data Architecture
 
-This document details the data schemas, field-level definitions, referential constraints, and intended business usage across all staging (`stg`), enterprise warehouse (`dw`), and audit (`audit`) layers of the **Nexora Inventory Intelligence** platform.
+This document details the data schemas, field-level definitions, referential constraints, and intended business usage across all staging (`stg`), enterprise warehouse (`dw`), and audit (`audit`) layers of the **Clarivens Inventory Intelligence** platform.
 
 ```mermaid
 erDiagram
@@ -93,7 +93,7 @@ Physical store footprints across 9 Indian states, regional classifications, stor
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `StoreSK` | `INT IDENTITY`| No | **PK** | System-generated surrogate key | `14` |
 | `StoreID` | `VARCHAR(20)` | No | Natural Key | Operational retail store identifier | `'STR014'` |
-| `StoreName` | `VARCHAR(100)`| No | | Full branch name | `'Nexora Bengaluru Flagship #2'` |
+| `StoreName` | `VARCHAR(100)`| No | | Full branch name | `'Clarivens Bengaluru Flagship #2'` |
 | `City` | `VARCHAR(50)` | No | | City location | `'Bengaluru'` |
 | `State` | `VARCHAR(50)` | No | | Indian state | `'Karnataka'` |
 | `Region` | `VARCHAR(20)` | No | | Sales territory (`West`, `South`, `North`, `East`) | `'South'` |

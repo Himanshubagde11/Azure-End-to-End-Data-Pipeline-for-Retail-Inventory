@@ -2,20 +2,20 @@
   "name": "LS_AzureSqlDatabase_DW",
   "type": "Microsoft.DataFactory/factories/linkedservices",
   "properties": {
-    "description": "Azure SQL Database Linked Service for Nexora Retail Warehouse and Staging",
+    "description": "Azure SQL Database Linked Service for Clarivens Retail Warehouse and Staging",
     "annotations": [
-      "Nexora",
+      "Clarivens",
       "Production",
       "AzureSQL"
     ],
     "parameters": {
       "ServerName": {
         "type": "string",
-        "defaultValue": "nexora-sql-server-prod.database.windows.net"
+        "defaultValue": "clarivens-sql-server-prod.database.windows.net"
       },
       "DatabaseName": {
         "type": "string",
-        "defaultValue": "sqldb-nexora-inventory-prod"
+        "defaultValue": "sqldb-clarivens-inventory-prod"
       }
     },
     "type": "AzureSqlDatabase",

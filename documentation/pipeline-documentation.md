@@ -1,5 +1,5 @@
-# NEXORA INVENTORY INTELLIGENCE — PIPELINE DOCUMENTATION
-**Organization:** NEXORA RETAIL GROUP  
+# CLARIVENS INVENTORY INTELLIGENCE — PIPELINE DOCUMENTATION
+**Organization:** CLARIVENS RETAIL GROUP  
 **Platform:** Azure Data Factory (ADF) & Azure SQL Warehouse  
 **Version:** 1.0.0 (Production Architecture)
 
@@ -7,7 +7,7 @@
 
 ## 1. Pipeline Architecture Overview
 
-The **Nexora Inventory Intelligence** ingestion and transformation engine is built upon **Azure Data Factory v2 (ADF)**. The platform orchestrates multi-source ingestion (Cloud Storage CSVs & REST API), triggers automated Python Data Quality gates, drives incremental watermarked loading into Azure SQL Database, and updates analytical warehouse dimensions and facts in strict dependency order.
+The **Clarivens Inventory Intelligence** ingestion and transformation engine is built upon **Azure Data Factory v2 (ADF)**. The platform orchestrates multi-source ingestion (Cloud Storage CSVs & REST API), triggers automated Python Data Quality gates, drives incremental watermarked loading into Azure SQL Database, and updates analytical warehouse dimensions and facts in strict dependency order.
 
 ```mermaid
 flowchart TD
@@ -123,7 +123,7 @@ To avoid creating duplicate pipelines for every new entity, `PL_Load_Sales` impl
 
 ## 4. Incremental Watermark Loading (`audit.ETL_Control`)
 
-Nexora Inventory Intelligence avoids full historical table scans by using a dedicated **High-Watermark Control Table**:
+Clarivens Inventory Intelligence avoids full historical table scans by using a dedicated **High-Watermark Control Table**:
 
 ```sql
 SELECT 
@@ -146,7 +146,7 @@ The REST API component ingests live market pricing and recommended safety stock 
 
 - **Endpoint:** `http://127.0.0.1:8080/api/v1/products/enrichment`
 - **Method:** `GET`
-- **Authentication:** HTTP Header `Authorization: Bearer nexora-api-prod-key-2025`
+- **Authentication:** HTTP Header `Authorization: Bearer clarivens-api-prod-key-2025`
 - **Pagination Strategy:**
   - Response payload includes `nextPageUrl` in the metadata header.
   - ADF REST Source uses dynamic `paginationRules`:

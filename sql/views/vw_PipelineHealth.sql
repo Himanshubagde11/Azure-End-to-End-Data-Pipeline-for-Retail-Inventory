@@ -1,10 +1,10 @@
 -- ============================================================================
--- NEXORA INVENTORY INTELLIGENCE
+-- CLARIVENS INVENTORY INTELLIGENCE
 -- View: vw_PipelineHealth
 -- Description: Aggregates pipeline execution statuses, data quality pass rates,
 --              and rejected record metrics for Power BI Page 6 (Pipeline Health)
 -- Author: Senior Data Engineer / Azure Data Architect
--- Organization: NEXORA RETAIL GROUP
+-- Organization: CLARIVENS RETAIL GROUP
 -- ============================================================================
 
 CREATE OR ALTER VIEW audit.vw_PipelineHealth

@@ -9,7 +9,7 @@
         "dependsOn": [],
         "policy": { "timeout": "0.00:10:00", "retry": 2, "retryIntervalInSeconds": 30 },
         "typeProperties": {
-          "url": "https://func-nexora-data-quality.azurewebsites.net/api/v1/run-validation",
+          "url": "https://func-clarivens-data-quality.azurewebsites.net/api/v1/run-validation",
           "method": "POST",
           "headers": {
             "Content-Type": "application/json",
@@ -72,6 +72,6 @@
     "parameters": {
       "p_RunID": { "type": "string", "defaultValue": "MANUAL_RUN" }
     },
-    "annotations": ["Nexora", "QualityGate", "Python"]
+    "annotations": ["Clarivens", "QualityGate", "Python"]
   }
 }

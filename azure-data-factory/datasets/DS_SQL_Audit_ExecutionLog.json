@@ -8,7 +8,7 @@
       "type": "LinkedServiceReference"
     },
     "annotations": [
-      "Nexora",
+      "Clarivens",
       "Audit",
       "ExecutionLog"
     ],

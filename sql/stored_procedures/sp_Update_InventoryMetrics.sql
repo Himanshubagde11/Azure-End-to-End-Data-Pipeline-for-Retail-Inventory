@@ -1,10 +1,10 @@
 -- ============================================================================
--- NEXORA INVENTORY INTELLIGENCE
+-- CLARIVENS INVENTORY INTELLIGENCE
 -- Procedure: sp_Update_InventoryMetrics
 -- Description: Computes rolling 30-day Average Daily Sales, Days of Inventory, 
 --              Stockout Risk classification (CRITICAL, HIGH, MEDIUM, LOW), and Reorder triggers
 -- Author: Senior Data Engineer / Azure Data Architect
--- Organization: NEXORA RETAIL GROUP
+-- Organization: CLARIVENS RETAIL GROUP
 -- ============================================================================
 
 CREATE OR ALTER PROCEDURE dw.sp_Update_InventoryMetrics

@@ -1,8 +1,8 @@
 """
-NEXORA INVENTORY INTELLIGENCE
+CLARIVENS INVENTORY INTELLIGENCE
 Configuration & Quality Thresholds
 Author: Senior Data Engineer / Azure Data Architect
-Organization: NEXORA RETAIL GROUP
+Organization: CLARIVENS RETAIL GROUP
 """
 
 import os
@@ -20,9 +20,9 @@ os.makedirs(LOGS_DIR, exist_ok=True)
 # Azure SQL Database / Local SQLite connection settings
 # In cloud production, these values are populated from Azure Key Vault or Environment variables
 AZURE_SQL_CONFIG = {
-    "server": os.getenv("AZURE_SQL_SERVER", "nexora-sql-server-prod.database.windows.net"),
-    "database": os.getenv("AZURE_SQL_DATABASE", "sqldb-nexora-inventory-prod"),
-    "username": os.getenv("AZURE_SQL_USERNAME", "nexora_admin"),
+    "server": os.getenv("AZURE_SQL_SERVER", "clarivens-sql-server-prod.database.windows.net"),
+    "database": os.getenv("AZURE_SQL_DATABASE", "sqldb-clarivens-inventory-prod"),
+    "username": os.getenv("AZURE_SQL_USERNAME", "clarivens_admin"),
     "password": os.getenv("AZURE_SQL_PASSWORD", "PLACEHOLDER_SECRET_STORED_IN_KEY_VAULT"),
     "driver": "{ODBC Driver 18 for SQL Server}",
     "encrypt": "yes",
@@ -31,13 +31,13 @@ AZURE_SQL_CONFIG = {
 }
 
 # Local relational test database (SQLite file replicating T-SQL schemas for local zero-cloud runs)
-LOCAL_DB_PATH = os.path.join(LOGS_DIR, "nexora_warehouse_local.db")
+LOCAL_DB_PATH = os.path.join(LOGS_DIR, "clarivens_warehouse_local.db")
 
 # Mock REST API Configuration
 REST_API_CONFIG = {
     "host": "127.0.0.1",
     "port": 8080,
-    "api_key": "nexora-api-prod-key-2025",
+    "api_key": "clarivens-api-prod-key-2025",
     "catalog_endpoint": "/api/v1/supplier-catalog",
     "enrichment_endpoint": "/api/v1/products/enrichment"
 }

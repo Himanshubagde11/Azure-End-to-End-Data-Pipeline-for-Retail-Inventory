@@ -2,7 +2,7 @@
   "name": "TR_Daily_Inventory_Schedule",
   "properties": {
     "description": "Daily recurrence trigger executing the master inventory ingestion and analytics pipeline at 23:30 IST (18:00 UTC)",
-    "annotations": ["Nexora", "Daily", "Schedule"],
+    "annotations": ["Clarivens", "Daily", "Schedule"],
     "runtimeState": "Started",
     "pipelines": [
       {
