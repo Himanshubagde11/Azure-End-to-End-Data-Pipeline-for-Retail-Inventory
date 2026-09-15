@@ -1,0 +1,22 @@
+{
+  "name": "DS_SQL_Audit_ExecutionLog",
+  "type": "Microsoft.DataFactory/factories/datasets",
+  "properties": {
+    "description": "Dataset mapping to audit.PipelineExecutionLog for runtime logging activities",
+    "linkedServiceName": {
+      "referenceName": "LS_AzureSqlDatabase_DW",
+      "type": "LinkedServiceReference"
+    },
+    "annotations": [
+      "Nexora",
+      "Audit",
+      "ExecutionLog"
+    ],
+    "type": "AzureSqlTable",
+    "schema": [],
+    "typeProperties": {
+      "schema": "audit",
+      "table": "PipelineExecutionLog"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "LS_RestApi_SupplierCatalog",
+  "type": "Microsoft.DataFactory/factories/linkedservices",
+  "properties": {
+    "description": "REST API Linked Service for Supplier Catalog & Live Replenishment Pricing Ingestion",
+    "annotations": [
+      "Nexora",
+      "REST",
+      "SupplierCatalog"
+    ],
+    "parameters": {
+      "BaseUrl": {
+        "type": "string",
+        "defaultValue": "http://127.0.0.1:8080"
+      }
+    },
+    "type": "RestService",
+    "typeProperties": {
+      "url": "@linkedService().BaseUrl",
+      "enableServerCertificateValidation": true,
+      "authenticationType": "Anonymous",
+      "authHeaders": {
+        "Authorization": "Bearer nexora-api-prod-key-2025"
+      }
+    }
+  }
+}

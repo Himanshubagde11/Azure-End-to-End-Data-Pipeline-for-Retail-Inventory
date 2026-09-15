@@ -1,0 +1,70 @@
+{
+  "name": "PL_Load_Inventory",
+  "properties": {
+    "description": "Ingests weekly inventory snapshots into stg.Inventory using generic parameterized dataset",
+    "activities": [
+      {
+        "name": "Truncate_Staging_Inventory",
+        "type": "SqlServerStoredProcedure",
+        "dependsOn": [],
+        "policy": { "timeout": "0.00:05:00", "retry": 2, "retryIntervalInSeconds": 30 },
+        "typeProperties": {
+          "storedProcedureName": "sp_executesql",
+          "storedProcedureParameters": {
+            "stmt": { "value": "TRUNCATE TABLE stg.Inventory;", "type": "String" }
+          }
+        },
+        "linkedServiceName": { "referenceName": "LS_AzureSqlDatabase_DW", "type": "LinkedServiceReference" }
+      },
+      {
+        "name": "Copy_Inventory_To_Staging",
+        "type": "Copy",
+        "dependsOn": [
+          { "activity": "Truncate_Staging_Inventory", "dependencyConditions": ["Succeeded"] }
+        ],
+        "policy": { "timeout": "0.00:20:00", "retry": 3, "retryIntervalInSeconds": 30 },
+        "typeProperties": {
+          "source": {
+            "type": "DelimitedTextSource",
+            "storeSettings": {
+              "type": "AzureBlobFSReadSettings",
+              "recursive": true,
+              "wildcardFolderPath": "inventory",
+              "wildcardFileName": "inventory_2025_*.csv"
+            }
+          },
+          "sink": {
+            "type": "AzureSqlSink",
+            "writeBehavior": "insert"
+          }
+        },
+        "inputs": [
+          {
+            "referenceName": "DS_CSV_Generic",
+            "type": "DatasetReference",
+            "parameters": {
+              "p_Container": "raw-data",
+              "p_FolderPath": "inventory",
+              "p_FileName": "inventory_2025_*.csv",
+              "p_Delimiter": ","
+            }
+          }
+        ],
+        "outputs": [
+          {
+            "referenceName": "DS_SQL_Generic",
+            "type": "DatasetReference",
+            "parameters": {
+              "p_SchemaName": "stg",
+              "p_TableName": "Inventory"
+            }
+          }
+        ]
+      }
+    ],
+    "parameters": {
+      "p_RunID": { "type": "string", "defaultValue": "MANUAL_RUN" }
+    },
+    "annotations": ["Nexora", "Ingestion", "Inventory"]
+  }
+}

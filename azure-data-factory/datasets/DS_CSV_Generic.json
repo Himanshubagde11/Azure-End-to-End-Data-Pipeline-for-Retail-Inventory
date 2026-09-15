@@ -1,0 +1,48 @@
+{
+  "name": "DS_CSV_Generic",
+  "type": "Microsoft.DataFactory/factories/datasets",
+  "properties": {
+    "description": "Generic parameterized DelimitedText dataset for ingesting retail source CSV files from ADLS Gen2",
+    "linkedServiceName": {
+      "referenceName": "LS_AzureBlobStorage_DataLake",
+      "type": "LinkedServiceReference"
+    },
+    "parameters": {
+      "p_Container": {
+        "type": "string",
+        "defaultValue": "raw-data"
+      },
+      "p_FolderPath": {
+        "type": "string",
+        "defaultValue": "sales"
+      },
+      "p_FileName": {
+        "type": "string",
+        "defaultValue": "sales_2025_01.csv"
+      },
+      "p_Delimiter": {
+        "type": "string",
+        "defaultValue": ","
+      }
+    },
+    "annotations": [
+      "Nexora",
+      "Generic",
+      "DelimitedText"
+    ],
+    "type": "DelimitedText",
+    "typeProperties": {
+      "location": {
+        "type": "AzureBlobFSLocation",
+        "fileName": "@dataset().p_FileName",
+        "folderPath": "@dataset().p_FolderPath",
+        "fileSystem": "@dataset().p_Container"
+      },
+      "columnDelimiter": "@dataset().p_Delimiter",
+      "escapeChar": "\\",
+      "firstRowAsHeader": true,
+      "quoteChar": "\""
+    },
+    "schema": []
+  }
+}

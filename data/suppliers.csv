@@ -1,0 +1,61 @@
+SupplierID,SupplierName,ContactName,Email,Phone,City,State,Rating,PaymentTerms,LeadTimeDays,IsActive
+SUP001,Aura Consumer Brands,Contact for Aura Consumer Brands,procurement@auraconsumerbr.in,+91 78924 46930,Bengaluru,Karnataka,4.46,Net 45,6,1
+SUP002,Bharat Agri Produce,Contact for Bharat Agri Produce,procurement@bharatagriprod.in,+91 92527 93130,Surat,Gujarat,4.42,Net 45,9,1
+SUP003,Apex Electronics Ltd,Contact for Apex Electronics Ltd,procurement@apexelectronic.in,+91 73024 93136,Chennai,Tamil Nadu,4.03,Net 30,19,1
+SUP004,Vanguard Appliances,Contact for Vanguard Appliances,procurement@vanguardapplia.in,+91 95268 27146,Hyderabad,Telangana,3.27,Net 60,11,1
+SUP005,Lotus Personal Care,Contact for Lotus Personal Care,procurement@lotuspersonalc.in,+91 88379 11267,Chennai,Tamil Nadu,4.46,2/10 Net 30,8,1
+SUP006,GreenLeaf Organics,Contact for GreenLeaf Organics,procurement@greenleaforgan.in,+91 87877 14722,Bengaluru,Karnataka,4.81,Net 45,5,1
+SUP007,Himalayan Spring Beverages,Contact for Himalayan Spring Beverages,procurement@himalayansprin.in,+91 74176 15482,Pune,Maharashtra,4.14,2/10 Net 30,21,1
+SUP008,Sovereign Kitchenwares,Contact for Sovereign Kitchenwares,procurement@sovereignkitch.in,+91 99455 56898,Chennai,Tamil Nadu,4.73,Net 30,14,1
+SUP009,Velocity Sports Equipment,Contact for Velocity Sports Equipment,procurement@velocitysports.in,+91 95562 83385,Ahmedabad,Gujarat,4.33,Net 60,10,1
+SUP010,Pronto Stationery Supplies,Contact for Pronto Stationery Supplies,procurement@prontostatione.in,+91 98331 31299,Hyderabad,Telangana,4.77,Net 45,7,1
+SUP011,Crown Fashion Goods,Contact for Crown Fashion Goods,procurement@crownfashiongo.in,+91 95637 63964,Delhi,Delhi,3.24,Net 60,16,1
+SUP012,Indus Valley Staples,Contact for Indus Valley Staples,procurement@indusvalleysta.in,+91 82535 15075,Ahmedabad,Gujarat,3.47,Net 30,11,1
+SUP013,Zenith Audio & Tech,Contact for Zenith Audio & Tech,procurement@zenithaudioand.in,+91 81457 50001,Kolkata,West Bengal,3.54,2/10 Net 30,10,1
+SUP014,BlueStar Home Comfort,Contact for BlueStar Home Comfort,procurement@bluestarhomeco.in,+91 83056 53025,Ahmedabad,Gujarat,3.24,Net 45,10,1
+SUP015,PureNature Botanicals,Contact for PureNature Botanicals,procurement@purenaturebota.in,+91 81506 94080,Chennai,Tamil Nadu,4.84,Net 60,5,1
+SUP016,SpiceRoute Trading Co,Contact for SpiceRoute Trading Co,procurement@spiceroutetrad.in,+91 70904 25118,Jaipur,Rajasthan,4.36,Net 60,15,1
+SUP017,Deccan Beverages Pvt Ltd,Contact for Deccan Beverages Pvt Ltd,procurement@deccanbeverage.in,+91 71253 24208,Chennai,Tamil Nadu,4.19,Net 60,8,1
+SUP018,Heritage Tableware,Contact for Heritage Tableware,procurement@heritagetablew.in,+91 84299 89457,Surat,Gujarat,3.79,Net 60,16,1
+SUP019,Pulse Fitness Essentials,Contact for Pulse Fitness Essentials,procurement@pulsefitnesses.in,+91 78346 15817,Jaipur,Rajasthan,3.85,Net 45,6,1
+SUP020,Camlin Craft Works,Contact for Camlin Craft Works,procurement@camlincraftwor.in,+91 81934 66531,Hyderabad,Telangana,4.08,Net 45,3,1
+SUP021,UrbanStyle Leather & Accessories,Contact for UrbanStyle Leather & Accessories,procurement@urbanstyleleat.in,+91 93584 49363,Bengaluru,Karnataka,4.26,Net 30,13,1
+SUP022,Orient Digital Innovations,Contact for Orient Digital Innovations,procurement@orientdigitali.in,+91 83185 48752,Jaipur,Rajasthan,4.33,Net 60,12,1
+SUP023,Ganges Millers & Grains,Contact for Ganges Millers & Grains,procurement@gangesmillersa.in,+91 92194 32810,Jaipur,Rajasthan,3.53,2/10 Net 30,7,1
+SUP024,Sunlight Dairy & Foods,Contact for Sunlight Dairy & Foods,procurement@sunlightdairya.in,+91 79957 47606,Surat,Gujarat,3.71,Net 30,21,1
+SUP025,Titan Consumer Electronics,Contact for Titan Consumer Electronics,procurement@titanconsumere.in,+91 85236 67905,Ahmedabad,Gujarat,4.54,Net 60,16,1
+SUP026,Prestige Household Appliances,Contact for Prestige Household Appliances,procurement@prestigehouseh.in,+91 91589 21114,Kolkata,West Bengal,4.07,Net 45,9,1
+SUP027,Hindustan Health & Beauty,Contact for Hindustan Health & Beauty,procurement@hindustanhealt.in,+91 73060 40784,Chennai,Tamil Nadu,4.33,Net 60,19,1
+SUP028,National Agro Consortium,Contact for National Agro Consortium,procurement@nationalagroco.in,+91 70800 16057,Chennai,Tamil Nadu,4.57,Net 45,10,1
+SUP029,Pacific Refreshments Ltd,Contact for Pacific Refreshments Ltd,procurement@pacificrefresh.in,+91 84923 64321,Ahmedabad,Gujarat,4.24,Net 30,18,1
+SUP030,Crest Homeware Industries,Contact for Crest Homeware Industries,procurement@cresthomewarei.in,+91 86199 62383,Surat,Gujarat,4.42,2/10 Net 30,9,1
+SUP031,Kavach Safety & Sports,Contact for Kavach Safety & Sports,procurement@kavachsafetyan.in,+91 99250 23970,Ahmedabad,Gujarat,4.32,Net 30,7,1
+SUP032,Navneet Educational Paper,Contact for Navneet Educational Paper,procurement@navneeteducati.in,+91 71645 83060,Hyderabad,Telangana,3.5,2/10 Net 30,10,1
+SUP033,Elegance Lifestyle Goods,Contact for Elegance Lifestyle Goods,procurement@elegancelifest.in,+91 91875 79616,Ahmedabad,Gujarat,3.98,2/10 Net 30,6,1
+SUP034,Royal Spices & Condiments,Contact for Royal Spices & Condiments,procurement@royalspicesand.in,+91 90075 76162,Jaipur,Rajasthan,4.82,2/10 Net 30,13,1
+SUP035,Cosmic Gadgets India,Contact for Cosmic Gadgets India,procurement@cosmicgadgetsi.in,+91 94368 72216,Hyderabad,Telangana,3.96,Net 45,20,1
+SUP036,Vedic Herbals & Care,Contact for Vedic Herbals & Care,procurement@vedicherbalsan.in,+91 95094 78327,Kolkata,West Bengal,4.48,Net 60,11,1
+SUP037,EverFresh Beverages,Contact for EverFresh Beverages,procurement@everfreshbever.in,+91 93381 47450,Kolkata,West Bengal,3.67,Net 30,10,1
+SUP038,Classic Cookware India,Contact for Classic Cookware India,procurement@classiccookwar.in,+91 74534 29769,Ahmedabad,Gujarat,3.77,Net 30,11,1
+SUP039,Matrix Fitness Systems,Contact for Matrix Fitness Systems,procurement@matrixfitnesss.in,+91 72104 64377,Ahmedabad,Gujarat,4.38,Net 45,15,1
+SUP040,Saraswati Office Supplies,Contact for Saraswati Office Supplies,procurement@saraswatioffic.in,+91 72040 37110,Hyderabad,Telangana,4.12,2/10 Net 30,13,1
+SUP041,Trendz Global Accessories,Contact for Trendz Global Accessories,procurement@trendzglobalac.in,+91 98073 85456,Hyderabad,Telangana,4.74,Net 30,15,1
+SUP042,Pinnacle Home Essentials,Contact for Pinnacle Home Essentials,procurement@pinnaclehomees.in,+91 79784 61116,Hyderabad,Telangana,3.21,Net 60,18,1
+SUP043,Gourmet Foods Direct,Contact for Gourmet Foods Direct,procurement@gourmetfoodsdi.in,+91 85998 38760,Hyderabad,Telangana,4.47,Net 45,20,1
+SUP044,Quantum Microelectronics,Contact for Quantum Microelectronics,procurement@quantummicroel.in,+91 81014 97670,Chennai,Tamil Nadu,4.03,2/10 Net 30,16,1
+SUP045,ThermaFlow Home Heating,Contact for ThermaFlow Home Heating,procurement@thermaflowhome.in,+91 90390 80008,Hyderabad,Telangana,4.63,Net 45,8,1
+SUP046,Aromas of India,Contact for Aromas of India,procurement@aromasofindia.in,+91 72750 94246,Mumbai,Maharashtra,4.21,Net 30,15,1
+SUP047,Nectar Juice & Beverage,Contact for Nectar Juice & Beverage,procurement@nectarjuiceand.in,+91 71647 44099,Hyderabad,Telangana,4.67,Net 45,7,1
+SUP048,Sterling Kitchen Solutions,Contact for Sterling Kitchen Solutions,procurement@sterlingkitche.in,+91 81059 59692,Hyderabad,Telangana,3.56,Net 60,13,1
+SUP049,IronGrip Gym Wear,Contact for IronGrip Gym Wear,procurement@irongripgymwea.in,+91 85411 12540,Chennai,Tamil Nadu,3.63,Net 30,16,1
+SUP050,Pioneer Paper Co,Contact for Pioneer Paper Co,procurement@pioneerpaperco.in,+91 77347 95215,Jaipur,Rajasthan,4.9,Net 60,4,1
+SUP051,Glamour Touch Lifestyle,Contact for Glamour Touch Lifestyle,procurement@glamourtouchli.in,+91 76532 12671,Bengaluru,Karnataka,4.48,Net 45,4,1
+SUP052,AgroHarvest Staples,Contact for AgroHarvest Staples,procurement@agroharveststa.in,+91 91936 24993,Surat,Gujarat,3.61,2/10 Net 30,7,1
+SUP053,SparkTech Mobiles,Contact for SparkTech Mobiles,procurement@sparktechmobil.in,+91 95129 58351,Surat,Gujarat,3.99,Net 60,9,1
+SUP054,CleanPro Appliances,Contact for CleanPro Appliances,procurement@cleanproapplia.in,+91 80192 24168,Delhi,Delhi,4.52,Net 45,6,1
+SUP055,NaturalGlow Cosmetics,Contact for NaturalGlow Cosmetics,procurement@naturalglowcos.in,+91 82997 35995,Surat,Gujarat,4.78,2/10 Net 30,3,1
+SUP056,TasteCraft Foods,Contact for TasteCraft Foods,procurement@tastecraftfood.in,+91 73339 49529,Bengaluru,Karnataka,4.37,Net 45,21,1
+SUP057,BrewMaster Coffee & Tea,Contact for BrewMaster Coffee & Tea,procurement@brewmastercoff.in,+91 81377 79827,Surat,Gujarat,4.55,Net 30,6,1
+SUP058,ChefCraft Cutlery,Contact for ChefCraft Cutlery,procurement@chefcraftcutle.in,+91 70414 65057,Hyderabad,Telangana,3.32,Net 60,14,1
+SUP059,Dynamic Athletics,Contact for Dynamic Athletics,procurement@dynamicathleti.in,+91 90826 70258,Kolkata,West Bengal,3.94,Net 60,6,1
+SUP060,Signature Leather Craft,Contact for Signature Leather Craft,procurement@signatureleath.in,+91 90182 80539,Delhi,Delhi,3.5,Net 60,16,1

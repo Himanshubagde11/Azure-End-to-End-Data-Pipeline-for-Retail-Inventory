@@ -1,0 +1,27 @@
+{
+  "name": "LS_AzureSqlDatabase_DW",
+  "type": "Microsoft.DataFactory/factories/linkedservices",
+  "properties": {
+    "description": "Azure SQL Database Linked Service for Nexora Retail Warehouse and Staging",
+    "annotations": [
+      "Nexora",
+      "Production",
+      "AzureSQL"
+    ],
+    "parameters": {
+      "ServerName": {
+        "type": "string",
+        "defaultValue": "nexora-sql-server-prod.database.windows.net"
+      },
+      "DatabaseName": {
+        "type": "string",
+        "defaultValue": "sqldb-nexora-inventory-prod"
+      }
+    },
+    "type": "AzureSqlDatabase",
+    "typeProperties": {
+      "connectionString": "Server=tcp:@{linkedService().ServerName},1433;Database=@{linkedService().DatabaseName};Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;",
+      "authenticationType": "SystemAssignedManagedIdentity"
+    }
+  }
+}

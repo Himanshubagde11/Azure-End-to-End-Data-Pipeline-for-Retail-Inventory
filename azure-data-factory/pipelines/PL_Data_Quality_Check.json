@@ -1,0 +1,77 @@
+{
+  "name": "PL_Data_Quality_Check",
+  "properties": {
+    "description": "Executes the modular Python Data Quality Framework against staged data. Evaluates schema, nulls, duplicates, and business rules, halting the pipeline if critical quality gates fail.",
+    "activities": [
+      {
+        "name": "Execute_Python_Validation_Engine",
+        "type": "WebActivity",
+        "dependsOn": [],
+        "policy": { "timeout": "0.00:10:00", "retry": 2, "retryIntervalInSeconds": 30 },
+        "typeProperties": {
+          "url": "https://func-nexora-data-quality.azurewebsites.net/api/v1/run-validation",
+          "method": "POST",
+          "headers": {
+            "Content-Type": "application/json",
+            "x-functions-key": "[PLACEHOLDER_KEY_VAULT_SECRET]"
+          },
+          "body": {
+            "run_id": "@pipeline().parameters.p_RunID",
+            "environment": "production",
+            "enforce_gate": true,
+            "min_pass_percentage": 95.0
+          }
+        }
+      },
+      {
+        "name": "Evaluate_DQ_Score_Gate",
+        "type": "IfCondition",
+        "dependsOn": [
+          { "activity": "Execute_Python_Validation_Engine", "dependencyConditions": ["Succeeded"] }
+        ],
+        "typeProperties": {
+          "expression": {
+            "value": "@greaterOrEquals(activity('Execute_Python_Validation_Engine').output.data_quality_score, 95.0)",
+            "type": "Expression"
+          },
+          "ifTrueActivities": [
+            {
+              "name": "Log_DQ_Pass",
+              "type": "SqlServerStoredProcedure",
+              "dependsOn": [],
+              "typeProperties": {
+                "storedProcedureName": "audit.sp_Log_PipelineExecution",
+                "storedProcedureParameters": {
+                  "RunID": { "value": "@pipeline().parameters.p_RunID", "type": "String" },
+                  "PipelineName": { "value": "PL_Data_Quality_Check", "type": "String" },
+                  "ActivityName": { "value": "DQ_Gate_Approved", "type": "String" },
+                  "StartTime": { "value": "@utcNow()", "type": "DateTime" },
+                  "EndTime": { "value": "@utcNow()", "type": "DateTime" },
+                  "Status": { "value": "SUCCESS", "type": "String" },
+                  "RowsProcessed": { "value": "@activity('Execute_Python_Validation_Engine').output.total_evaluated_records", "type": "Int64" },
+                  "RowsFailed": { "value": "@activity('Execute_Python_Validation_Engine').output.total_defective_records", "type": "Int64" }
+                }
+              },
+              "linkedServiceName": { "referenceName": "LS_AzureSqlDatabase_DW", "type": "LinkedServiceReference" }
+            }
+          ],
+          "ifFalseActivities": [
+            {
+              "name": "Fail_Pipeline_Quality_Gate",
+              "type": "Fail",
+              "dependsOn": [],
+              "typeProperties": {
+                "message": "Data quality score below acceptable threshold (95%). Pipeline halted to protect enterprise warehouse integrity.",
+                "errorCode": "ERR_DATA_QUALITY_BELOW_THRESHOLD"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "parameters": {
+      "p_RunID": { "type": "string", "defaultValue": "MANUAL_RUN" }
+    },
+    "annotations": ["Nexora", "QualityGate", "Python"]
+  }
+}

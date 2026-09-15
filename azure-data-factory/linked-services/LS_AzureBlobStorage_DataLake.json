@@ -1,0 +1,23 @@
+{
+  "name": "LS_AzureBlobStorage_DataLake",
+  "type": "Microsoft.DataFactory/factories/linkedservices",
+  "properties": {
+    "description": "Azure Blob Storage / ADLS Gen2 Linked Service for Nexora Retail Ingestion Lake",
+    "annotations": [
+      "Nexora",
+      "Production",
+      "Storage"
+    ],
+    "parameters": {
+      "StorageAccountUri": {
+        "type": "string",
+        "defaultValue": "https://sanexoradatalakeprod.dfs.core.windows.net"
+      }
+    },
+    "type": "AzureBlobFS",
+    "typeProperties": {
+      "url": "@linkedService().StorageAccountUri",
+      "encryptedCredential": "[PLACEHOLDER_CREDENTIAL_AUTHENTICATED_VIA_MANAGED_IDENTITY]"
+    }
+  }
+}

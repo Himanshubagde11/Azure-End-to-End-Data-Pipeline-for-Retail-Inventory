@@ -1,0 +1,33 @@
+{
+  "name": "TR_Monthly_Sales_TumblingWindow",
+  "properties": {
+    "description": "Tumbling window trigger executing incremental monthly sales ingestion slices with automatic backfill and concurrency management",
+    "annotations": ["Nexora", "Monthly", "TumblingWindow"],
+    "runtimeState": "Started",
+    "pipeline": {
+      "pipelineReference": {
+        "referenceName": "PL_Load_Sales",
+        "type": "PipelineReference"
+      },
+      "parameters": {
+        "p_SourceFolder": "sales",
+        "p_SourceFile": "sales_@{formatDateTime(trigger().outputs.windowStartTime,'yyyy_MM')}.csv",
+        "p_TargetTable": "Sales",
+        "p_RunID": "@trigger().outputs.windowStartTime"
+      }
+    },
+    "type": "TumblingWindowTrigger",
+    "typeProperties": {
+      "frequency": "Month",
+      "interval": 1,
+      "startTime": "2025-01-01T00:00:00Z",
+      "endTime": "2025-12-31T23:59:59Z",
+      "delay": "00:00:00",
+      "maxConcurrency": 1,
+      "retryPolicy": {
+        "count": 3,
+        "intervalInSeconds": 60
+      }
+    }
+  }
+}

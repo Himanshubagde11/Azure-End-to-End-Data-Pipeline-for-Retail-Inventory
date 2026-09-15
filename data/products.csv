@@ -1,0 +1,1201 @@
+ProductID,ProductName,CategoryID,CategoryName,SupplierID,Brand,UnitCost,UnitPrice,ReorderLevel,ReorderQuantity,LaunchDate,IsActive
+PRD00001,Mi Compact Bluetooth Speaker Eco 546,CAT001,Electronics,SUP016,Mi,15337.08,21322.84,20,40,2021-05-15,1
+PRD00002,Mi Compact Bluetooth Speaker Classic 444,CAT001,Electronics,SUP017,Mi,870.9,1289.58,36,137,2022-06-26,1
+PRD00003,Logitech Ergonomic Wireless Mouse Prime 669,CAT001,Electronics,SUP049,Logitech,534.24,810.89,30,105,2024-08-18,1
+PRD00004,Mi Portable Power Bank 20000mAh Eco 558,CAT001,Electronics,SUP038,Mi,14741.73,18331.36,17,50,2022-05-22,1
+PRD00005,Mi Ergonomic Wireless Mouse Select 535,CAT001,Electronics,SUP017,Mi,18438.86,25382.71,21,69,2024-05-10,1
+PRD00006,Samsung Portable Power Bank 20000mAh Elite 423,CAT001,Electronics,SUP018,Samsung,2519.92,3457.14,36,99,2022-12-16,1
+PRD00007,JBL Tablet Stylus Pen Prime 202,CAT001,Electronics,SUP035,JBL,15462.2,20090.22,21,36,2023-01-23,1
+PRD00008,Logitech Bluetooth Soundbar Pro 155,CAT001,Electronics,SUP001,Logitech,10393.47,14817.35,14,65,2024-02-28,1
+PRD00009,Logitech True Wireless Earbuds Eco 590,CAT001,Electronics,SUP005,Logitech,8344.51,10580.64,11,41,2024-02-27,1
+PRD00010,Mi Smartwatch Fitness Tracker Max 690,CAT001,Electronics,SUP008,Mi,11774.44,14520.45,14,61,2023-02-08,1
+PRD00011,OnePlus 4K Action Camera Elite 894,CAT001,Electronics,SUP040,OnePlus,9834.69,13229.12,24,44,2024-05-19,1
+PRD00012,JBL UltraHD Smart LED TV Max 881,CAT001,Electronics,SUP005,JBL,4121.35,5255.98,12,35,2022-03-18,1
+PRD00013,Sony Bluetooth Soundbar Classic 561,CAT001,Electronics,SUP045,Sony,12862.09,17378.5,11,39,2023-12-10,1
+PRD00014,Mi Noise Isolating Gaming Headset Max 803,CAT001,Electronics,SUP035,Mi,4586.64,5918.05,30,62,2022-07-04,1
+PRD00015,boAt Portable Power Bank 20000mAh Prime 946,CAT001,Electronics,SUP030,boAt,2931.59,3619.87,44,151,2023-08-04,1
+PRD00016,Logitech Tablet Stylus Pen Classic 378,CAT001,Electronics,SUP021,Logitech,9433.57,12816.4,12,63,2021-07-24,1
+PRD00017,Logitech True Wireless Earbuds Pro 193,CAT001,Electronics,SUP018,Logitech,4504.98,6386.7,28,62,2021-11-27,1
+PRD00018,Sony True Wireless Earbuds Plus 581,CAT001,Electronics,SUP032,Sony,9769.19,13116.16,18,36,2024-11-27,1
+PRD00019,Mi Wireless Noise-Canceling Headphones Select 518,CAT001,Electronics,SUP019,Mi,6399.55,9063.53,15,46,2024-12-16,1
+PRD00020,OnePlus Wi-Fi 6 Dual-Band Router Pro 565,CAT001,Electronics,SUP001,OnePlus,1948.29,2507.15,32,173,2024-09-27,1
+PRD00021,Boult Wi-Fi 6 Dual-Band Router Eco 523,CAT001,Electronics,SUP018,Boult,1333.8,1822.47,56,155,2024-01-07,1
+PRD00022,boAt 4K Action Camera Prime 548,CAT001,Electronics,SUP020,boAt,16337.37,22149.39,10,65,2022-12-06,1
+PRD00023,Sony 4K Action Camera Classic 195,CAT001,Electronics,SUP010,Sony,4428.32,6541.47,13,54,2021-11-27,1
+PRD00024,Logitech Fast USB-C Charging Hub Prime 525,CAT001,Electronics,SUP059,Logitech,15500.24,23723.95,17,54,2022-07-07,1
+PRD00025,Boult True Wireless Earbuds Plus 984,CAT001,Electronics,SUP047,Boult,1617.05,2348.16,51,118,2023-01-10,1
+PRD00026,JBL Gaming Mechanical Keyboard Eco 986,CAT001,Electronics,SUP056,JBL,3047.01,4182.92,21,46,2024-08-11,1
+PRD00027,Noise Portable Power Bank 20000mAh Classic 339,CAT001,Electronics,SUP025,Noise,15886.64,21177.44,20,72,2024-12-26,1
+PRD00028,boAt Smartwatch Fitness Tracker Eco 137,CAT001,Electronics,SUP059,boAt,2641.37,4027.15,46,87,2024-02-17,1
+PRD00029,Sony Fast USB-C Charging Hub Plus 519,CAT001,Electronics,SUP045,Sony,16157.43,24663.79,12,55,2023-06-20,1
+PRD00030,Samsung Smartwatch Fitness Tracker Select 972,CAT001,Electronics,SUP040,Samsung,12589.59,17262.94,20,65,2024-09-02,1
+PRD00031,Noise Wireless Noise-Canceling Headphones Prime 332,CAT001,Electronics,SUP045,Noise,13903.81,18632.2,13,73,2021-08-06,1
+PRD00032,Sony Gaming Mechanical Keyboard Pro 432,CAT001,Electronics,SUP027,Sony,14800.0,19217.6,21,52,2022-04-17,1
+PRD00033,boAt True Wireless Earbuds Plus 279,CAT001,Electronics,SUP041,boAt,1783.28,2653.86,40,138,2022-04-15,1
+PRD00034,Mi Gaming Mechanical Keyboard Prime 782,CAT001,Electronics,SUP023,Mi,520.56,761.93,43,161,2022-02-15,1
+PRD00035,Logitech True Wireless Earbuds Classic 806,CAT001,Electronics,SUP025,Logitech,4889.28,7229.47,16,49,2024-02-08,1
+PRD00036,Zebronics True Wireless Earbuds Prime 816,CAT001,Electronics,SUP044,Zebronics,5708.44,8731.85,22,42,2021-10-28,1
+PRD00037,Sony Compact Bluetooth Speaker Eco 952,CAT001,Electronics,SUP013,Sony,16760.42,21728.77,17,63,2023-04-21,1
+PRD00038,Logitech True Wireless Earbuds Plus 743,CAT001,Electronics,SUP024,Logitech,2113.53,2962.9,27,114,2024-01-19,1
+PRD00039,boAt Tablet Stylus Pen Max 402,CAT001,Electronics,SUP059,boAt,6279.95,8380.37,16,33,2023-09-17,1
+PRD00040,boAt Gaming Mechanical Keyboard Prime 944,CAT001,Electronics,SUP005,boAt,17487.01,26675.54,19,72,2023-02-15,1
+PRD00041,Noise Bluetooth Soundbar Classic 966,CAT001,Electronics,SUP030,Noise,14953.27,19732.0,22,25,2023-09-04,1
+PRD00042,Logitech Ergonomic Wireless Mouse Classic 942,CAT001,Electronics,SUP021,Logitech,11939.67,15775.49,17,55,2021-10-18,1
+PRD00043,Noise True Wireless Earbuds Max 750,CAT001,Electronics,SUP003,Noise,15302.97,22998.01,19,66,2024-02-05,1
+PRD00044,Logitech UltraHD Smart LED TV Eco 218,CAT001,Electronics,SUP048,Logitech,2114.03,3159.2,33,124,2024-06-22,1
+PRD00045,Boult Tablet Stylus Pen Classic 701,CAT001,Electronics,SUP027,Boult,13822.18,17414.18,23,66,2021-08-20,1
+PRD00046,Sony Gaming Mechanical Keyboard Select 322,CAT001,Electronics,SUP023,Sony,8397.4,12754.14,21,31,2023-09-21,1
+PRD00047,OnePlus UltraHD Smart LED TV Prime 294,CAT001,Electronics,SUP039,OnePlus,17922.95,27210.89,24,30,2022-11-21,1
+PRD00048,Sony UltraHD Smart LED TV Select 349,CAT001,Electronics,SUP053,Sony,18297.1,26663.85,16,29,2022-10-07,1
+PRD00049,Noise Noise Isolating Gaming Headset Select 892,CAT001,Electronics,SUP017,Noise,3028.11,4540.51,10,42,2022-03-18,1
+PRD00050,boAt Compact Bluetooth Speaker Max 776,CAT001,Electronics,SUP002,boAt,16076.03,20155.67,21,75,2022-10-11,1
+PRD00051,Logitech Bluetooth Soundbar Pro 229,CAT001,Electronics,SUP038,Logitech,13812.18,18906.15,12,55,2024-06-17,1
+PRD00052,Mi Wireless Noise-Canceling Headphones Elite 729,CAT001,Electronics,SUP004,Mi,1137.08,1655.5,58,113,2024-11-01,1
+PRD00053,OnePlus Fast USB-C Charging Hub Classic 802,CAT001,Electronics,SUP010,OnePlus,2309.51,3304.53,53,84,2021-06-20,1
+PRD00054,boAt Wireless Noise-Canceling Headphones Prime 739,CAT001,Electronics,SUP039,boAt,11840.34,16291.52,20,49,2023-08-17,1
+PRD00055,Samsung Smartwatch Fitness Tracker Max 973,CAT001,Electronics,SUP057,Samsung,12233.04,18236.77,27,71,2022-07-15,1
+PRD00056,OnePlus Portable Power Bank 20000mAh Select 947,CAT001,Electronics,SUP017,OnePlus,8581.01,11452.31,13,45,2024-06-22,1
+PRD00057,boAt Ergonomic Wireless Mouse Eco 168,CAT001,Electronics,SUP004,boAt,2005.73,2490.08,52,87,2023-03-18,1
+PRD00058,Boult True Wireless Earbuds Select 786,CAT001,Electronics,SUP020,Boult,2568.5,3380.1,52,167,2021-05-20,1
+PRD00059,Samsung Ergonomic Wireless Mouse Elite 258,CAT001,Electronics,SUP018,Samsung,12269.76,15692.67,13,47,2023-02-25,1
+PRD00060,Noise True Wireless Earbuds Classic 965,CAT001,Electronics,SUP054,Noise,10531.53,15273.35,29,64,2021-10-22,1
+PRD00061,Logitech Tablet Stylus Pen Pro 284,CAT001,Electronics,SUP010,Logitech,5309.86,7691.1,20,47,2021-03-28,1
+PRD00062,OnePlus True Wireless Earbuds Max 245,CAT001,Electronics,SUP030,OnePlus,13798.59,21073.23,12,72,2022-07-14,1
+PRD00063,boAt Ergonomic Wireless Mouse Select 419,CAT001,Electronics,SUP011,boAt,13446.97,19546.78,28,63,2021-01-05,1
+PRD00064,JBL Compact Bluetooth Speaker Pro 790,CAT001,Electronics,SUP014,JBL,1830.7,2458.4,52,137,2024-07-09,1
+PRD00065,Boult Compact Bluetooth Speaker Max 453,CAT001,Electronics,SUP026,Boult,8152.93,10562.87,28,56,2023-01-08,1
+PRD00066,Sony True Wireless Earbuds Pro 309,CAT001,Electronics,SUP008,Sony,5820.76,7423.58,14,73,2023-05-11,1
+PRD00067,Mi UltraHD Smart LED TV Classic 279,CAT001,Electronics,SUP056,Mi,2694.72,3694.12,39,139,2023-02-13,1
+PRD00068,Sony Tablet Stylus Pen Classic 119,CAT001,Electronics,SUP046,Sony,8694.54,10777.06,20,61,2024-10-13,1
+PRD00069,OnePlus Wi-Fi 6 Dual-Band Router Prime 217,CAT001,Electronics,SUP006,OnePlus,7701.34,11744.39,15,64,2024-12-12,1
+PRD00070,Samsung Smartwatch Fitness Tracker Elite 546,CAT001,Electronics,SUP050,Samsung,11038.01,15101.4,22,44,2023-04-11,1
+PRD00071,Samsung Bluetooth Soundbar Max 643,CAT001,Electronics,SUP010,Samsung,9605.63,14423.02,21,47,2022-04-04,1
+PRD00072,Noise Gaming Mechanical Keyboard Plus 716,CAT001,Electronics,SUP037,Noise,3124.59,4522.2,12,36,2024-08-25,1
+PRD00073,JBL Compact Bluetooth Speaker Eco 797,CAT001,Electronics,SUP010,JBL,17123.4,23649.92,30,64,2023-11-11,1
+PRD00074,Samsung Fast USB-C Charging Hub Eco 552,CAT001,Electronics,SUP020,Samsung,11809.64,17249.82,28,28,2023-09-03,1
+PRD00075,Mi Fast USB-C Charging Hub Pro 158,CAT001,Electronics,SUP036,Mi,7042.59,9132.03,30,30,2024-08-19,1
+PRD00076,Sony Compact Bluetooth Speaker Eco 929,CAT001,Electronics,SUP007,Sony,10725.57,13611.14,29,55,2022-01-15,1
+PRD00077,Zebronics Compact Bluetooth Speaker Max 616,CAT001,Electronics,SUP059,Zebronics,12077.21,14848.8,24,53,2022-06-12,1
+PRD00078,OnePlus Gaming Mechanical Keyboard Classic 893,CAT001,Electronics,SUP007,OnePlus,6491.36,9036.37,30,66,2023-02-11,1
+PRD00079,OnePlus 4K Action Camera Prime 358,CAT001,Electronics,SUP043,OnePlus,13485.77,19037.37,29,34,2023-02-19,1
+PRD00080,Zebronics Bluetooth Soundbar Prime 771,CAT001,Electronics,SUP025,Zebronics,13027.41,17292.25,29,70,2021-05-18,1
+PRD00081,Zebronics Wi-Fi 6 Dual-Band Router Plus 786,CAT001,Electronics,SUP002,Zebronics,13106.38,19888.54,26,30,2024-09-12,1
+PRD00082,Logitech Ergonomic Wireless Mouse Plus 319,CAT001,Electronics,SUP019,Logitech,6552.44,9499.68,16,39,2022-03-03,1
+PRD00083,Samsung Noise Isolating Gaming Headset Pro 777,CAT001,Electronics,SUP012,Samsung,6462.27,9369.31,14,63,2024-03-06,1
+PRD00084,JBL Noise Isolating Gaming Headset Plus 838,CAT001,Electronics,SUP029,JBL,8293.77,11056.09,17,53,2023-12-26,1
+PRD00085,Boult Portable Power Bank 20000mAh Elite 416,CAT001,Electronics,SUP019,Boult,17875.58,26032.76,16,48,2024-08-25,1
+PRD00086,OnePlus Compact Bluetooth Speaker Classic 265,CAT001,Electronics,SUP056,OnePlus,15176.58,22194.93,14,41,2021-11-16,1
+PRD00087,Boult Ergonomic Wireless Mouse Max 828,CAT001,Electronics,SUP058,Boult,15702.94,23253.22,19,30,2022-05-15,1
+PRD00088,boAt 4K Action Camera Classic 193,CAT001,Electronics,SUP026,boAt,17527.4,22406.29,24,47,2021-07-02,1
+PRD00089,Zebronics 4K Action Camera Elite 495,CAT001,Electronics,SUP022,Zebronics,18400.64,24330.95,10,45,2021-12-21,1
+PRD00090,boAt Compact Bluetooth Speaker Plus 139,CAT001,Electronics,SUP001,boAt,5556.86,8184.6,14,73,2024-08-20,1
+PRD00091,Sony Wireless Noise-Canceling Headphones Prime 320,CAT001,Electronics,SUP019,Sony,15504.58,21335.5,29,58,2024-02-25,1
+PRD00092,Logitech Portable Power Bank 20000mAh Max 148,CAT001,Electronics,SUP058,Logitech,4677.68,6575.52,29,54,2021-02-27,1
+PRD00093,JBL Fast USB-C Charging Hub Pro 747,CAT001,Electronics,SUP023,JBL,9704.07,12459.16,14,43,2024-01-20,1
+PRD00094,JBL Portable Power Bank 20000mAh Classic 291,CAT001,Electronics,SUP031,JBL,12408.34,15405.56,21,29,2021-07-28,1
+PRD00095,OnePlus UltraHD Smart LED TV Select 359,CAT001,Electronics,SUP041,OnePlus,13913.8,18324.65,12,47,2022-12-22,1
+PRD00096,JBL Wireless Noise-Canceling Headphones Select 236,CAT001,Electronics,SUP041,JBL,1154.69,1587.91,36,174,2024-12-16,1
+PRD00097,boAt Bluetooth Soundbar Max 833,CAT001,Electronics,SUP021,boAt,14437.86,19452.93,19,37,2021-04-02,1
+PRD00098,Boult Gaming Mechanical Keyboard Classic 934,CAT001,Electronics,SUP050,Boult,10206.01,13136.22,30,37,2023-06-28,1
+PRD00099,Zebronics UltraHD Smart LED TV Prime 227,CAT001,Electronics,SUP012,Zebronics,14858.06,19924.5,22,72,2024-07-11,1
+PRD00100,Mi Fast USB-C Charging Hub Select 916,CAT001,Electronics,SUP012,Mi,9774.86,14294.81,23,30,2024-10-27,1
+PRD00101,Logitech 4K Action Camera Select 205,CAT001,ELECTR,SUP029,Logitech,1803.25,2548.25,44,132,2024-03-23,1
+PRD00102,Mi Ergonomic Wireless Mouse Pro 844,CAT001,Electronics,SUP041,Mi,16141.17,21236.57,23,42,2021-02-22,1
+PRD00103,Zebronics Smartwatch Fitness Tracker Plus 131,CAT001,Electronics,SUP050,Zebronics,2941.45,4104.09,53,79,2022-02-08,1
+PRD00104,Zebronics Wi-Fi 6 Dual-Band Router Select 492,CAT001,Electronics,SUP029,Zebronics,17582.83,21587.41,14,68,2024-06-12,1
+PRD00105,Samsung Compact Bluetooth Speaker Plus 642,CAT001,Electronics,SUP012,Samsung,7010.14,9145.0,18,40,2021-01-24,1
+PRD00106,Boult Fast USB-C Charging Hub Classic 675,CAT001,Electronics,SUP013,Boult,2487.36,3614.0,53,102,2023-12-16,1
+PRD00107,boAt Wireless Noise-Canceling Headphones Max 562,CAT001,Electronics,SUP046,boAt,3483.71,4985.79,12,68,2023-11-12,1
+PRD00108,Boult Wireless Noise-Canceling Headphones Prime 407,CAT001,Electronics,SUP008,Boult,15802.22,22607.14,30,36,2023-09-08,1
+PRD00109,boAt Portable Power Bank 20000mAh Elite 909,CAT001,Electronics,SUP040,boAt,9316.5,12280.41,28,48,2024-09-05,1
+PRD00110,Samsung Wireless Noise-Canceling Headphones Prime 507,CAT001,Electronics,SUP009,Samsung,18492.65,26501.66,26,51,2024-10-03,1
+PRD00111,Samsung Ergonomic Wireless Mouse Eco 577,CAT001,Electronics,SUP033,Samsung,12693.98,16671.18,27,65,2022-03-14,1
+PRD00112,Sony Noise Isolating Gaming Headset Max 630,CAT001,Electronics,SUP058,Sony,3127.23,3948.48,20,70,2022-06-17,1
+PRD00113,Samsung Gaming Mechanical Keyboard Prime 301,CAT001,Electronics,SUP006,Samsung,11876.29,16350.49,14,65,2023-10-18,1
+PRD00114,boAt 4K Action Camera Plus 275,CAT001,Electronics,SUP003,boAt,12306.0,17643.2,29,46,2021-01-03,1
+PRD00115,JBL Wi-Fi 6 Dual-Band Router Prime 766,CAT001,Electronics,SUP035,JBL,4176.17,5778.27,29,65,2021-08-21,1
+PRD00116,Logitech Gaming Mechanical Keyboard Eco 350,CAT001,Electronics,SUP011,Logitech,14955.09,21256.57,19,54,2021-12-02,1
+PRD00117,OnePlus Fast USB-C Charging Hub Eco 575,CAT001,Electronics,SUP023,OnePlus,4053.02,5653.79,20,70,2023-12-28,1
+PRD00118,boAt Smartwatch Fitness Tracker Select 627,CAT001,Electronics,SUP010,boAt,10543.97,13769.46,24,32,2023-08-08,1
+PRD00119,Sony Wireless Noise-Canceling Headphones Prime 493,CAT001,Electronics,SUP011,Sony,16034.57,21410.34,15,45,2023-04-25,1
+PRD00120,Boult Fast USB-C Charging Hub Eco 610,CAT001,Electronics,SUP038,Boult,16305.22,22170.49,12,50,2024-04-07,1
+PRD00121,Sony Ergonomic Wireless Mouse Pro 388,CAT001,Electronics,SUP001,Sony,9332.33,13928.8,30,68,2024-05-18,1
+PRD00122,Samsung Noise Isolating Gaming Headset Classic 237,CAT001,Electronics,SUP037,Samsung,16366.57,23504.26,22,48,2021-07-02,1
+PRD00123,Noise 4K Action Camera Select 666,CAT001,Electronics,SUP040,Noise,5588.12,7408.15,24,73,2023-10-22,1
+PRD00124,boAt Wireless Noise-Canceling Headphones Max 503,CAT001,Electronics,SUP033,boAt,7123.55,10921.57,27,48,2022-04-20,1
+PRD00125,Boult Smartwatch Fitness Tracker Pro 146,CAT001,Electronics,SUP058,Boult,1056.29,1511.82,55,141,2024-03-20,1
+PRD00126,boAt 4K Action Camera Select 727,CAT001,Electronics,SUP033,boAt,6131.32,8140.39,29,72,2023-10-11,1
+PRD00127,Boult Noise Isolating Gaming Headset Eco 825,CAT001,Electronics,SUP027,Boult,10567.08,14293.97,10,48,2023-11-04,1
+PRD00128,Logitech True Wireless Earbuds Pro 711,CAT001,Electronics,SUP038,Logitech,8963.81,13672.72,28,61,2022-12-02,1
+PRD00129,boAt Fast USB-C Charging Hub Classic 251,CAT001,Electronics,SUP029,boAt,15263.15,19597.62,28,69,2021-04-01,1
+PRD00130,OnePlus Ergonomic Wireless Mouse Plus 522,CAT001,Electronics,SUP034,OnePlus,12882.58,17171.37,29,55,2021-12-05,1
+PRD00131,Boult Portable Power Bank 20000mAh Select 778,CAT001,Electronics,SUP044,Boult,9032.43,11948.61,15,54,2023-09-12,1
+PRD00132,Logitech Compact Bluetooth Speaker Eco 296,CAT001,Electronics,SUP014,Logitech,17725.67,22943.8,19,39,2023-05-23,1
+PRD00133,Mi Tablet Stylus Pen Select 591,CAT001,Electronics,SUP035,Mi,6680.78,10102.94,18,43,2021-10-22,1
+PRD00134,OnePlus Smartwatch Fitness Tracker Select 891,CAT001,Electronics,SUP042,OnePlus,14953.78,19404.79,19,70,2021-06-15,1
+PRD00135,Crompton Heavy Weight Dry Iron Elite 306,CAT002,Home Appliances,SUP040,Crompton,6866.63,9390.96,27,69,2023-03-04,1
+PRD00136,Havells Garment Steamer Portable Elite 151,CAT002,Home Appliances,SUP022,Havells,5641.21,8242.41,30,39,2021-02-14,1
+PRD00137,Crompton Garment Steamer Portable Max 797,CAT002,Home Appliances,SUP031,Crompton,6423.44,8245.04,27,35,2024-11-16,1
+PRD00138,Havells Ionic Hair Dryer 2000W Prime 428,CAT002,Home Appliances,SUP047,Havells,2661.97,3460.02,30,158,2022-09-24,1
+PRD00139,Prestige Convection Microwave Oven Classic 957,CAT002,Home Appliances,SUP056,Prestige,1812.36,2949.49,50,175,2024-03-24,1
+PRD00140,Philips Heavy Weight Dry Iron Pro 405,CAT002,Home Appliances,SUP034,Philips,4851.7,6378.06,20,43,2024-11-18,1
+PRD00141,Prestige Steam Iron 1800W Eco 379,CAT002,Home Appliances,SUP046,Prestige,1944.29,2559.21,35,168,2024-11-09,1
+PRD00142,Philips Electric Kettle 1.8L Select 909,CAT002,Home Appliances,SUP021,Philips,2736.44,4154.89,37,97,2024-07-17,1
+PRD00143,Kent Air Fryer Digital 4.5L Max 289,CAT002,Home Appliances,SUP029,Kent,8058.06,11610.06,17,25,2023-07-08,1
+PRD00144,Morphy Richards Vacuum Cleaner Handheld Select 409,CAT002,Home Appliances,SUP004,Morphy Richards,4964.07,7333.73,18,66,2023-12-08,1
+PRD00145,Bajaj Ionic Hair Dryer 2000W Eco 414,CAT002,Home Appliances,SUP999,Bajaj,1687.81,2570.9,44,163,2021-11-10,1
+PRD00146,Havells Multi-Cooker Electric Pan Elite 236,CAT002,Home Appliances,SUP059,Havells,4155.91,5953.14,29,48,2024-12-18,1
+PRD00147,Havells Steam Iron 1800W Elite 796,CAT002,Home Appliances,SUP024,Havells,6299.23,10113.79,12,58,2024-09-23,1
+PRD00148,Bajaj Air Fryer Digital 4.5L Pro 948,CAT002,Home Appliances,SUP055,Bajaj,4694.28,6813.06,28,59,2022-03-11,1
+PRD00149,Crompton Pop-up 4-Slice Toaster Max 796,CAT002,Home Appliances,SUP009,Crompton,2041.86,3024.83,30,140,2024-01-15,1
+PRD00150,Kent Pop-up 4-Slice Toaster Eco 677,CAT002,Home Appliances,SUP053,Kent,897.46,1288.03,44,167,2021-07-09,1
+PRD00151,Havells Convection Microwave Oven Max 146,CAT002,Home Appliances,SUP019,Havells,3733.65,5709.55,27,28,2021-08-02,1
+PRD00152,Prestige Tower Air Cooler Plus 884,CAT002,Home Appliances,SUP059,Prestige,5421.82,8357.62,23,48,2024-08-28,1
+PRD00153,Kent Tower Air Cooler Max 799,CAT002,Home Appliances,SUP035,Kent,7922.12,12724.66,14,66,2023-02-06,1
+PRD00154,Prestige Tower Air Cooler Elite 954,CAT002,Home Appliances,SUP053,Prestige,476.92,614.66,98,268,2024-09-13,1
+PRD00155,Havells Induction Cooktop 2000W Eco 454,CAT002,Home Appliances,SUP060,Havells,1652.19,2214.51,32,79,2024-10-25,1
+PRD00156,Havells Convection Microwave Oven Elite 168,CAT002,Home Appliances,SUP015,Havells,1231.95,1591.76,28,106,2021-07-15,1
+PRD00157,Havells Pop-up 4-Slice Toaster Pro 243,CAT002,Home Appliances,SUP057,Havells,4355.19,5982.96,28,45,2023-04-10,1
+PRD00158,Havells Electric Kettle 1.8L Classic 407,CAT002,Home Appliances,SUP004,Havells,2582.44,3798.87,36,155,2024-09-16,1
+PRD00159,Kent Hand Blender & Chopper Select 813,CAT002,Home Appliances,SUP015,Kent,3676.52,4881.58,22,36,2024-04-28,1
+PRD00160,Prestige Heavy Weight Dry Iron Eco 159,CAT002,Home Appliances,SUP017,Prestige,4808.49,7937.44,27,58,2022-07-08,1
+PRD00161,Usha Induction Cooktop 2000W Max 560,CAT002,Home Appliances,SUP039,Usha,7015.28,9190.04,16,28,2023-07-22,1
+PRD00162,Philips Multi-Cooker Electric Pan Max 292,CAT002,Home Appliances,SUP059,Philips,6686.04,9916.48,27,38,2024-04-28,1
+PRD00163,Morphy Richards Hand Blender & Chopper Pro 316,CAT002,Home Appliances,SUP039,Morphy Richards,7712.99,12710.38,13,72,2024-04-23,1
+PRD00164,Havells Garment Steamer Portable Classic 345,CAT002,Home Appliances,SUP024,Havells,4728.61,7383.75,22,54,2023-05-09,1
+PRD00165,Crompton Pop-up 4-Slice Toaster Eco 200,CAT002,Home Appliances,SUP003,Crompton,6671.83,10264.9,20,38,2023-06-14,1
+PRD00166,Havells Multi-Cooker Electric Pan Plus 116,CAT002,Home Appliances,SUP015,Havells,2471.0,4039.27,51,112,2022-04-11,1
+PRD00167,Havells Tower Air Cooler Eco 663,CAT002,Home Appliances,SUP048,Havells,5523.21,8410.2,18,73,2024-12-21,1
+PRD00168,Crompton Steam Iron 1800W Plus 850,CAT002,Home Appliances,SUP004,Crompton,6611.06,8820.25,27,56,2022-09-21,1
+PRD00169,Philips Pop-up 4-Slice Toaster Max 937,CAT002,Home Appliances,SUP010,Philips,5628.67,8761.68,23,33,2022-02-23,1
+PRD00170,Havells Convection Microwave Oven Eco 482,CAT002,Home Appliances,SUP035,Havells,918.49,1380.75,55,159,2024-01-01,1
+PRD00171,Kent Pop-up 4-Slice Toaster Pro 117,CAT002,Home Appliances,SUP059,Kent,4552.99,6232.31,19,26,2024-03-04,1
+PRD00172,Prestige Air Fryer Digital 4.5L Elite 296,CAT002,Home Appliances,SUP026,Prestige,5253.3,7151.58,21,42,2024-02-12,1
+PRD00173,Havells Steam Iron 1800W Elite 407,CAT002,Home Appliances,SUP025,Havells,5751.32,9167.15,30,66,2021-02-13,1
+PRD00174,Crompton Tower Air Cooler Pro 752,CAT002,Home Appliances,SUP007,Crompton,523.24,698.44,56,130,2023-10-28,1
+PRD00175,Philips Pop-up 4-Slice Toaster Elite 316,CAT002,Home Appliances,SUP044,Philips,7434.87,11344.22,28,55,2023-01-03,1
+PRD00176,Philips Heavy Weight Dry Iron Plus 970,CAT002,Home Appliances,SUP011,Philips,2887.26,4757.11,34,171,2024-02-10,1
+PRD00177,Havells Multi-Cooker Electric Pan Classic 793,CAT002,Home Appliances,SUP023,Havells,7398.07,10270.98,14,75,2021-09-24,1
+PRD00178,Bajaj Convection Microwave Oven Classic 337,CAT002,Home Appliances,SUP041,Bajaj,6949.73,9669.95,29,63,2024-06-01,1
+PRD00179,Crompton Heavy Weight Dry Iron Eco 333,CAT002,Home Appliances,SUP040,Crompton,3207.54,5253.14,23,36,2024-02-25,1
+PRD00180,Havells Heavy Weight Dry Iron Max 184,CAT002,Home Appliances,SUP007,Havells,2526.78,3550.84,34,169,2024-06-12,1
+PRD00181,Philips Air Fryer Digital 4.5L Prime 555,CAT002,Home Appliances,SUP036,Philips,3239.36,4428.73,14,30,2022-07-15,1
+PRD00182,Kent Pop-up 4-Slice Toaster Max 126,CAT002,Home Appliances,SUP025,Kent,1144.55,1682.57,45,124,2021-05-14,1
+PRD00183,Bajaj Vacuum Cleaner Handheld Elite 685,CAT002,Home Appliances,SUP032,Bajaj,4488.56,6835.62,15,33,2023-05-09,1
+PRD00184,Bajaj Electric Kettle 1.8L Plus 545,CAT002,Home Appliances,SUP041,Bajaj,2588.7,3565.48,29,121,2023-04-24,1
+PRD00185,Havells Steam Iron 1800W Eco 209,CAT002,Home Appliances,SUP022,Havells,1500.04,1926.14,50,117,2024-06-15,1
+PRD00186,Prestige Tower Air Cooler Prime 428,CAT002,Home Appliances,SUP019,Prestige,5124.89,7826.08,25,45,2022-07-11,1
+PRD00187,Crompton Garment Steamer Portable Elite 433,CAT002,Home Appliances,SUP038,Crompton,3364.43,5314.8,22,48,2021-10-07,1
+PRD00188,Prestige Pop-up 4-Slice Toaster Pro 844,CAT002,Home Appliances,SUP032,Prestige,4027.57,6172.58,24,43,2021-07-22,1
+PRD00189,Morphy Richards Electric Kettle 1.8L Elite 358,CAT002,Home Appliances,SUP038,Morphy Richards,5554.64,8529.1,22,29,2024-10-16,1
+PRD00190,Kent Tower Air Cooler Pro 909,CAT002,Home Appliances,SUP016,Kent,7955.32,12169.57,27,63,2021-02-25,1
+PRD00191,Usha Ionic Hair Dryer 2000W Plus 762,CAT002,Home Appliances,SUP028,Usha,5198.25,7660.03,30,68,2024-06-26,1
+PRD00192,Philips Air Fryer Digital 4.5L Max 364,CAT002,Home Appliances,SUP026,Philips,2170.51,3362.18,60,149,2022-08-12,1
+PRD00193,Prestige Steam Iron 1800W Select 125,CAT002,Home Appliances,SUP022,Prestige,4191.48,5766.86,12,32,2022-06-10,1
+PRD00194,Havells Steam Iron 1800W Eco 456,CAT002,Home Appliances,SUP052,Havells,4140.26,5905.12,24,45,2021-05-02,1
+PRD00195,Bajaj Garment Steamer Portable Pro 969,CAT002,Home Appliances,SUP036,Bajaj,3108.85,4088.9,15,72,2022-09-06,1
+PRD00196,Usha Electric Kettle 1.8L Classic 573,CAT002,Home Appliances,SUP048,Usha,2246.88,3177.64,36,98,2024-07-01,1
+PRD00197,Havells Multi-Cooker Electric Pan Eco 706,CAT002,Home Appliances,SUP051,Havells,3779.03,4849.89,16,38,2023-12-26,1
+PRD00198,Bajaj Air Fryer Digital 4.5L Plus 474,CAT002,Home Appliances,SUP021,Bajaj,2976.38,4266.35,41,160,2024-09-21,1
+PRD00199,Kent Multi-Cooker Electric Pan Classic 701,CAT002,Home Appliances,SUP052,Kent,1335.3,1863.27,54,154,2022-11-23,1
+PRD00200,Bajaj Heavy Weight Dry Iron Plus 420,CAT002,Home Appliances,SUP027,Bajaj,1363.43,1880.51,36,122,2022-09-13,1
+PRD00201,Prestige Multi-Cooker Electric Pan Classic 533,CAT002,Home Appliances,SUP009,Prestige,1889.59,2838.89,36,146,2022-08-10,1
+PRD00202,Usha Electric Kettle 1.8L Eco 734,CAT002,Home Appliances,SUP025,Usha,865.49,1209.84,25,137,2022-04-27,1
+PRD00203,Crompton Pop-up 4-Slice Toaster Classic 801,CAT002,Home Appliances,SUP002,Crompton,4260.88,6533.34,24,56,2022-02-19,1
+PRD00204,Havells Vacuum Cleaner Handheld Prime 133,CAT002,Home Appliances,SUP050,Havells,2580.11,3776.34,35,174,2024-10-24,1
+PRD00205,Crompton Vacuum Cleaner Handheld Max 686,CAT002,Home Appliances,SUP035,Crompton,1335.1,2084.53,48,144,2021-12-15,1
+PRD00206,Kent Induction Cooktop 2000W Max 853,CAT002,Home Appliances,SUP056,Kent,6883.05,10675.4,19,27,2024-05-12,1
+PRD00207,Crompton Air Fryer Digital 4.5L Max 894,CAT002,Home Appliances,SUP041,Crompton,6742.14,9083.73,28,69,2023-12-20,1
+PRD00208,Prestige Tower Air Cooler Plus 903,CAT002,Home Appliances,SUP039,Prestige,2051.3,2761.76,28,147,2023-09-09,1
+PRD00209,Prestige Pop-up 4-Slice Toaster Select 820,CAT002,Home Appliances,SUP051,Prestige,2717.92,4015.2,57,161,2021-03-25,1
+PRD00210,Philips Tower Air Cooler Prime 987,CAT002,Home Appliances,SUP054,Philips,5533.2,8463.87,14,40,2022-12-11,1
+PRD00211,Kent Induction Cooktop 2000W Eco 245,CAT002,Home Appliances,SUP051,Kent,4925.05,6731.6,23,49,2024-02-21,1
+PRD00212,Bajaj Vacuum Cleaner Handheld Classic 627,CAT002,Home Appliances,SUP001,Bajaj,6260.97,9559.41,21,54,2024-06-19,1
+PRD00213,Bajaj Vacuum Cleaner Handheld Eco 750,CAT002,Home Appliances,SUP053,Bajaj,5597.11,7822.44,12,75,2024-04-14,1
+PRD00214,Crompton Induction Cooktop 2000W Prime 430,CAT002,Home Appliances,SUP049,Crompton,6869.66,9551.75,28,33,2024-06-22,1
+PRD00215,Philips Convection Microwave Oven Max 741,CAT002,Home Appliances,SUP028,Philips,6525.15,9358.07,13,35,2024-08-01,1
+PRD00216,Prestige Induction Cooktop 2000W Prime 262,CAT002,Home Appliances,SUP024,Prestige,7226.78,11614.64,12,66,2023-05-03,1
+PRD00217,Prestige Ionic Hair Dryer 2000W Pro 505,CAT002,Home Appliances,SUP001,Prestige,5298.43,8159.94,17,52,2021-12-04,1
+PRD00218,Crompton Induction Cooktop 2000W Max 235,CAT002,Home Appliances,SUP053,Crompton,5051.02,7357.64,24,25,2021-12-11,1
+PRD00219,Kent Air Fryer Digital 4.5L Plus 589,CAT002,Home Appliances,SUP009,Kent,998.92,1404.86,31,88,2023-06-10,1
+PRD00220,Prestige Tower Air Cooler Plus 170,CAT002,Home Appliances,SUP014,Prestige,4561.44,5859.46,30,35,2024-06-24,1
+PRD00221,Prestige Ionic Hair Dryer 2000W Classic 730,CAT002,Home Appliances,SUP047,Prestige,5770.89,9230.37,12,31,2022-02-19,1
+PRD00222,Usha Tower Air Cooler Classic 422,CAT002,Home Appliances,SUP039,Usha,6580.84,8948.67,30,30,2022-09-20,1
+PRD00223,Morphy Richards Garment Steamer Portable Pro 968,CAT002,Home Appliances,SUP019,Morphy Richards,7014.79,11271.43,16,58,2022-12-13,1
+PRD00224,Philips Ionic Hair Dryer 2000W Elite 606,CAT002,Home Appliances,SUP024,Philips,3440.61,4670.9,30,63,2021-09-01,1
+PRD00225,Prestige Hand Blender & Chopper Classic 981,CAT002,Home Appliances,SUP005,Prestige,6952.04,9871.63,27,68,2022-08-25,1
+PRD00226,Bajaj Convection Microwave Oven Pro 368,CAT002,Home Appliances,SUP033,Bajaj,2122.01,3456.4,50,139,2023-11-23,1
+PRD00227,Kent Vacuum Cleaner Handheld Classic 818,CAT002,Home Appliances,SUP020,Kent,3567.65,5367.28,27,64,2022-05-03,1
+PRD00228,Havells Air Fryer Digital 4.5L Plus 649,CAT002,Home Appliances,SUP016,Havells,2982.31,4421.9,29,114,2024-12-28,1
+PRD00229,Havells Convection Microwave Oven Max 544,CAT002,Home Appliances,SUP046,Havells,1348.9,2013.93,28,114,2022-02-01,1
+PRD00230,Philips Electric Kettle 1.8L Plus 608,CAT002,Home Appliances,SUP050,Philips,7835.88,11424.91,18,35,2023-03-24,1
+PRD00231,Bajaj Heavy Weight Dry Iron Pro 443,CAT002,Home Appliances,SUP033,Bajaj,6705.09,9171.94,12,41,2021-08-15,1
+PRD00232,Philips Hand Blender & Chopper Eco 979,CAT002,Home Appliances,SUP047,Philips,4843.37,6785.18,18,74,2021-10-22,1
+PRD00233,Havells Air Fryer Digital 4.5L Pro 145,CAT002,Home Appliances,SUP012,Havells,7104.84,9134.67,11,55,2023-07-05,1
+PRD00234,Kent Convection Microwave Oven Elite 429,CAT002,Home Appliances,SUP008,Kent,2374.04,3859.31,45,109,2021-10-12,1
+PRD00235,Philips Pop-up 4-Slice Toaster Plus 328,CAT002,Home Appliances,SUP055,Philips,6683.62,11077.6,22,29,2024-05-25,1
+PRD00236,Usha Heavy Weight Dry Iron Max 666,CAT002,Home Appliances,SUP016,Usha,3989.78,5591.1,19,61,2023-12-20,1
+PRD00237,Usha Steam Iron 1800W Eco 891,CAT002,Home Appliances,SUP060,Usha,6463.12,9971.54,27,73,2022-03-01,1
+PRD00238,Philips Tower Air Cooler Elite 654,CAT002,Home Appliances,SUP055,Philips,3134.78,4984.73,10,46,2021-11-13,1
+PRD00239,Morphy Richards Garment Steamer Portable Max 310,CAT002,Home Appliances,SUP006,Morphy Richards,4556.06,6180.81,25,28,2022-12-09,1
+PRD00240,Havells Convection Microwave Oven Classic 817,CAT002,Home Appliances,SUP041,Havells,7390.73,10596.37,12,62,2021-09-05,1
+PRD00241,Bajaj Tower Air Cooler Pro 545,CAT002,Home Appliances,SUP054,Bajaj,5583.94,7381.55,19,41,2023-07-23,1
+PRD00242,Usha Garment Steamer Portable Select 563,CAT002,Home Appliances,SUP011,Usha,2557.66,3336.56,37,92,2021-03-04,1
+PRD00243,Crompton Steam Iron 1800W Select 516,CAT002,Home Appliances,SUP055,Crompton,1385.71,1936.68,38,132,2023-08-09,1
+PRD00244,Bajaj Air Fryer Digital 4.5L Plus 926,CAT002,Home Appliances,SUP006,Bajaj,5766.93,9135.72,29,27,2022-06-05,1
+PRD00245,Havells Garment Steamer Portable Select 505,CAT002,Home Appliances,SUP029,Havells,4429.31,6730.38,18,36,2021-07-28,1
+PRD00246,Havells Pop-up 4-Slice Toaster Max 573,CAT002,Home Appliances,SUP013,Havells,1239.78,1945.93,32,76,2021-04-05,1
+PRD00247,Usha Tower Air Cooler Max 696,CAT002,Home Appliances,SUP029,Usha,4992.42,8119.57,12,26,2021-04-21,1
+PRD00248,Prestige Vacuum Cleaner Handheld Max 967,CAT002,Home Appliances,SUP028,Prestige,6877.51,9547.84,11,54,2021-03-19,1
+PRD00249,Kent Garment Steamer Portable Eco 130,CAT002,Home Appliances,SUP029,Kent,3416.15,4858.0,21,38,2022-05-09,1
+PRD00250,Philips Electric Kettle 1.8L Elite 762,CAT002,Home Appliances,SUP025,Philips,2737.07,3877.74,60,136,2021-02-09,1
+PRD00251,Kent Electric Kettle 1.8L Elite 758,CAT002,Home Appliances,SUP046,Kent,7306.06,10660.28,30,59,2021-07-26,1
+PRD00252,Crompton Hand Blender & Chopper Eco 452,CAT002,Home Appliances,SUP039,Crompton,7523.25,10910.07,22,42,2022-01-11,1
+PRD00253,Philips Induction Cooktop 2000W Prime 159,CAT002,Home Appliances,SUP016,Philips,6717.07,9663.5,21,74,2022-03-04,1
+PRD00254,Havells Ionic Hair Dryer 2000W Prime 646,CAT002,Home Appliances,SUP052,Havells,6776.21,11020.14,11,73,2022-10-28,1
+PRD00255,Usha Tower Air Cooler Plus 280,CAT002,Home Appliances,SUP023,Usha,2283.27,3159.1,47,150,2021-12-23,1
+PRD00256,Prestige Multi-Cooker Electric Pan Elite 956,CAT002,Home Appliances,SUP003,Prestige,8107.05,13048.37,25,59,2023-03-16,1
+PRD00257,Philips Air Fryer Digital 4.5L Elite 716,CAT002,Home Appliances,SUP046,Philips,2145.77,3131.42,25,117,2022-03-11,1
+PRD00258,Usha Electric Kettle 1.8L Pro 122,CAT002,Home Appliances,SUP024,Usha,1594.77,2441.64,34,174,2021-09-28,1
+PRD00259,Usha Air Fryer Digital 4.5L Classic 700,CAT002,Home Appliances,SUP042,Usha,1233.0,1699.09,33,95,2024-11-16,1
+PRD00260,Prestige Hand Blender & Chopper Select 328,CAT002,Home Appliances,SUP047,Prestige,5607.87,8853.62,22,44,2023-03-06,1
+PRD00261,Kent Convection Microwave Oven Pro 286,CAT002,Home Appliances,SUP022,Kent,5118.51,8333.44,29,39,2021-08-05,1
+PRD00262,Bajaj Garment Steamer Portable Elite 455,CAT002,Home Appliances,SUP017,Bajaj,8063.44,10754.4,12,70,2023-08-01,1
+PRD00263,Havells Induction Cooktop 2000W Max 458,CAT002,Home Appliances,SUP027,Havells,2439.1,3207.01,25,81,2024-08-24,1
+PRD00264,Kent Electric Kettle 1.8L Eco 487,CAT002,Home Appliances,SUP005,Kent,3172.04,4452.38,25,75,2022-03-15,1
+PRD00265,Philips Vacuum Cleaner Handheld Prime 120,CAT002,Home Appliances,SUP047,Philips,2920.06,4797.2,29,118,2022-07-06,1
+PRD00266,Bajaj Air Fryer Digital 4.5L Select 708,CAT002,Home Appliances,SUP011,Bajaj,8085.89,13058.2,10,52,2022-10-14,1
+PRD00267,Bajaj Convection Microwave Oven Select 310,CAT002,Home Appliances,SUP020,Bajaj,8001.59,11328.41,27,71,2023-11-10,1
+PRD00268,Nivea Charcoal Face Wash 150ml Pro 502,CAT003,Personal Care,SUP006,Nivea,520.26,1061.68,34,81,2023-01-14,1
+PRD00269,L'Oreal Herbal Hair Growth Oil 200ml Elite 199,CAT003,Personal Care,SUP008,L'Oreal,99.82,151.87,97,400,2021-08-28,1
+PRD00270,Dove Herbal Hair Growth Oil 200ml Eco 600,CAT003,Personal Care,SUP024,Dove,769.06,1213.51,59,124,2022-06-13,1
+PRD00271,L'Oreal Natural Brightening Serum 30ml Pro 369,CAT003,Personal Care,SUP045,L'Oreal,418.6,660.1,94,294,2021-03-25,1
+PRD00272,Nivea Aloe Vera Calming Gel 250ml Max 784,CAT003,Personal Care,SUP034,Nivea,344.72,610.52,135,208,2021-07-27,1
+PRD00273,Beardo Gentle Body Wash 500ml Eco 686,CAT003,Personal Care,SUP058,Beardo,758.87,1306.29,30,125,2021-09-19,1
+PRD00274,Himalaya Bamboo Toothbrush Pack of 4 Max 875,CAT003,Personal Care,SUP003,Himalaya,425.76,920.1,81,398,2022-04-05,1
+PRD00275,Nivea Gentle Body Wash 500ml Classic 306,CAT003,Personal Care,SUP036,Nivea,847.9,1560.95,41,115,2021-02-13,1
+PRD00276,Beardo Gentle Body Wash 500ml Select 977,CAT003,Personal Care,SUP010,Beardo,292.67,499.9,61,351,2024-02-14,1
+PRD00277,Nivea Natural Brightening Serum 30ml Max 676,CAT003,Personal Care,SUP042,Nivea,680.25,1350.87,59,119,2024-05-13,1
+PRD00278,L'Oreal Electric Shaver & Trimmer Pro 276,CAT003,Personal Care,SUP057,L'Oreal,292.07,439.84,137,324,2024-01-13,1
+PRD00279,The Derma Co Broad Spectrum Sunscreen SPF50 Pro 863,CAT003,PERSON,SUP018,The Derma Co,445.92,704.62,107,155,2023-05-10,1
+PRD00280,Nivea Electric Shaver & Trimmer Elite 237,CAT003,Personal Care,SUP006,Nivea,311.37,605.7,101,218,2024-10-21,1
+PRD00281,L'Oreal Charcoal Face Wash 150ml Elite 943,CAT003,Personal Care,SUP051,L'Oreal,393.52,679.79,126,372,2023-01-17,1
+PRD00282,Nivea Natural Brightening Serum 30ml Prime 826,CAT003,Personal Care,SUP057,Nivea,470.23,705.96,127,375,2021-03-07,1
+PRD00283,Mamaearth Charcoal Face Wash 150ml Elite 133,CAT003,Personal Care,SUP030,Mamaearth,431.47,917.06,150,200,2023-06-27,1
+PRD00284,Dove Bamboo Toothbrush Pack of 4 Max 797,CAT003,Personal Care,SUP036,Dove,103.53,170.59,136,264,2022-08-19,1
+PRD00285,Garnier Broad Spectrum Sunscreen SPF50 Plus 957,CAT003,Personal Care,SUP011,Garnier,768.76,1499.26,30,111,2021-07-02,1
+PRD00286,The Derma Co Deep Cleansing Clay Mask Elite 762,CAT003,Personal Care,SUP031,The Derma Co,253.34,390.77,143,254,2021-11-01,1
+PRD00287,Himalaya Natural Brightening Serum 30ml Pro 329,CAT003,Personal Care,SUP055,Himalaya,274.34,550.08,99,332,2023-07-13,1
+PRD00288,L'Oreal Broad Spectrum Sunscreen SPF50 Prime 323,CAT003,Personal Care,SUP999,L'Oreal,439.36,827.89,139,251,2021-01-17,1
+PRD00289,Beardo Broad Spectrum Sunscreen SPF50 Prime 405,CAT003,Personal Care,SUP042,Beardo,607.0,1047.34,46,110,2023-05-09,1
+PRD00290,Biotique Aloe Vera Calming Gel 250ml Elite 253,CAT003,Personal Care,SUP044,Biotique,478.32,747.46,67,356,2024-11-11,1
+PRD00291,Mamaearth Natural Brightening Serum 30ml Eco 402,CAT003,Personal Care,SUP037,Mamaearth,279.76,469.9,109,338,2021-10-23,1
+PRD00292,Garnier Charcoal Face Wash 150ml Elite 802,CAT003,Personal Care,SUP043,Garnier,491.67,975.97,145,241,2023-03-27,1
+PRD00293,Himalaya Bamboo Toothbrush Pack of 4 Prime 199,CAT003,Personal Care,SUP042,Himalaya,442.5,859.61,131,345,2022-11-11,1
+PRD00294,The Derma Co Anti-Dandruff Shampoo 400ml Select 328,CAT003,Personal Care,SUP030,The Derma Co,653.04,1047.83,46,122,2023-10-10,1
+PRD00295,L'Oreal Anti-Dandruff Shampoo 400ml Pro 987,CAT003,Personal Care,SUP056,L'Oreal,568.49,1024.45,29,135,2022-09-04,1
+PRD00296,Dove Aloe Vera Calming Gel 250ml Prime 523,CAT003,Personal Care,SUP058,Dove,121.63,250.04,77,201,2023-07-19,1
+PRD00297,Himalaya Electric Shaver & Trimmer Select 983,CAT003,Personal Care,SUP004,Himalaya,631.06,1248.97,56,117,2022-06-21,1
+PRD00298,L'Oreal Hydrating Face Moisturizer 100ml Prime 314,CAT003,Personal Care,SUP028,L'Oreal,666.12,1012.57,35,137,2021-03-20,1
+PRD00299,Dove Aloe Vera Calming Gel 250ml Classic 539,CAT003,Personal Care,SUP001,Dove,823.3,1362.69,27,143,2022-12-12,1
+PRD00300,Beardo Broad Spectrum Sunscreen SPF50 Elite 118,CAT003,Personal Care,SUP007,Beardo,601.1,1106.33,40,103,2023-05-05,1
+PRD00301,Beardo Gentle Body Wash 500ml Prime 271,CAT003,Personal Care,SUP009,Beardo,130.27,189.19,97,266,2023-07-22,1
+PRD00302,L'Oreal Broad Spectrum Sunscreen SPF50 Select 868,CAT003,Personal Care,SUP009,L'Oreal,225.09,486.18,111,154,2022-04-24,1
+PRD00303,Mamaearth Charcoal Face Wash 150ml Plus 226,CAT003,Personal Care,SUP004,Mamaearth,362.28,674.18,64,246,2023-09-20,1
+PRD00304,Mamaearth Deep Cleansing Clay Mask Max 769,CAT003,Personal Care,SUP036,Mamaearth,723.81,1052.14,32,128,2024-07-04,1
+PRD00305,L'Oreal Herbal Hair Growth Oil 200ml Plus 310,CAT003,Personal Care,SUP018,L'Oreal,615.3,1134.36,44,128,2021-11-17,1
+PRD00306,Himalaya Deep Cleansing Clay Mask Classic 950,CAT003,Personal Care,SUP013,Himalaya,771.94,1349.3,32,111,2021-02-16,1
+PRD00307,The Derma Co Deep Cleansing Clay Mask Prime 951,CAT003,Personal Care,SUP036,The Derma Co,482.82,743.28,150,254,2023-03-02,1
+PRD00308,The Derma Co Electric Shaver & Trimmer Eco 438,CAT003,Personal Care,SUP032,The Derma Co,260.57,373.95,71,382,2021-10-22,1
+PRD00309,Nivea Natural Brightening Serum 30ml Max 840,CAT003,Personal Care,SUP004,Nivea,637.15,1344.75,39,133,2023-05-15,1
+PRD00310,Himalaya Anti-Dandruff Shampoo 400ml Pro 972,CAT003,Personal Care,SUP049,Himalaya,303.74,607.97,100,259,2021-02-28,1
+PRD00311,Mamaearth Hydrating Face Moisturizer 100ml Plus 779,CAT003,Personal Care,SUP024,Mamaearth,578.34,936.08,53,154,2023-12-03,1
+PRD00312,Himalaya Broad Spectrum Sunscreen SPF50 Max 510,CAT003,Personal Care,SUP057,Himalaya,388.19,662.59,109,326,2024-07-21,1
+PRD00313,Nivea Natural Brightening Serum 30ml Plus 812,CAT003,Personal Care,SUP052,Nivea,639.34,1406.36,35,88,2024-10-16,1
+PRD00314,L'Oreal Deep Cleansing Clay Mask Plus 725,CAT003,Personal Care,SUP008,L'Oreal,372.41,610.16,63,370,2022-08-16,1
+PRD00315,L'Oreal Gentle Body Wash 500ml Pro 164,CAT003,Personal Care,SUP022,L'Oreal,281.44,452.88,150,372,2022-11-28,1
+PRD00316,Beardo Bamboo Toothbrush Pack of 4 Max 543,CAT003,Personal Care,SUP053,Beardo,589.52,924.22,47,159,2024-03-27,1
+PRD00317,Mamaearth Bamboo Toothbrush Pack of 4 Pro 758,CAT003,Personal Care,SUP032,Mamaearth,799.47,1393.76,55,138,2022-02-25,1
+PRD00318,The Derma Co Broad Spectrum Sunscreen SPF50 Select 384,CAT003,Personal Care,SUP030,The Derma Co,118.77,184.33,142,246,2024-04-03,1
+PRD00319,L'Oreal Electric Shaver & Trimmer Max 977,CAT003,Personal Care,SUP027,L'Oreal,463.81,746.89,123,340,2021-02-13,1
+PRD00320,Beardo Hydrating Face Moisturizer 100ml Pro 945,CAT003,Personal Care,SUP014,Beardo,149.99,273.23,139,313,2023-09-18,1
+PRD00321,L'Oreal Aloe Vera Calming Gel 250ml Select 472,CAT003,Personal Care,SUP024,L'Oreal,715.49,1442.95,54,117,2024-12-22,1
+PRD00322,Nivea Electric Shaver & Trimmer Max 877,CAT003,Personal Care,SUP024,Nivea,587.36,839.74,47,156,2023-09-17,1
+PRD00323,Mamaearth Anti-Dandruff Shampoo 400ml Plus 604,CAT003,Personal Care,SUP013,Mamaearth,188.15,361.28,112,177,2023-10-07,1
+PRD00324,Dove Anti-Dandruff Shampoo 400ml Elite 568,CAT003,Personal Care,SUP054,Dove,714.91,1095.89,46,88,2024-01-21,1
+PRD00325,Nivea Aloe Vera Calming Gel 250ml Eco 568,CAT003,Personal Care,SUP004,Nivea,587.01,1273.47,33,138,2021-09-24,1
+PRD00326,Dove Bamboo Toothbrush Pack of 4 Eco 620,CAT003,Personal Care,SUP043,Dove,681.43,1442.32,36,168,2022-02-13,1
+PRD00327,Garnier Deep Cleansing Clay Mask Classic 528,CAT003,Personal Care,SUP029,Garnier,834.22,,40,110,2024-06-10,1
+PRD00328,Himalaya Natural Brightening Serum 30ml Classic 716,CAT003,Personal Care,SUP060,Himalaya,619.01,1206.9,44,164,2023-12-24,1
+PRD00329,The Derma Co Bamboo Toothbrush Pack of 4 Elite 314,CAT003,Personal Care,SUP012,The Derma Co,560.61,,47,161,2022-12-21,1
+PRD00330,Beardo Bamboo Toothbrush Pack of 4 Select 827,CAT003,Personal Care,SUP058,Beardo,168.86,275.94,121,299,2024-11-24,1
+PRD00331,Biotique Bamboo Toothbrush Pack of 4 Classic 927,CAT003,Personal Care,SUP013,Biotique,89.83,133.4,108,187,2021-11-02,1
+PRD00332,Himalaya Herbal Hair Growth Oil 200ml Prime 799,CAT003,Personal Care,SUP035,Himalaya,272.93,556.82,148,350,2023-04-25,1
+PRD00333,Garnier Hydrating Face Moisturizer 100ml Eco 204,CAT003,Personal Care,SUP051,Garnier,554.4,1043.83,60,103,2024-04-17,1
+PRD00334,Mamaearth Herbal Hair Growth Oil 200ml Classic 496,CAT003,Personal Care,SUP017,Mamaearth,400.76,796.78,147,230,2021-01-24,1
+PRD00335,L'Oreal Charcoal Face Wash 150ml Elite 748,CAT003,Personal Care,SUP019,L'Oreal,622.56,1156.98,59,169,2022-12-07,1
+PRD00336,Himalaya Electric Shaver & Trimmer Max 291,CAT003,Personal Care,SUP036,Himalaya,821.11,1590.59,32,123,2021-07-09,1
+PRD00337,Himalaya Herbal Hair Growth Oil 200ml Plus 698,CAT003,Personal Care,SUP060,Himalaya,731.43,1047.01,54,165,2022-01-05,1
+PRD00338,Mamaearth Broad Spectrum Sunscreen SPF50 Prime 602,CAT003,Personal Care,SUP012,Mamaearth,688.23,1223.61,29,175,2023-09-08,1
+PRD00339,Nivea Bamboo Toothbrush Pack of 4 Plus 525,CAT003,Personal Care,SUP022,Nivea,498.17,831.47,104,206,2022-11-11,1
+PRD00340,Biotique Broad Spectrum Sunscreen SPF50 Elite 870,CAT003,Personal Care,SUP023,Biotique,556.08,956.64,60,180,2021-02-22,1
+PRD00341,The Derma Co Electric Shaver & Trimmer Elite 140,CAT003,Personal Care,SUP019,The Derma Co,605.56,977.08,32,124,2023-09-24,1
+PRD00342,Beardo Hydrating Face Moisturizer 100ml Select 626,CAT003,Personal Care,SUP006,Beardo,698.17,1186.13,27,112,2022-06-17,1
+PRD00343,Himalaya Anti-Dandruff Shampoo 400ml Pro 741,CAT003,Personal Care,SUP035,Himalaya,130.41,244.94,87,371,2024-02-07,1
+PRD00344,Nivea Gentle Body Wash 500ml Plus 124,CAT003,Personal Care,SUP017,Nivea,433.6,702.67,71,168,2021-03-26,1
+PRD00345,Nivea Bamboo Toothbrush Pack of 4 Elite 364,CAT003,Personal Care,SUP044,Nivea,393.88,670.76,111,260,2023-01-13,1
+PRD00346,Beardo Anti-Dandruff Shampoo 400ml Pro 756,CAT003,Personal Care,SUP007,Beardo,634.62,927.55,27,164,2021-06-17,1
+PRD00347,Biotique Herbal Hair Growth Oil 200ml Max 388,CAT003,Personal Care,SUP035,Biotique,669.26,1133.22,50,180,2021-08-06,1
+PRD00348,Himalaya Charcoal Face Wash 150ml Classic 915,CAT003,Personal Care,SUP056,Himalaya,694.06,1231.54,34,113,2023-01-18,1
+PRD00349,Himalaya Bamboo Toothbrush Pack of 4 Max 142,CAT003,Personal Care,SUP048,Himalaya,83.87,152.26,128,290,2021-05-07,1
+PRD00350,The Derma Co Broad Spectrum Sunscreen SPF50 Classic 761,CAT003,Personal Care,SUP012,The Derma Co,735.62,1107.22,36,103,2023-04-04,1
+PRD00351,Mamaearth Aloe Vera Calming Gel 250ml Eco 760,CAT003,Personal Care,SUP038,Mamaearth,503.24,802.18,29,107,2021-04-24,1
+PRD00352,Garnier Electric Shaver & Trimmer Select 231,CAT003,Personal Care,SUP032,Garnier,596.9,930.67,43,154,2021-04-11,1
+PRD00353,Garnier Electric Shaver & Trimmer Prime 810,CAT003,Personal Care,SUP001,Garnier,529.81,948.44,48,178,2023-07-06,1
+PRD00354,The Derma Co Broad Spectrum Sunscreen SPF50 Elite 829,CAT003,Personal Care,SUP029,The Derma Co,649.66,1099.31,48,92,2023-08-15,1
+PRD00355,Biotique Broad Spectrum Sunscreen SPF50 Eco 664,CAT003,Personal Care,SUP013,Biotique,163.8,304.11,70,365,2023-03-18,1
+PRD00356,Nivea Herbal Hair Growth Oil 200ml Max 119,CAT003,Personal Care,SUP017,Nivea,734.18,1354.34,50,173,2022-01-18,1
+PRD00357,Beardo Bamboo Toothbrush Pack of 4 Eco 769,CAT003,Personal Care,SUP033,Beardo,676.9,1112.32,39,173,2023-03-15,1
+PRD00358,Nivea Bamboo Toothbrush Pack of 4 Classic 472,CAT003,Personal Care,SUP029,Nivea,466.67,873.37,138,325,2022-09-05,1
+PRD00359,Himalaya Natural Brightening Serum 30ml Plus 853,CAT003,Personal Care,SUP017,Himalaya,643.64,1383.56,27,103,2024-04-03,1
+PRD00360,The Derma Co Broad Spectrum Sunscreen SPF50 Pro 784,CAT003,Personal Care,SUP003,The Derma Co,239.22,505.68,106,249,2024-08-02,1
+PRD00361,Garnier Aloe Vera Calming Gel 250ml Max 820,CAT003,Personal Care,SUP037,Garnier,825.7,1524.53,42,169,2023-10-18,1
+PRD00362,Dove Natural Brightening Serum 30ml Classic 474,CAT003,Personal Care,SUP034,Dove,532.51,1120.03,29,141,2023-07-08,1
+PRD00363,Garnier Gentle Body Wash 500ml Select 598,CAT003,Personal Care,SUP015,Garnier,690.35,1443.62,25,139,2022-08-06,1
+PRD00364,Beardo Anti-Dandruff Shampoo 400ml Prime 316,CAT003,Personal Care,SUP027,Beardo,195.69,296.2,137,333,2021-11-08,1
+PRD00365,Nivea Broad Spectrum Sunscreen SPF50 Eco 791,CAT003,Personal Care,SUP003,Nivea,448.69,693.15,80,315,2024-01-08,1
+PRD00366,Himalaya Natural Brightening Serum 30ml Plus 744,CAT003,Personal Care,SUP034,Himalaya,474.73,994.61,78,164,2022-05-06,1
+PRD00367,Mamaearth Gentle Body Wash 500ml Prime 187,CAT003,Personal Care,SUP054,Mamaearth,246.78,450.03,120,372,2024-03-08,1
+PRD00368,Himalaya Gentle Body Wash 500ml Plus 738,CAT003,Personal Care,SUP025,Himalaya,587.93,927.52,46,133,2021-04-13,1
+PRD00369,Nivea Natural Brightening Serum 30ml Pro 307,CAT003,Personal Care,SUP012,Nivea,482.49,1020.79,147,257,2022-10-04,1
+PRD00370,Mamaearth Electric Shaver & Trimmer Max 195,CAT003,Personal Care,SUP028,Mamaearth,451.33,676.23,137,288,2021-11-21,1
+PRD00371,Dove Bamboo Toothbrush Pack of 4 Select 995,CAT003,Personal Care,SUP038,Dove,113.45,199.9,89,390,2024-07-12,1
+PRD00372,Nivea Deep Cleansing Clay Mask Classic 237,CAT003,Personal Care,SUP001,Nivea,275.98,542.7,70,222,2024-05-07,1
+PRD00373,Beardo Hydrating Face Moisturizer 100ml Max 632,CAT003,Personal Care,SUP007,Beardo,85.54,159.48,148,355,2023-07-12,1
+PRD00374,Dove Natural Brightening Serum 30ml Prime 367,CAT003,Personal Care,SUP049,Dove,738.33,1242.75,48,153,2023-11-13,1
+PRD00375,Dove Charcoal Face Wash 150ml Eco 283,CAT003,Personal Care,SUP048,Dove,365.06,650.42,92,228,2023-12-13,1
+PRD00376,Nivea Natural Brightening Serum 30ml Elite 557,CAT003,Personal Care,SUP036,Nivea,682.99,1476.13,31,102,2024-06-26,1
+PRD00377,Mamaearth Deep Cleansing Clay Mask Plus 498,CAT003,Personal Care,SUP028,Mamaearth,822.72,1177.54,30,180,2022-08-20,1
+PRD00378,Nivea Anti-Dandruff Shampoo 400ml Prime 327,CAT003,Personal Care,SUP034,Nivea,365.54,667.36,109,388,2024-10-21,1
+PRD00379,Mamaearth Herbal Hair Growth Oil 200ml Plus 755,CAT003,Personal Care,SUP051,Mamaearth,460.66,660.61,144,388,2023-04-02,1
+PRD00380,Beardo Deep Cleansing Clay Mask Elite 729,CAT003,Personal Care,SUP018,Beardo,210.5,304.64,90,317,2021-03-03,1
+PRD00381,Garnier Gentle Body Wash 500ml Classic 515,CAT003,Personal Care,SUP036,Garnier,531.28,931.15,29,86,2023-12-27,1
+PRD00382,Garnier Deep Cleansing Clay Mask Select 935,CAT003,Personal Care,SUP017,Garnier,292.91,534.11,84,266,2024-10-01,1
+PRD00383,Dove Natural Brightening Serum 30ml Max 672,CAT003,Personal Care,SUP051,Dove,135.74,216.69,74,355,2023-09-27,1
+PRD00384,Biotique Deep Cleansing Clay Mask Eco 486,CAT003,Personal Care,SUP058,Biotique,513.64,1012.08,46,174,2024-11-15,1
+PRD00385,Mamaearth Deep Cleansing Clay Mask Eco 219,CAT003,Personal Care,SUP023,Mamaearth,278.52,460.87,88,323,2022-06-14,1
+PRD00386,Beardo Bamboo Toothbrush Pack of 4 Pro 817,CAT003,Personal Care,SUP060,Beardo,720.78,1129.86,30,126,2023-02-18,1
+PRD00387,L'Oreal Natural Brightening Serum 30ml Select 462,CAT003,Personal Care,SUP013,L'Oreal,248.3,446.12,83,392,2022-08-24,1
+PRD00388,The Derma Co Charcoal Face Wash 150ml Prime 311,CAT003,Personal Care,SUP059,The Derma Co,256.49,522.1,139,241,2022-02-04,1
+PRD00389,L'Oreal Anti-Dandruff Shampoo 400ml Pro 882,CAT003,Personal Care,SUP056,L'Oreal,739.96,1606.86,55,122,2023-08-19,1
+PRD00390,L'Oreal Herbal Hair Growth Oil 200ml Plus 882,CAT003,Personal Care,SUP052,L'Oreal,785.33,1246.69,39,171,2022-01-17,1
+PRD00391,L'Oreal Gentle Body Wash 500ml Pro 614,CAT003,Personal Care,SUP030,L'Oreal,347.41,716.46,82,267,2021-12-17,1
+PRD00392,Mamaearth Broad Spectrum Sunscreen SPF50 Pro 790,CAT003,Personal Care,SUP017,Mamaearth,242.28,436.74,101,242,2023-03-18,1
+PRD00393,Biotique Charcoal Face Wash 150ml Eco 727,CAT003,Personal Care,SUP024,Biotique,344.18,526.25,114,203,2024-12-25,1
+PRD00394,Dove Broad Spectrum Sunscreen SPF50 Prime 561,CAT003,Personal Care,SUP018,Dove,218.51,327.5,133,325,2022-02-24,1
+PRD00395,Beardo Charcoal Face Wash 150ml Classic 976,CAT003,Personal Care,SUP032,Beardo,373.28,562.56,79,271,2021-03-14,1
+PRD00396,Beardo Natural Brightening Serum 30ml Select 904,CAT003,Personal Care,SUP011,Beardo,454.7,713.53,132,162,2024-02-23,1
+PRD00397,The Derma Co Hydrating Face Moisturizer 100ml Prime 587,CAT003,Personal Care,SUP036,The Derma Co,726.01,,46,108,2023-06-18,1
+PRD00398,Garnier Herbal Hair Growth Oil 200ml Pro 521,CAT003,Personal Care,SUP021,Garnier,173.35,358.79,137,200,2022-05-12,1
+PRD00399,Beardo Aloe Vera Calming Gel 250ml Eco 893,CAT003,Personal Care,SUP010,Beardo,647.13,1354.99,49,153,2023-08-21,1
+PRD00400,Garnier Natural Brightening Serum 30ml Classic 746,CAT003,Personal Care,SUP021,Garnier,551.48,920.96,29,85,2022-06-08,1
+PRD00401,Catch Organic Turmeric Powder 500g Prime 719,CAT004,Grocery,SUP034,Catch,628.4,743.9,53,174,2023-12-19,1
+PRD00402,Saffola Toor Dal Premium Unpolished 1kg Plus 288,CAT004,Grocery,SUP048,Saffola,818.06,947.11,40,159,2023-12-23,1
+PRD00403,Daawat Pure Cold Pressed Mustard Oil 1L Plus 506,CAT004,Grocery,SUP026,Daawat,138.22,158.56,120,290,2021-01-25,1
+PRD00404,Fortune Himalayan Pink Rock Salt 1kg Max 368,CAT004,Grocery,SUP019,Fortune,604.38,695.46,49,114,2022-04-24,1
+PRD00405,Aashirvaad Toor Dal Premium Unpolished 1kg Plus 639,CAT004,Grocery,SUP035,Aashirvaad,803.86,917.35,47,116,2024-08-28,1
+PRD00406,Patanjali Roasted Almonds California 500g Plus 814,CAT004,Grocery,SUP041,Patanjali,533.06,663.68,54,155,2024-09-21,1
+PRD00407,Catch Himalayan Pink Rock Salt 1kg Select 593,CAT004,Grocery,SUP010,Catch,533.4,687.91,53,114,2023-07-09,1
+PRD00408,Tata Sampann Roasted Almonds California 500g Pro 635,CAT004,Grocery,SUP045,Tata Sampann,782.92,1017.09,47,111,2024-09-01,1
+PRD00409,Patanjali Toor Dal Premium Unpolished 1kg Prime 109,CAT004,Grocery,SUP013,Patanjali,738.11,950.85,39,176,2021-09-12,1
+PRD00410,Saffola Raw Cashew Nuts Whole 500g Classic 355,CAT004,Grocery,SUP006,Saffola,192.76,245.81,109,362,2024-04-09,1
+PRD00411,Daawat Raw Cashew Nuts Whole 500g Prime 391,CAT004,Grocery,SUP009,Daawat,631.85,779.25,42,127,2022-02-06,1
+PRD00412,Fortune Roasted Almonds California 500g Eco 732,CAT004,Grocery,SUP004,Fortune,454.75,576.41,122,198,2023-01-05,1
+PRD00413,Tata Sampann Himalayan Pink Rock Salt 1kg Plus 204,CAT004,Grocery,SUP010,Tata Sampann,300.31,347.68,116,336,2021-04-03,1
+PRD00414,Patanjali Organic Basmati Rice 5kg Elite 450,CAT004,Grocery,SUP003,Patanjali,425.32,546.79,123,245,2024-12-26,1
+PRD00415,Fortune Organic Turmeric Powder 500g Plus 157,CAT004,grocery,SUP017,Fortune,286.19,345.23,129,270,2022-04-27,1
+PRD00416,Tata Sampann Raw Cashew Nuts Whole 500g Max 886,CAT004,Grocery,SUP048,Tata Sampann,691.79,833.51,53,106,2021-04-15,1
+PRD00417,Daawat Pure Cold Pressed Mustard Oil 1L Eco 498,CAT004,Grocery,SUP034,Daawat,661.71,788.29,45,95,2021-12-18,1
+PRD00418,Catch Pure Cold Pressed Mustard Oil 1L Eco 753,CAT004,Grocery,SUP041,Catch,315.43,378.6,66,371,2022-02-08,1
+PRD00419,Organic Tattva Raw Cashew Nuts Whole 500g Pro 271,CAT004,Grocery,SUP038,Organic Tattva,763.92,950.16,50,176,2022-01-02,1
+PRD00420,Patanjali Oats Rolled Breakfast 1kg Plus 480,CAT004,Grocery,SUP004,Patanjali,742.57,876.02,56,86,2023-11-02,1
+PRD00421,Aashirvaad Organic Turmeric Powder 500g Max 228,CAT004,Grocery,SUP013,Aashirvaad,486.5,579.98,131,351,2023-08-24,1
+PRD00422,Saffola Organic Basmati Rice 5kg Select 841,CAT004,Grocery,SUP035,Saffola,166.93,218.73,122,330,2024-09-10,1
+PRD00423,Patanjali Oats Rolled Breakfast 1kg Elite 680,CAT004,Grocery,SUP010,Patanjali,213.9,256.23,119,220,2022-02-17,1
+PRD00424,Catch Toor Dal Premium Unpolished 1kg Prime 654,CAT004,Grocery,SUP057,Catch,377.24,428.73,141,279,2024-12-06,1
+PRD00425,Organic Tattva Organic Basmati Rice 5kg Elite 428,CAT004,Grocery,SUP044,Organic Tattva,697.51,878.01,59,179,2024-04-17,1
+PRD00426,Aashirvaad Toor Dal Premium Unpolished 1kg Prime 430,CAT004,Grocery,SUP009,Aashirvaad,415.87,496.18,72,283,2021-01-27,1
+PRD00427,Tata Sampann Whole Wheat Flour 10kg Elite 209,CAT004,Grocery,SUP034,Tata Sampann,484.26,558.44,133,314,2024-11-16,1
+PRD00428,Catch Natural Honey Pure 500g Pro 475,CAT004,Grocery,SUP060,Catch,244.75,311.12,61,388,2022-11-16,1
+PRD00429,Patanjali Pure Cold Pressed Mustard Oil 1L Pro 469,CAT004,Grocery,SUP053,Patanjali,550.01,725.58,51,180,2023-12-02,1
+PRD00430,Catch Natural Honey Pure 500g Pro 851,CAT004,Grocery,SUP015,Catch,108.7,129.33,87,395,2021-02-24,1
+PRD00431,Saffola Himalayan Pink Rock Salt 1kg Elite 297,CAT004,Grocery,SUP050,Saffola,521.2,614.87,36,146,2024-12-04,1
+PRD00432,Organic Tattva Desi Cow Ghee Bilona 1L Eco 819,CAT004,Grocery,SUP033,Organic Tattva,647.04,845.55,35,176,2022-09-13,1
+PRD00433,Aashirvaad Organic Turmeric Powder 500g Eco 460,CAT004,Grocery,SUP053,Aashirvaad,861.75,1065.88,45,122,2024-11-14,1
+PRD00434,Organic Tattva Oats Rolled Breakfast 1kg Elite 676,CAT004,Grocery,SUP029,Organic Tattva,538.79,648.17,60,170,2023-06-15,1
+PRD00435,Tata Sampann Raw Cashew Nuts Whole 500g Pro 391,CAT004,Grocery,SUP055,Tata Sampann,584.17,718.79,44,75,2023-04-07,1
+PRD00436,Tata Sampann Organic Turmeric Powder 500g Prime 666,CAT004,Grocery,SUP010,Tata Sampann,507.7,630.05,34,87,2021-08-12,1
+PRD00437,Catch Whole Wheat Flour 10kg Select 696,CAT004,Grocery,SUP047,Catch,271.12,320.21,98,173,2024-10-07,1
+PRD00438,Organic Tattva Pure Cold Pressed Mustard Oil 1L Eco 277,CAT004,Grocery,SUP020,Organic Tattva,486.89,638.02,149,297,2021-10-21,1
+PRD00439,Saffola Organic Basmati Rice 5kg Max 898,CAT004,Grocery,SUP008,Saffola,95.61,122.61,104,375,2024-07-28,1
+PRD00440,Tata Sampann Kashmiri Red Chilli Powder 500g Classic 155,CAT004,Grocery,SUP045,Tata Sampann,320.83,366.81,129,294,2022-06-17,1
+PRD00441,Aashirvaad Kashmiri Red Chilli Powder 500g Pro 789,CAT004,Grocery,SUP019,Aashirvaad,707.08,853.01,53,171,2021-04-14,1
+PRD00442,Aashirvaad Raw Cashew Nuts Whole 500g Plus 444,CAT004,Grocery,SUP026,Aashirvaad,119.7,148.56,66,290,2024-05-03,1
+PRD00443,Saffola Himalayan Pink Rock Salt 1kg Plus 880,CAT004,Grocery,SUP048,Saffola,167.06,206.94,122,251,2022-09-20,1
+PRD00444,Daawat Himalayan Pink Rock Salt 1kg Elite 173,CAT004,Grocery,SUP027,Daawat,285.96,347.0,147,386,2021-02-22,1
+PRD00445,Organic Tattva Raw Cashew Nuts Whole 500g Select 295,CAT004,Grocery,SUP040,Organic Tattva,335.27,417.63,63,347,2023-03-12,1
+PRD00446,Aashirvaad Toor Dal Premium Unpolished 1kg Eco 145,CAT004,Grocery,SUP004,Aashirvaad,881.41,1037.38,48,94,2021-02-24,1
+PRD00447,Aashirvaad Kashmiri Red Chilli Powder 500g Prime 114,CAT004,Grocery,SUP014,Aashirvaad,355.66,458.65,99,265,2024-01-11,1
+PRD00448,Daawat Oats Rolled Breakfast 1kg Elite 659,CAT004,Grocery,SUP043,Daawat,518.56,612.68,55,154,2022-12-23,1
+PRD00449,Saffola Organic Basmati Rice 5kg Pro 361,CAT004,Grocery,SUP042,Saffola,199.14,236.21,149,308,2023-01-15,1
+PRD00450,Fortune Organic Basmati Rice 5kg Classic 776,CAT004,Grocery,SUP056,Fortune,290.54,377.7,144,242,2021-01-10,1
+PRD00451,Saffola Desi Cow Ghee Bilona 1L Elite 489,CAT004,Grocery,SUP033,Saffola,505.23,641.37,45,137,2021-03-07,1
+PRD00452,Tata Sampann Toor Dal Premium Unpolished 1kg Pro 353,CAT004,Grocery,SUP044,Tata Sampann,879.65,1046.75,56,125,2022-01-12,1
+PRD00453,Organic Tattva Organic Turmeric Powder 500g Prime 341,CAT004,Grocery,SUP057,Organic Tattva,946.37,1257.16,42,178,2021-11-09,1
+PRD00454,Tata Sampann Raw Cashew Nuts Whole 500g Prime 330,CAT004,Grocery,SUP034,Tata Sampann,182.3,238.81,144,185,2021-12-13,1
+PRD00455,Daawat Desi Cow Ghee Bilona 1L Classic 346,CAT004,Grocery,SUP009,Daawat,563.47,683.36,44,152,2023-08-18,1
+PRD00456,Aashirvaad Kashmiri Red Chilli Powder 500g Elite 983,CAT004,Grocery,SUP010,Aashirvaad,169.99,215.04,127,382,2022-07-25,1
+PRD00457,Aashirvaad Desi Cow Ghee Bilona 1L Select 169,CAT004,Grocery,SUP002,Aashirvaad,549.39,726.05,32,98,2023-03-24,1
+PRD00458,Saffola Organic Turmeric Powder 500g Classic 410,CAT004,Grocery,SUP013,Saffola,445.92,587.81,141,388,2023-03-25,1
+PRD00459,Aashirvaad Pure Cold Pressed Mustard Oil 1L Plus 126,CAT004,Grocery,SUP015,Aashirvaad,735.01,918.25,42,152,2022-10-08,1
+PRD00460,Tata Sampann Desi Cow Ghee Bilona 1L Select 181,CAT004,Grocery,SUP024,Tata Sampann,667.77,816.3,57,152,2024-12-21,1
+PRD00461,Saffola Whole Wheat Flour 10kg Eco 585,CAT004,Grocery,SUP015,Saffola,169.45,198.22,64,254,2021-05-14,1
+PRD00462,Daawat Oats Rolled Breakfast 1kg Elite 167,CAT004,Grocery,SUP056,Daawat,205.26,271.55,116,371,2024-12-11,1
+PRD00463,Daawat Toor Dal Premium Unpolished 1kg Classic 514,CAT004,Grocery,SUP048,Daawat,747.47,933.21,49,167,2023-07-20,1
+PRD00464,Tata Sampann Natural Honey Pure 500g Max 562,CAT004,Grocery,SUP999,Tata Sampann,458.49,598.64,91,282,2024-12-02,1
+PRD00465,Tata Sampann Raw Cashew Nuts Whole 500g Elite 398,CAT004,Grocery,SUP040,Tata Sampann,442.8,578.8,96,268,2022-07-10,1
+PRD00466,Aashirvaad Organic Basmati Rice 5kg Eco 949,CAT004,Grocery,SUP035,Aashirvaad,629.72,725.28,57,89,2022-10-23,1
+PRD00467,Saffola Whole Wheat Flour 10kg Classic 431,CAT004,Grocery,SUP017,Saffola,453.05,528.8,135,379,2022-08-03,1
+PRD00468,Aashirvaad Organic Turmeric Powder 500g Max 193,CAT004,Grocery,SUP033,Aashirvaad,148.32,180.53,106,171,2024-12-26,1
+PRD00469,Aashirvaad Natural Honey Pure 500g Classic 663,CAT004,Grocery,SUP010,Aashirvaad,389.45,499.21,102,294,2022-03-28,1
+PRD00470,Tata Sampann Whole Wheat Flour 10kg Classic 415,CAT004,Grocery,SUP013,Tata Sampann,325.11,416.77,117,223,2022-02-05,1
+PRD00471,Catch Organic Basmati Rice 5kg Pro 569,CAT004,Grocery,SUP038,Catch,495.35,607.66,60,305,2024-04-07,1
+PRD00472,Patanjali Desi Cow Ghee Bilona 1L Eco 519,CAT004,Grocery,SUP036,Patanjali,444.9,554.85,60,212,2023-10-21,1
+PRD00473,Tata Sampann Kashmiri Red Chilli Powder 500g Plus 251,CAT004,Grocery,SUP054,Tata Sampann,94.83,113.62,78,368,2021-11-19,1
+PRD00474,Catch Natural Honey Pure 500g Select 189,CAT004,Grocery,SUP045,Catch,89.37,108.22,82,191,2023-10-22,1
+PRD00475,Aashirvaad Oats Rolled Breakfast 1kg Eco 867,CAT004,Grocery,SUP058,Aashirvaad,568.96,749.71,30,173,2023-06-12,1
+PRD00476,Fortune Raw Cashew Nuts Whole 500g Classic 963,CAT004,Grocery,SUP027,Fortune,543.18,645.16,33,90,2023-06-17,1
+PRD00477,Daawat Himalayan Pink Rock Salt 1kg Elite 726,CAT004,Grocery,SUP045,Daawat,97.66,121.21,140,285,2021-08-24,1
+PRD00478,Catch Natural Honey Pure 500g Classic 723,CAT004,Grocery,SUP041,Catch,812.26,959.84,47,91,2024-09-24,1
+PRD00479,Patanjali Toor Dal Premium Unpolished 1kg Plus 724,CAT004,Grocery,SUP041,Patanjali,255.61,303.49,84,150,2021-01-15,1
+PRD00480,Daawat Pure Cold Pressed Mustard Oil 1L Classic 523,CAT004,Grocery,SUP045,Daawat,86.17,103.25,141,204,2021-11-07,1
+PRD00481,Catch Roasted Almonds California 500g Max 415,CAT004,Grocery,SUP047,Catch,316.76,391.79,60,179,2023-06-13,1
+PRD00482,Tata Sampann Natural Honey Pure 500g Plus 298,CAT004,Grocery,SUP009,Tata Sampann,344.12,411.59,146,272,2024-01-21,1
+PRD00483,Aashirvaad Toor Dal Premium Unpolished 1kg Eco 985,CAT004,Grocery,SUP037,Aashirvaad,530.96,634.79,51,170,2021-09-10,1
+PRD00484,Organic Tattva Oats Rolled Breakfast 1kg Pro 313,CAT004,Grocery,SUP002,Organic Tattva,567.54,678.16,47,83,2022-05-27,1
+PRD00485,Saffola Organic Turmeric Powder 500g Plus 684,CAT004,Grocery,SUP021,Saffola,593.15,693.22,32,175,2023-12-28,1
+PRD00486,Tata Sampann Oats Rolled Breakfast 1kg Prime 523,CAT004,Grocery,SUP020,Tata Sampann,123.55,161.3,107,265,2023-04-17,1
+PRD00487,Fortune Whole Wheat Flour 10kg Select 903,CAT004,Grocery,SUP010,Fortune,78.84,92.35,71,263,2021-08-17,1
+PRD00488,Organic Tattva Kashmiri Red Chilli Powder 500g Eco 850,CAT004,Grocery,SUP009,Organic Tattva,835.86,995.48,45,93,2021-09-22,1
+PRD00489,Tata Sampann Kashmiri Red Chilli Powder 500g Eco 496,CAT004,Grocery,SUP039,Tata Sampann,690.88,850.74,25,114,2021-11-28,1
+PRD00490,Organic Tattva Pure Cold Pressed Mustard Oil 1L Eco 147,CAT004,Grocery,SUP021,Organic Tattva,138.31,177.23,99,155,2023-11-07,1
+PRD00491,Daawat Kashmiri Red Chilli Powder 500g Prime 383,CAT004,Grocery,SUP008,Daawat,526.71,675.67,32,109,2022-03-09,1
+PRD00492,Fortune Organic Basmati Rice 5kg Elite 655,CAT004,Grocery,SUP011,Fortune,362.04,431.72,78,391,2023-10-08,1
+PRD00493,Catch Pure Cold Pressed Mustard Oil 1L Select 653,CAT004,Grocery,SUP004,Catch,446.5,517.33,120,381,2021-02-13,1
+PRD00494,Saffola Pure Cold Pressed Mustard Oil 1L Classic 283,CAT004,Grocery,SUP053,Saffola,682.73,893.47,53,153,2023-05-11,1
+PRD00495,Fortune Kashmiri Red Chilli Powder 500g Eco 681,CAT004,Grocery,SUP044,Fortune,164.27,212.14,149,269,2021-08-10,1
+PRD00496,Patanjali Desi Cow Ghee Bilona 1L Eco 337,CAT004,Grocery,SUP059,Patanjali,902.44,1047.75,41,121,2024-03-23,1
+PRD00497,Organic Tattva Desi Cow Ghee Bilona 1L Select 564,CAT004,Grocery,SUP011,Organic Tattva,486.19,,74,239,2024-08-28,1
+PRD00498,Organic Tattva Roasted Almonds California 500g Plus 620,CAT004,Grocery,SUP030,Organic Tattva,138.15,178.55,73,233,2021-05-18,1
+PRD00499,Saffola Raw Cashew Nuts Whole 500g Elite 735,CAT004,Grocery,SUP053,Saffola,265.54,309.01,121,248,2021-06-07,1
+PRD00500,Saffola Oats Rolled Breakfast 1kg Classic 680,CAT004,Grocery,SUP037,Saffola,757.53,936.13,40,97,2021-12-23,1
+PRD00501,Fortune Toor Dal Premium Unpolished 1kg Eco 433,CAT004,Grocery,SUP007,Fortune,547.35,707.96,36,114,2024-02-20,1
+PRD00502,Saffola Desi Cow Ghee Bilona 1L Select 606,CAT004,Grocery,SUP041,Saffola,628.72,721.0,38,179,2022-10-25,1
+PRD00503,Aashirvaad Organic Basmati Rice 5kg Plus 563,CAT004,Grocery,SUP020,Aashirvaad,525.79,634.01,53,100,2022-11-11,1
+PRD00504,Catch Natural Honey Pure 500g Classic 835,CAT004,Grocery,SUP026,Catch,934.24,1118.52,30,149,2021-10-17,1
+PRD00505,Catch Whole Wheat Flour 10kg Pro 478,CAT004,Grocery,SUP019,Catch,860.47,1140.95,25,165,2023-02-28,1
+PRD00506,Daawat Organic Basmati Rice 5kg Classic 819,CAT004,Grocery,SUP014,Daawat,579.1,725.03,49,126,2024-07-18,1
+PRD00507,Aashirvaad Desi Cow Ghee Bilona 1L Eco 242,CAT004,Grocery,SUP056,Aashirvaad,215.35,259.46,106,365,2024-03-10,1
+PRD00508,Aashirvaad Desi Cow Ghee Bilona 1L Plus 111,CAT004,Grocery,SUP009,Aashirvaad,109.93,125.21,122,318,2024-03-03,1
+PRD00509,Saffola Desi Cow Ghee Bilona 1L Eco 907,CAT004,Grocery,SUP029,Saffola,674.33,888.38,36,133,2024-09-27,1
+PRD00510,Organic Tattva Raw Cashew Nuts Whole 500g Elite 290,CAT004,Grocery,SUP018,Organic Tattva,429.42,,123,366,2022-12-17,1
+PRD00511,Organic Tattva Raw Cashew Nuts Whole 500g Pro 138,CAT004,Grocery,SUP010,Organic Tattva,559.18,709.29,32,149,2024-12-03,1
+PRD00512,Catch Oats Rolled Breakfast 1kg Eco 629,CAT004,Grocery,SUP043,Catch,115.8,151.51,71,212,2024-11-24,1
+PRD00513,Fortune Desi Cow Ghee Bilona 1L Prime 727,CAT004,Grocery,SUP037,Fortune,92.76,111.04,61,270,2024-09-16,1
+PRD00514,Organic Tattva Oats Rolled Breakfast 1kg Classic 461,CAT004,Grocery,SUP048,Organic Tattva,914.33,1177.91,43,96,2021-12-20,1
+PRD00515,Catch Roasted Almonds California 500g Pro 744,CAT004,Grocery,SUP002,Catch,473.21,551.51,66,318,2023-12-20,1
+PRD00516,Patanjali Roasted Almonds California 500g Max 229,CAT004,Grocery,SUP018,Patanjali,502.56,653.26,42,107,2022-10-09,1
+PRD00517,Tata Sampann Roasted Almonds California 500g Max 718,CAT004,Grocery,SUP012,Tata Sampann,203.03,252.82,79,318,2024-06-26,1
+PRD00518,Daawat Roasted Almonds California 500g Eco 285,CAT004,Grocery,SUP010,Daawat,768.43,1000.64,46,85,2022-10-27,1
+PRD00519,Saffola Toor Dal Premium Unpolished 1kg Classic 343,CAT004,Grocery,SUP017,Saffola,642.9,818.33,35,101,2023-01-21,1
+PRD00520,Tata Sampann Pure Cold Pressed Mustard Oil 1L Plus 575,CAT004,Grocery,SUP025,Tata Sampann,405.86,482.69,128,209,2024-11-23,1
+PRD00521,Catch Toor Dal Premium Unpolished 1kg Plus 643,CAT004,Grocery,SUP003,Catch,832.6,947.8,53,123,2023-09-22,1
+PRD00522,Organic Tattva Pure Cold Pressed Mustard Oil 1L Classic 725,CAT004,Grocery,SUP042,Organic Tattva,875.83,1139.79,46,109,2023-02-09,1
+PRD00523,Saffola Natural Honey Pure 500g Eco 891,CAT004,Grocery,SUP012,Saffola,656.14,773.23,37,141,2023-11-23,1
+PRD00524,Tata Sampann Organic Turmeric Powder 500g Pro 951,CAT004,Grocery,SUP047,Tata Sampann,106.5,128.85,127,176,2024-06-08,1
+PRD00525,Catch Roasted Almonds California 500g Elite 134,CAT004,Grocery,SUP008,Catch,66.45,76.55,136,318,2022-10-21,1
+PRD00526,Fortune Oats Rolled Breakfast 1kg Max 976,CAT004,Grocery,SUP030,Fortune,592.24,712.58,36,89,2022-05-10,1
+PRD00527,Fortune Desi Cow Ghee Bilona 1L Eco 383,CAT004,Grocery,SUP050,Fortune,741.27,938.3,45,107,2022-02-09,1
+PRD00528,Saffola Organic Basmati Rice 5kg Classic 440,CAT004,Grocery,SUP060,Saffola,946.34,1118.04,41,97,2024-02-16,1
+PRD00529,Saffola Kashmiri Red Chilli Powder 500g Plus 760,CAT004,Grocery,SUP017,Saffola,490.31,569.27,115,205,2021-08-23,1
+PRD00530,Tata Sampann Pure Cold Pressed Mustard Oil 1L Max 172,CAT004,Grocery,SUP041,Tata Sampann,562.07,663.27,53,77,2024-03-21,1
+PRD00531,Tata Sampann Organic Basmati Rice 5kg Classic 372,CAT004,Grocery,SUP050,Tata Sampann,182.2,217.65,110,297,2021-09-23,1
+PRD00532,Patanjali Toor Dal Premium Unpolished 1kg Classic 513,CAT004,Grocery,SUP045,Patanjali,808.86,1039.03,29,144,2022-01-13,1
+PRD00533,Fortune Toor Dal Premium Unpolished 1kg Select 441,CAT004,Grocery,SUP030,Fortune,662.06,799.67,30,121,2023-02-27,1
+PRD00534,Daawat Roasted Almonds California 500g Plus 667,CAT004,Grocery,SUP045,Daawat,80.59,97.09,84,226,2024-02-21,1
+PRD00535,Davidoff Isotonic Electrolyte Drink 500ml Max 747,CAT005,Beverages,SUP016,Davidoff,224.28,314.95,64,199,2021-12-19,1
+PRD00536,Tetley Cold Brew Coffee Concentrate 300ml Max 911,CAT005,Beverages,SUP022,Tetley,270.95,393.56,128,397,2024-01-02,1
+PRD00537,Paper Boat Sparkling Natural Mineral Water 750ml Pro 515,CAT005,Beverages,SUP056,Paper Boat,78.78,133.85,145,283,2024-11-28,1
+PRD00538,Real Herbal Infusion Chamomile Tea Elite 173,CAT005,Beverages,SUP016,Real,41.78,57.89,143,154,2024-10-02,1
+PRD00539,Tata Tea Green Tea Lemon Honey 100 Bags Plus 747,CAT005,Beverages,SUP053,Tata Tea,47.73,69.32,72,266,2022-10-03,1
+PRD00540,Bru Cold Pressed Mixed Fruit Juice 1L Eco 709,CAT005,Beverages,SUP026,Bru,388.62,550.54,85,259,2023-12-22,1
+PRD00541,Bru Isotonic Electrolyte Drink 500ml Plus 429,CAT005,Beverages,SUP008,Bru,405.57,685.8,65,301,2022-06-03,1
+PRD00542,Real Classic Indian Masala Chai 500g Classic 272,CAT005,Beverages,SUP051,Real,341.81,534.65,116,212,2021-03-04,1
+PRD00543,Tetley Energy Drink Sugar Free 250ml Plus 116,CAT005,Beverages,SUP038,Tetley,425.23,579.45,60,195,2021-12-21,1
+PRD00544,Tetley Classic Indian Masala Chai 500g Eco 808,CAT005,Beverages,SUP012,Tetley,82.74,114.7,94,283,2024-07-08,1
+PRD00545,Tata Tea Energy Drink Sugar Free 250ml Plus 834,CAT005,Beverages,SUP001,Tata Tea,252.45,450.85,140,361,2023-06-14,1
+PRD00546,Raw Pressery Herbal Infusion Chamomile Tea Elite 220,CAT005,Beverages,SUP041,Raw Pressery,473.9,854.43,139,242,2022-08-25,1
+PRD00547,Red Bull Premium Roasted Filter Coffee 500g Pro 298,CAT005,Beverages,SUP060,Red Bull,76.27,105.91,120,277,2022-03-22,1
+PRD00548,Tata Tea Sparkling Natural Mineral Water 750ml Select 391,CAT005,Beverages,SUP048,Tata Tea,120.36,172.01,138,356,2024-01-04,1
+PRD00549,B-Fizz Sparkling Natural Mineral Water 750ml Plus 261,CAT005,Beverages,SUP038,B-Fizz,382.4,585.62,74,168,2022-12-15,1
+PRD00550,Paper Boat Energy Drink Sugar Free 250ml Classic 303,CAT005,Beverages,SUP007,Paper Boat,364.92,639.85,89,349,2021-06-08,1
+PRD00551,Tetley Premium Roasted Filter Coffee 500g Elite 484,CAT005,Beverages,SUP014,Tetley,430.57,585.58,134,274,2021-07-05,1
+PRD00552,Davidoff Energy Drink Sugar Free 250ml Plus 496,CAT005,Beverages,SUP022,Davidoff,194.94,296.06,84,311,2023-05-07,1
+PRD00553,Tata Tea Green Tea Lemon Honey 100 Bags Pro 387,CAT005,Beverages,SUP057,Tata Tea,87.11,150.28,118,257,2022-06-08,1
+PRD00554,Real Classic Indian Masala Chai 500g Plus 691,CAT005,Beverages,SUP031,Real,466.41,805.55,71,255,2024-04-19,1
+PRD00555,Red Bull Cold Brew Coffee Concentrate 300ml Pro 847,CAT005,Beverages,SUP058,Red Bull,219.79,381.92,91,233,2024-10-08,1
+PRD00556,Real Energy Drink Sugar Free 250ml Pro 527,CAT005,Beverages,SUP026,Real,470.98,634.75,120,337,2021-07-17,1
+PRD00557,Bru Cold Brew Coffee Concentrate 300ml Eco 607,CAT005,Beverages,SUP023,Bru,134.43,210.61,61,327,2024-04-05,1
+PRD00558,Raw Pressery Classic Indian Masala Chai 500g Max 116,CAT005,Beverages,SUP050,Raw Pressery,243.3,353.1,150,267,2021-08-15,1
+PRD00559,Tetley Green Tea Lemon Honey 100 Bags Plus 908,CAT005,Beverages,SUP025,Tetley,421.56,674.89,150,312,2021-11-03,1
+PRD00560,B-Fizz Isotonic Electrolyte Drink 500ml Pro 403,CAT005,Beverages,SUP040,B-Fizz,218.79,314.33,138,288,2022-11-03,1
+PRD00561,Tata Tea Isotonic Electrolyte Drink 500ml Select 152,CAT005,Beverages,SUP042,Tata Tea,75.49,111.53,139,160,2023-06-06,1
+PRD00562,Bru Herbal Infusion Chamomile Tea Elite 241,CAT005,Beverages,SUP038,Bru,471.47,671.35,74,316,2024-12-25,1
+PRD00563,Raw Pressery Premium Roasted Filter Coffee 500g Select 461,CAT005,Beverages,SUP023,Raw Pressery,433.56,667.75,114,220,2021-02-12,1
+PRD00564,Davidoff Cold Brew Coffee Concentrate 300ml Max 581,CAT005,Beverages,SUP024,Davidoff,347.97,566.41,128,380,2023-08-20,1
+PRD00565,Raw Pressery Cold Pressed Mixed Fruit Juice 1L Eco 189,CAT005,Beverages,SUP018,Raw Pressery,61.48,107.78,96,395,2021-02-06,1
+PRD00566,Real Cold Pressed Mixed Fruit Juice 1L Eco 254,CAT005,Beverages,SUP999,Real,423.12,655.12,140,155,2023-07-22,1
+PRD00567,Davidoff Green Tea Lemon Honey 100 Bags Select 530,CAT005,Beverages,SUP052,Davidoff,226.96,365.44,97,198,2021-01-28,1
+PRD00568,B-Fizz Premium Roasted Filter Coffee 500g Select 521,CAT005,Beverages,SUP037,B-Fizz,288.31,465.88,101,274,2024-08-10,1
+PRD00569,Red Bull Green Tea Lemon Honey 100 Bags Plus 908,CAT005,Beverages,SUP019,Red Bull,143.3,219.4,96,347,2021-03-12,1
+PRD00570,Real Cold Brew Coffee Concentrate 300ml Plus 828,CAT005,Beverages,SUP008,Real,268.57,376.39,82,364,2022-03-08,1
+PRD00571,Paper Boat Sparkling Natural Mineral Water 750ml Plus 551,CAT005,BEVERA,SUP023,Paper Boat,143.49,201.22,131,331,2021-11-11,1
+PRD00572,Paper Boat Green Tea Lemon Honey 100 Bags Eco 652,CAT005,Beverages,SUP050,Paper Boat,468.84,728.84,75,385,2021-07-16,1
+PRD00573,Davidoff Green Tea Lemon Honey 100 Bags Select 259,CAT005,Beverages,SUP049,Davidoff,26.95,44.75,124,234,2023-08-10,1
+PRD00574,Real Energy Drink Sugar Free 250ml Eco 446,CAT005,Beverages,SUP026,Real,338.56,560.83,65,185,2021-05-01,1
+PRD00575,Raw Pressery Energy Drink Sugar Free 250ml Eco 465,CAT005,Beverages,SUP002,Raw Pressery,67.08,90.77,142,199,2022-05-07,1
+PRD00576,B-Fizz Cold Pressed Mixed Fruit Juice 1L Eco 793,CAT005,Beverages,SUP039,B-Fizz,330.56,451.26,125,250,2022-08-11,1
+PRD00577,B-Fizz Energy Drink Sugar Free 250ml Pro 782,CAT005,Beverages,SUP019,B-Fizz,189.28,262.74,114,244,2024-06-01,1
+PRD00578,Paper Boat Isotonic Electrolyte Drink 500ml Prime 556,CAT005,Beverages,SUP011,Paper Boat,422.81,577.23,116,339,2024-08-10,1
+PRD00579,Tetley Alphonso Mango Pulp 850g Plus 955,CAT005,Beverages,SUP005,Tetley,292.17,398.71,86,227,2024-09-11,1
+PRD00580,Tetley Energy Drink Sugar Free 250ml Max 106,CAT005,Beverages,SUP049,Tetley,211.3,372.59,113,194,2024-12-19,1
+PRD00581,Raw Pressery Green Tea Lemon Honey 100 Bags Plus 952,CAT005,Beverages,SUP032,Raw Pressery,198.71,310.86,65,360,2023-10-10,1
+PRD00582,Davidoff Herbal Infusion Chamomile Tea Elite 127,CAT005,Beverages,SUP043,Davidoff,385.0,535.32,98,394,2024-02-21,1
+PRD00583,Tetley Classic Indian Masala Chai 500g Plus 603,CAT005,Beverages,SUP039,Tetley,437.59,704.61,63,180,2023-08-03,1
+PRD00584,Davidoff Isotonic Electrolyte Drink 500ml Classic 989,CAT005,Beverages,SUP047,Davidoff,142.35,232.29,148,359,2021-06-17,1
+PRD00585,Tata Tea Energy Drink Sugar Free 250ml Prime 266,CAT005,Beverages,SUP004,Tata Tea,289.65,401.86,119,374,2022-06-06,1
+PRD00586,Paper Boat Classic Indian Masala Chai 500g Classic 751,CAT005,Beverages,SUP050,Paper Boat,440.01,648.21,97,224,2021-09-07,1
+PRD00587,Bru Green Tea Lemon Honey 100 Bags Plus 656,CAT005,Beverages,SUP045,Bru,171.79,250.15,147,354,2023-05-22,1
+PRD00588,Bru Isotonic Electrolyte Drink 500ml Select 943,CAT005,Beverages,SUP059,Bru,90.39,125.09,96,245,2024-07-11,1
+PRD00589,Bru Green Tea Lemon Honey 100 Bags Elite 258,CAT005,Beverages,SUP059,Bru,254.04,435.23,131,307,2021-07-15,1
+PRD00590,Bru Cold Pressed Mixed Fruit Juice 1L Plus 117,CAT005,Beverages,SUP049,Bru,243.18,353.62,106,185,2024-10-17,1
+PRD00591,Real Isotonic Electrolyte Drink 500ml Prime 129,CAT005,Beverages,SUP020,Real,363.73,500.81,76,369,2022-12-08,1
+PRD00592,Raw Pressery Green Tea Lemon Honey 100 Bags Plus 180,CAT005,Beverages,SUP028,Raw Pressery,218.29,365.4,74,169,2021-08-25,1
+PRD00593,Raw Pressery Sparkling Natural Mineral Water 750ml Max 133,CAT005,Beverages,SUP005,Raw Pressery,385.84,596.07,67,270,2021-05-02,1
+PRD00594,Tata Tea Classic Indian Masala Chai 500g Max 901,CAT005,Beverages,SUP023,Tata Tea,81.33,129.17,135,380,2022-03-22,1
+PRD00595,Bru Sparkling Natural Mineral Water 750ml Plus 966,CAT005,Beverages,SUP033,Bru,364.52,524.85,134,239,2023-03-28,1
+PRD00596,Raw Pressery Energy Drink Sugar Free 250ml Max 201,CAT005,Beverages,SUP058,Raw Pressery,397.91,666.12,127,205,2022-05-06,1
+PRD00597,Tata Tea Herbal Infusion Chamomile Tea Max 319,CAT005,Beverages,SUP007,Tata Tea,443.82,765.55,120,243,2022-08-22,1
+PRD00598,Paper Boat Green Tea Lemon Honey 100 Bags Classic 534,CAT005,Beverages,SUP008,Paper Boat,122.49,173.87,74,344,2023-02-15,1
+PRD00599,Real Herbal Infusion Chamomile Tea Eco 880,CAT005,Beverages,SUP025,Real,189.37,273.52,65,171,2023-08-04,1
+PRD00600,Davidoff Classic Indian Masala Chai 500g Prime 803,CAT005,Beverages,SUP055,Davidoff,469.16,709.55,130,254,2023-07-07,1
+PRD00601,Davidoff Cold Pressed Mixed Fruit Juice 1L Select 283,CAT005,Beverages,SUP043,Davidoff,30.82,50.1,146,176,2024-08-17,1
+PRD00602,Bru Cold Pressed Mixed Fruit Juice 1L Plus 504,CAT005,Beverages,SUP013,Bru,207.28,328.03,73,339,2022-02-12,1
+PRD00603,Raw Pressery Isotonic Electrolyte Drink 500ml Classic 225,CAT005,Beverages,SUP023,Raw Pressery,130.96,196.91,123,221,2023-11-13,1
+PRD00604,Tetley Cold Brew Coffee Concentrate 300ml Eco 623,CAT005,Beverages,SUP015,Tetley,151.9,254.69,73,181,2023-08-16,1
+PRD00605,Tata Tea Green Tea Lemon Honey 100 Bags Max 855,CAT005,Beverages,SUP044,Tata Tea,49.05,66.61,146,156,2022-07-20,1
+PRD00606,Real Isotonic Electrolyte Drink 500ml Prime 736,CAT005,Beverages,SUP019,Real,308.57,516.03,144,342,2024-08-07,1
+PRD00607,Davidoff Cold Brew Coffee Concentrate 300ml Prime 655,CAT005,Beverages,SUP025,Davidoff,181.35,313.72,129,154,2021-07-04,1
+PRD00608,Paper Boat Cold Brew Coffee Concentrate 300ml Classic 553,CAT005,beverages,SUP032,Paper Boat,234.14,314.95,131,318,2023-12-06,1
+PRD00609,Real Alphonso Mango Pulp 850g Prime 832,CAT005,Beverages,SUP044,Real,202.03,338.3,132,322,2024-11-18,1
+PRD00610,Davidoff Herbal Infusion Chamomile Tea Eco 675,CAT005,Beverages,SUP040,Davidoff,413.73,637.82,110,217,2024-10-13,1
+PRD00611,Red Bull Isotonic Electrolyte Drink 500ml Select 162,CAT005,Beverages,SUP025,Red Bull,37.81,51.03,106,239,2021-11-11,1
+PRD00612,Tetley Cold Pressed Mixed Fruit Juice 1L Select 465,CAT005,Beverages,SUP038,Tetley,212.43,287.57,91,213,2022-11-10,1
+PRD00613,Bru Cold Pressed Mixed Fruit Juice 1L Prime 217,CAT005,Beverages,SUP028,Bru,178.61,239.41,101,159,2024-11-28,1
+PRD00614,B-Fizz Energy Drink Sugar Free 250ml Classic 373,CAT005,Beverages,SUP021,B-Fizz,34.28,52.25,62,231,2024-10-13,1
+PRD00615,Bru Energy Drink Sugar Free 250ml Eco 202,CAT005,Beverages,SUP020,Bru,339.34,478.74,123,278,2023-03-20,1
+PRD00616,Tetley Isotonic Electrolyte Drink 500ml Elite 608,CAT005,Beverages,SUP004,Tetley,314.13,565.82,69,365,2022-05-09,1
+PRD00617,Tetley Classic Indian Masala Chai 500g Elite 739,CAT005,Beverages,SUP037,Tetley,363.01,496.18,134,174,2023-05-03,1
+PRD00618,Davidoff Herbal Infusion Chamomile Tea Classic 314,CAT005,Beverages,SUP035,Davidoff,183.03,249.13,98,279,2023-07-22,1
+PRD00619,Raw Pressery Isotonic Electrolyte Drink 500ml Classic 511,CAT005,Beverages,SUP046,Raw Pressery,139.33,215.37,145,345,2022-01-21,1
+PRD00620,Real Herbal Infusion Chamomile Tea Eco 318,CAT005,Beverages,SUP041,Real,325.67,556.49,119,218,2024-10-24,1
+PRD00621,B-Fizz Sparkling Natural Mineral Water 750ml Elite 473,CAT005,Beverages,SUP021,B-Fizz,235.43,335.41,147,345,2023-07-14,1
+PRD00622,Raw Pressery Cold Pressed Mixed Fruit Juice 1L Classic 373,CAT005,Beverages,SUP008,Raw Pressery,399.79,644.0,92,325,2022-07-08,1
+PRD00623,Raw Pressery Green Tea Lemon Honey 100 Bags Pro 351,CAT005,Beverages,SUP058,Raw Pressery,387.66,563.55,122,293,2024-07-21,1
+PRD00624,Raw Pressery Sparkling Natural Mineral Water 750ml Plus 379,CAT005,Beverages,SUP003,Raw Pressery,87.08,124.7,95,318,2022-11-28,1
+PRD00625,Tata Tea Cold Brew Coffee Concentrate 300ml Pro 980,CAT005,Beverages,SUP043,Tata Tea,432.91,629.94,98,371,2021-07-12,1
+PRD00626,Tetley Cold Pressed Mixed Fruit Juice 1L Plus 341,CAT005,Beverages,SUP016,Tetley,75.93,125.9,75,283,2023-08-03,1
+PRD00627,Bru Energy Drink Sugar Free 250ml Select 437,CAT005,Beverages,SUP007,Bru,403.71,670.0,90,389,2024-04-05,1
+PRD00628,Raw Pressery Green Tea Lemon Honey 100 Bags Prime 550,CAT005,Beverages,SUP021,Raw Pressery,210.81,365.09,67,275,2023-12-04,1
+PRD00629,Tetley Herbal Infusion Chamomile Tea Eco 799,CAT005,Beverages,SUP053,Tetley,137.09,197.41,78,242,2024-12-12,1
+PRD00630,Tata Tea Classic Indian Masala Chai 500g Pro 961,CAT005,Beverages,SUP025,Tata Tea,361.45,612.41,66,326,2022-05-18,1
+PRD00631,Paper Boat Classic Indian Masala Chai 500g Max 647,CAT005,Beverages,SUP006,Paper Boat,419.46,725.12,109,152,2024-05-10,1
+PRD00632,Red Bull Premium Roasted Filter Coffee 500g Elite 980,CAT005,Beverages,SUP056,Red Bull,430.06,758.72,140,231,2024-01-09,1
+PRD00633,Davidoff Cold Pressed Mixed Fruit Juice 1L Eco 854,CAT005,Beverages,SUP017,Davidoff,212.9,365.95,114,374,2021-03-23,1
+PRD00634,Bru Herbal Infusion Chamomile Tea Select 530,CAT005,Beverages,SUP042,Bru,298.96,509.03,101,266,2021-01-21,1
+PRD00635,Davidoff Green Tea Lemon Honey 100 Bags Plus 103,CAT005,Beverages,SUP016,Davidoff,207.3,332.03,100,297,2021-02-06,1
+PRD00636,Real Herbal Infusion Chamomile Tea Classic 911,CAT005,Beverages,SUP053,Real,452.44,685.82,77,216,2022-11-19,1
+PRD00637,Red Bull Isotonic Electrolyte Drink 500ml Elite 186,CAT005,Beverages,SUP060,Red Bull,213.6,299.32,108,391,2022-01-01,1
+PRD00638,Raw Pressery Herbal Infusion Chamomile Tea Max 573,CAT005,Beverages,SUP039,Raw Pressery,115.21,188.95,81,162,2024-10-14,1
+PRD00639,Real Classic Indian Masala Chai 500g Max 476,CAT005,Beverages,SUP044,Real,102.41,160.88,61,333,2024-08-27,1
+PRD00640,Bru Cold Brew Coffee Concentrate 300ml Elite 830,CAT005,Beverages,SUP028,Bru,117.43,209.4,94,223,2024-07-05,1
+PRD00641,Raw Pressery Premium Roasted Filter Coffee 500g Prime 844,CAT005,Beverages,SUP017,Raw Pressery,333.12,499.93,112,352,2022-01-10,1
+PRD00642,Davidoff Premium Roasted Filter Coffee 500g Elite 478,CAT005,Beverages,SUP021,Davidoff,290.22,467.68,70,152,2024-03-28,1
+PRD00643,Raw Pressery Alphonso Mango Pulp 850g Classic 825,CAT005,Beverages,SUP060,Raw Pressery,217.6,345.09,69,174,2021-01-11,1
+PRD00644,Davidoff Premium Roasted Filter Coffee 500g Select 720,CAT005,Beverages,SUP033,Davidoff,452.39,812.84,136,331,2021-01-09,1
+PRD00645,Tetley Energy Drink Sugar Free 250ml Prime 504,CAT005,Beverages,SUP033,Tetley,330.42,456.66,131,160,2022-05-06,1
+PRD00646,Paper Boat Cold Brew Coffee Concentrate 300ml Eco 235,CAT005,Beverages,SUP003,Paper Boat,65.79,108.22,115,186,2023-02-11,1
+PRD00647,Davidoff Green Tea Lemon Honey 100 Bags Prime 865,CAT005,Beverages,SUP028,Davidoff,189.07,284.75,93,306,2023-09-11,1
+PRD00648,Paper Boat Green Tea Lemon Honey 100 Bags Eco 882,CAT005,Beverages,SUP010,Paper Boat,457.27,715.75,144,312,2024-01-07,1
+PRD00649,Raw Pressery Sparkling Natural Mineral Water 750ml Plus 136,CAT005,Beverages,SUP029,Raw Pressery,238.96,333.14,119,261,2021-08-02,1
+PRD00650,B-Fizz Isotonic Electrolyte Drink 500ml Eco 568,CAT005,Beverages,SUP056,B-Fizz,249.31,429.23,78,181,2023-02-07,1
+PRD00651,Real Classic Indian Masala Chai 500g Plus 867,CAT005,Beverages,SUP034,Real,256.48,368.8,144,299,2022-10-01,1
+PRD00652,Real Energy Drink Sugar Free 250ml Classic 178,CAT005,Beverages,SUP044,Real,137.0,210.65,72,377,2023-01-10,1
+PRD00653,Tetley Cold Pressed Mixed Fruit Juice 1L Select 704,CAT005,Beverages,SUP054,Tetley,447.76,614.39,101,189,2021-02-15,1
+PRD00654,Davidoff Cold Brew Coffee Concentrate 300ml Prime 708,CAT005,Beverages,SUP047,Davidoff,324.39,474.17,65,317,2024-06-24,1
+PRD00655,Real Energy Drink Sugar Free 250ml Elite 983,CAT005,Beverages,SUP036,Real,47.15,75.89,101,354,2021-12-03,1
+PRD00656,Tetley Energy Drink Sugar Free 250ml Max 508,CAT005,Beverages,SUP025,Tetley,141.1,201.0,111,172,2021-04-06,1
+PRD00657,Red Bull Alphonso Mango Pulp 850g Plus 223,CAT005,Beverages,SUP007,Red Bull,160.84,272.71,99,381,2022-06-22,1
+PRD00658,B-Fizz Isotonic Electrolyte Drink 500ml Elite 601,CAT005,Beverages,SUP028,B-Fizz,227.68,338.62,94,294,2024-02-25,1
+PRD00659,Real Isotonic Electrolyte Drink 500ml Classic 745,CAT005,Beverages,SUP042,Real,218.84,294.97,103,399,2024-11-08,1
+PRD00660,Davidoff Green Tea Lemon Honey 100 Bags Max 397,CAT005,BEVERA,SUP058,Davidoff,238.04,324.23,121,226,2022-03-22,1
+PRD00661,Raw Pressery Classic Indian Masala Chai 500g Classic 402,CAT005,Beverages,SUP027,Raw Pressery,283.68,443.39,65,281,2021-09-14,1
+PRD00662,Davidoff Cold Pressed Mixed Fruit Juice 1L Prime 463,CAT005,Beverages,SUP030,Davidoff,140.96,192.14,124,154,2021-12-22,1
+PRD00663,Real Green Tea Lemon Honey 100 Bags Classic 146,CAT005,Beverages,SUP040,Real,62.9,109.46,98,230,2024-11-15,1
+PRD00664,Paper Boat Classic Indian Masala Chai 500g Plus 316,CAT005,Beverages,SUP002,Paper Boat,109.21,181.84,137,216,2021-07-18,1
+PRD00665,Tetley Sparkling Natural Mineral Water 750ml Max 113,CAT005,Beverages,SUP053,Tetley,103.14,157.57,148,253,2024-05-20,1
+PRD00666,Paper Boat Energy Drink Sugar Free 250ml Classic 923,CAT005,Beverages,SUP013,Paper Boat,162.71,224.43,61,198,2021-01-23,1
+PRD00667,Raw Pressery Sparkling Natural Mineral Water 750ml Eco 764,CAT005,Beverages,SUP050,Raw Pressery,91.05,129.77,140,369,2022-02-10,1
+PRD00668,Milton Fine Bone China Dinner Set 24 Pcs Eco 532,CAT006,Home & Kitchen,SUP002,Milton,216.54,302.1,79,339,2024-08-16,1
+PRD00669,Borosil Fine Bone China Dinner Set 24 Pcs Elite 401,CAT006,Home & Kitchen,SUP055,Borosil,1886.76,3235.01,28,117,2021-02-21,1
+PRD00670,Signoraware Bamboo Cutting Board Set Eco 854,CAT006,Home & Kitchen,SUP033,Signoraware,1914.92,3171.53,43,79,2024-07-16,1
+PRD00671,Borosil Fine Bone China Dinner Set 24 Pcs Pro 640,CAT006,Home & Kitchen,SUP057,Borosil,208.01,327.72,130,166,2023-11-14,1
+PRD00672,Hawkins Fine Bone China Dinner Set 24 Pcs Eco 737,CAT006,Home & Kitchen,SUP013,Hawkins,3013.84,4427.9,23,26,2022-05-24,1
+PRD00673,Vinod Fine Bone China Dinner Set 24 Pcs Eco 337,CAT006,Home & Kitchen,SUP047,Vinod,1698.29,2685.18,46,152,2024-03-10,1
+PRD00674,Signoraware Bamboo Cutting Board Set Select 915,CAT006,Home & Kitchen,SUP048,Signoraware,1590.59,2861.74,35,154,2022-05-23,1
+PRD00675,Wonderchef Triply Stainless Steel Kadhai 24cm Plus 277,CAT006,Home & Kitchen,SUP016,Wonderchef,758.43,1206.06,31,176,2024-08-10,1
+PRD00676,Prestige Airtight Glass Container Set of 4 Pro 467,CAT006,Home & Kitchen,SUP028,Prestige,2836.76,4180.37,35,97,2021-02-11,1
+PRD00677,Borosil Triply Stainless Steel Kadhai 24cm Max 675,CAT006,Home & Kitchen,SUP057,Borosil,833.49,1193.37,46,175,2023-01-25,1
+PRD00678,Cello Double Wall Coffee Mug Set of 2 Plus 973,CAT006,Home & Kitchen,SUP030,Cello,2254.91,3485.6,31,165,2021-08-26,1
+PRD00679,Hawkins Triply Stainless Steel Kadhai 24cm Max 943,CAT006,Home & Kitchen,SUP011,Hawkins,1865.54,2876.53,35,155,2021-04-12,1
+PRD00680,Wonderchef Stainless Steel Insulated Water Bottle 1L Eco 850,CAT006,Home & Kitchen,SUP013,Wonderchef,2805.0,3900.49,48,117,2022-02-28,1
+PRD00681,Signoraware Fine Bone China Dinner Set 24 Pcs Pro 351,CAT006,Home & Kitchen,SUP024,Signoraware,2696.18,4114.63,43,139,2022-02-09,1
+PRD00682,Vinod Bamboo Cutting Board Set Elite 255,CAT006,Home & Kitchen,SUP058,Vinod,2447.28,3799.71,39,92,2024-07-14,1
+PRD00683,Vinod Fine Bone China Dinner Set 24 Pcs Pro 553,CAT006,Home & Kitchen,SUP026,Vinod,594.03,794.15,58,83,2021-06-11,1
+PRD00684,Signoraware Non-Stick Granite Frying Pan 26cm Pro 502,CAT006,Home & Kitchen,SUP052,Signoraware,2465.54,3989.77,34,148,2021-11-23,1
+PRD00685,Cello Double Wall Coffee Mug Set of 2 Classic 511,CAT006,Home & Kitchen,SUP053,Cello,2851.64,4676.03,44,167,2023-06-01,1
+PRD00686,Milton Stainless Steel Insulated Water Bottle 1L Classic 556,CAT006,Home & Kitchen,SUP050,Milton,2113.83,3692.38,53,164,2023-11-13,1
+PRD00687,Cello Airtight Glass Container Set of 4 Max 137,CAT006,Home & Kitchen,SUP033,Cello,1789.17,2662.45,33,141,2023-04-03,1
+PRD00688,Cello Double Wall Coffee Mug Set of 2 Select 875,CAT006,Home & Kitchen,SUP050,Cello,2088.84,2802.62,59,150,2023-04-27,1
+PRD00689,Signoraware Stainless Steel Insulated Water Bottle 1L Max 849,CAT006,Home & Kitchen,SUP049,Signoraware,332.83,492.79,140,279,2023-02-02,1
+PRD00690,Wonderchef Triply Stainless Steel Kadhai 24cm Prime 686,CAT006,Home & Kitchen,SUP019,Wonderchef,2397.42,3635.92,40,178,2022-06-10,1
+PRD00691,Signoraware Non-Stick Granite Frying Pan 26cm Elite 207,CAT006,Home & Kitchen,SUP028,Signoraware,1149.93,1815.13,48,133,2021-03-23,1
+PRD00692,Hawkins Bamboo Cutting Board Set Max 163,CAT006,Home & Kitchen,SUP034,Hawkins,1445.9,1997.13,38,132,2021-06-22,1
+PRD00693,Signoraware Bamboo Cutting Board Set Prime 698,CAT006,Home & Kitchen,SUP053,Signoraware,1671.42,2512.22,53,163,2024-12-14,1
+PRD00694,Milton Non-Stick Granite Frying Pan 26cm Plus 596,CAT006,Home & Kitchen,SUP030,Milton,2319.01,3202.51,57,142,2021-12-07,1
+PRD00695,Prestige Fine Bone China Dinner Set 24 Pcs Plus 672,CAT006,Home & Kitchen,SUP019,Prestige,1276.46,2280.88,51,89,2021-06-19,1
+PRD00696,Milton Hard Anodized Pressure Cooker 3L Max 480,CAT006,Home & Kitchen,SUP051,Milton,1080.02,1599.77,43,137,2021-03-05,1
+PRD00697,Prestige Bamboo Cutting Board Set Prime 390,CAT006,Home & Kitchen,SUP005,Prestige,807.52,1377.61,56,75,2021-09-12,1
+PRD00698,Signoraware Hard Anodized Pressure Cooker 3L Eco 686,CAT006,Home & Kitchen,SUP047,Signoraware,1094.59,1659.66,46,175,2024-08-27,1
+PRD00699,Milton Non-Stick Granite Frying Pan 26cm Eco 879,CAT006,Home & Kitchen,SUP058,Milton,1522.28,2305.84,45,86,2024-07-08,1
+PRD00700,Vinod Bamboo Cutting Board Set Pro 786,CAT006,Home & Kitchen,SUP051,Vinod,2864.63,4752.07,30,96,2021-10-21,1
+PRD00701,Hawkins Stainless Steel Insulated Water Bottle 1L Max 297,CAT006,Home & Kitchen,SUP058,Hawkins,3063.26,4774.16,11,61,2022-08-17,1
+PRD00702,Hawkins Hard Anodized Pressure Cooker 3L Plus 119,CAT006,Home & Kitchen,SUP003,Hawkins,988.64,1394.73,53,85,2023-07-19,1
+PRD00703,Prestige Fine Bone China Dinner Set 24 Pcs Select 547,CAT006,Home & Kitchen,SUP008,Prestige,700.55,940.1,58,115,2024-05-03,1
+PRD00704,Milton Triply Stainless Steel Kadhai 24cm Prime 247,CAT006,Home & Kitchen,SUP004,Milton,707.14,1185.8,34,114,2024-11-06,1
+PRD00705,Milton Rotating Spice Rack 16 Jars Pro 830,CAT006,Home & Kitchen,SUP025,Milton,328.43,488.73,100,186,2024-06-09,1
+PRD00706,Prestige Triply Stainless Steel Kadhai 24cm Elite 345,CAT006,Home & Kitchen,SUP004,Prestige,2444.01,3862.25,56,140,2024-02-09,1
+PRD00707,Wonderchef Rotating Spice Rack 16 Jars Classic 167,CAT006,Home & Kitchen,SUP044,Wonderchef,1626.72,2433.38,39,77,2023-09-19,1
+PRD00708,Borosil Triply Stainless Steel Kadhai 24cm Plus 411,CAT006,Home & Kitchen,SUP011,Borosil,1883.15,2849.79,57,101,2022-06-18,1
+PRD00709,Signoraware Airtight Glass Container Set of 4 Eco 142,CAT006,Home & Kitchen,SUP060,Signoraware,153.05,232.93,139,224,2022-01-02,1
+PRD00710,Cello Fine Bone China Dinner Set 24 Pcs Prime 959,CAT006,Home & Kitchen,SUP048,Cello,2223.99,4042.5,38,149,2023-01-06,1
+PRD00711,Hawkins Double Wall Coffee Mug Set of 2 Prime 191,CAT006,Home & Kitchen,SUP040,Hawkins,1355.68,1868.86,33,167,2023-07-07,1
+PRD00712,Vinod Double Wall Coffee Mug Set of 2 Select 750,CAT006,Home & Kitchen,SUP022,Vinod,947.15,1580.0,53,109,2022-11-11,1
+PRD00713,Wonderchef Airtight Glass Container Set of 4 Select 116,CAT006,Home & Kitchen,SUP044,Wonderchef,2937.76,4061.86,25,152,2024-01-01,1
+PRD00714,Signoraware Non-Stick Granite Frying Pan 26cm Eco 880,CAT006,Home & Kitchen,SUP044,Signoraware,1348.01,1837.1,29,143,2021-11-15,1
+PRD00715,Vinod Triply Stainless Steel Kadhai 24cm Classic 947,CAT006,Home & Kitchen,SUP029,Vinod,1984.0,2949.53,25,90,2024-06-07,1
+PRD00716,Borosil Hard Anodized Pressure Cooker 3L Pro 876,CAT006,Home & Kitchen,SUP020,Borosil,1007.46,1780.84,47,99,2021-10-21,1
+PRD00717,Borosil Airtight Glass Container Set of 4 Eco 471,CAT006,Home & Kitchen,SUP053,Borosil,262.23,402.54,150,330,2022-01-07,1
+PRD00718,Hawkins Bamboo Cutting Board Set Prime 682,CAT006,Home & Kitchen,SUP999,Hawkins,1675.99,2341.08,37,159,2022-02-19,1
+PRD00719,Milton Triply Stainless Steel Kadhai 24cm Prime 683,CAT006,Home & Kitchen,SUP035,Milton,2759.21,4808.67,42,99,2021-12-22,1
+PRD00720,Wonderchef Stainless Steel Insulated Water Bottle 1L Pro 537,CAT006,Home & Kitchen,SUP008,Wonderchef,2104.95,3749.56,28,116,2024-07-09,1
+PRD00721,Wonderchef Double Wall Coffee Mug Set of 2 Eco 470,CAT006,Home & Kitchen,SUP029,Wonderchef,1727.63,2330.52,39,81,2023-07-18,1
+PRD00722,Prestige Rotating Spice Rack 16 Jars Classic 299,CAT006,Home & Kitchen,SUP005,Prestige,1170.85,2039.88,26,169,2022-12-14,1
+PRD00723,Borosil Airtight Glass Container Set of 4 Plus 437,CAT006,Home & Kitchen,SUP002,Borosil,1097.96,1757.3,31,78,2024-07-26,1
+PRD00724,Cello Rotating Spice Rack 16 Jars Elite 210,CAT006,Home & Kitchen,SUP016,Cello,1594.41,2856.14,28,180,2023-09-26,1
+PRD00725,Wonderchef Triply Stainless Steel Kadhai 24cm Max 740,CAT006,Home & Kitchen,SUP045,Wonderchef,1511.69,2084.99,28,79,2024-06-28,1
+PRD00726,Milton Triply Stainless Steel Kadhai 24cm Pro 921,CAT006,Home & Kitchen,SUP036,Milton,1497.85,2171.72,52,83,2021-11-02,1
+PRD00727,Cello Hard Anodized Pressure Cooker 3L Classic 511,CAT006,Home & Kitchen,SUP030,Cello,442.28,737.62,89,371,2021-08-13,1
+PRD00728,Hawkins Bamboo Cutting Board Set Select 766,CAT006,Home & Kitchen,SUP007,Hawkins,3009.63,5071.72,24,58,2023-10-07,1
+PRD00729,Prestige Triply Stainless Steel Kadhai 24cm Max 707,CAT006,Home & Kitchen,SUP031,Prestige,2557.72,3595.95,33,156,2023-06-14,1
+PRD00730,Milton Fine Bone China Dinner Set 24 Pcs Elite 240,CAT006,Home & Kitchen,SUP049,Milton,2580.93,3497.66,44,149,2024-09-21,1
+PRD00731,Cello Rotating Spice Rack 16 Jars Plus 250,CAT006,Home & Kitchen,SUP043,Cello,1582.05,2513.85,43,122,2021-09-19,1
+PRD00732,Prestige Non-Stick Granite Frying Pan 26cm Elite 619,CAT006,Home & Kitchen,SUP041,Prestige,2648.51,4150.55,28,129,2023-04-07,1
+PRD00733,Hawkins Airtight Glass Container Set of 4 Select 293,CAT006,Home & Kitchen,SUP022,Hawkins,2186.97,3579.07,54,151,2023-10-19,1
+PRD00734,Signoraware Stainless Steel Insulated Water Bottle 1L Select 266,CAT006,Home & Kitchen,SUP015,Signoraware,469.79,817.34,65,276,2022-01-21,1
+PRD00735,Wonderchef Airtight Glass Container Set of 4 Elite 344,CAT006,Home & Kitchen,SUP012,Wonderchef,1616.28,2710.38,46,178,2024-04-13,1
+PRD00736,Vinod Hard Anodized Pressure Cooker 3L Pro 175,CAT006,Home & Kitchen,SUP038,Vinod,1241.55,1942.77,34,112,2024-04-21,1
+PRD00737,Prestige Rotating Spice Rack 16 Jars Pro 303,CAT006,Home & Kitchen,SUP036,Prestige,753.37,1053.41,41,167,2022-06-28,1
+PRD00738,Milton Airtight Glass Container Set of 4 Elite 122,CAT006,Home & Kitchen,SUP051,Milton,687.04,984.8,31,77,2022-07-21,1
+PRD00739,Vinod Triply Stainless Steel Kadhai 24cm Elite 412,CAT006,Home & Kitchen,SUP040,Vinod,1541.42,2279.96,48,159,2022-09-26,1
+PRD00740,Hawkins Bamboo Cutting Board Set Max 247,CAT006,Home & Kitchen,SUP021,Hawkins,2842.31,3926.7,37,99,2024-12-12,1
+PRD00741,Borosil Bamboo Cutting Board Set Pro 881,CAT006,Home & Kitchen,SUP004,Borosil,2028.89,2848.85,59,112,2022-06-08,1
+PRD00742,Milton Stainless Steel Insulated Water Bottle 1L Eco 314,CAT006,Home & Kitchen,SUP033,Milton,2368.26,3993.24,29,96,2024-11-25,1
+PRD00743,Wonderchef Rotating Spice Rack 16 Jars Eco 283,CAT006,Home & Kitchen,SUP038,Wonderchef,1131.56,1675.83,55,166,2024-08-09,1
+PRD00744,Prestige Bamboo Cutting Board Set Elite 324,CAT006,Home & Kitchen,SUP057,Prestige,2879.4,4365.48,40,125,2022-05-14,1
+PRD00745,Milton Bamboo Cutting Board Set Select 360,CAT006,Home & Kitchen,SUP015,Milton,1829.18,2529.52,30,112,2024-09-12,1
+PRD00746,Wonderchef Hard Anodized Pressure Cooker 3L Select 536,CAT006,Home & Kitchen,SUP025,Wonderchef,1526.01,2299.94,48,177,2024-06-09,1
+PRD00747,Milton Hard Anodized Pressure Cooker 3L Eco 339,CAT006,Home & Kitchen,SUP007,Milton,960.16,1306.66,30,112,2021-05-08,1
+PRD00748,Hawkins Triply Stainless Steel Kadhai 24cm Select 139,CAT006,Home & Kitchen,SUP050,Hawkins,1815.38,2656.98,46,107,2023-12-27,1
+PRD00749,Borosil Stainless Steel Insulated Water Bottle 1L Plus 975,CAT006,Home & Kitchen,SUP023,Borosil,2444.77,4060.84,41,76,2023-05-27,1
+PRD00750,Signoraware Bamboo Cutting Board Set Pro 583,CAT006,Home & Kitchen,SUP048,Signoraware,2144.98,3884.81,34,125,2022-04-24,1
+PRD00751,Wonderchef Airtight Glass Container Set of 4 Elite 628,CAT006,Home & Kitchen,SUP006,Wonderchef,1940.36,3034.29,54,167,2024-06-26,1
+PRD00752,Borosil Rotating Spice Rack 16 Jars Classic 888,CAT006,Home & Kitchen,SUP037,Borosil,3022.89,4535.72,24,53,2021-06-05,1
+PRD00753,Cello Non-Stick Granite Frying Pan 26cm Pro 611,CAT006,Home & Kitchen,SUP049,Cello,2621.72,4495.87,46,103,2024-07-22,1
+PRD00754,Cello Bamboo Cutting Board Set Select 701,CAT006,Home & Kitchen,SUP052,Cello,220.88,372.52,77,189,2023-10-21,1
+PRD00755,Signoraware Bamboo Cutting Board Set Elite 500,CAT006,Home & Kitchen,SUP041,Signoraware,344.31,511.82,120,177,2023-10-15,1
+PRD00756,Hawkins Stainless Steel Insulated Water Bottle 1L Plus 206,CAT006,Home & Kitchen,SUP059,Hawkins,2208.4,3090.95,56,78,2022-04-03,1
+PRD00757,Cello Bamboo Cutting Board Set Elite 338,CAT006,Home & Kitchen,SUP011,Cello,1037.87,1608.8,54,82,2023-09-01,1
+PRD00758,Signoraware Rotating Spice Rack 16 Jars Classic 260,CAT006,Home & Kitchen,SUP014,Signoraware,3168.27,4375.02,23,55,2021-07-28,1
+PRD00759,Borosil Non-Stick Granite Frying Pan 26cm Prime 542,CAT006,Home & Kitchen,SUP033,Borosil,2644.58,4285.9,35,152,2023-10-07,1
+PRD00760,Cello Fine Bone China Dinner Set 24 Pcs Elite 107,CAT006,Home & Kitchen,SUP059,Cello,3172.81,4801.08,22,63,2022-09-11,1
+PRD00761,Wonderchef Fine Bone China Dinner Set 24 Pcs Eco 689,CAT006,Home & Kitchen,SUP054,Wonderchef,269.21,367.88,142,375,2024-06-23,1
+PRD00762,Signoraware Stainless Steel Insulated Water Bottle 1L Plus 525,CAT006,Home & Kitchen,SUP045,Signoraware,909.86,1596.23,52,133,2024-11-06,1
+PRD00763,Signoraware Triply Stainless Steel Kadhai 24cm Pro 345,CAT006,Home & Kitchen,SUP047,Signoraware,2850.9,3968.33,59,112,2021-12-24,1
+PRD00764,Wonderchef Airtight Glass Container Set of 4 Classic 880,CAT006,Home & Kitchen,SUP050,Wonderchef,1836.11,3332.71,29,171,2021-09-25,1
+PRD00765,Signoraware Rotating Spice Rack 16 Jars Eco 268,CAT006,Home & Kitchen,SUP044,Signoraware,920.94,1419.48,54,78,2021-11-23,1
+PRD00766,Signoraware Fine Bone China Dinner Set 24 Pcs Select 863,CAT006,Home & Kitchen,SUP059,Signoraware,1367.99,1923.71,27,76,2023-02-23,1
+PRD00767,Vinod Non-Stick Granite Frying Pan 26cm Eco 596,CAT006,Home & Kitchen,SUP053,Vinod,1557.14,2122.92,40,166,2024-03-16,1
+PRD00768,Milton Stainless Steel Insulated Water Bottle 1L Plus 958,CAT006,Home & Kitchen,SUP043,Milton,205.1,281.0,97,181,2024-03-03,1
+PRD00769,Cello Hard Anodized Pressure Cooker 3L Plus 551,CAT006,Home & Kitchen,SUP004,Cello,1242.17,1757.79,27,161,2022-08-23,1
+PRD00770,Hawkins Double Wall Coffee Mug Set of 2 Classic 806,CAT006,Home & Kitchen,SUP024,Hawkins,1090.39,1474.46,25,81,2024-04-08,1
+PRD00771,Borosil Airtight Glass Container Set of 4 Max 116,CAT006,Home & Kitchen,SUP005,Borosil,1436.13,2601.02,46,180,2022-11-22,1
+PRD00772,Hawkins Airtight Glass Container Set of 4 Plus 841,CAT006,Home & Kitchen,SUP041,Hawkins,659.49,988.94,31,179,2023-06-18,1
+PRD00773,Borosil Airtight Glass Container Set of 4 Classic 538,CAT006,Home & Kitchen,SUP042,Borosil,518.45,733.06,47,116,2022-01-13,1
+PRD00774,Prestige Rotating Spice Rack 16 Jars Classic 317,CAT006,Home & Kitchen,SUP057,Prestige,1549.27,2102.71,42,158,2023-01-03,1
+PRD00775,Signoraware Airtight Glass Container Set of 4 Prime 885,CAT006,Home & Kitchen,SUP039,Signoraware,1976.55,3571.78,31,166,2022-05-04,1
+PRD00776,Signoraware Rotating Spice Rack 16 Jars Plus 440,CAT006,Home & Kitchen,SUP002,Signoraware,684.76,1145.74,45,160,2024-02-11,1
+PRD00777,Signoraware Fine Bone China Dinner Set 24 Pcs Elite 615,CAT006,Home & Kitchen,SUP048,Signoraware,1941.78,3515.65,39,77,2021-05-08,1
+PRD00778,Borosil Bamboo Cutting Board Set Max 161,CAT006,Home & Kitchen,SUP003,Borosil,569.54,875.87,37,94,2024-04-21,1
+PRD00779,Wonderchef Airtight Glass Container Set of 4 Select 237,CAT006,Home & Kitchen,SUP019,Wonderchef,998.29,1606.83,27,141,2024-11-27,1
+PRD00780,Borosil Hard Anodized Pressure Cooker 3L Select 450,CAT006,Home & Kitchen,SUP025,Borosil,888.86,1384.22,40,177,2022-10-28,1
+PRD00781,Vinod Double Wall Coffee Mug Set of 2 Plus 552,CAT006,Home & Kitchen,SUP010,Vinod,2070.84,2809.53,56,83,2022-01-21,1
+PRD00782,Milton Airtight Glass Container Set of 4 Max 277,CAT006,Home & Kitchen,SUP030,Milton,1957.52,3353.32,38,105,2021-07-24,1
+PRD00783,Milton Stainless Steel Insulated Water Bottle 1L Elite 350,CAT006,Home & Kitchen,SUP018,Milton,1443.25,2295.14,44,111,2024-11-07,1
+PRD00784,Hawkins Fine Bone China Dinner Set 24 Pcs Select 507,CAT006,Home & Kitchen,SUP051,Hawkins,1302.04,1985.25,52,139,2024-03-27,1
+PRD00785,Prestige Fine Bone China Dinner Set 24 Pcs Classic 537,CAT006,Home & Kitchen,SUP012,Prestige,2754.83,4604.98,44,151,2022-09-24,1
+PRD00786,Signoraware Stainless Steel Insulated Water Bottle 1L Eco 413,CAT006,Home & Kitchen,SUP031,Signoraware,1533.49,2271.94,55,84,2023-03-23,1
+PRD00787,Milton Airtight Glass Container Set of 4 Elite 104,CAT006,Home & Kitchen,SUP048,Milton,189.14,291.05,107,275,2024-07-13,1
+PRD00788,Signoraware Rotating Spice Rack 16 Jars Eco 415,CAT006,Home & Kitchen,SUP011,Signoraware,2105.2,3329.23,51,79,2021-07-19,1
+PRD00789,Signoraware Airtight Glass Container Set of 4 Prime 889,CAT006,Home & Kitchen,SUP024,Signoraware,2934.91,4846.68,57,165,2024-11-23,1
+PRD00790,Signoraware Hard Anodized Pressure Cooker 3L Classic 853,CAT006,Home & Kitchen,SUP042,Signoraware,902.72,1379.35,48,155,2021-12-22,1
+PRD00791,Cello Non-Stick Granite Frying Pan 26cm Eco 797,CAT006,Home & Kitchen,SUP046,Cello,599.47,855.75,35,76,2021-02-21,1
+PRD00792,Signoraware Bamboo Cutting Board Set Max 630,CAT006,Home & Kitchen,SUP033,Signoraware,2925.34,5089.33,35,129,2023-12-10,1
+PRD00793,Signoraware Double Wall Coffee Mug Set of 2 Prime 851,CAT006,Home & Kitchen,SUP048,Signoraware,1405.41,2445.38,30,88,2023-03-09,1
+PRD00794,Signoraware Airtight Glass Container Set of 4 Prime 106,CAT006,Home & Kitchen,SUP034,Signoraware,3160.43,5386.59,10,31,2021-12-14,1
+PRD00795,Cello Bamboo Cutting Board Set Classic 274,CAT006,Home & Kitchen,SUP008,Cello,688.02,965.34,33,100,2024-03-17,1
+PRD00796,Borosil Fine Bone China Dinner Set 24 Pcs Plus 305,CAT006,Home & Kitchen,SUP059,Borosil,329.9,462.4,84,216,2024-08-21,1
+PRD00797,Milton Triply Stainless Steel Kadhai 24cm Max 400,CAT006,Home & Kitchen,SUP031,Milton,411.41,567.41,68,237,2021-10-08,1
+PRD00798,Hawkins Fine Bone China Dinner Set 24 Pcs Pro 162,CAT006,Home & Kitchen,SUP001,Hawkins,961.55,1720.26,27,87,2022-09-26,1
+PRD00799,Cello Bamboo Cutting Board Set Eco 584,CAT006,HOME &,SUP016,Cello,2458.58,3907.93,46,122,2023-06-27,1
+PRD00800,Signoraware Rotating Spice Rack 16 Jars Classic 725,CAT006,Home & Kitchen,SUP056,Signoraware,324.59,478.19,102,356,2021-01-15,1
+PRD00801,Milton Bamboo Cutting Board Set Pro 716,CAT006,Home & Kitchen,SUP043,Milton,524.83,,40,122,2024-10-22,1
+PRD00802,Strauss Badminton Racket Carbon Fiber Elite 103,CAT007,Sports & Fitness,SUP048,Strauss,2368.49,,45,77,2023-01-26,1
+PRD00803,Vector X Protein Shaker Bottle 700ml Elite 721,CAT007,Sports & Fitness,SUP055,Vector X,1224.74,2033.91,30,119,2024-08-22,1
+PRD00804,Strauss Hexagonal Rubber Dumbbells Pair 5kg Prime 721,CAT007,Sports & Fitness,SUP051,Strauss,564.78,782.93,58,148,2021-03-16,1
+PRD00805,Kobo Hexagonal Rubber Dumbbells Pair 5kg Eco 272,CAT007,Sports & Fitness,SUP011,Kobo,2163.81,3870.93,55,159,2022-04-07,1
+PRD00806,Nivia Hexagonal Rubber Dumbbells Pair 5kg Classic 832,CAT007,Sports & Fitness,SUP047,Nivia,186.63,330.79,101,381,2024-05-08,1
+PRD00807,Vector X Resistance Loop Bands Set of 5 Max 781,CAT007,Sports & Fitness,SUP050,Vector X,429.52,667.9,122,173,2023-04-19,1
+PRD00808,Boldfit Hexagonal Rubber Dumbbells Pair 5kg Classic 834,CAT007,Sports & Fitness,SUP008,Boldfit,1813.97,2998.33,60,130,2022-04-09,1
+PRD00809,Nivia Resistance Loop Bands Set of 5 Max 191,CAT007,Sports & Fitness,SUP009,Nivia,895.74,1418.3,37,170,2021-10-12,1
+PRD00810,Strauss Protein Shaker Bottle 700ml Pro 418,CAT007,Sports & Fitness,SUP024,Strauss,261.1,406.14,109,400,2024-06-25,1
+PRD00811,Yonex Adjustable Hand Grip Strengthener Max 504,CAT007,Sports & Fitness,SUP044,Yonex,140.95,243.22,100,187,2023-04-16,1
+PRD00812,Cosco Badminton Racket Carbon Fiber Prime 249,CAT007,Sports & Fitness,SUP045,Cosco,1823.3,3142.68,27,151,2023-05-17,1
+PRD00813,Kobo Hexagonal Rubber Dumbbells Pair 5kg Eco 746,CAT007,Sports & Fitness,SUP046,Kobo,2009.41,3086.68,49,82,2023-03-27,1
+PRD00814,Yonex Speed Jump Rope Aluminum Handle Pro 986,CAT007,Sports & Fitness,SUP026,Yonex,1889.37,3265.17,50,113,2022-01-18,1
+PRD00815,Strauss Protein Shaker Bottle 700ml Eco 456,CAT007,Sports & Fitness,SUP060,Strauss,1847.59,2750.26,58,168,2023-05-23,1
+PRD00816,Strauss Speed Jump Rope Aluminum Handle Max 234,CAT007,Sports & Fitness,SUP011,Strauss,857.39,1448.92,28,165,2023-08-21,1
+PRD00817,Vector X Adjustable Hand Grip Strengthener Eco 398,CAT007,Sports & Fitness,SUP055,Vector X,2165.66,3058.64,37,169,2021-06-24,1
+PRD00818,Cosco Hexagonal Rubber Dumbbells Pair 5kg Classic 537,CAT007,Sports & Fitness,SUP004,Cosco,1669.14,2330.04,28,87,2023-08-06,1
+PRD00819,Boldfit Hexagonal Rubber Dumbbells Pair 5kg Classic 252,CAT007,Sports & Fitness,SUP020,Boldfit,1549.5,2315.45,27,90,2022-07-16,1
+PRD00820,Strauss Adjustable Hand Grip Strengthener Max 896,CAT007,Sports & Fitness,SUP008,Strauss,1177.18,2007.6,49,110,2024-06-01,1
+PRD00821,Nivia Hexagonal Rubber Dumbbells Pair 5kg Max 600,CAT007,sports & fitness,SUP048,Nivia,1582.41,2784.44,39,77,2024-05-23,1
+PRD00822,Cosco Hexagonal Rubber Dumbbells Pair 5kg Classic 595,CAT007,Sports & Fitness,SUP005,Cosco,2399.9,3937.8,44,148,2022-02-11,1
+PRD00823,Cosco Cricket Bat English Willow Grade 2 Classic 932,CAT007,Sports & Fitness,SUP999,Cosco,1717.69,2558.98,59,175,2024-02-17,1
+PRD00824,Nivia Cricket Bat English Willow Grade 2 Elite 774,CAT007,Sports & Fitness,SUP003,Nivia,2166.53,3034.92,36,75,2024-06-04,1
+PRD00825,Yonex Adjustable Hand Grip Strengthener Plus 189,CAT007,Sports & Fitness,SUP024,Yonex,1402.49,2419.3,27,85,2021-09-10,1
+PRD00826,Cosco Cricket Bat English Willow Grade 2 Classic 773,CAT007,Sports & Fitness,SUP029,Cosco,120.2,174.23,126,381,2023-11-18,1
+PRD00827,Vector X Adjustable Hand Grip Strengthener Select 635,CAT007,Sports & Fitness,SUP043,Vector X,2196.59,3989.15,59,140,2022-12-04,1
+PRD00828,Yonex Anti-Slip High Density Yoga Mat 8mm Pro 292,CAT007,Sports & Fitness,SUP014,Yonex,443.0,765.4,87,395,2022-10-18,1
+PRD00829,Kobo Protein Shaker Bottle 700ml Plus 846,CAT007,Sports & Fitness,SUP026,Kobo,1538.87,2093.34,41,108,2024-11-06,1
+PRD00830,Nivia Badminton Racket Carbon Fiber Prime 792,CAT007,Sports & Fitness,SUP018,Nivia,1089.78,1783.32,59,101,2021-11-24,1
+PRD00831,Boldfit Speed Jump Rope Aluminum Handle Plus 529,CAT007,Sports & Fitness,SUP005,Boldfit,1993.17,2902.42,52,123,2021-10-08,1
+PRD00832,Nivia Resistance Loop Bands Set of 5 Max 800,CAT007,Sports & Fitness,SUP056,Nivia,1370.28,1859.75,30,121,2023-05-05,1
+PRD00833,Kobo Speed Jump Rope Aluminum Handle Pro 200,CAT007,Sports & Fitness,SUP047,Kobo,979.92,1761.67,49,88,2021-03-17,1
+PRD00834,Vector X Resistance Loop Bands Set of 5 Max 641,CAT007,Sports & Fitness,SUP058,Vector X,915.49,1440.43,43,145,2023-10-04,1
+PRD00835,Cosco Anti-Slip High Density Yoga Mat 8mm Select 869,CAT007,Sports & Fitness,SUP009,Cosco,1008.2,1480.55,59,145,2024-08-19,1
+PRD00836,Decathlon Resistance Loop Bands Set of 5 Plus 773,CAT007,Sports & Fitness,SUP016,Decathlon,408.12,605.3,94,163,2023-12-25,1
+PRD00837,Vector X Gym Bag with Shoe Compartment Plus 549,CAT007,Sports & Fitness,SUP046,Vector X,2368.64,4012.56,57,111,2023-07-17,1
+PRD00838,Kobo Speed Jump Rope Aluminum Handle Max 412,CAT007,Sports & Fitness,SUP016,Kobo,1046.85,1522.8,30,156,2021-02-24,1
+PRD00839,Cosco Hexagonal Rubber Dumbbells Pair 5kg Pro 186,CAT007,Sports & Fitness,SUP033,Cosco,1814.97,2839.58,56,178,2021-07-22,1
+PRD00840,Vector X Adjustable Hand Grip Strengthener Eco 627,CAT007,Sports & Fitness,SUP040,Vector X,1682.08,2736.67,59,164,2021-07-01,1
+PRD00841,Decathlon Speed Jump Rope Aluminum Handle Classic 819,CAT007,Sports & Fitness,SUP011,Decathlon,1338.26,1965.17,58,162,2021-10-15,1
+PRD00842,Yonex Cricket Bat English Willow Grade 2 Plus 176,CAT007,Sports & Fitness,SUP011,Yonex,956.88,1322.87,47,81,2024-08-13,1
+PRD00843,Nivia Protein Shaker Bottle 700ml Select 795,CAT007,Sports & Fitness,SUP017,Nivia,689.46,1073.63,32,112,2023-08-10,1
+PRD00844,Decathlon Speed Jump Rope Aluminum Handle Classic 322,CAT007,Sports & Fitness,SUP055,Decathlon,2224.57,3943.03,57,180,2021-08-20,1
+PRD00845,Decathlon Badminton Racket Carbon Fiber Select 106,CAT007,Sports & Fitness,SUP012,Decathlon,1523.41,2226.26,47,88,2021-06-24,1
+PRD00846,Boldfit Gym Bag with Shoe Compartment Pro 203,CAT007,Sports & Fitness,SUP059,Boldfit,1102.23,1551.36,58,140,2022-07-04,1
+PRD00847,Decathlon Badminton Racket Carbon Fiber Plus 887,CAT007,Sports & Fitness,SUP058,Decathlon,1617.12,2294.5,50,122,2023-06-14,1
+PRD00848,Kobo Adjustable Hand Grip Strengthener Max 549,CAT007,Sports & Fitness,SUP057,Kobo,1616.32,2441.1,33,120,2024-01-12,1
+PRD00849,Nivia Speed Jump Rope Aluminum Handle Elite 391,CAT007,Sports & Fitness,SUP013,Nivia,211.78,315.58,102,380,2021-03-22,1
+PRD00850,Kobo Badminton Racket Carbon Fiber Max 531,CAT007,Sports & Fitness,SUP060,Kobo,1235.07,1897.52,33,116,2024-09-24,1
+PRD00851,Cosco Gym Bag with Shoe Compartment Max 210,CAT007,Sports & Fitness,SUP004,Cosco,1927.39,2659.29,47,139,2021-11-08,1
+PRD00852,Strauss Protein Shaker Bottle 700ml Pro 544,CAT007,Sports & Fitness,SUP010,Strauss,1214.84,1751.61,30,172,2024-04-20,1
+PRD00853,Cosco Cricket Bat English Willow Grade 2 Elite 387,CAT007,Sports & Fitness,SUP046,Cosco,1868.14,3236.74,40,160,2024-04-16,1
+PRD00854,Cosco Hexagonal Rubber Dumbbells Pair 5kg Elite 975,CAT007,Sports & Fitness,SUP018,Cosco,1467.93,2355.83,39,90,2022-07-02,1
+PRD00855,Cosco Speed Jump Rope Aluminum Handle Classic 118,CAT007,Sports & Fitness,SUP045,Cosco,1525.55,2084.62,28,123,2024-09-10,1
+PRD00856,Yonex Speed Jump Rope Aluminum Handle Select 536,CAT007,Sports & Fitness,SUP018,Yonex,1212.57,1871.17,28,113,2021-05-12,1
+PRD00857,Strauss Protein Shaker Bottle 700ml Elite 427,CAT007,Sports & Fitness,SUP031,Strauss,2160.84,3027.87,25,81,2023-04-10,1
+PRD00858,Nivia Resistance Loop Bands Set of 5 Classic 289,CAT007,Sports & Fitness,SUP001,Nivia,695.16,1066.62,46,113,2021-02-22,1
+PRD00859,Cosco Cricket Bat English Willow Grade 2 Select 469,CAT007,Sports & Fitness,SUP018,Cosco,1810.15,,58,152,2023-04-21,1
+PRD00860,Strauss Speed Jump Rope Aluminum Handle Max 208,CAT007,Sports & Fitness,SUP029,Strauss,417.51,694.13,75,160,2022-04-23,1
+PRD00861,Nivia Hexagonal Rubber Dumbbells Pair 5kg Select 408,CAT007,Sports & Fitness,SUP013,Nivia,1773.8,3212.99,37,143,2022-01-05,1
+PRD00862,Kobo Gym Bag with Shoe Compartment Select 474,CAT007,Sports & Fitness,SUP060,Kobo,1142.54,1883.72,52,83,2024-07-17,1
+PRD00863,Decathlon Cricket Bat English Willow Grade 2 Plus 713,CAT007,sports & fitness,SUP048,Decathlon,745.06,1338.83,43,80,2021-12-07,1
+PRD00864,Vector X Gym Bag with Shoe Compartment Max 269,CAT007,Sports & Fitness,SUP018,Vector X,1118.06,1725.02,60,174,2024-07-20,1
+PRD00865,Cosco Speed Jump Rope Aluminum Handle Pro 263,CAT007,Sports & Fitness,SUP047,Cosco,1423.93,2254.56,25,176,2024-09-23,1
+PRD00866,Kobo Cricket Bat English Willow Grade 2 Prime 972,CAT007,Sports & Fitness,SUP035,Kobo,622.37,1023.05,60,90,2022-04-02,1
+PRD00867,Kobo Speed Jump Rope Aluminum Handle Pro 754,CAT007,Sports & Fitness,SUP053,Kobo,457.76,798.49,77,219,2021-11-08,1
+PRD00868,Nivia Speed Jump Rope Aluminum Handle Pro 764,CAT007,Sports & Fitness,SUP017,Nivia,912.21,1450.33,48,116,2021-12-18,1
+PRD00869,Strauss Adjustable Hand Grip Strengthener Prime 432,CAT007,Sports & Fitness,SUP018,Strauss,2366.4,3787.4,25,180,2023-04-24,1
+PRD00870,Kobo Adjustable Hand Grip Strengthener Pro 650,CAT007,Sports & Fitness,SUP056,Kobo,1618.68,2808.24,31,167,2024-11-09,1
+PRD00871,Yonex Cricket Bat English Willow Grade 2 Eco 325,CAT007,Sports & Fitness,SUP047,Yonex,859.32,1211.65,50,94,2024-04-24,1
+PRD00872,Boldfit Gym Bag with Shoe Compartment Plus 590,CAT007,Sports & Fitness,SUP032,Boldfit,333.62,467.45,83,358,2022-04-19,1
+PRD00873,Kobo Adjustable Hand Grip Strengthener Pro 417,CAT007,Sports & Fitness,SUP005,Kobo,491.45,687.87,110,325,2022-02-05,1
+PRD00874,Yonex Gym Bag with Shoe Compartment Eco 760,CAT007,Sports & Fitness,SUP025,Yonex,2332.48,3195.38,58,92,2021-10-04,1
+PRD00875,Decathlon Gym Bag with Shoe Compartment Max 946,CAT007,Sports & Fitness,SUP010,Decathlon,150.9,258.44,65,183,2022-02-09,1
+PRD00876,Decathlon Anti-Slip High Density Yoga Mat 8mm Max 655,CAT007,Sports & Fitness,SUP037,Decathlon,1798.38,2635.68,30,100,2022-08-25,1
+PRD00877,Cosco Badminton Racket Carbon Fiber Prime 439,CAT007,Sports & Fitness,SUP008,Cosco,1211.91,1728.24,59,163,2023-11-18,1
+PRD00878,Decathlon Anti-Slip High Density Yoga Mat 8mm Max 657,CAT007,Sports & Fitness,SUP015,Decathlon,796.56,1229.84,51,93,2021-04-01,1
+PRD00879,Strauss Gym Bag with Shoe Compartment Plus 461,CAT007,Sports & Fitness,SUP008,Strauss,1614.23,2290.26,49,162,2021-08-06,1
+PRD00880,Nivia Speed Jump Rope Aluminum Handle Prime 465,CAT007,Sports & Fitness,SUP010,Nivia,293.94,430.21,106,386,2021-01-20,1
+PRD00881,Strauss Adjustable Hand Grip Strengthener Select 714,CAT007,Sports & Fitness,SUP018,Strauss,533.51,802.33,44,154,2023-06-04,1
+PRD00882,Boldfit Badminton Racket Carbon Fiber Prime 930,CAT007,Sports & Fitness,SUP025,Boldfit,2187.93,3706.7,25,94,2022-06-05,1
+PRD00883,Vector X Badminton Racket Carbon Fiber Max 215,CAT007,Sports & Fitness,SUP012,Vector X,1437.48,2575.75,42,93,2021-06-05,1
+PRD00884,Boldfit Gym Bag with Shoe Compartment Select 606,CAT007,Sports & Fitness,SUP042,Boldfit,1086.34,1777.05,51,152,2023-03-26,1
+PRD00885,Strauss Speed Jump Rope Aluminum Handle Classic 662,CAT007,Sports & Fitness,SUP038,Strauss,1253.39,1948.54,59,143,2022-07-03,1
+PRD00886,Yonex Gym Bag with Shoe Compartment Max 340,CAT007,Sports & Fitness,SUP004,Yonex,944.7,1331.79,26,121,2024-03-04,1
+PRD00887,Boldfit Protein Shaker Bottle 700ml Plus 401,CAT007,Sports & Fitness,SUP015,Boldfit,1169.69,2006.5,60,128,2022-04-27,1
+PRD00888,Cosco Anti-Slip High Density Yoga Mat 8mm Max 812,CAT007,Sports & Fitness,SUP045,Cosco,1725.04,2557.48,26,164,2024-06-02,1
+PRD00889,Nivia Hexagonal Rubber Dumbbells Pair 5kg Eco 957,CAT007,Sports & Fitness,SUP005,Nivia,1474.15,2052.09,34,121,2022-02-08,1
+PRD00890,Strauss Anti-Slip High Density Yoga Mat 8mm Plus 883,CAT007,Sports & Fitness,SUP047,Strauss,535.93,891.3,58,164,2023-08-14,1
+PRD00891,Vector X Protein Shaker Bottle 700ml Pro 393,CAT007,Sports & Fitness,SUP001,Vector X,373.69,506.36,142,158,2022-09-06,1
+PRD00892,Strauss Gym Bag with Shoe Compartment Eco 667,CAT007,Sports & Fitness,SUP018,Strauss,1742.01,2494.33,57,114,2022-07-06,1
+PRD00893,Strauss Hexagonal Rubber Dumbbells Pair 5kg Plus 860,CAT007,Sports & Fitness,SUP039,Strauss,603.05,963.04,39,125,2022-12-18,1
+PRD00894,Vector X Hexagonal Rubber Dumbbells Pair 5kg Eco 420,CAT007,Sports & Fitness,SUP028,Vector X,1608.16,2403.9,49,96,2021-06-21,1
+PRD00895,Kobo Speed Jump Rope Aluminum Handle Max 206,CAT007,Sports & Fitness,SUP035,Kobo,297.4,472.54,102,157,2022-05-06,1
+PRD00896,Nivia Hexagonal Rubber Dumbbells Pair 5kg Elite 711,CAT007,Sports & Fitness,SUP016,Nivia,145.03,255.31,84,291,2022-11-02,1
+PRD00897,Nivia Resistance Loop Bands Set of 5 Pro 677,CAT007,Sports & Fitness,SUP023,Nivia,2369.21,3626.87,28,115,2021-05-01,1
+PRD00898,Strauss Resistance Loop Bands Set of 5 Elite 422,CAT007,Sports & Fitness,SUP058,Strauss,1834.2,3032.43,33,164,2021-06-14,1
+PRD00899,Nivia Cricket Bat English Willow Grade 2 Plus 124,CAT007,Sports & Fitness,SUP030,Nivia,1458.76,2165.69,27,112,2022-03-22,1
+PRD00900,Nivia Hexagonal Rubber Dumbbells Pair 5kg Elite 320,CAT007,Sports & Fitness,SUP009,Nivia,1961.05,3167.3,35,139,2023-08-26,1
+PRD00901,Kobo Protein Shaker Bottle 700ml Select 738,CAT007,Sports & Fitness,SUP005,Kobo,2071.57,3120.68,49,105,2022-10-20,1
+PRD00902,Vector X Adjustable Hand Grip Strengthener Max 924,CAT007,Sports & Fitness,SUP030,Vector X,154.07,258.19,99,290,2021-08-04,1
+PRD00903,Cosco Protein Shaker Bottle 700ml Prime 265,CAT007,Sports & Fitness,SUP050,Cosco,275.41,433.92,105,172,2021-03-23,1
+PRD00904,Kobo Badminton Racket Carbon Fiber Eco 362,CAT007,Sports & Fitness,SUP055,Kobo,1859.97,2811.36,33,90,2024-01-12,1
+PRD00905,Strauss Resistance Loop Bands Set of 5 Classic 977,CAT007,Sports & Fitness,SUP044,Strauss,1532.88,2497.02,53,121,2023-06-03,1
+PRD00906,Vector X Gym Bag with Shoe Compartment Prime 998,CAT007,Sports & Fitness,SUP036,Vector X,2116.22,3449.48,28,169,2022-12-27,1
+PRD00907,Cosco Anti-Slip High Density Yoga Mat 8mm Max 397,CAT007,Sports & Fitness,SUP006,Cosco,976.87,1536.02,29,103,2024-08-22,1
+PRD00908,Vector X Protein Shaker Bottle 700ml Eco 757,CAT007,Sports & Fitness,SUP059,Vector X,1340.06,2285.46,31,85,2022-12-04,1
+PRD00909,Strauss Gym Bag with Shoe Compartment Elite 511,CAT007,Sports & Fitness,SUP030,Strauss,869.48,1266.46,56,102,2024-02-09,1
+PRD00910,Cosco Anti-Slip High Density Yoga Mat 8mm Eco 249,CAT007,Sports & Fitness,SUP024,Cosco,1579.69,2302.88,27,151,2024-01-26,1
+PRD00911,Vector X Gym Bag with Shoe Compartment Elite 155,CAT007,Sports & Fitness,SUP006,Vector X,602.2,807.88,52,109,2023-11-06,1
+PRD00912,Nivia Adjustable Hand Grip Strengthener Prime 514,CAT007,Sports & Fitness,SUP043,Nivia,306.3,532.47,117,373,2024-09-07,1
+PRD00913,Cosco Resistance Loop Bands Set of 5 Pro 194,CAT007,Sports & Fitness,SUP031,Cosco,2160.5,3252.33,44,96,2022-06-14,1
+PRD00914,Cosco Badminton Racket Carbon Fiber Classic 463,CAT007,Sports & Fitness,SUP043,Cosco,2200.72,3460.6,25,146,2022-02-24,1
+PRD00915,Boldfit Adjustable Hand Grip Strengthener Select 114,CAT007,Sports & Fitness,SUP044,Boldfit,463.15,703.59,78,277,2023-02-26,1
+PRD00916,Kobo Gym Bag with Shoe Compartment Pro 561,CAT007,Sports & Fitness,SUP048,Kobo,2270.78,3924.97,53,156,2021-01-07,1
+PRD00917,Strauss Speed Jump Rope Aluminum Handle Plus 715,CAT007,Sports & Fitness,SUP024,Strauss,980.83,1441.59,37,161,2021-06-27,1
+PRD00918,Kobo Anti-Slip High Density Yoga Mat 8mm Prime 614,CAT007,Sports & Fitness,SUP023,Kobo,1987.44,2741.1,56,158,2024-07-14,1
+PRD00919,Strauss Protein Shaker Bottle 700ml Select 216,CAT007,Sports & Fitness,SUP025,Strauss,2232.08,3391.01,48,97,2022-09-14,1
+PRD00920,Strauss Resistance Loop Bands Set of 5 Prime 818,CAT007,Sports & Fitness,SUP002,Strauss,1534.46,2715.99,31,86,2021-02-21,1
+PRD00921,Nivia Gym Bag with Shoe Compartment Eco 867,CAT007,Sports & Fitness,SUP052,Nivia,1833.94,3248.47,31,156,2024-09-19,1
+PRD00922,Kobo Anti-Slip High Density Yoga Mat 8mm Classic 316,CAT007,Sports & Fitness,SUP023,Kobo,628.16,953.09,49,89,2022-08-04,1
+PRD00923,Strauss Badminton Racket Carbon Fiber Classic 107,CAT007,Sports & Fitness,SUP020,Strauss,2262.33,3811.45,57,111,2023-11-09,1
+PRD00924,Yonex Gym Bag with Shoe Compartment Pro 524,CAT007,Sports & Fitness,SUP037,Yonex,194.5,261.16,107,365,2023-06-06,1
+PRD00925,Yonex Gym Bag with Shoe Compartment Classic 297,CAT007,Sports & Fitness,SUP025,Yonex,1525.09,2271.72,28,177,2024-03-21,1
+PRD00926,Strauss Adjustable Hand Grip Strengthener Select 629,CAT007,Sports & Fitness,SUP041,Strauss,481.25,683.78,150,355,2022-09-04,1
+PRD00927,Kobo Gym Bag with Shoe Compartment Plus 430,CAT007,Sports & Fitness,SUP046,Kobo,584.58,799.32,52,76,2022-01-20,1
+PRD00928,Nivia Cricket Bat English Willow Grade 2 Classic 125,CAT007,Sports & Fitness,SUP042,Nivia,1812.53,2503.87,54,156,2023-03-08,1
+PRD00929,Kobo Speed Jump Rope Aluminum Handle Elite 648,CAT007,Sports & Fitness,SUP018,Kobo,2036.24,3367.15,49,173,2023-11-02,1
+PRD00930,Cosco Hexagonal Rubber Dumbbells Pair 5kg Pro 753,CAT007,Sports & Fitness,SUP019,Cosco,2365.34,4102.13,32,133,2021-02-05,1
+PRD00931,Cosco Resistance Loop Bands Set of 5 Max 179,CAT007,Sports & Fitness,SUP002,Cosco,1246.88,1839.81,38,125,2021-08-26,1
+PRD00932,Nivia Gym Bag with Shoe Compartment Eco 740,CAT007,Sports & Fitness,SUP052,Nivia,293.99,479.96,108,377,2023-11-15,1
+PRD00933,Cosco Adjustable Hand Grip Strengthener Prime 110,CAT007,Sports & Fitness,SUP040,Cosco,2180.3,3527.61,27,90,2023-06-16,1
+PRD00934,Decathlon Cricket Bat English Willow Grade 2 Plus 634,CAT007,Sports & Fitness,SUP034,Decathlon,1811.07,3207.23,37,152,2021-09-01,1
+PRD00935,Casio Highlighter Pastel Colors Set of 6 Select 217,CAT008,Stationery,SUP009,Casio,586.1,821.43,33,103,2021-12-23,1
+PRD00936,Kangaro Heavy Duty Desktop Stapler Eco 304,CAT008,Stationery,SUP052,Kangaro,620.53,964.58,60,158,2023-08-24,1
+PRD00937,Doms Expanding File Folder 12 Pockets Classic 297,CAT008,Stationery,SUP051,Doms,177.56,262.48,95,396,2024-02-19,1
+PRD00938,Parker Heavy Duty Desktop Stapler Elite 839,CAT008,Stationery,SUP007,Parker,327.33,622.57,114,302,2023-06-20,1
+PRD00939,Doms Sticky Notes Neon Pack of 5 Elite 680,CAT008,Stationery,SUP017,Doms,242.34,463.84,68,265,2022-01-17,1
+PRD00940,Kangaro Sticky Notes Neon Pack of 5 Select 507,CAT008,Stationery,SUP005,Kangaro,38.86,57.11,101,259,2022-06-08,1
+PRD00941,Luxor Scientific Calculator 417 Functions Select 248,CAT008,Stationery,SUP014,Luxor,511.09,737.4,45,163,2021-12-11,1
+PRD00942,Luxor Expanding File Folder 12 Pockets Elite 675,CAT008,Stationery,SUP018,Luxor,61.73,93.87,87,284,2022-02-18,1
+PRD00943,Doms Fine Tip Gel Pen Set Pack of 10 Classic 425,CAT008,Stationery,SUP018,Doms,532.44,787.16,28,177,2024-08-02,1
+PRD00944,Camlin Sticky Notes Neon Pack of 5 Max 563,CAT008,Stationery,SUP042,Camlin,127.82,197.23,109,210,2021-05-01,1
+PRD00945,Pilot Hardbound Ruled Executive Notebook A5 Prime 234,CAT008,Stationery,SUP002,Pilot,550.24,871.49,59,142,2021-06-21,1
+PRD00946,Pilot Fine Tip Gel Pen Set Pack of 10 Max 949,CAT008,Stationery,SUP036,Pilot,525.58,937.06,42,115,2023-07-03,1
+PRD00947,Pilot Mechanical Pencil 0.7mm Set Pro 502,CAT008,Stationery,SUP007,Pilot,208.02,413.13,123,367,2021-06-20,1
+PRD00948,Casio Hardbound Ruled Executive Notebook A5 Pro 945,CAT008,Stationery,SUP006,Casio,26.55,38.1,101,370,2024-04-06,1
+PRD00949,Luxor Scientific Calculator 417 Functions Pro 804,CAT008,Stationery,SUP017,Luxor,566.85,855.15,27,89,2021-05-03,1
+PRD00950,Doms Mechanical Pencil 0.7mm Set Prime 815,CAT008,Stationery,SUP010,Doms,127.31,184.59,118,180,2022-06-28,1
+PRD00951,Pilot Sticky Notes Neon Pack of 5 Max 634,CAT008,Stationery,SUP047,Pilot,352.38,594.37,144,275,2023-06-25,1
+PRD00952,Casio Expanding File Folder 12 Pockets Max 370,CAT008,Stationery,SUP048,Casio,502.71,892.13,47,146,2022-11-21,1
+PRD00953,Camlin Scientific Calculator 417 Functions Max 606,CAT008,Stationery,SUP007,Camlin,57.97,80.84,87,269,2024-04-16,1
+PRD00954,Casio Mechanical Pencil 0.7mm Set Select 878,CAT008,Stationery,SUP059,Casio,614.96,1090.11,34,139,2021-03-08,1
+PRD00955,Doms Mechanical Pencil 0.7mm Set Eco 988,CAT008,Stationery,SUP011,Doms,410.9,608.44,111,198,2021-05-14,1
+PRD00956,Camlin Heavy Duty Desktop Stapler Plus 572,CAT008,Stationery,SUP002,Camlin,572.0,1028.6,40,77,2024-03-09,1
+PRD00957,Pilot Expanding File Folder 12 Pockets Select 371,CAT008,Stationery,SUP033,Pilot,94.55,157.86,105,260,2022-03-13,1
+PRD00958,Luxor Sticky Notes Neon Pack of 5 Pro 551,CAT008,Stationery,SUP013,Luxor,191.73,274.5,143,247,2024-04-10,1
+PRD00959,Parker Sticky Notes Neon Pack of 5 Prime 642,CAT008,stationery,SUP008,Parker,402.69,664.61,73,324,2021-11-08,1
+PRD00960,Camlin Scientific Calculator 417 Functions Pro 136,CAT008,Stationery,SUP045,Camlin,382.4,572.91,128,175,2023-04-20,1
+PRD00961,Doms Sticky Notes Neon Pack of 5 Classic 203,CAT008,Stationery,SUP051,Doms,158.53,294.28,148,218,2024-04-06,1
+PRD00962,Luxor Scientific Calculator 417 Functions Prime 822,CAT008,Stationery,SUP055,Luxor,395.68,708.41,72,197,2024-12-10,1
+PRD00963,Parker Scientific Calculator 417 Functions Select 797,CAT008,Stationery,SUP028,Parker,63.76,93.93,118,186,2021-11-16,1
+PRD00964,Classmate Mechanical Pencil 0.7mm Set Plus 370,CAT008,Stationery,SUP001,Classmate,575.19,842.84,25,151,2023-08-19,1
+PRD00965,Casio Expanding File Folder 12 Pockets Eco 212,CAT008,Stationery,SUP011,Casio,48.46,67.67,147,224,2022-09-17,1
+PRD00966,Camlin Highlighter Pastel Colors Set of 6 Max 411,CAT008,Stationery,SUP043,Camlin,526.45,814.75,56,169,2023-09-09,1
+PRD00967,Kangaro Expanding File Folder 12 Pockets Select 569,CAT008,Stationery,SUP044,Kangaro,28.54,44.43,150,235,2024-02-09,1
+PRD00968,Parker Hardbound Ruled Executive Notebook A5 Classic 976,CAT008,Stationery,SUP048,Parker,158.76,316.7,105,277,2021-04-19,1
+PRD00969,Luxor Sticky Notes Neon Pack of 5 Elite 862,CAT008,Stationery,SUP044,Luxor,76.24,147.34,108,313,2021-05-21,1
+PRD00970,Parker Expanding File Folder 12 Pockets Prime 795,CAT008,Stationery,SUP003,Parker,239.77,370.51,135,256,2023-05-07,1
+PRD00971,Camlin Mechanical Pencil 0.7mm Set Classic 914,CAT008,Stationery,SUP060,Camlin,306.67,604.86,104,223,2021-01-16,1
+PRD00972,Pilot Highlighter Pastel Colors Set of 6 Plus 635,CAT008,Stationery,SUP052,Pilot,629.0,1079.34,35,113,2024-05-03,1
+PRD00973,Classmate Heavy Duty Desktop Stapler Eco 141,CAT008,Stationery,SUP028,Classmate,156.91,291.44,75,163,2024-05-01,1
+PRD00974,Classmate Mechanical Pencil 0.7mm Set Pro 357,CAT008,Stationery,SUP018,Classmate,106.76,202.7,124,320,2022-02-23,1
+PRD00975,Casio Highlighter Pastel Colors Set of 6 Classic 699,CAT008,Stationery,SUP044,Casio,598.5,912.31,27,135,2023-04-26,1
+PRD00976,Doms Sticky Notes Neon Pack of 5 Classic 200,CAT008,STATIO,SUP052,Doms,582.61,1125.69,44,97,2024-11-11,1
+PRD00977,Casio Highlighter Pastel Colors Set of 6 Prime 238,CAT008,Stationery,SUP030,Casio,282.28,417.51,99,171,2023-10-21,1
+PRD00978,Doms Highlighter Pastel Colors Set of 6 Classic 198,CAT008,Stationery,SUP028,Doms,107.32,172.32,100,278,2023-08-12,1
+PRD00979,Doms Expanding File Folder 12 Pockets Classic 572,CAT008,Stationery,SUP051,Doms,37.43,62.69,113,172,2022-10-10,1
+PRD00980,Luxor Scientific Calculator 417 Functions Plus 735,CAT008,Stationery,SUP043,Luxor,362.26,608.25,97,163,2024-03-13,1
+PRD00981,Pilot Hardbound Ruled Executive Notebook A5 Eco 959,CAT008,Stationery,SUP053,Pilot,54.24,76.61,143,177,2023-10-04,1
+PRD00982,Pilot Heavy Duty Desktop Stapler Select 985,CAT008,Stationery,SUP034,Pilot,58.34,104.72,146,280,2021-12-07,1
+PRD00983,Pilot Highlighter Pastel Colors Set of 6 Plus 328,CAT008,Stationery,SUP052,Pilot,583.88,1007.95,34,113,2023-12-01,1
+PRD00984,Casio Expanding File Folder 12 Pockets Max 168,CAT008,Stationery,SUP007,Casio,20.02,34.1,75,283,2021-04-07,1
+PRD00985,Classmate Expanding File Folder 12 Pockets Eco 500,CAT008,Stationery,SUP055,Classmate,55.06,79.43,111,273,2022-04-27,1
+PRD00986,Pilot Heavy Duty Desktop Stapler Max 542,CAT008,Stationery,SUP048,Pilot,112.14,156.79,78,359,2022-03-17,1
+PRD00987,Pilot Scientific Calculator 417 Functions Eco 396,CAT008,Stationery,SUP026,Pilot,202.35,289.9,135,276,2023-11-09,1
+PRD00988,Camlin Sticky Notes Neon Pack of 5 Eco 526,CAT008,Stationery,SUP001,Camlin,532.5,774.65,43,133,2021-10-13,1
+PRD00989,Classmate Heavy Duty Desktop Stapler Eco 143,CAT008,Stationery,SUP011,Classmate,592.11,922.35,33,134,2024-05-01,1
+PRD00990,Casio Mechanical Pencil 0.7mm Set Select 823,CAT008,Stationery,SUP047,Casio,350.79,577.78,82,317,2022-06-21,1
+PRD00991,Pilot Mechanical Pencil 0.7mm Set Plus 385,CAT008,Stationery,SUP039,Pilot,514.53,894.61,50,83,2024-07-16,1
+PRD00992,Kangaro Highlighter Pastel Colors Set of 6 Plus 814,CAT008,Stationery,SUP002,Kangaro,224.17,439.67,104,299,2024-02-02,1
+PRD00993,Casio Highlighter Pastel Colors Set of 6 Max 781,CAT008,Stationery,SUP016,Casio,86.92,168.95,120,232,2022-12-26,1
+PRD00994,Parker Fine Tip Gel Pen Set Pack of 10 Classic 873,CAT008,Stationery,SUP055,Parker,633.19,1224.56,28,153,2023-02-02,1
+PRD00995,Pilot Fine Tip Gel Pen Set Pack of 10 Select 721,CAT008,Stationery,SUP025,Pilot,417.72,585.44,82,232,2021-12-15,1
+PRD00996,Casio Highlighter Pastel Colors Set of 6 Elite 358,CAT008,Stationery,SUP034,Casio,329.39,577.22,88,201,2022-07-27,1
+PRD00997,Camlin Scientific Calculator 417 Functions Pro 744,CAT008,Stationery,SUP050,Camlin,624.69,893.9,27,178,2022-01-12,1
+PRD00998,Camlin Sticky Notes Neon Pack of 5 Select 289,CAT008,Stationery,SUP014,Camlin,449.89,883.36,142,285,2024-04-27,1
+PRD00999,Luxor Expanding File Folder 12 Pockets Select 733,CAT008,Stationery,SUP056,Luxor,586.85,1102.59,29,131,2024-11-13,1
+PRD01000,Camlin Fine Tip Gel Pen Set Pack of 10 Plus 901,CAT008,Stationery,SUP022,Camlin,345.87,495.66,123,209,2021-10-18,1
+PRD01001,Casio Hardbound Ruled Executive Notebook A5 Prime 948,CAT008,Stationery,SUP035,Casio,178.37,315.54,68,373,2022-05-03,1
+PRD01002,Kangaro Scientific Calculator 417 Functions Classic 733,CAT008,Stationery,SUP002,Kangaro,55.69,98.3,74,299,2024-05-21,1
+PRD01003,Luxor Hardbound Ruled Executive Notebook A5 Classic 367,CAT008,Stationery,SUP047,Luxor,146.32,278.9,67,185,2022-09-27,1
+PRD01004,Classmate Mechanical Pencil 0.7mm Set Elite 605,CAT008,Stationery,SUP027,Classmate,65.93,128.91,138,329,2021-06-03,1
+PRD01005,Pilot Fine Tip Gel Pen Set Pack of 10 Plus 377,CAT008,Stationery,SUP028,Pilot,475.7,682.39,123,279,2022-11-12,1
+PRD01006,Kangaro Expanding File Folder 12 Pockets Elite 121,CAT008,Stationery,SUP048,Kangaro,606.69,849.47,37,143,2024-11-22,1
+PRD01007,Pilot Hardbound Ruled Executive Notebook A5 Pro 496,CAT008,Stationery,SUP008,Pilot,502.38,886.03,52,164,2024-09-05,1
+PRD01008,Camlin Expanding File Folder 12 Pockets Select 460,CAT008,Stationery,SUP001,Camlin,142.0,227.58,67,210,2022-02-19,1
+PRD01009,Doms Scientific Calculator 417 Functions Pro 921,CAT008,Stationery,SUP012,Doms,29.39,52.33,67,169,2021-03-15,1
+PRD01010,Classmate Heavy Duty Desktop Stapler Select 458,CAT008,Stationery,SUP008,Classmate,399.52,762.29,97,183,2024-08-22,1
+PRD01011,Camlin Fine Tip Gel Pen Set Pack of 10 Prime 656,CAT008,Stationery,SUP020,Camlin,149.69,265.01,105,379,2022-08-23,1
+PRD01012,Kangaro Mechanical Pencil 0.7mm Set Elite 639,CAT008,Stationery,SUP058,Kangaro,582.58,896.48,59,139,2021-01-12,1
+PRD01013,Pilot Sticky Notes Neon Pack of 5 Prime 180,CAT008,Stationery,SUP014,Pilot,148.24,214.89,126,209,2023-12-18,1
+PRD01014,Luxor Fine Tip Gel Pen Set Pack of 10 Plus 136,CAT008,Stationery,SUP003,Luxor,636.08,1123.09,54,89,2021-08-27,1
+PRD01015,Kangaro Heavy Duty Desktop Stapler Classic 407,CAT008,Stationery,SUP056,Kangaro,541.12,771.47,42,153,2024-08-01,1
+PRD01016,Doms Sticky Notes Neon Pack of 5 Eco 145,CAT008,Stationery,SUP003,Doms,161.4,253.56,144,260,2021-11-10,1
+PRD01017,Classmate Mechanical Pencil 0.7mm Set Select 948,CAT008,Stationery,SUP054,Classmate,591.69,1092.19,38,171,2021-06-24,1
+PRD01018,Doms Sticky Notes Neon Pack of 5 Pro 926,CAT008,Stationery,SUP047,Doms,88.8,139.93,146,223,2024-07-19,1
+PRD01019,Parker Heavy Duty Desktop Stapler Classic 578,CAT008,Stationery,SUP044,Parker,489.75,948.07,76,382,2021-05-26,1
+PRD01020,Camlin Heavy Duty Desktop Stapler Elite 889,CAT008,Stationery,SUP043,Camlin,361.97,560.55,110,159,2023-06-09,1
+PRD01021,Classmate Heavy Duty Desktop Stapler Max 414,CAT008,Stationery,SUP002,Classmate,378.12,582.28,93,366,2022-08-15,1
+PRD01022,Classmate Expanding File Folder 12 Pockets Eco 137,CAT008,Stationery,SUP006,Classmate,628.51,1023.04,60,102,2024-01-19,1
+PRD01023,Luxor Heavy Duty Desktop Stapler Max 551,CAT008,Stationery,SUP041,Luxor,133.28,241.67,95,216,2024-03-08,1
+PRD01024,Parker Highlighter Pastel Colors Set of 6 Pro 338,CAT008,Stationery,SUP003,Parker,92.1,129.44,147,279,2024-10-11,1
+PRD01025,Classmate Scientific Calculator 417 Functions Prime 363,CAT008,Stationery,SUP023,Classmate,30.15,56.45,105,288,2021-10-08,1
+PRD01026,Camlin Fine Tip Gel Pen Set Pack of 10 Eco 215,CAT008,Stationery,SUP005,Camlin,341.95,512.0,101,296,2023-11-14,1
+PRD01027,Kangaro Sticky Notes Neon Pack of 5 Plus 125,CAT008,Stationery,SUP031,Kangaro,225.72,412.95,102,399,2024-11-12,1
+PRD01028,Classmate Heavy Duty Desktop Stapler Plus 477,CAT008,Stationery,SUP052,Classmate,48.1,93.34,135,156,2021-10-07,1
+PRD01029,Luxor Mechanical Pencil 0.7mm Set Elite 487,CAT008,Stationery,SUP037,Luxor,543.36,762.26,34,123,2021-02-08,1
+PRD01030,Camlin Sticky Notes Neon Pack of 5 Pro 721,CAT008,Stationery,SUP037,Camlin,317.57,525.24,116,231,2023-04-27,1
+PRD01031,Casio Heavy Duty Desktop Stapler Select 348,CAT008,Stationery,SUP045,Casio,523.37,1036.47,39,133,2023-12-04,1
+PRD01032,Pilot Scientific Calculator 417 Functions Classic 470,CAT008,Stationery,SUP039,Pilot,70.2,117.65,69,384,2023-11-16,1
+PRD01033,Pilot Scientific Calculator 417 Functions Classic 335,CAT008,Stationery,SUP038,Pilot,378.69,703.74,76,386,2022-07-22,1
+PRD01034,Kangaro Highlighter Pastel Colors Set of 6 Prime 449,CAT008,Stationery,SUP041,Kangaro,217.72,310.11,113,279,2022-10-16,1
+PRD01035,Parker Scientific Calculator 417 Functions Eco 115,CAT008,Stationery,SUP009,Parker,125.07,199.19,130,332,2024-12-04,1
+PRD01036,Doms Hardbound Ruled Executive Notebook A5 Pro 806,CAT008,Stationery,SUP009,Doms,125.17,177.81,125,371,2024-07-12,1
+PRD01037,Casio Sticky Notes Neon Pack of 5 Prime 221,CAT008,Stationery,SUP005,Casio,232.19,431.13,103,301,2021-12-02,1
+PRD01038,Pilot Mechanical Pencil 0.7mm Set Classic 745,CAT008,Stationery,SUP047,Pilot,303.34,565.57,97,343,2024-12-05,1
+PRD01039,Camlin Highlighter Pastel Colors Set of 6 Plus 107,CAT008,Stationery,SUP012,Camlin,393.94,616.85,143,266,2024-06-15,1
+PRD01040,Camlin Heavy Duty Desktop Stapler Elite 404,CAT008,Stationery,SUP025,Camlin,330.77,466.28,126,379,2024-05-11,1
+PRD01041,Parker Mechanical Pencil 0.7mm Set Plus 142,CAT008,Stationery,SUP021,Parker,532.81,954.2,38,130,2023-10-20,1
+PRD01042,Luxor Fine Tip Gel Pen Set Pack of 10 Prime 269,CAT008,Stationery,SUP039,Luxor,94.69,143.52,116,207,2022-05-09,1
+PRD01043,Casio Fine Tip Gel Pen Set Pack of 10 Prime 244,CAT008,Stationery,SUP058,Casio,80.46,134.43,125,343,2022-01-20,1
+PRD01044,Casio Hardbound Ruled Executive Notebook A5 Pro 600,CAT008,Stationery,SUP034,Casio,544.48,762.23,38,111,2024-12-15,1
+PRD01045,Pilot Highlighter Pastel Colors Set of 6 Prime 212,CAT008,Stationery,SUP006,Pilot,471.24,910.12,75,263,2024-08-09,1
+PRD01046,Kangaro Highlighter Pastel Colors Set of 6 Max 462,CAT008,Stationery,SUP033,Kangaro,526.29,946.12,39,168,2021-06-06,1
+PRD01047,Kangaro Mechanical Pencil 0.7mm Set Eco 745,CAT008,Stationery,SUP007,Kangaro,483.38,844.86,69,330,2023-01-14,1
+PRD01048,Casio Mechanical Pencil 0.7mm Set Pro 749,CAT008,Stationery,SUP017,Casio,415.19,623.5,135,246,2022-11-07,1
+PRD01049,Parker Expanding File Folder 12 Pockets Eco 933,CAT008,Stationery,SUP047,Parker,137.88,225.77,76,200,2021-09-28,1
+PRD01050,Classmate Scientific Calculator 417 Functions Classic 168,CAT008,Stationery,SUP017,Classmate,329.14,562.12,150,195,2021-07-23,1
+PRD01051,Casio Sticky Notes Neon Pack of 5 Select 595,CAT008,Stationery,SUP032,Casio,354.19,694.43,98,365,2022-05-22,1
+PRD01052,Doms Expanding File Folder 12 Pockets Select 656,CAT008,Stationery,SUP021,Doms,323.0,462.25,74,396,2023-07-15,1
+PRD01053,Doms Scientific Calculator 417 Functions Max 280,CAT008,Stationery,SUP050,Doms,312.78,481.32,74,238,2024-12-05,1
+PRD01054,Pilot Expanding File Folder 12 Pockets Classic 803,CAT008,Stationery,SUP050,Pilot,167.96,256.04,124,205,2024-01-18,1
+PRD01055,Kangaro Mechanical Pencil 0.7mm Set Select 521,CAT008,Stationery,SUP047,Kangaro,266.57,428.04,111,216,2021-05-16,1
+PRD01056,Luxor Scientific Calculator 417 Functions Pro 415,CAT008,Stationery,SUP040,Luxor,302.01,449.88,81,287,2022-11-04,1
+PRD01057,Parker Mechanical Pencil 0.7mm Set Pro 839,CAT008,Stationery,SUP042,Parker,33.3,52.31,150,235,2023-09-03,1
+PRD01058,Casio Hardbound Ruled Executive Notebook A5 Select 648,CAT008,Stationery,SUP011,Casio,145.02,211.57,128,251,2022-05-26,1
+PRD01059,Luxor Mechanical Pencil 0.7mm Set Classic 320,CAT008,Stationery,SUP033,Luxor,368.36,553.69,61,159,2021-09-04,1
+PRD01060,Pilot Sticky Notes Neon Pack of 5 Pro 260,CAT008,Stationery,SUP048,Pilot,198.35,277.54,140,347,2022-01-09,1
+PRD01061,Doms Fine Tip Gel Pen Set Pack of 10 Classic 234,CAT008,Stationery,SUP046,Doms,535.53,1015.91,30,84,2021-09-24,1
+PRD01062,Classmate Sticky Notes Neon Pack of 5 Pro 860,CAT008,Stationery,SUP039,Classmate,543.06,925.26,34,87,2024-04-27,1
+PRD01063,Luxor Heavy Duty Desktop Stapler Classic 624,CAT008,Stationery,SUP037,Luxor,488.39,747.32,118,201,2021-05-21,1
+PRD01064,Doms Expanding File Folder 12 Pockets Prime 539,CAT008,Stationery,SUP035,Doms,78.63,155.0,131,221,2024-05-23,1
+PRD01065,Doms Scientific Calculator 417 Functions Pro 608,CAT008,Stationery,SUP037,Doms,478.36,936.71,129,332,2021-08-08,1
+PRD01066,Doms Hardbound Ruled Executive Notebook A5 Elite 557,CAT008,Stationery,SUP041,Doms,252.99,424.4,142,229,2023-03-26,1
+PRD01067,Camlin Fine Tip Gel Pen Set Pack of 10 Plus 312,CAT008,Stationery,SUP054,Camlin,564.84,922.58,40,85,2022-07-20,1
+PRD01068,Tommy Hilfiger Minimalist Chronograph Wristwatch Elite 160,CAT009,Fashion Accessories,SUP021,Tommy Hilfiger,3495.2,5954.4,19,72,2023-03-02,1
+PRD01069,Titan RFID Blocking Travel Card Case Prime 806,CAT009,fashion accessories,SUP016,Titan,1083.85,2127.71,56,144,2024-06-21,1
+PRD01070,Lenskart Silk Touch Printed Neck Scarf Eco 626,CAT009,Fashion Accessories,SUP025,Lenskart,2576.77,5540.5,30,88,2024-12-03,1
+PRD01071,Titan Polarized Aviator Sunglasses Plus 632,CAT009,Fashion Accessories,SUP011,Titan,3412.0,5607.68,24,32,2021-07-16,1
+PRD01072,Wildhorn Minimalist Chronograph Wristwatch Classic 508,CAT009,Fashion Accessories,SUP040,Wildhorn,220.0,354.49,97,334,2023-09-11,1
+PRD01073,Wildhorn Silk Touch Printed Neck Scarf Plus 397,CAT009,Fashion Accessories,SUP014,Wildhorn,2440.45,4074.99,48,141,2023-08-15,1
+PRD01074,Wildhorn Silk Touch Printed Neck Scarf Plus 636,CAT009,Fashion Accessories,SUP005,Wildhorn,3269.15,6150.42,20,51,2022-03-16,1
+PRD01075,Fossil Genuine Leather Bifold Wallet Elite 304,CAT009,Fashion Accessories,SUP039,Fossil,3178.28,6164.63,20,31,2021-10-15,1
+PRD01076,Fastrack Polarized Aviator Sunglasses Select 751,CAT009,Fashion Accessories,SUP059,Fastrack,2595.55,4373.35,25,99,2023-05-27,1
+PRD01077,Fossil RFID Blocking Travel Card Case Select 739,CAT009,Fashion Accessories,SUP010,Fossil,3493.39,8389.04,27,59,2022-02-19,1
+PRD01078,Fastrack Classic Analog Stainless Steel Watch Prime 282,CAT009,Fashion Accessories,SUP050,Fastrack,1315.89,2107.38,58,150,2024-06-19,1
+PRD01079,Lenskart Canvas Laptop Backpack 15.6 Inch Elite 272,CAT009,Fashion Accessories,SUP031,Lenskart,191.54,323.52,87,173,2022-03-06,1
+PRD01080,Lavie Genuine Leather Bifold Wallet Max 153,CAT009,Fashion Accessories,SUP033,Lavie,771.73,1721.88,52,160,2024-06-10,1
+PRD01081,Fastrack Classic Analog Stainless Steel Watch Classic 486,CAT009,Fashion Accessories,SUP057,Fastrack,3523.33,7442.0,21,44,2023-09-03,1
+PRD01082,Wildhorn Reversible Formal Leather Belt Prime 828,CAT009,Fashion Accessories,SUP036,Wildhorn,797.26,1474.53,53,137,2023-11-04,1
+PRD01083,Lavie RFID Blocking Travel Card Case Plus 125,CAT009,Fashion Accessories,SUP036,Lavie,3921.72,8991.53,21,71,2024-04-20,1
+PRD01084,Baggit Reversible Formal Leather Belt Select 283,CAT009,Fashion Accessories,SUP001,Baggit,4211.39,10498.54,16,53,2023-09-07,1
+PRD01085,Lavie Canvas Laptop Backpack 15.6 Inch Max 477,CAT009,Fashion Accessories,SUP018,Lavie,4136.29,7889.14,10,63,2023-01-21,1
+PRD01086,Baggit Minimalist Chronograph Wristwatch Pro 812,CAT009,Fashion Accessories,SUP039,Baggit,3222.42,5541.98,11,61,2021-12-16,1
+PRD01087,Lenskart Minimalist Chronograph Wristwatch Plus 584,CAT009,Fashion Accessories,SUP040,Lenskart,3419.72,7006.0,27,31,2021-06-01,1
+PRD01088,Wildhorn Polarized Aviator Sunglasses Plus 184,CAT009,Fashion Accessories,SUP055,Wildhorn,1992.55,4543.5,28,131,2021-06-04,1
+PRD01089,Fastrack Canvas Laptop Backpack 15.6 Inch Pro 440,CAT009,Fashion Accessories,SUP024,Fastrack,3797.02,8670.13,20,70,2022-10-24,1
+PRD01090,Baggit Genuine Leather Bifold Wallet Classic 957,CAT009,Fashion Accessories,SUP006,Baggit,3064.56,4828.9,16,73,2022-12-09,1
+PRD01091,Lenskart Polarized Aviator Sunglasses Pro 382,CAT009,Fashion Accessories,SUP036,Lenskart,2808.85,5878.46,51,97,2021-05-09,1
+PRD01092,Fastrack Silk Touch Printed Neck Scarf Select 577,CAT009,Fashion Accessories,SUP047,Fastrack,2634.51,5535.53,54,86,2021-02-06,1
+PRD01093,Wildhorn Classic Analog Stainless Steel Watch Select 705,CAT009,Fashion Accessories,SUP024,Wildhorn,2887.02,4476.19,35,175,2021-04-21,1
+PRD01094,Fastrack Minimalist Chronograph Wristwatch Elite 415,CAT009,Fashion Accessories,SUP025,Fastrack,3797.17,7758.5,16,72,2022-05-02,1
+PRD01095,Wildhorn Canvas Laptop Backpack 15.6 Inch Prime 243,CAT009,Fashion Accessories,SUP017,Wildhorn,2620.97,4795.88,37,109,2022-03-10,1
+PRD01096,Fossil Minimalist Chronograph Wristwatch Max 601,CAT009,Fashion Accessories,SUP038,Fossil,1714.26,3066.12,58,132,2022-01-27,1
+PRD01097,Wildhorn RFID Blocking Travel Card Case Elite 819,CAT009,Fashion Accessories,SUP036,Wildhorn,2054.25,4205.24,43,101,2023-12-17,1
+PRD01098,Fastrack Canvas Laptop Backpack 15.6 Inch Elite 364,CAT009,Fashion Accessories,SUP030,Fastrack,1122.86,1920.11,32,141,2022-08-05,1
+PRD01099,Lavie Silk Touch Printed Neck Scarf Classic 774,CAT009,Fashion Accessories,SUP027,Lavie,2721.85,4242.7,31,155,2023-01-06,1
+PRD01100,Lavie Minimalist Chronograph Wristwatch Select 763,CAT009,Fashion Accessories,SUP012,Lavie,4080.87,6765.12,21,44,2022-08-18,1
+PRD01101,Lenskart Genuine Leather Bifold Wallet Eco 707,CAT009,Fashion Accessories,SUP024,Lenskart,2668.17,4929.57,50,135,2022-05-24,1
+PRD01102,Lenskart Silk Touch Printed Neck Scarf Classic 407,CAT009,Fashion Accessories,SUP050,Lenskart,353.36,845.86,89,345,2021-07-14,1
+PRD01103,Baggit Canvas Laptop Backpack 15.6 Inch Pro 267,CAT009,Fashion Accessories,SUP022,Baggit,2392.72,5704.94,58,100,2022-03-22,1
+PRD01104,Fastrack Genuine Leather Bifold Wallet Prime 911,CAT009,Fashion Accessories,SUP043,Fastrack,3488.36,7758.33,24,50,2022-08-01,1
+PRD01105,Fastrack Polarized Aviator Sunglasses Plus 408,CAT009,Fashion Accessories,SUP010,Fastrack,1508.52,2498.16,38,130,2021-12-08,1
+PRD01106,Titan Silk Touch Printed Neck Scarf Eco 263,CAT009,Fashion Accessories,SUP025,Titan,1669.16,3135.75,50,164,2022-08-22,1
+PRD01107,Fastrack Minimalist Chronograph Wristwatch Max 496,CAT009,Fashion Accessories,SUP044,Fastrack,735.13,1600.76,33,126,2023-05-27,1
+PRD01108,Baggit RFID Blocking Travel Card Case Max 455,CAT009,Fashion Accessories,SUP024,Baggit,2289.5,4924.79,26,103,2022-04-12,1
+PRD01109,Tommy Hilfiger Silk Touch Printed Neck Scarf Pro 725,CAT009,Fashion Accessories,SUP013,Tommy Hilfiger,2768.42,5029.33,29,157,2022-03-16,1
+PRD01110,Fastrack Genuine Leather Bifold Wallet Prime 545,CAT009,Fashion Accessories,SUP025,Fastrack,581.11,1048.97,36,129,2022-05-10,1
+PRD01111,Titan Minimalist Chronograph Wristwatch Prime 531,CAT009,Fashion Accessories,SUP044,Titan,955.52,1735.9,58,88,2024-02-12,1
+PRD01112,Baggit Classic Analog Stainless Steel Watch Pro 264,CAT009,Fashion Accessories,SUP042,Baggit,1558.19,3077.42,49,162,2024-01-16,1
+PRD01113,Baggit RFID Blocking Travel Card Case Pro 410,CAT009,Fashion Accessories,SUP050,Baggit,2015.92,4340.13,32,152,2024-09-12,1
+PRD01114,Lavie Minimalist Chronograph Wristwatch Select 214,CAT009,Fashion Accessories,SUP010,Lavie,3573.34,8827.06,27,73,2024-11-03,1
+PRD01115,Lavie Genuine Leather Bifold Wallet Prime 302,CAT009,Fashion Accessories,SUP003,Lavie,2404.35,4843.87,54,130,2021-08-10,1
+PRD01116,Lenskart Classic Analog Stainless Steel Watch Eco 475,CAT009,Fashion Accessories,SUP019,Lenskart,396.32,792.37,107,214,2024-06-22,1
+PRD01117,Tommy Hilfiger Genuine Leather Bifold Wallet Prime 283,CAT009,Fashion Accessories,SUP039,Tommy Hilfiger,1446.8,2651.1,53,116,2023-11-02,1
+PRD01118,Lavie Classic Analog Stainless Steel Watch Pro 644,CAT009,Fashion Accessories,SUP010,Lavie,3371.1,5734.69,12,59,2021-03-24,1
+PRD01119,Baggit Minimalist Chronograph Wristwatch Prime 453,CAT009,Fashion Accessories,SUP021,Baggit,4378.4,9164.59,17,71,2024-01-03,1
+PRD01120,Titan Silk Touch Printed Neck Scarf Plus 723,CAT009,Fashion Accessories,SUP048,Titan,4399.96,8969.51,13,49,2021-06-21,1
+PRD01121,Baggit Canvas Laptop Backpack 15.6 Inch Classic 122,CAT009,Fashion Accessories,SUP017,Baggit,974.58,2103.52,30,130,2021-04-19,1
+PRD01122,Tommy Hilfiger Canvas Laptop Backpack 15.6 Inch Elite 810,CAT009,Fashion Accessories,SUP045,Tommy Hilfiger,3631.48,6526.26,25,38,2024-05-24,1
+PRD01123,Fossil Polarized Aviator Sunglasses Pro 719,CAT009,Fashion Accessories,SUP002,Fossil,1902.26,3145.87,43,109,2021-07-07,1
+PRD01124,Wildhorn RFID Blocking Travel Card Case Prime 373,CAT009,Fashion Accessories,SUP046,Wildhorn,2177.75,4813.39,45,87,2022-04-01,1
+PRD01125,Fastrack Silk Touch Printed Neck Scarf Max 726,CAT009,Fashion Accessories,SUP022,Fastrack,1423.43,3015.8,54,150,2024-11-20,1
+PRD01126,Lenskart RFID Blocking Travel Card Case Pro 451,CAT009,Fashion Accessories,SUP014,Lenskart,1651.37,2931.04,53,94,2024-12-16,1
+PRD01127,Baggit Polarized Aviator Sunglasses Prime 512,CAT009,Fashion Accessories,SUP006,Baggit,319.39,730.99,70,311,2024-09-12,1
+PRD01128,Tommy Hilfiger Reversible Formal Leather Belt Select 411,CAT009,Fashion Accessories,SUP011,Tommy Hilfiger,1440.68,2522.35,54,78,2022-10-19,1
+PRD01129,Baggit Silk Touch Printed Neck Scarf Classic 883,CAT009,Fashion Accessories,SUP059,Baggit,281.12,691.29,131,340,2024-04-13,1
+PRD01130,Baggit Polarized Aviator Sunglasses Max 199,CAT009,Fashion Accessories,SUP011,Baggit,1889.64,3164.31,32,148,2023-03-28,1
+PRD01131,Tommy Hilfiger RFID Blocking Travel Card Case Classic 460,CAT009,Fashion Accessories,SUP007,Tommy Hilfiger,3425.53,6280.13,29,42,2023-06-21,1
+PRD01132,Tommy Hilfiger Silk Touch Printed Neck Scarf Classic 330,CAT009,Fashion Accessories,SUP012,Tommy Hilfiger,3891.12,7393.47,24,43,2024-03-28,1
+PRD01133,Fossil RFID Blocking Travel Card Case Pro 645,CAT009,Fashion Accessories,SUP042,Fossil,3765.02,8197.9,30,36,2021-07-19,1
+PRD01134,Baggit RFID Blocking Travel Card Case Classic 293,CAT009,Fashion Accessories,SUP047,Baggit,2929.32,5914.46,33,153,2021-10-19,1
+PRD01135,Titan RFID Blocking Travel Card Case Select 724,CAT009,Fashion Accessories,SUP048,Titan,1259.74,2481.4,55,162,2021-06-01,1
+PRD01136,Tommy Hilfiger RFID Blocking Travel Card Case Elite 970,CAT009,Fashion Accessories,SUP021,Tommy Hilfiger,4125.05,7702.34,17,36,2024-12-07,1
+PRD01137,Fossil Polarized Aviator Sunglasses Max 131,CAT009,Fashion Accessories,SUP012,Fossil,1074.27,2009.09,40,162,2024-04-26,1
+PRD01138,Tommy Hilfiger Minimalist Chronograph Wristwatch Max 922,CAT009,Fashion Accessories,SUP001,Tommy Hilfiger,2789.31,4917.81,35,106,2024-12-03,1
+PRD01139,Baggit Genuine Leather Bifold Wallet Eco 982,CAT009,Fashion Accessories,SUP039,Baggit,1844.56,4060.77,41,166,2021-12-25,1
+PRD01140,Lenskart Genuine Leather Bifold Wallet Eco 947,CAT009,Fashion Accessories,SUP046,Lenskart,3316.46,5750.16,22,71,2021-06-13,1
+PRD01141,Baggit Minimalist Chronograph Wristwatch Max 206,CAT009,Fashion Accessories,SUP043,Baggit,810.65,1387.21,32,167,2022-06-14,1
+PRD01142,Wildhorn Silk Touch Printed Neck Scarf Elite 914,CAT009,Fashion Accessories,SUP032,Wildhorn,2264.79,3878.91,46,157,2021-08-23,1
+PRD01143,Fossil Reversible Formal Leather Belt Select 402,CAT009,Fashion Accessories,SUP039,Fossil,3157.32,5565.18,24,69,2023-10-09,1
+PRD01144,Wildhorn Genuine Leather Bifold Wallet Plus 634,CAT009,Fashion Accessories,SUP020,Wildhorn,1426.02,2397.7,48,147,2023-12-10,1
+PRD01145,Fossil Polarized Aviator Sunglasses Eco 830,CAT009,Fashion Accessories,SUP041,Fossil,2080.21,3609.72,33,93,2023-07-09,1
+PRD01146,Titan Reversible Formal Leather Belt Elite 697,CAT009,Fashion Accessories,SUP058,Titan,1488.77,2954.25,41,121,2024-08-20,1
+PRD01147,Lavie Polarized Aviator Sunglasses Plus 701,CAT009,Fashion Accessories,SUP056,Lavie,3863.28,6760.77,21,49,2024-11-06,1
+PRD01148,Wildhorn Minimalist Chronograph Wristwatch Eco 488,CAT009,Fashion Accessories,SUP010,Wildhorn,241.48,584.33,103,207,2023-04-08,1
+PRD01149,Fastrack Canvas Laptop Backpack 15.6 Inch Elite 465,CAT009,Fashion Accessories,SUP024,Fastrack,2334.77,4599.19,25,170,2022-12-07,1
+PRD01150,Baggit Genuine Leather Bifold Wallet Max 437,CAT009,Fashion Accessories,SUP037,Baggit,2372.04,4074.75,59,169,2021-01-15,1
+PRD01151,Fastrack Reversible Formal Leather Belt Prime 916,CAT009,Fashion Accessories,SUP030,Fastrack,3374.36,7065.61,30,40,2022-12-23,1
+PRD01152,Titan Polarized Aviator Sunglasses Prime 665,CAT009,Fashion Accessories,SUP015,Titan,1378.7,2969.91,29,91,2023-01-07,1
+PRD01153,Lenskart Reversible Formal Leather Belt Eco 200,CAT009,Fashion Accessories,SUP008,Lenskart,2499.55,5497.78,45,176,2021-04-16,1
+PRD01154,Fastrack Minimalist Chronograph Wristwatch Eco 302,CAT009,Fashion Accessories,SUP056,Fastrack,611.46,1216.46,56,113,2021-10-14,1
+PRD01155,Lenskart Classic Analog Stainless Steel Watch Elite 703,CAT009,Fashion Accessories,SUP018,Lenskart,3660.91,7374.97,24,25,2023-07-20,1
+PRD01156,Wildhorn Minimalist Chronograph Wristwatch Select 619,CAT009,Fashion Accessories,SUP044,Wildhorn,2267.77,3916.29,44,108,2022-06-09,1
+PRD01157,Lenskart Canvas Laptop Backpack 15.6 Inch Max 874,CAT009,Fashion Accessories,SUP012,Lenskart,4265.41,8076.82,20,57,2024-08-06,1
+PRD01158,Baggit Classic Analog Stainless Steel Watch Prime 196,CAT009,Fashion Accessories,SUP007,Baggit,4177.28,7747.18,30,68,2022-04-25,1
+PRD01159,Fastrack Reversible Formal Leather Belt Prime 613,CAT009,Fashion Accessories,SUP037,Fastrack,1499.26,3270.67,55,88,2023-10-07,1
+PRD01160,Lavie Polarized Aviator Sunglasses Plus 296,CAT009,Fashion Accessories,SUP031,Lavie,3490.84,7696.75,15,64,2022-06-17,1
+PRD01161,Fossil RFID Blocking Travel Card Case Elite 369,CAT009,Fashion Accessories,SUP047,Fossil,2218.96,5090.05,44,122,2022-05-11,1
+PRD01162,Lavie Silk Touch Printed Neck Scarf Eco 415,CAT009,Fashion Accessories,SUP023,Lavie,2017.29,3657.07,51,75,2024-01-14,1
+PRD01163,Lenskart Polarized Aviator Sunglasses Prime 119,CAT009,Fashion Accessories,SUP028,Lenskart,3716.06,6199.15,18,43,2023-01-11,1
+PRD01164,Lavie RFID Blocking Travel Card Case Elite 916,CAT009,Fashion Accessories,SUP021,Lavie,1108.71,2114.79,42,88,2021-04-06,1
+PRD01165,Lenskart Minimalist Chronograph Wristwatch Pro 899,CAT009,Fashion Accessories,SUP025,Lenskart,3028.69,6335.51,25,40,2023-10-19,1
+PRD01166,Fastrack Genuine Leather Bifold Wallet Pro 754,CAT009,Fashion Accessories,SUP057,Fastrack,1660.43,3220.85,53,111,2021-08-05,1
+PRD01167,Lavie Classic Analog Stainless Steel Watch Classic 944,CAT009,Fashion Accessories,SUP029,Lavie,835.66,1364.58,44,148,2022-09-03,1
+PRD01168,Lavie Reversible Formal Leather Belt Prime 670,CAT009,Fashion Accessories,SUP048,Lavie,2474.04,4286.69,26,92,2021-12-23,1
+PRD01169,Lavie Silk Touch Printed Neck Scarf Eco 865,CAT009,Fashion Accessories,SUP013,Lavie,4001.41,6625.23,24,39,2024-06-11,1
+PRD01170,Fossil Canvas Laptop Backpack 15.6 Inch Pro 243,CAT009,Fashion Accessories,SUP034,Fossil,694.9,1269.68,50,178,2024-01-27,1
+PRD01171,Tommy Hilfiger Genuine Leather Bifold Wallet Select 116,CAT009,Fashion Accessories,SUP019,Tommy Hilfiger,2623.89,6541.96,57,177,2023-09-16,1
+PRD01172,Fastrack Silk Touch Printed Neck Scarf Max 678,CAT009,Fashion Accessories,SUP055,Fastrack,578.06,1132.5,32,143,2022-09-28,1
+PRD01173,Lenskart Classic Analog Stainless Steel Watch Elite 869,CAT009,Fashion Accessories,SUP042,Lenskart,495.72,1034.88,95,269,2024-12-05,1
+PRD01174,Fastrack Silk Touch Printed Neck Scarf Plus 763,CAT009,Fashion Accessories,SUP001,Fastrack,2664.97,4967.43,52,77,2024-10-10,1
+PRD01175,Titan RFID Blocking Travel Card Case Pro 330,CAT009,Fashion Accessories,SUP042,Titan,1572.7,2568.19,39,149,2023-09-15,1
+PRD01176,Lavie Reversible Formal Leather Belt Plus 293,CAT009,Fashion Accessories,SUP055,Lavie,3519.33,5880.6,15,31,2021-09-20,1
+PRD01177,Wildhorn Genuine Leather Bifold Wallet Select 170,CAT009,Fashion Accessories,SUP011,Wildhorn,1594.63,2791.89,39,159,2022-04-10,1
+PRD01178,Fossil RFID Blocking Travel Card Case Elite 322,CAT009,Fashion Accessories,SUP056,Fossil,3516.53,5467.45,24,32,2024-01-15,1
+PRD01179,Baggit Reversible Formal Leather Belt Pro 557,CAT009,Fashion Accessories,SUP033,Baggit,2074.52,3455.57,49,150,2021-02-06,1
+PRD01180,Wildhorn Classic Analog Stainless Steel Watch Elite 223,CAT009,Fashion Accessories,SUP014,Wildhorn,4243.81,9129.62,21,72,2023-07-07,1
+PRD01181,Tommy Hilfiger Classic Analog Stainless Steel Watch Select 589,CAT009,Fashion Accessories,SUP027,Tommy Hilfiger,1282.83,2062.42,54,77,2021-07-26,1
+PRD01182,Fastrack RFID Blocking Travel Card Case Select 469,CAT009,Fashion Accessories,SUP006,Fastrack,4265.56,9675.4,23,66,2023-04-23,1
+PRD01183,Lenskart RFID Blocking Travel Card Case Pro 381,CAT009,Fashion Accessories,SUP001,Lenskart,3332.0,7827.71,11,34,2022-03-19,1
+PRD01184,Tommy Hilfiger Polarized Aviator Sunglasses Plus 243,CAT009,Fashion Accessories,SUP019,Tommy Hilfiger,3182.7,6927.53,11,63,2022-12-22,1
+PRD01185,Baggit Silk Touch Printed Neck Scarf Plus 529,CAT009,Fashion Accessories,SUP051,Baggit,924.85,2223.59,34,169,2022-06-04,1
+PRD01186,Titan Polarized Aviator Sunglasses Eco 308,CAT009,Fashion Accessories,SUP002,Titan,1502.2,3042.91,41,154,2023-01-26,1
+PRD01187,Titan Silk Touch Printed Neck Scarf Eco 135,CAT009,Fashion Accessories,SUP034,Titan,3354.99,5464.91,23,27,2024-10-24,1
+PRD01188,Wildhorn Polarized Aviator Sunglasses Max 115,CAT009,Fashion Accessories,SUP027,Wildhorn,1686.24,2837.24,51,83,2021-08-15,1
+PRD01189,Wildhorn Minimalist Chronograph Wristwatch Pro 418,CAT009,Fashion Accessories,SUP024,Wildhorn,2237.37,5263.0,41,91,2023-11-18,1
+PRD01190,Lenskart Classic Analog Stainless Steel Watch Eco 866,CAT009,Fashion Accessories,SUP043,Lenskart,3770.31,7433.72,14,39,2022-03-08,1
+PRD01191,Fastrack Classic Analog Stainless Steel Watch Classic 389,CAT009,Fashion Accessories,SUP020,Fastrack,4011.49,6431.83,17,41,2022-12-22,1
+PRD01192,Lenskart Silk Touch Printed Neck Scarf Prime 878,CAT009,Fashion Accessories,SUP060,Lenskart,4065.98,7158.24,21,67,2022-10-24,1
+PRD01193,Baggit Genuine Leather Bifold Wallet Pro 913,CAT009,Fashion Accessories,SUP026,Baggit,1034.91,1712.13,34,156,2021-04-06,1
+PRD01194,Titan Silk Touch Printed Neck Scarf Eco 595,CAT009,Fashion Accessories,SUP040,Titan,3885.18,6442.41,28,50,2024-04-15,1
+PRD01195,Tommy Hilfiger Canvas Laptop Backpack 15.6 Inch Eco 220,CAT009,Fashion Accessories,SUP022,Tommy Hilfiger,3398.23,6990.3,26,46,2023-03-09,1
+PRD01196,Tommy Hilfiger Minimalist Chronograph Wristwatch Eco 779,CAT009,Fashion Accessories,SUP042,Tommy Hilfiger,596.89,1369.18,58,108,2021-06-14,1
+PRD01197,Tommy Hilfiger Genuine Leather Bifold Wallet Plus 196,CAT009,Fashion Accessories,SUP023,Tommy Hilfiger,1161.18,2167.83,32,90,2023-03-28,1
+PRD01198,Lenskart Canvas Laptop Backpack 15.6 Inch Classic 666,CAT009,Fashion Accessories,SUP010,Lenskart,4432.23,7043.58,26,36,2024-09-07,1
+PRD01199,Titan Reversible Formal Leather Belt Elite 851,CAT009,Fashion Accessories,SUP035,Titan,3396.65,6549.57,14,61,2021-09-12,1
+PRD01200,Tommy Hilfiger Reversible Formal Leather Belt Plus 483,CAT009,Fashion Accessories,SUP028,Tommy Hilfiger,865.8,1804.12,39,171,2022-09-20,1

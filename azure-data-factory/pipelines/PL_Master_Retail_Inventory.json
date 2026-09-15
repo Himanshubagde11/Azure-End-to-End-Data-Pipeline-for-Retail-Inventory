@@ -1,0 +1,223 @@
+{
+  "name": "PL_Master_Retail_Inventory",
+  "properties": {
+    "description": "Master Orchestrator Pipeline for Nexora Inventory Intelligence. Coordinates ingestion, Python DQ validation, warehouse transformation, and centralized audit logging.",
+    "activities": [
+      {
+        "name": "Log_Pipeline_Start",
+        "type": "SqlServerStoredProcedure",
+        "dependsOn": [],
+        "policy": {
+          "timeout": "0.00:05:00",
+          "retry": 2,
+          "retryIntervalInSeconds": 30
+        },
+        "userProperties": [],
+        "typeProperties": {
+          "storedProcedureName": "audit.sp_Log_PipelineExecution",
+          "storedProcedureParameters": {
+            "RunID": { "value": "@pipeline().RunId", "type": "String" },
+            "PipelineName": { "value": "PL_Master_Retail_Inventory", "type": "String" },
+            "ActivityName": { "value": "Master_Orchestrator_Start", "type": "String" },
+            "StartTime": { "value": "@utcNow()", "type": "DateTime" },
+            "Status": { "value": "RUNNING", "type": "String" }
+          }
+        },
+        "linkedServiceName": {
+          "referenceName": "LS_AzureSqlDatabase_DW",
+          "type": "LinkedServiceReference"
+        }
+      },
+      {
+        "name": "Execute_Load_Master_Dimensions",
+        "type": "ExecutePipeline",
+        "dependsOn": [
+          { "activity": "Log_Pipeline_Start", "dependencyConditions": ["Succeeded"] }
+        ],
+        "userProperties": [],
+        "typeProperties": {
+          "pipeline": { "referenceName": "PL_Load_Products", "type": "PipelineReference" },
+          "waitOnCompletion": true,
+          "parameters": { "p_RunID": "@pipeline().RunId" }
+        }
+      },
+      {
+        "name": "Execute_Load_Stores",
+        "type": "ExecutePipeline",
+        "dependsOn": [
+          { "activity": "Log_Pipeline_Start", "dependencyConditions": ["Succeeded"] }
+        ],
+        "userProperties": [],
+        "typeProperties": {
+          "pipeline": { "referenceName": "PL_Load_Stores", "type": "PipelineReference" },
+          "waitOnCompletion": true,
+          "parameters": { "p_RunID": "@pipeline().RunId" }
+        }
+      },
+      {
+        "name": "Execute_Load_Suppliers",
+        "type": "ExecutePipeline",
+        "dependsOn": [
+          { "activity": "Log_Pipeline_Start", "dependencyConditions": ["Succeeded"] }
+        ],
+        "userProperties": [],
+        "typeProperties": {
+          "pipeline": { "referenceName": "PL_Load_Suppliers", "type": "PipelineReference" },
+          "waitOnCompletion": true,
+          "parameters": { "p_RunID": "@pipeline().RunId" }
+        }
+      },
+      {
+        "name": "Execute_Load_REST_API",
+        "type": "ExecutePipeline",
+        "dependsOn": [
+          { "activity": "Execute_Load_Master_Dimensions", "dependencyConditions": ["Succeeded"] },
+          { "activity": "Execute_Load_Suppliers", "dependencyConditions": ["Succeeded"] }
+        ],
+        "userProperties": [],
+        "typeProperties": {
+          "pipeline": { "referenceName": "PL_Load_REST_API", "type": "PipelineReference" },
+          "waitOnCompletion": true,
+          "parameters": { "p_RunID": "@pipeline().RunId" }
+        }
+      },
+      {
+        "name": "Execute_Load_Sales",
+        "type": "ExecutePipeline",
+        "dependsOn": [
+          { "activity": "Execute_Load_Master_Dimensions", "dependencyConditions": ["Succeeded"] },
+          { "activity": "Execute_Load_Stores", "dependencyConditions": ["Succeeded"] }
+        ],
+        "userProperties": [],
+        "typeProperties": {
+          "pipeline": { "referenceName": "PL_Load_Sales", "type": "PipelineReference" },
+          "waitOnCompletion": true,
+          "parameters": { "p_RunID": "@pipeline().RunId" }
+        }
+      },
+      {
+        "name": "Execute_Load_Inventory",
+        "type": "ExecutePipeline",
+        "dependsOn": [
+          { "activity": "Execute_Load_Master_Dimensions", "dependencyConditions": ["Succeeded"] },
+          { "activity": "Execute_Load_Stores", "dependencyConditions": ["Succeeded"] }
+        ],
+        "userProperties": [],
+        "typeProperties": {
+          "pipeline": { "referenceName": "PL_Load_Inventory", "type": "PipelineReference" },
+          "waitOnCompletion": true,
+          "parameters": { "p_RunID": "@pipeline().RunId" }
+        }
+      },
+      {
+        "name": "Execute_Load_Purchases",
+        "type": "ExecutePipeline",
+        "dependsOn": [
+          { "activity": "Execute_Load_Master_Dimensions", "dependencyConditions": ["Succeeded"] },
+          { "activity": "Execute_Load_Suppliers", "dependencyConditions": ["Succeeded"] }
+        ],
+        "userProperties": [],
+        "typeProperties": {
+          "pipeline": { "referenceName": "PL_Load_Purchases", "type": "PipelineReference" },
+          "waitOnCompletion": true,
+          "parameters": { "p_RunID": "@pipeline().RunId" }
+        }
+      },
+      {
+        "name": "Execute_Load_Returns",
+        "type": "ExecutePipeline",
+        "dependsOn": [
+          { "activity": "Execute_Load_Sales", "dependencyConditions": ["Succeeded"] }
+        ],
+        "userProperties": [],
+        "typeProperties": {
+          "pipeline": { "referenceName": "PL_Load_Returns", "type": "PipelineReference" },
+          "waitOnCompletion": true,
+          "parameters": { "p_RunID": "@pipeline().RunId" }
+        }
+      },
+      {
+        "name": "Execute_Data_Quality_Check",
+        "type": "ExecutePipeline",
+        "dependsOn": [
+          { "activity": "Execute_Load_REST_API", "dependencyConditions": ["Succeeded"] },
+          { "activity": "Execute_Load_Sales", "dependencyConditions": ["Succeeded"] },
+          { "activity": "Execute_Load_Inventory", "dependencyConditions": ["Succeeded"] },
+          { "activity": "Execute_Load_Purchases", "dependencyConditions": ["Succeeded"] },
+          { "activity": "Execute_Load_Returns", "dependencyConditions": ["Succeeded"] }
+        ],
+        "userProperties": [],
+        "typeProperties": {
+          "pipeline": { "referenceName": "PL_Data_Quality_Check", "type": "PipelineReference" },
+          "waitOnCompletion": true,
+          "parameters": { "p_RunID": "@pipeline().RunId" }
+        }
+      },
+      {
+        "name": "Execute_Transform_Warehouse",
+        "type": "ExecutePipeline",
+        "dependsOn": [
+          { "activity": "Execute_Data_Quality_Check", "dependencyConditions": ["Succeeded"] }
+        ],
+        "userProperties": [],
+        "typeProperties": {
+          "pipeline": { "referenceName": "PL_Transform_Warehouse", "type": "PipelineReference" },
+          "waitOnCompletion": true,
+          "parameters": { "p_RunID": "@pipeline().RunId" }
+        }
+      },
+      {
+        "name": "Log_Pipeline_Success",
+        "type": "SqlServerStoredProcedure",
+        "dependsOn": [
+          { "activity": "Execute_Transform_Warehouse", "dependencyConditions": ["Succeeded"] }
+        ],
+        "userProperties": [],
+        "typeProperties": {
+          "storedProcedureName": "audit.sp_Log_PipelineExecution",
+          "storedProcedureParameters": {
+            "RunID": { "value": "@pipeline().RunId", "type": "String" },
+            "PipelineName": { "value": "PL_Master_Retail_Inventory", "type": "String" },
+            "ActivityName": { "value": "Master_Orchestrator_Complete", "type": "String" },
+            "StartTime": { "value": "@activity('Log_Pipeline_Start').ExecutionStartTime", "type": "DateTime" },
+            "EndTime": { "value": "@utcNow()", "type": "DateTime" },
+            "Status": { "value": "SUCCESS", "type": "String" }
+          }
+        },
+        "linkedServiceName": {
+          "referenceName": "LS_AzureSqlDatabase_DW",
+          "type": "LinkedServiceReference"
+        }
+      },
+      {
+        "name": "Log_Pipeline_Failure",
+        "type": "SqlServerStoredProcedure",
+        "dependsOn": [
+          { "activity": "Execute_Transform_Warehouse", "dependencyConditions": ["Failed"] },
+          { "activity": "Execute_Data_Quality_Check", "dependencyConditions": ["Failed"] }
+        ],
+        "userProperties": [],
+        "typeProperties": {
+          "storedProcedureName": "audit.sp_Log_PipelineExecution",
+          "storedProcedureParameters": {
+            "RunID": { "value": "@pipeline().RunId", "type": "String" },
+            "PipelineName": { "value": "PL_Master_Retail_Inventory", "type": "String" },
+            "ActivityName": { "value": "Master_Orchestrator_Failed", "type": "String" },
+            "StartTime": { "value": "@activity('Log_Pipeline_Start').ExecutionStartTime", "type": "DateTime" },
+            "EndTime": { "value": "@utcNow()", "type": "DateTime" },
+            "Status": { "value": "FAILED", "type": "String" },
+            "ErrorMessage": { "value": "Pipeline execution halted due to failure in upstream activity", "type": "String" }
+          }
+        },
+        "linkedServiceName": {
+          "referenceName": "LS_AzureSqlDatabase_DW",
+          "type": "LinkedServiceReference"
+        }
+      }
+    ],
+    "parameters": {
+      "p_TriggerType": { "type": "string", "defaultValue": "Scheduled" }
+    },
+    "annotations": ["Nexora", "Master", "Production"]
+  }
+}

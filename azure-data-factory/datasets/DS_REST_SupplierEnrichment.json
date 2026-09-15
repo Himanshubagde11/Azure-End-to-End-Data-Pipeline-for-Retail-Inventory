@@ -1,0 +1,35 @@
+{
+  "name": "DS_REST_SupplierEnrichment",
+  "type": "Microsoft.DataFactory/factories/datasets",
+  "properties": {
+    "description": "REST Dataset for querying live supplier replenishment feeds with query pagination",
+    "linkedServiceName": {
+      "referenceName": "LS_RestApi_SupplierCatalog",
+      "type": "LinkedServiceReference"
+    },
+    "parameters": {
+      "p_RelativeUrl": {
+        "type": "string",
+        "defaultValue": "/api/v1/products/enrichment"
+      },
+      "p_Page": {
+        "type": "int",
+        "defaultValue": 1
+      },
+      "p_Limit": {
+        "type": "int",
+        "defaultValue": 100
+      }
+    },
+    "annotations": [
+      "Nexora",
+      "REST",
+      "SupplierEnrichment"
+    ],
+    "type": "RestResource",
+    "typeProperties": {
+      "relativeUrl": "@concat(dataset().p_RelativeUrl, '?page=', dataset().p_Page, '&limit=', dataset().p_Limit)"
+    },
+    "schema": []
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "globalParameters": {
+    "Environment": {
+      "type": "string",
+      "value": "prod"
+    },
+    "AzureRegion": {
+      "type": "string",
+      "value": "centralindia"
+    },
+    "DataLakeStorageAccount": {
+      "type": "string",
+      "value": "sanexoradatalakeprod"
+    },
+    "MaxCopyRetryCount": {
+      "type": "int",
+      "value": 3
+    },
+    "AlertNotificationEmail": {
+      "type": "string",
+      "value": "dataops@nexoraretail.in"
+    }
+  }
+}

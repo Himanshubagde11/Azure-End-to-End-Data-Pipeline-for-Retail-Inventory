@@ -1,0 +1,32 @@
+{
+  "name": "TR_Daily_Inventory_Schedule",
+  "properties": {
+    "description": "Daily recurrence trigger executing the master inventory ingestion and analytics pipeline at 23:30 IST (18:00 UTC)",
+    "annotations": ["Nexora", "Daily", "Schedule"],
+    "runtimeState": "Started",
+    "pipelines": [
+      {
+        "pipelineReference": {
+          "referenceName": "PL_Master_Retail_Inventory",
+          "type": "PipelineReference"
+        },
+        "parameters": {
+          "p_TriggerType": "ScheduledDaily"
+        }
+      }
+    ],
+    "type": "ScheduleTrigger",
+    "typeProperties": {
+      "recurrence": {
+        "frequency": "Day",
+        "interval": 1,
+        "startTime": "2025-01-01T18:00:00Z",
+        "timeZone": "UTC",
+        "schedule": {
+          "hours": [18],
+          "minutes": [0]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "DS_SQL_ETL_Control",
+  "type": "Microsoft.DataFactory/factories/datasets",
+  "properties": {
+    "description": "Dataset mapping to audit.ETL_Control for high-watermark incremental lookups",
+    "linkedServiceName": {
+      "referenceName": "LS_AzureSqlDatabase_DW",
+      "type": "LinkedServiceReference"
+    },
+    "annotations": [
+      "Nexora",
+      "Audit",
+      "Watermark"
+    ],
+    "type": "AzureSqlTable",
+    "schema": [],
+    "typeProperties": {
+      "schema": "audit",
+      "table": "ETL_Control"
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "name": "Nexora Enterprise Dark",
+  "dataColors": [
+    "#48CAE4",
+    "#0077B6",
+    "#2EC4B6",
+    "#7209B7",
+    "#FFB703",
+    "#F72585",
+    "#E63946",
+    "#8D99AE",
+    "#52B788",
+    "#B5179E"
+  ],
+  "background": "#0B132B",
+  "foreground": "#1C2541",
+  "tableAccent": "#48CAE4",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [
+          {
+            "show": true,
+            "color": { "solid": { "color": "#1C2541" } },
+            "transparency": 10
+          }
+        ],
+        "border": [
+          {
+            "show": true,
+            "color": { "solid": { "color": "#2E3D5C" } },
+            "radius": 6
+          }
+        ],
+        "dropShadow": [
+          {
+            "show": true,
+            "color": { "solid": { "color": "#000000" } },
+            "position": "Outer",
+            "preset": "BottomRight"
+          }
+        ],
+        "title": [
+          {
+            "show": true,
+            "fontColor": { "solid": { "color": "#F8F9FA" } },
+            "fontSize": 12,
+            "fontFamily": "Segoe UI",
+            "bold": true,
+            "alignment": "Left"
+          }
+        ]
+      }
+    },
+    "page": {
+      "*": {
+        "background": [
+          {
+            "color": { "solid": { "color": "#0B132B" } },
+            "transparency": 0
+          }
+        ]
+      }
+    },
+    "card": {
+      "*": {
+        "labels": [
+          {
+            "color": { "solid": { "color": "#48CAE4" } },
+            "fontSize": 24,
+            "fontFamily": "Segoe UI",
+            "bold": true
+          }
+        ],
+        "categoryLabels": [
+          {
+            "color": { "solid": { "color": "#8D99AE" } },
+            "fontSize": 10,
+            "fontFamily": "Segoe UI"
+          }
+        ]
+      }
+    },
+    "tableEx": {
+      "*": {
+        "grid": [
+          {
+            "gridVertical": false,
+            "gridHorizontal": true,
+            "gridHorizontalColor": { "solid": { "color": "#2E3D5C" } },
+            "rowPadding": 6
+          }
+        ],
+        "columnHeaders": [
+          {
+            "fontColor": { "solid": { "color": "#48CAE4" } },
+            "backColor": { "solid": { "color": "#141E33" } },
+            "fontFamily": "Segoe UI",
+            "fontSize": 11,
+            "bold": true
+          }
+        ],
+        "values": [
+          {
+            "fontColorPrimary": { "solid": { "color": "#F8F9FA" } },
+            "backColorPrimary": { "solid": { "color": "#1C2541" } },
+            "fontColorSecondary": { "solid": { "color": "#F8F9FA" } },
+            "backColorSecondary": { "solid": { "color": "#182239" } },
+            "fontFamily": "Segoe UI",
+            "fontSize": 10
+          }
+        ]
+      }
+    }
+  }
+}

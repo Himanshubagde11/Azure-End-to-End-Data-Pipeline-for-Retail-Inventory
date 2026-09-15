@@ -1,0 +1,130 @@
+{
+  "name": "PL_Transform_Warehouse",
+  "properties": {
+    "description": "Transforms cleansed staging data into Star Schema enterprise dimensions and facts with metric calculation in dependency sequence",
+    "activities": [
+      {
+        "name": "Load_DimDate",
+        "type": "SqlServerStoredProcedure",
+        "dependsOn": [],
+        "policy": { "timeout": "0.00:05:00", "retry": 2, "retryIntervalInSeconds": 30 },
+        "typeProperties": {
+          "storedProcedureName": "dw.sp_Load_DimDate"
+        },
+        "linkedServiceName": { "referenceName": "LS_AzureSqlDatabase_DW", "type": "LinkedServiceReference" }
+      },
+      {
+        "name": "Load_DimCategory",
+        "type": "SqlServerStoredProcedure",
+        "dependsOn": [{ "activity": "Load_DimDate", "dependencyConditions": ["Succeeded"] }],
+        "typeProperties": {
+          "storedProcedureName": "dw.sp_Load_DimCategory",
+          "storedProcedureParameters": { "RunID": { "value": "@pipeline().parameters.p_RunID", "type": "String" } }
+        },
+        "linkedServiceName": { "referenceName": "LS_AzureSqlDatabase_DW", "type": "LinkedServiceReference" }
+      },
+      {
+        "name": "Load_DimSupplier",
+        "type": "SqlServerStoredProcedure",
+        "dependsOn": [{ "activity": "Load_DimDate", "dependencyConditions": ["Succeeded"] }],
+        "typeProperties": {
+          "storedProcedureName": "dw.sp_Load_DimSupplier",
+          "storedProcedureParameters": { "RunID": { "value": "@pipeline().parameters.p_RunID", "type": "String" } }
+        },
+        "linkedServiceName": { "referenceName": "LS_AzureSqlDatabase_DW", "type": "LinkedServiceReference" }
+      },
+      {
+        "name": "Load_DimStore",
+        "type": "SqlServerStoredProcedure",
+        "dependsOn": [{ "activity": "Load_DimDate", "dependencyConditions": ["Succeeded"] }],
+        "typeProperties": {
+          "storedProcedureName": "dw.sp_Load_DimStore",
+          "storedProcedureParameters": { "RunID": { "value": "@pipeline().parameters.p_RunID", "type": "String" } }
+        },
+        "linkedServiceName": { "referenceName": "LS_AzureSqlDatabase_DW", "type": "LinkedServiceReference" }
+      },
+      {
+        "name": "Load_DimProduct",
+        "type": "SqlServerStoredProcedure",
+        "dependsOn": [
+          { "activity": "Load_DimCategory", "dependencyConditions": ["Succeeded"] },
+          { "activity": "Load_DimSupplier", "dependencyConditions": ["Succeeded"] }
+        ],
+        "typeProperties": {
+          "storedProcedureName": "dw.sp_Load_DimProduct",
+          "storedProcedureParameters": { "RunID": { "value": "@pipeline().parameters.p_RunID", "type": "String" } }
+        },
+        "linkedServiceName": { "referenceName": "LS_AzureSqlDatabase_DW", "type": "LinkedServiceReference" }
+      },
+      {
+        "name": "Load_FactSales",
+        "type": "SqlServerStoredProcedure",
+        "dependsOn": [
+          { "activity": "Load_DimProduct", "dependencyConditions": ["Succeeded"] },
+          { "activity": "Load_DimStore", "dependencyConditions": ["Succeeded"] }
+        ],
+        "typeProperties": {
+          "storedProcedureName": "dw.sp_Load_FactSales",
+          "storedProcedureParameters": { "RunID": { "value": "@pipeline().parameters.p_RunID", "type": "String" } }
+        },
+        "linkedServiceName": { "referenceName": "LS_AzureSqlDatabase_DW", "type": "LinkedServiceReference" }
+      },
+      {
+        "name": "Load_FactInventory",
+        "type": "SqlServerStoredProcedure",
+        "dependsOn": [
+          { "activity": "Load_DimProduct", "dependencyConditions": ["Succeeded"] },
+          { "activity": "Load_DimStore", "dependencyConditions": ["Succeeded"] }
+        ],
+        "typeProperties": {
+          "storedProcedureName": "dw.sp_Load_FactInventory",
+          "storedProcedureParameters": { "RunID": { "value": "@pipeline().parameters.p_RunID", "type": "String" } }
+        },
+        "linkedServiceName": { "referenceName": "LS_AzureSqlDatabase_DW", "type": "LinkedServiceReference" }
+      },
+      {
+        "name": "Load_FactPurchases",
+        "type": "SqlServerStoredProcedure",
+        "dependsOn": [
+          { "activity": "Load_DimProduct", "dependencyConditions": ["Succeeded"] },
+          { "activity": "Load_DimSupplier", "dependencyConditions": ["Succeeded"] },
+          { "activity": "Load_DimStore", "dependencyConditions": ["Succeeded"] }
+        ],
+        "typeProperties": {
+          "storedProcedureName": "dw.sp_Load_FactPurchases",
+          "storedProcedureParameters": { "RunID": { "value": "@pipeline().parameters.p_RunID", "type": "String" } }
+        },
+        "linkedServiceName": { "referenceName": "LS_AzureSqlDatabase_DW", "type": "LinkedServiceReference" }
+      },
+      {
+        "name": "Load_FactReturns",
+        "type": "SqlServerStoredProcedure",
+        "dependsOn": [
+          { "activity": "Load_FactSales", "dependencyConditions": ["Succeeded"] }
+        ],
+        "typeProperties": {
+          "storedProcedureName": "dw.sp_Load_FactReturns",
+          "storedProcedureParameters": { "RunID": { "value": "@pipeline().parameters.p_RunID", "type": "String" } }
+        },
+        "linkedServiceName": { "referenceName": "LS_AzureSqlDatabase_DW", "type": "LinkedServiceReference" }
+      },
+      {
+        "name": "Update_Inventory_Metrics",
+        "type": "SqlServerStoredProcedure",
+        "dependsOn": [
+          { "activity": "Load_FactInventory", "dependencyConditions": ["Succeeded"] },
+          { "activity": "Load_FactSales", "dependencyConditions": ["Succeeded"] }
+        ],
+        "typeProperties": {
+          "storedProcedureName": "dw.sp_Update_InventoryMetrics",
+          "storedProcedureParameters": { "RunID": { "value": "@pipeline().parameters.p_RunID", "type": "String" } }
+        },
+        "linkedServiceName": { "referenceName": "LS_AzureSqlDatabase_DW", "type": "LinkedServiceReference" }
+      }
+    ],
+    "parameters": {
+      "p_RunID": { "type": "string", "defaultValue": "MANUAL_RUN" }
+    },
+    "annotations": ["Nexora", "Transformation", "StarSchema"]
+  }
+}

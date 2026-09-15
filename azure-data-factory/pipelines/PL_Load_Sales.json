@@ -1,0 +1,89 @@
+{
+  "name": "PL_Load_Sales",
+  "properties": {
+    "description": "Generic parameterized incremental ingestion pipeline for monthly Sales CSV files using high-watermark lookup",
+    "activities": [
+      {
+        "name": "Lookup_Last_Watermark",
+        "type": "Lookup",
+        "dependsOn": [],
+        "policy": { "timeout": "0.00:05:00", "retry": 2, "retryIntervalInSeconds": 30 },
+        "typeProperties": {
+          "source": {
+            "type": "AzureSqlSource",
+            "sqlReaderQuery": "SELECT LastWatermarkValue FROM audit.ETL_Control WHERE PipelineName = 'PL_Load_Sales' AND TableName = 'dw.FactSales';"
+          },
+          "dataset": { "referenceName": "DS_SQL_ETL_Control", "type": "DatasetReference" }
+        }
+      },
+      {
+        "name": "Truncate_Staging_Sales",
+        "type": "SqlServerStoredProcedure",
+        "dependsOn": [
+          { "activity": "Lookup_Last_Watermark", "dependencyConditions": ["Succeeded"] }
+        ],
+        "policy": { "timeout": "0.00:05:00", "retry": 2, "retryIntervalInSeconds": 30 },
+        "typeProperties": {
+          "storedProcedureName": "sp_executesql",
+          "storedProcedureParameters": {
+            "stmt": { "value": "TRUNCATE TABLE stg.Sales;", "type": "String" }
+          }
+        },
+        "linkedServiceName": { "referenceName": "LS_AzureSqlDatabase_DW", "type": "LinkedServiceReference" }
+      },
+      {
+        "name": "Copy_Sales_To_Staging",
+        "type": "Copy",
+        "dependsOn": [
+          { "activity": "Truncate_Staging_Sales", "dependencyConditions": ["Succeeded"] }
+        ],
+        "policy": { "timeout": "0.00:30:00", "retry": 3, "retryIntervalInSeconds": 30 },
+        "typeProperties": {
+          "source": {
+            "type": "DelimitedTextSource",
+            "storeSettings": {
+              "type": "AzureBlobFSReadSettings",
+              "recursive": true,
+              "wildcardFolderPath": "@pipeline().parameters.p_SourceFolder",
+              "wildcardFileName": "@pipeline().parameters.p_SourceFile"
+            }
+          },
+          "sink": {
+            "type": "AzureSqlSink",
+            "writeBehavior": "insert"
+          }
+        },
+        "inputs": [
+          {
+            "referenceName": "DS_CSV_Generic",
+            "type": "DatasetReference",
+            "parameters": {
+              "p_Container": "@pipeline().parameters.p_Container",
+              "p_FolderPath": "@pipeline().parameters.p_SourceFolder",
+              "p_FileName": "@pipeline().parameters.p_SourceFile",
+              "p_Delimiter": ","
+            }
+          }
+        ],
+        "outputs": [
+          {
+            "referenceName": "DS_SQL_Generic",
+            "type": "DatasetReference",
+            "parameters": {
+              "p_SchemaName": "stg",
+              "p_TableName": "@pipeline().parameters.p_TargetTable"
+            }
+          }
+        ]
+      }
+    ],
+    "parameters": {
+      "p_Container": { "type": "string", "defaultValue": "raw-data" },
+      "p_SourceFolder": { "type": "string", "defaultValue": "sales" },
+      "p_SourceFile": { "type": "string", "defaultValue": "sales_2025_*.csv" },
+      "p_TargetTable": { "type": "string", "defaultValue": "Sales" },
+      "p_RunID": { "type": "string", "defaultValue": "MANUAL_RUN" }
+    },
+    "annotations": ["Nexora", "Incremental", "Sales", "Generic"]
+  }
+}
