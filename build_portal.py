@@ -700,12 +700,12 @@ def generate_html():
 
             <!-- Page Buttons -->
             <div class="pbi-selector">
-                <button class="pbi-btn active" onclick="loadPbi('01_executive_overview', 'Executive Overview', 'High-level business telemetry covering revenue trajectory, gross profit margins, inventory value, and regional performance ranking.', 'Total Revenue = SUM(dw_FactSales[Revenue])\nGross Margin % = DIVIDE([Total Gross Profit], [Total Revenue], 0)')">1. Executive Overview</button>
-                <button class="pbi-btn" onclick="loadPbi('02_inventory_intelligence', 'Inventory Intelligence & Risk', 'Predictive stockout analysis, Days of Inventory (DOI), Average Daily Sales (ADS), and classified replenishment tiers (Critical, High, Medium, Low).', 'Days of Inventory = DIVIDE(SUM(dw_FactInventory[ClosingStock]), [Average Daily Sales], 0)\nStockout Risk = IF([Days of Inventory] <= 3, \"CRITICAL\", IF([Days of Inventory] <= 7, \"HIGH\", \"NORMAL\"))')">2. Inventory Intelligence</button>
-                <button class="pbi-btn" onclick="loadPbi('03_sales_analytics', 'Sales & Revenue Analytics', 'Omni-channel sales performance, seasonal retail seasonality, category margin matrices, and discount sensitivity curves.', 'YoY Revenue Growth = VAR PriorYear = CALCULATE([Total Revenue], SAMEPERIODLASTYEAR(dw_DimDate[FullDate])) RETURN DIVIDE([Total Revenue] - PriorYear, PriorYear, 0)')">3. Sales Analytics</button>
-                <button class="pbi-btn" onclick="loadPbi('04_store_performance', 'Store Performance & Spatial', 'Comparative store throughput, sales per square foot efficiency, regional fulfillment, and return rate profiling across 36 stores.', 'Sales Per SqFt = DIVIDE([Total Revenue], SUM(dw_DimStore[SquareFootage]), 0)\nReturn Rate % = DIVIDE([Total Return Quantity], [Total Sales Quantity], 0)')">4. Store Performance</button>
-                <button class="pbi-btn" onclick="loadPbi('05_product_supplier_analysis', 'Product & Supplier Intelligence', 'Vendor lead-time reliability scores, gross margin contribution quadrants, and ABC inventory classification.', 'Supplier On-Time Rate % = DIVIDE(COUNTROWS(FILTER(dw_FactPurchases, dw_FactPurchases[DeliveryDelayDays] <= 0)), COUNTROWS(dw_FactPurchases), 0)')">5. Product & Supplier</button>
-                <button class="pbi-btn" onclick="loadPbi('06_data_pipeline_health', 'Data Pipeline & Quality Health', 'Telemetry dashboard for Azure Data Factory executions, watermark state tracking, and automated Data Quality Engine audit logs.', 'Quality Pass Rate % = DIVIDE(SUM(audit_DataQualityLog[RecordsPassed]), SUM(audit_DataQualityLog[RecordsEvaluated]), 0)')">6. Data Pipeline Health</button>
+                <button class="pbi-btn active" onclick="loadPbi('01_executive_overview', this)">1. Executive Overview</button>
+                <button class="pbi-btn" onclick="loadPbi('02_inventory_intelligence', this)">2. Inventory Intelligence</button>
+                <button class="pbi-btn" onclick="loadPbi('03_sales_analytics', this)">3. Sales Analytics</button>
+                <button class="pbi-btn" onclick="loadPbi('04_store_performance', this)">4. Store Performance</button>
+                <button class="pbi-btn" onclick="loadPbi('05_product_supplier_analysis', this)">5. Product & Supplier</button>
+                <button class="pbi-btn" onclick="loadPbi('06_data_pipeline_health', this)">6. Data Pipeline Health</button>
             </div>
 
             <div class="pbi-viewer-card">
@@ -859,6 +859,39 @@ Gross Margin % = DIVIDE([Total Gross Profit], [Total Revenue], 0)</div>
     <script>
         const tableData = {json.dumps(samples)};
 
+        const pbiPages = {{
+            '01_executive_overview': {{
+                title: 'Executive Overview',
+                desc: 'High-level business telemetry covering revenue trajectory, gross profit margins, inventory value, and regional performance ranking.',
+                dax: 'Total Revenue = SUM(dw_FactSales[Revenue])\\nGross Margin % = DIVIDE([Total Gross Profit], [Total Revenue], 0)'
+            }},
+            '02_inventory_intelligence': {{
+                title: 'Inventory Intelligence & Risk',
+                desc: 'Predictive stockout analysis, Days of Inventory (DOI), Average Daily Sales (ADS), and classified replenishment tiers (Critical, High, Medium, Low).',
+                dax: 'Days of Inventory = DIVIDE(SUM(dw_FactInventory[ClosingStock]), [Average Daily Sales], 0)\\nStockout Risk = IF([Days of Inventory] <= 3, "CRITICAL", IF([Days of Inventory] <= 7, "HIGH", "NORMAL"))'
+            }},
+            '03_sales_analytics': {{
+                title: 'Sales & Revenue Analytics',
+                desc: 'Omni-channel sales performance, seasonal retail seasonality, category margin matrices, and discount sensitivity curves.',
+                dax: 'YoY Revenue Growth = VAR PriorYear = CALCULATE([Total Revenue], SAMEPERIODLASTYEAR(dw_DimDate[FullDate])) RETURN DIVIDE([Total Revenue] - PriorYear, PriorYear, 0)'
+            }},
+            '04_store_performance': {{
+                title: 'Store Performance & Spatial',
+                desc: 'Comparative store throughput, sales per square foot efficiency, regional fulfillment, and return rate profiling across 36 stores.',
+                dax: 'Sales Per SqFt = DIVIDE([Total Revenue], SUM(dw_DimStore[SquareFootage]), 0)\\nReturn Rate % = DIVIDE([Total Return Quantity], [Total Sales Quantity], 0)'
+            }},
+            '05_product_supplier_analysis': {{
+                title: 'Product & Supplier Intelligence',
+                desc: 'Vendor lead-time reliability scores, gross margin contribution quadrants, and ABC inventory classification.',
+                dax: 'Supplier On-Time Rate % = DIVIDE(COUNTROWS(FILTER(dw_FactPurchases, dw_FactPurchases[DeliveryDelayDays] <= 0)), COUNTROWS(dw_FactPurchases), 0)'
+            }},
+            '06_data_pipeline_health': {{
+                title: 'Data Pipeline & Quality Health',
+                desc: 'Telemetry dashboard for Azure Data Factory executions, watermark state tracking, and automated Data Quality Engine audit logs.',
+                dax: 'Quality Pass Rate % = DIVIDE(SUM(audit_DataQualityLog[RecordsPassed]), SUM(audit_DataQualityLog[RecordsEvaluated]), 0)'
+            }}
+        }};
+
         function switchTab(tabId, btn) {{
             document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
             document.querySelectorAll('.nav-tab').forEach(el => el.classList.remove('active'));
@@ -866,13 +899,15 @@ Gross Margin % = DIVIDE([Total Gross Profit], [Total Revenue], 0)</div>
             btn.classList.add('active');
         }}
 
-        function loadPbi(imgKey, title, desc, dax) {{
+        function loadPbi(imgKey, btn) {{
+            const page = pbiPages[imgKey];
+            if (!page) return;
             document.getElementById('pbi-img').src = 'power-bi/screenshots/' + imgKey + '.png';
-            document.getElementById('pbi-title').innerText = title;
-            document.getElementById('pbi-desc').innerText = desc;
-            document.getElementById('pbi-dax').innerText = dax;
+            document.getElementById('pbi-title').innerText = page.title;
+            document.getElementById('pbi-desc').innerText = page.desc;
+            document.getElementById('pbi-dax').innerText = page.dax;
             document.querySelectorAll('.pbi-btn').forEach(b => b.classList.remove('active'));
-            event.target.classList.add('active');
+            if (btn) btn.classList.add('active');
         }}
 
         function loadTable(tableName, btn) {{
