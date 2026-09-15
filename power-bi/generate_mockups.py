@@ -69,11 +69,19 @@ def draw_header(ax, title, subtitle):
     rect = patches.Rectangle((0, 0.930), 1, 0.070, transform=ax.transAxes, facecolor=NAV_BG, edgecolor=CARD_BORDER, linewidth=1)
     ax.add_patch(rect)
     
-    # Minimal Geometric C logo mark
-    logo_bg = patches.FancyBboxPatch((0.020, 0.944), 0.016, 0.042, boxstyle="round,pad=0.002,rounding_size=0.004",
-                                     transform=ax.transAxes, facecolor="#141418", edgecolor=ORANGE, linewidth=1.2)
-    ax.add_patch(logo_bg)
-    ax.text(0.028, 0.965, "C", transform=ax.transAxes, color=ORANGE_BRIGHT, fontsize=11, fontweight="bold", ha="center", va="center")
+    # Clarivens 3D Ribbon Logo Mark
+    logo_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "assets", "clarivens_icon.png")
+    if os.path.exists(logo_path):
+        import matplotlib.image as mpimg
+        logo_img = mpimg.imread(logo_path)
+        logo_ax = ax.figure.add_axes([0.016, 0.938, 0.024, 0.052])
+        logo_ax.imshow(logo_img, aspect="equal")
+        logo_ax.axis("off")
+    else:
+        logo_bg = patches.FancyBboxPatch((0.020, 0.944), 0.016, 0.042, boxstyle="round,pad=0.002,rounding_size=0.004",
+                                         transform=ax.transAxes, facecolor="#141418", edgecolor=ORANGE, linewidth=1.2)
+        ax.add_patch(logo_bg)
+        ax.text(0.028, 0.965, "C", transform=ax.transAxes, color=ORANGE_BRIGHT, fontsize=11, fontweight="bold", ha="center", va="center")
 
     # Wordmark with generous spacing to avoid ANY overlap
     ax.text(0.044, 0.965, "CLARIVENS", transform=ax.transAxes, color=TEXT_WHITE, fontsize=11.5, fontweight="bold", va="center")

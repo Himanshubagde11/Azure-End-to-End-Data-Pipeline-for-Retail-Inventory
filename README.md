@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/clarivens_logo.png" alt="Clarivens Logo" width="160" />
+</p>
+
 # CLARIVENS INVENTORY INTELLIGENCE
 ### An End-to-End Azure Retail Inventory Data Pipeline & Analytics Platform
 

@@ -7,9 +7,18 @@ Aesthetic: Cinematic Black + Orange + Liquid Glassmorphism
 import os
 import json
 import sqlite3
+import base64
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.path.join(BASE_DIR, "audit_logs", "clarivens_warehouse_local.db")
+
+def get_base64_image(image_path):
+    if os.path.exists(image_path):
+        with open(image_path, "rb") as f:
+            encoded = base64.b64encode(f.read()).decode("utf-8")
+            ext = os.path.splitext(image_path)[1].lower().replace(".", "")
+            return f"data:image/{ext};base64,{encoded}"
+    return ""
 
 def extract_portal_data():
     conn = sqlite3.connect(DB_PATH)
@@ -90,6 +99,8 @@ def extract_portal_data():
 
 def generate_html():
     metrics, watermarks, dq_rules, samples = extract_portal_data()
+    logo_data_uri = get_base64_image(os.path.join(BASE_DIR, "assets", "clarivens_icon.png"))
+    favicon_data_uri = get_base64_image(os.path.join(BASE_DIR, "assets", "favicon.png"))
 
     html_content = f"""<!DOCTYPE html>
 <html lang="en">
@@ -97,6 +108,7 @@ def generate_html():
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clarivens — Enterprise Azure Data Intelligence Platform</title>
+    <link rel="icon" type="image/png" href="{favicon_data_uri}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -194,16 +206,31 @@ def generate_html():
         }}
 
         .brand-logo {{
-            width: 38px;
-            height: 38px;
+            width: 42px;
+            height: 42px;
             background: #0C0C0E;
             border: 1px solid rgba(255, 106, 0, 0.45);
-            border-radius: 9px;
+            border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 0 16px rgba(255, 106, 0, 0.22), inset 0 1px 1px rgba(255, 176, 103, 0.25);
+            box-shadow: 0 0 18px rgba(255, 106, 0, 0.28), inset 0 1px 1px rgba(255, 176, 103, 0.25);
             position: relative;
+            padding: 4px;
+            box-sizing: border-box;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }}
+
+        .brand-logo:hover {{
+            transform: scale(1.06);
+            box-shadow: 0 0 24px rgba(255, 122, 0, 0.45), inset 0 1px 2px rgba(255, 176, 103, 0.4);
+        }}
+
+        .brand-logo-img {{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            filter: drop-shadow(0 0 6px rgba(255, 122, 0, 0.35));
         }}
 
         .brand-text {{
@@ -1038,10 +1065,7 @@ def generate_html():
         <div class="master-container header-inner">
             <div class="brand">
                 <div class="brand-logo">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                        <path d="M16.5 8.2C15.5 7.1 14.1 6.5 12.2 6.5C8.8 6.5 6.5 9 6.5 12C6.5 15 8.8 17.5 12.2 17.5C14.1 17.5 15.5 16.9 16.5 15.8" stroke="#FF7A00" stroke-width="2.6" stroke-linecap="round"/>
-                        <path d="M12.2 6.5C14.1 6.5 15.5 7.1 16.5 8.2" stroke="#FFB067" stroke-width="2.6" stroke-linecap="round"/>
-                    </svg>
+                    <img src="{logo_data_uri}" alt="Clarivens Logo" class="brand-logo-img">
                 </div>
                 <div class="brand-text">
                     <span class="brand-title">CLARIVENS</span>

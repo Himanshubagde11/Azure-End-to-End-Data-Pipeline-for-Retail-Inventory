@@ -36,21 +36,32 @@ WHITE = "#FFFFFF"
 MUTED = "#8E8E93"
 GRAY_LIGHT = "#E4E4E7"
 
+def draw_diagram_header(fig, ax, title, subtitle):
+    logo_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "assets", "clarivens_icon.png")
+    if os.path.exists(logo_path):
+        import matplotlib.image as mpimg
+        logo_img = mpimg.imread(logo_path)
+        logo_ax = ax.inset_axes([0.035, 0.925, 0.022, 0.048])
+        logo_ax.imshow(logo_img, aspect="equal")
+        logo_ax.axis("off")
+    else:
+        logo_bg = patches.FancyBboxPatch((0.038, 0.932), 0.016, 0.038, boxstyle="round,pad=0.003,rounding_size=0.005",
+                                         transform=ax.transAxes, facecolor="#141418", edgecolor=ORANGE, linewidth=1.2)
+        ax.add_patch(logo_bg)
+        ax.text(0.046, 0.951, "C", transform=ax.transAxes, color=ORANGE_BRIGHT, fontsize=11, fontweight="bold", ha="center", va="center")
+
+    ax.text(0.062, 0.956, title, color=WHITE, fontsize=15, fontweight="bold")
+    ax.text(0.062, 0.932, subtitle, color=ORANGE_SOFT, fontsize=9.5)
+
 def create_architecture_diagram():
     print("Generating architecture-diagram.png...")
     fig, ax = plt.subplots(figsize=(16, 10), facecolor=BG_COLOR)
     ax.set_facecolor(BG_COLOR)
     ax.axis("off")
 
-    # Minimal Geometric C logo mark
-    logo_bg = patches.FancyBboxPatch((0.038, 0.932), 0.016, 0.038, boxstyle="round,pad=0.003,rounding_size=0.005",
-                                     transform=ax.transAxes, facecolor="#141418", edgecolor=ORANGE, linewidth=1.2)
-    ax.add_patch(logo_bg)
-    ax.text(0.046, 0.951, "C", transform=ax.transAxes, color=ORANGE_BRIGHT, fontsize=11, fontweight="bold", ha="center", va="center")
-
-    # Header
-    ax.text(0.062, 0.956, "CLARIVENS ENTERPRISE DATA INTELLIGENCE", color=WHITE, fontsize=15, fontweight="bold")
-    ax.text(0.062, 0.932, "Production End-to-End Architecture: Azure Data Factory, Azure SQL Database, Python DQ & Power BI", color=ORANGE_SOFT, fontsize=9.5)
+    draw_diagram_header(fig, ax,
+                        "CLARIVENS ENTERPRISE DATA INTELLIGENCE",
+                        "Production End-to-End Architecture: Azure Data Factory, Azure SQL Database, Python DQ & Power BI")
 
     # 4 Architecture Columns / Swimlanes
     columns = [
@@ -117,14 +128,9 @@ def create_data_flow_diagram():
     ax.set_facecolor(BG_COLOR)
     ax.axis("off")
 
-    # Logo
-    logo_bg = patches.FancyBboxPatch((0.038, 0.932), 0.016, 0.038, boxstyle="round,pad=0.003,rounding_size=0.005",
-                                     transform=ax.transAxes, facecolor="#141418", edgecolor=ORANGE, linewidth=1.2)
-    ax.add_patch(logo_bg)
-    ax.text(0.046, 0.951, "C", transform=ax.transAxes, color=ORANGE_BRIGHT, fontsize=11, fontweight="bold", ha="center", va="center")
-
-    ax.text(0.062, 0.956, "CLARIVENS ENTERPRISE DATA INTELLIGENCE — END-TO-END DATA FLOW", color=WHITE, fontsize=15, fontweight="bold")
-    ax.text(0.062, 0.932, "Sequential Ingestion, Quality Evaluation, Incremental Watermarking & Star Schema Load", color=ORANGE_SOFT, fontsize=9.5)
+    draw_diagram_header(fig, ax,
+                        "CLARIVENS ENTERPRISE DATA INTELLIGENCE — END-TO-END DATA FLOW",
+                        "Sequential Ingestion, Quality Evaluation, Incremental Watermarking & Star Schema Load")
 
     steps = [
         ("Step 1: Raw Ingestion", "ADLS Gen2 CSVs & REST API\nIngested into stg.* tables\nADF Copy Activities with retries", 0.04, 0.50, ORANGE_BRIGHT),
@@ -173,14 +179,9 @@ def create_star_schema_diagram():
     ax.set_facecolor(BG_COLOR)
     ax.axis("off")
 
-    # Logo
-    logo_bg = patches.FancyBboxPatch((0.038, 0.932), 0.016, 0.038, boxstyle="round,pad=0.003,rounding_size=0.005",
-                                     transform=ax.transAxes, facecolor="#141418", edgecolor=ORANGE, linewidth=1.2)
-    ax.add_patch(logo_bg)
-    ax.text(0.046, 0.951, "C", transform=ax.transAxes, color=ORANGE_BRIGHT, fontsize=11, fontweight="bold", ha="center", va="center")
-
-    ax.text(0.062, 0.956, "CLARIVENS ENTERPRISE DATA INTELLIGENCE — STAR SCHEMA DATA MODEL", color=WHITE, fontsize=15, fontweight="bold")
-    ax.text(0.062, 0.932, "Enterprise Dimensional Architecture in Azure SQL Database (dw schema)", color=ORANGE_SOFT, fontsize=9.5)
+    draw_diagram_header(fig, ax,
+                        "CLARIVENS ENTERPRISE DATA INTELLIGENCE — STAR SCHEMA DATA MODEL",
+                        "Enterprise Dimensional Architecture in Azure SQL Database (dw schema)")
 
     # Central Fact Tables (Orange Highlighted)
     facts = [
