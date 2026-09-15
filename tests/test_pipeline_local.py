@@ -23,11 +23,20 @@ import numpy as np
 
 # Set paths
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, os.path.join(BASE_DIR, "python"))
+if BASE_DIR not in sys.path:
+    sys.path.insert(0, BASE_DIR)
+python_dir = os.path.join(BASE_DIR, "python")
+if python_dir not in sys.path:
+    sys.path.insert(0, python_dir)
 
-from config import DATA_DIR, SALES_DIR, INVENTORY_DIR, PURCHASES_DIR, RETURNS_DIR, LOCAL_DB_PATH
-from data_quality import DataQualityEngine
-from mock_api import ENRICHMENT_CACHE
+try:
+    from python.config import DATA_DIR, SALES_DIR, INVENTORY_DIR, PURCHASES_DIR, RETURNS_DIR, LOCAL_DB_PATH
+    from python.data_quality import DataQualityEngine
+    from python.mock_api import ENRICHMENT_CACHE
+except ImportError:
+    from config import DATA_DIR, SALES_DIR, INVENTORY_DIR, PURCHASES_DIR, RETURNS_DIR, LOCAL_DB_PATH
+    from data_quality import DataQualityEngine
+    from mock_api import ENRICHMENT_CACHE
 
 def get_connection():
     os.makedirs(os.path.dirname(LOCAL_DB_PATH), exist_ok=True)

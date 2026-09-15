@@ -12,14 +12,26 @@ import numpy as np
 import sys
 import os
 
-# Add python directory to path
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "python")))
+# Add root and python directories to path
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+if BASE_DIR not in sys.path:
+    sys.path.insert(0, BASE_DIR)
+python_dir = os.path.join(BASE_DIR, "python")
+if python_dir not in sys.path:
+    sys.path.insert(0, python_dir)
 
-from schema_validator import SchemaValidator
-from null_validator import NullValidator
-from duplicate_validator import DuplicateValidator
-from business_rule_validator import BusinessRuleValidator
-from data_quality import DataQualityEngine
+try:
+    from python.schema_validator import SchemaValidator
+    from python.null_validator import NullValidator
+    from python.duplicate_validator import DuplicateValidator
+    from python.business_rule_validator import BusinessRuleValidator
+    from python.data_quality import DataQualityEngine
+except ImportError:
+    from schema_validator import SchemaValidator
+    from null_validator import NullValidator
+    from duplicate_validator import DuplicateValidator
+    from business_rule_validator import BusinessRuleValidator
+    from data_quality import DataQualityEngine
 
 class TestDataQualityFramework(unittest.TestCase):
 
