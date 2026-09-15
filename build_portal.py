@@ -1,13 +1,12 @@
 """
 NEXORA INVENTORY INTELLIGENCE
-Build Portal: Generates an ultra-premium executive preview portal (preview.html)
-Extracts real metrics, sample rows, and audit logs directly from the local warehouse.
+Build Portal: Generates the ultra-premium Enterprise Data Intelligence Command Center (preview.html)
+Aesthetic: Cinematic Black + Orange + Liquid Glassmorphism
 """
 
 import os
 import json
 import sqlite3
-import datetime
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.path.join(BASE_DIR, "audit_logs", "nexora_warehouse_local.db")
@@ -97,30 +96,47 @@ def generate_html():
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexora Inventory Intelligence — Local Preview & Analytics Hub</title>
+    <title>Nexora Inventory Intelligence — Enterprise Command Center</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {{
-            --bg-primary: #070D1E;
-            --bg-secondary: #0E1834;
-            --bg-card: #142145;
-            --bg-card-hover: #1B2B59;
-            --border: #233566;
-            --border-highlight: #3A5599;
-            --cyan: #48CAE4;
-            --blue: #0077B6;
-            --emerald: #2EC4B6;
-            --amber: #FFB703;
-            --coral: #E63946;
-            --text-primary: #F8FAFC;
-            --text-secondary: #94A3B8;
-            --text-muted: #64748B;
-            --radius-lg: 16px;
-            --radius-md: 12px;
-            --radius-sm: 8px;
-            --shadow-glow: 0 0 25px rgba(72, 202, 228, 0.15);
+            /* Color Palette: Black + Orange + White */
+            --black-0: #050505;
+            --black-1: #080808;
+            --black-2: #0D0D0D;
+            --black-3: #121214;
+            --black-surface: #141417;
+
+            --orange: #FF6A00;
+            --orange-bright: #FF7A00;
+            --orange-soft: #FF8A1F;
+            --orange-subtle: rgba(255, 106, 0, 0.08);
+            --orange-glow: rgba(255, 106, 0, 0.18);
+            --orange-glow-high: rgba(255, 106, 0, 0.35);
+
+            --white: #FFFFFF;
+            --text-primary: #FFFFFF;
+            --text-secondary: #A1A1AA;
+            --text-muted: #71717A;
+
+            /* Liquid Glass System */
+            --glass-1: rgba(255, 255, 255, 0.025);
+            --glass-2: rgba(255, 255, 255, 0.045);
+            --glass-3: rgba(255, 255, 255, 0.07);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --glass-border-hover: rgba(255, 106, 0, 0.4);
+            --glass-border-active: rgba(255, 106, 0, 0.65);
+            --glass-blur: blur(20px) saturate(140%);
+
+            /* Geometry Tokens */
+            --radius-sm: 6px;
+            --radius-md: 10px;
+            --radius-lg: 14px;
+            --radius-xl: 20px;
+            --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+            --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.45);
         }}
 
         * {{
@@ -130,114 +146,158 @@ def generate_html():
         }}
 
         body {{
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg-primary);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--black-0);
+            background-image: 
+                radial-gradient(circle at 85% 8%, rgba(255, 106, 0, 0.07) 0%, transparent 45%),
+                radial-gradient(circle at 15% 92%, rgba(255, 122, 0, 0.035) 0%, transparent 40%),
+                radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.008) 0%, transparent 70%);
+            background-attachment: fixed;
             color: var(--text-primary);
             min-height: 100vh;
             line-height: 1.6;
             overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }}
+
+        /* Master Container Grid Alignment */
+        .master-container {{
+            max-width: 1500px;
+            margin: 0 auto;
+            padding-left: 40px;
+            padding-right: 40px;
+            width: 100%;
         }}
 
         /* Header Bar */
         header {{
-            background: rgba(14, 24, 52, 0.85);
-            backdrop-filter: blur(16px);
-            border-bottom: 1px solid var(--border);
-            padding: 16px 36px;
             position: sticky;
             top: 0;
             z-index: 100;
+            background: rgba(8, 8, 8, 0.82);
+            backdrop-filter: var(--glass-blur);
+            border-bottom: 1px solid var(--glass-border);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }}
+
+        .header-inner {{
             display: flex;
             justify-content: space-between;
             align-items: center;
+            height: 70px;
         }}
 
         .brand {{
             display: flex;
             align-items: center;
-            gap: 16px;
+            gap: 14px;
         }}
 
         .brand-logo {{
-            width: 44px;
-            height: 44px;
-            background: linear-gradient(135deg, var(--blue), var(--cyan));
-            border-radius: 12px;
+            width: 38px;
+            height: 38px;
+            background: linear-gradient(135deg, #1C1C1F, #0A0A0A);
+            border: 1px solid var(--glass-border-hover);
+            border-radius: var(--radius-sm);
             display: flex;
             align-items: center;
             justify-content: center;
+            box-shadow: 0 0 15px rgba(255, 106, 0, 0.2);
+        }}
+
+        .brand-text {{
+            display: flex;
+            flex-direction: column;
+        }}
+
+        .brand-title {{
             font-family: 'Outfit', sans-serif;
+            font-size: 17px;
             font-weight: 800;
-            font-size: 22px;
-            color: #fff;
-            box-shadow: 0 4px 15px rgba(0, 119, 182, 0.4);
-        }}
-
-        .brand-text h1 {{
-            font-family: 'Outfit', sans-serif;
-            font-size: 20px;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-            color: var(--text-primary);
-        }}
-
-        .brand-text p {{
-            font-size: 12px;
-            color: var(--cyan);
-            font-weight: 500;
             letter-spacing: 0.5px;
+            color: var(--text-primary);
+            line-height: 1.2;
+        }}
+
+        .brand-sub {{
+            font-size: 11px;
+            color: var(--orange);
+            font-weight: 600;
+            letter-spacing: 0.8px;
             text-transform: uppercase;
         }}
 
-        .status-badge {{
+        .status-pill {{
             display: flex;
             align-items: center;
             gap: 10px;
-            background: rgba(46, 196, 182, 0.12);
-            border: 1px solid rgba(46, 196, 182, 0.35);
-            padding: 8px 16px;
-            border-radius: 30px;
-            font-size: 13px;
+            background: rgba(255, 106, 0, 0.06);
+            border: 1px solid rgba(255, 106, 0, 0.28);
+            padding: 6px 16px;
+            border-radius: 9999px;
+            font-size: 12px;
             font-weight: 600;
-            color: var(--emerald);
+            letter-spacing: 0.5px;
+            color: var(--text-primary);
+            box-shadow: 0 0 14px rgba(255, 106, 0, 0.1);
         }}
 
-        .pulse-dot {{
-            width: 8px;
-            height: 8px;
-            background-color: var(--emerald);
+        .pulse-orange {{
+            width: 7px;
+            height: 7px;
+            background: var(--orange);
             border-radius: 50%;
-            box-shadow: 0 0 10px var(--emerald);
-            animation: pulse 2s infinite;
+            box-shadow: 0 0 8px var(--orange);
+            animation: pulse-ring 2s infinite;
         }}
 
-        @keyframes pulse {{
-            0% {{ transform: scale(0.95); opacity: 0.8; }}
-            50% {{ transform: scale(1.3); opacity: 1; }}
-            100% {{ transform: scale(0.95); opacity: 0.8; }}
+        @keyframes pulse-ring {{
+            0% {{ transform: scale(0.9); opacity: 0.75; }}
+            50% {{ transform: scale(1.35); opacity: 1; }}
+            100% {{ transform: scale(0.9); opacity: 0.75; }}
         }}
 
-        /* Navigation Tabs */
-        .nav-container {{
-            background: var(--bg-secondary);
-            border-bottom: 1px solid var(--border);
-            padding: 8px 36px;
+        .status-sep {{
+            color: var(--text-muted);
+            font-weight: 300;
+        }}
+
+        .status-count {{
+            color: var(--orange-soft);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11.5px;
+        }}
+
+        /* Navigation Bar */
+        .nav-bar {{
+            background: var(--black-1);
+            border-bottom: 1px solid var(--glass-border);
+        }}
+
+        .nav-inner {{
             display: flex;
-            gap: 8px;
+            gap: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
             overflow-x: auto;
+            scrollbar-width: none;
+        }}
+
+        .nav-inner::-webkit-scrollbar {{
+            display: none;
         }}
 
         .nav-tab {{
             background: transparent;
-            border: none;
+            border: 1px solid transparent;
             color: var(--text-secondary);
-            padding: 10px 18px;
+            padding: 8px 18px;
             font-family: 'Outfit', sans-serif;
-            font-size: 14px;
+            font-size: 13.5px;
             font-weight: 600;
             border-radius: var(--radius-sm);
             cursor: pointer;
-            transition: all 0.2s ease;
+            transition: var(--transition);
             white-space: nowrap;
             display: flex;
             align-items: center;
@@ -246,20 +306,21 @@ def generate_html():
 
         .nav-tab:hover {{
             color: var(--text-primary);
-            background: rgba(255, 255, 255, 0.05);
+            background: var(--glass-1);
+            border-color: rgba(255, 255, 255, 0.08);
         }}
 
         .nav-tab.active {{
-            background: var(--blue);
-            color: #fff;
-            box-shadow: 0 2px 10px rgba(0, 119, 182, 0.4);
+            background: rgba(255, 106, 0, 0.08);
+            color: var(--text-primary);
+            border-color: var(--orange);
+            box-shadow: 0 0 16px rgba(255, 106, 0, 0.2);
         }}
 
-        /* Main Container */
-        main {{
-            max-width: 1440px;
-            margin: 0 auto;
-            padding: 32px 36px;
+        /* Main Workspace */
+        main.main-content {{
+            padding-top: 32px;
+            padding-bottom: 64px;
         }}
 
         .tab-content {{
@@ -276,27 +337,28 @@ def generate_html():
             to {{ opacity: 1; transform: translateY(0); }}
         }}
 
-        /* KPI Banner */
+        /* KPI Cards Grid */
         .kpi-grid {{
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-            margin-bottom: 32px;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            gap: 16px;
+            margin-bottom: 36px;
         }}
 
         .kpi-card {{
-            background: var(--bg-card);
-            border: 1px solid var(--border);
+            background: var(--glass-2);
+            backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
             border-radius: var(--radius-md);
-            padding: 22px;
+            padding: 22px 20px;
             position: relative;
             overflow: hidden;
-            transition: transform 0.2s ease, border-color 0.2s ease;
-        }}
-
-        .kpi-card:hover {{
-            transform: translateY(-3px);
-            border-color: var(--border-highlight);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: var(--shadow-glass);
+            min-height: 124px;
         }}
 
         .kpi-card::before {{
@@ -304,195 +366,300 @@ def generate_html():
             position: absolute;
             top: 0;
             left: 0;
-            width: 4px;
-            height: 100%;
-            background: var(--card-accent, var(--cyan));
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--orange), transparent);
+            opacity: 0.5;
+            transition: var(--transition);
         }}
 
-        .kpi-title {{
-            font-size: 13px;
+        .kpi-card:hover {{
+            transform: translateY(-3px);
+            border-color: var(--glass-border-hover);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 20px var(--orange-subtle);
+        }}
+
+        .kpi-card:hover::before {{
+            opacity: 1;
+            background: linear-gradient(90deg, transparent, var(--orange-bright), transparent);
+        }}
+
+        .kpi-label {{
+            font-size: 11px;
             font-weight: 600;
             color: var(--text-secondary);
             text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 8px;
+            letter-spacing: 0.75px;
+            margin-bottom: 10px;
         }}
 
-        .kpi-value {{
+        .kpi-num {{
             font-family: 'Outfit', sans-serif;
-            font-size: 28px;
+            font-size: 27px;
+            font-weight: 700;
+            color: var(--text-primary);
+            letter-spacing: -0.5px;
+            font-variant-numeric: tabular-nums;
+            line-height: 1.1;
+        }}
+
+        .kpi-sub {{
+            font-size: 11.5px;
+            color: var(--orange-soft);
+            margin-top: 8px;
+            font-weight: 500;
+        }}
+
+        /* Section Headers */
+        .section-header {{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 22px;
+            flex-wrap: wrap;
+            gap: 16px;
+        }}
+
+        .header-badge-row {{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 6px;
+        }}
+
+        .badge-tag {{
+            background: rgba(255, 106, 0, 0.12);
+            color: var(--orange);
+            border: 1px solid rgba(255, 106, 0, 0.35);
+            padding: 3px 9px;
+            border-radius: var(--radius-sm);
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+        }}
+
+        .header-sub-meta {{
+            font-size: 12px;
+            color: var(--text-muted);
+        }}
+
+        .section-title {{
+            font-family: 'Outfit', sans-serif;
+            font-size: 24px;
             font-weight: 700;
             color: var(--text-primary);
             letter-spacing: -0.5px;
         }}
 
-        .kpi-subtext {{
-            font-size: 12px;
-            color: var(--emerald);
-            margin-top: 6px;
-            font-weight: 500;
-        }}
-
-        /* Power BI Showcase Gallery */
-        .report-header {{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 24px;
-        }}
-
-        .report-header h2 {{
-            font-family: 'Outfit', sans-serif;
-            font-size: 24px;
-            font-weight: 700;
-        }}
-
+        /* Segmented Glass Controls */
         .pbi-selector {{
             display: flex;
             gap: 10px;
             flex-wrap: wrap;
-            margin-bottom: 24px;
+            margin-bottom: 20px;
         }}
 
         .pbi-btn {{
-            background: var(--bg-card);
-            border: 1px solid var(--border);
+            background: var(--glass-1);
+            border: 1px solid var(--glass-border);
             color: var(--text-secondary);
-            padding: 10px 16px;
+            padding: 9px 16px;
             border-radius: var(--radius-sm);
+            font-family: 'Outfit', sans-serif;
             font-size: 13px;
             font-weight: 600;
             cursor: pointer;
-            transition: all 0.2s ease;
+            transition: var(--transition);
         }}
 
-        .pbi-btn:hover, .pbi-btn.active {{
-            background: var(--bg-card-hover);
-            color: var(--cyan);
-            border-color: var(--cyan);
+        .pbi-btn:hover {{
+            color: var(--text-primary);
+            border-color: rgba(255, 255, 255, 0.15);
+            background: var(--glass-2);
         }}
 
+        .pbi-btn.active {{
+            background: rgba(255, 106, 0, 0.08);
+            color: var(--orange);
+            border-color: var(--orange);
+            box-shadow: 0 0 15px rgba(255, 106, 0, 0.2);
+        }}
+
+        /* Dashboard Showcase Viewport (Strict 16:9 Alignment) */
         .pbi-viewer-card {{
-            background: var(--bg-card);
-            border: 1px solid var(--border);
+            background: var(--glass-2);
+            backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
             border-radius: var(--radius-lg);
             padding: 24px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            box-shadow: var(--shadow-glass);
+            transition: var(--transition);
         }}
 
-        .pbi-image-frame {{
+        .dashboard-frame {{
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
             position: relative;
             border-radius: var(--radius-md);
-            overflow: hidden;
-            border: 1px solid var(--border);
-            background: #000;
+            background: #000000;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.9), 0 0 25px rgba(255, 106, 0, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
             cursor: pointer;
         }}
 
-        .pbi-image-frame img {{
+        .dashboard-frame img {{
             width: 100%;
-            height: auto;
+            height: 100%;
+            object-fit: contain;
             display: block;
-            transition: transform 0.3s ease;
+            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
         }}
 
-        .pbi-image-frame:hover img {{
-            transform: scale(1.01);
+        .dashboard-frame:hover img {{
+            transform: scale(1.008);
         }}
 
         .zoom-hint {{
             position: absolute;
-            top: 16px;
-            right: 16px;
-            background: rgba(14, 24, 52, 0.85);
-            backdrop-filter: blur(8px);
+            top: 14px;
+            right: 14px;
+            background: rgba(8, 8, 8, 0.85);
+            backdrop-filter: blur(10px);
             padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 12px;
-            color: var(--cyan);
-            border: 1px solid var(--border-highlight);
+            border-radius: 9999px;
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--orange);
+            border: 1px solid rgba(255, 106, 0, 0.3);
             pointer-events: none;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
         }}
 
+        /* Dashboard Information Panel (60% Insights / 40% DAX) */
         .pbi-meta {{
             margin-top: 24px;
             display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 24px;
+            grid-template-columns: 3fr 2fr;
+            gap: 20px;
+            align-items: stretch;
         }}
 
-        .pbi-insights h4, .pbi-dax h4 {{
+        .info-card {{
+            background: var(--glass-1);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-md);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }}
+
+        .info-card h4 {{
             font-family: 'Outfit', sans-serif;
-            font-size: 16px;
-            color: var(--cyan);
-            margin-bottom: 10px;
+            font-size: 13.5px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            color: var(--orange);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }}
 
-        .pbi-insights p {{
-            font-size: 14px;
+        .info-card p {{
+            font-size: 13.5px;
             color: var(--text-secondary);
-            line-height: 1.6;
+            line-height: 1.65;
         }}
 
-        .dax-chip {{
-            background: #0B132B;
-            border: 1px solid var(--border);
+        .dax-terminal {{
+            background: #030303;
+            border: 1px solid rgba(255, 255, 255, 0.08);
             border-radius: var(--radius-sm);
-            padding: 12px;
+            padding: 14px;
             font-family: 'JetBrains Mono', monospace;
             font-size: 12px;
-            color: #E2E8F0;
+            color: #E4E4E7;
+            line-height: 1.6;
             overflow-x: auto;
+            flex-grow: 1;
+            white-space: pre-wrap;
+            word-break: break-word;
         }}
 
-        /* Architecture Section */
+        /* Architecture Grid */
         .arch-grid {{
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            grid-template-columns: 1fr 1fr;
             gap: 24px;
             margin-top: 20px;
         }}
 
         .arch-card {{
-            background: var(--bg-card);
-            border: 1px solid var(--border);
+            background: var(--glass-2);
+            backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
             border-radius: var(--radius-lg);
             padding: 24px;
-            transition: border-color 0.2s ease;
+            box-shadow: var(--shadow-glass);
+            transition: var(--transition);
         }}
 
         .arch-card:hover {{
-            border-color: var(--cyan);
+            border-color: var(--glass-border-hover);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5), 0 0 20px var(--orange-subtle);
+        }}
+
+        .arch-card-full {{
+            grid-column: 1 / -1;
         }}
 
         .arch-card h3 {{
             font-family: 'Outfit', sans-serif;
-            font-size: 18px;
+            font-size: 17px;
+            font-weight: 700;
             color: var(--text-primary);
-            margin-bottom: 12px;
+            margin-bottom: 8px;
             display: flex;
             align-items: center;
             gap: 10px;
         }}
 
-        .arch-card img {{
+        .arch-card p {{
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }}
+
+        .arch-frame {{
             width: 100%;
             border-radius: var(--radius-md);
-            border: 1px solid var(--border);
-            margin-top: 14px;
+            overflow: hidden;
+            background: #000000;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            margin-top: 16px;
             cursor: pointer;
         }}
 
-        /* Data Explorer Tables */
-        .explorer-header {{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-            gap: 16px;
+        .arch-frame img {{
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            display: block;
+            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
         }}
 
+        .arch-frame:hover img {{
+            transform: scale(1.01);
+        }}
+
+        /* Warehouse Explorer */
         .table-tabs {{
             display: flex;
             gap: 8px;
@@ -500,28 +667,38 @@ def generate_html():
         }}
 
         .table-tab-btn {{
-            background: var(--bg-card);
-            border: 1px solid var(--border);
+            background: var(--glass-1);
+            border: 1px solid var(--glass-border);
             color: var(--text-secondary);
             padding: 8px 16px;
             border-radius: var(--radius-sm);
-            font-size: 13px;
-            font-weight: 600;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            font-weight: 500;
             cursor: pointer;
+            transition: var(--transition);
+        }}
+
+        .table-tab-btn:hover {{
+            color: var(--text-primary);
+            border-color: rgba(255, 255, 255, 0.15);
         }}
 
         .table-tab-btn.active {{
-            background: var(--blue);
-            color: #fff;
-            border-color: var(--blue);
+            background: rgba(255, 106, 0, 0.08);
+            color: var(--orange);
+            border-color: var(--orange);
+            box-shadow: 0 0 15px rgba(255, 106, 0, 0.2);
         }}
 
-        .table-container {{
-            background: var(--bg-card);
-            border: 1px solid var(--border);
+        .table-wrapper {{
+            background: var(--glass-2);
+            backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
             border-radius: var(--radius-lg);
             overflow-x: auto;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            box-shadow: var(--shadow-glass);
+            margin-top: 18px;
         }}
 
         table {{
@@ -532,48 +709,192 @@ def generate_html():
         }}
 
         th {{
-            background: #0B132B;
-            color: var(--cyan);
+            background: #080808;
+            color: var(--orange-soft);
             font-family: 'Outfit', sans-serif;
             font-weight: 600;
             padding: 14px 18px;
-            border-bottom: 1px solid var(--border);
+            border-bottom: 1px solid var(--glass-border);
             white-space: nowrap;
+            position: sticky;
+            top: 0;
+            letter-spacing: 0.3px;
         }}
 
         td {{
             padding: 12px 18px;
-            border-bottom: 1px solid rgba(255,255,255,0.04);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
             color: var(--text-secondary);
             white-space: nowrap;
+            font-family: 'Inter', sans-serif;
+        }}
+
+        tr:nth-child(even) td {{
+            background: rgba(255, 255, 255, 0.012);
         }}
 
         tr:hover td {{
-            background: rgba(255, 255, 255, 0.02);
+            background: rgba(255, 106, 0, 0.04);
             color: var(--text-primary);
         }}
 
-        .pill {{
-            padding: 4px 10px;
-            border-radius: 20px;
+        /* Data Quality Observability Banner */
+        .dq-hero-card {{
+            background: var(--glass-2);
+            backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-lg);
+            padding: 24px 28px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+            box-shadow: var(--shadow-glass);
+            flex-wrap: wrap;
+            gap: 20px;
+        }}
+
+        .dq-score-col {{
+            display: flex;
+            flex-direction: column;
+        }}
+
+        .dq-badge {{
             font-size: 11px;
             font-weight: 700;
+            color: var(--orange);
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }}
+
+        .dq-big-score {{
+            font-family: 'Outfit', sans-serif;
+            font-size: 42px;
+            font-weight: 800;
+            color: var(--text-primary);
+            line-height: 1;
+            letter-spacing: -1px;
+        }}
+
+        .dq-sub {{
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-top: 6px;
+        }}
+
+        .dq-stats-row {{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }}
+
+        .dq-stat-box {{
+            background: var(--glass-1);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-md);
+            padding: 14px 22px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 140px;
+        }}
+
+        .dq-stat-val {{
+            font-family: 'Outfit', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--text-primary);
+        }}
+
+        .text-pass {{ color: #34D399; }}
+        .text-warn {{ color: var(--orange-soft); }}
+
+        .dq-stat-lbl {{
+            font-size: 11px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            margin-top: 4px;
+            letter-spacing: 0.5px;
+        }}
+
+        /* Status Pills */
+        .pill {{
+            padding: 3px 10px;
+            border-radius: 9999px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
             display: inline-block;
         }}
 
         .pill-pass {{
-            background: rgba(46, 196, 182, 0.15);
-            color: var(--emerald);
-            border: 1px solid rgba(46, 196, 182, 0.4);
+            background: rgba(16, 185, 129, 0.1);
+            color: #34D399;
+            border: 1px solid rgba(16, 185, 129, 0.3);
         }}
 
         .pill-warn {{
-            background: rgba(255, 183, 3, 0.15);
-            color: var(--amber);
-            border: 1px solid rgba(255, 183, 3, 0.4);
+            background: rgba(255, 106, 0, 0.1);
+            color: var(--orange-soft);
+            border: 1px solid rgba(255, 106, 0, 0.3);
         }}
 
-        /* Modal View */
+        /* Interview Cards */
+        .interview-grid {{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-top: 20px;
+        }}
+
+        .interview-card {{
+            background: var(--glass-2);
+            backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            box-shadow: var(--shadow-glass);
+            transition: var(--transition);
+        }}
+
+        .interview-card:hover {{
+            border-color: var(--glass-border-hover);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5), 0 0 20px var(--orange-subtle);
+        }}
+
+        .interview-card-full {{
+            grid-column: 1 / -1;
+        }}
+
+        .interview-card h3 {{
+            font-family: 'Outfit', sans-serif;
+            font-size: 16.5px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }}
+
+        .interview-card p {{
+            font-size: 13.5px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }}
+
+        .interview-card code {{
+            font-family: 'JetBrains Mono', monospace;
+            background: #030303;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--orange-soft);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 12px;
+        }}
+
+        /* Modal Fullscreen View */
         .modal {{
             display: none;
             position: fixed;
@@ -581,12 +902,12 @@ def generate_html():
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(7, 13, 30, 0.94);
-            backdrop-filter: blur(12px);
+            background: rgba(5, 5, 5, 0.96);
+            backdrop-filter: blur(24px);
             z-index: 1000;
             justify-content: center;
             align-items: center;
-            padding: 24px;
+            padding: 32px;
         }}
 
         .modal.active {{
@@ -604,98 +925,191 @@ def generate_html():
             height: auto;
             max-height: 90vh;
             border-radius: var(--radius-md);
-            border: 1px solid var(--border-highlight);
-            box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+            border: 1px solid var(--glass-border-hover);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.9), 0 0 35px var(--orange-glow);
         }}
 
         .modal-close {{
             position: absolute;
-            top: -40px;
+            top: -42px;
             right: 0;
-            background: var(--coral);
-            border: none;
-            color: #fff;
-            width: 32px;
-            height: 32px;
+            background: var(--glass-2);
+            border: 1px solid var(--glass-border);
+            color: var(--text-primary);
+            width: 34px;
+            height: 34px;
             border-radius: 50%;
             cursor: pointer;
-            font-weight: bold;
-            font-size: 16px;
+            font-weight: 700;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }}
+
+        .modal-close:hover {{
+            background: var(--orange);
+            color: #000;
+            border-color: var(--orange);
         }}
 
         /* Footer */
         footer {{
-            border-top: 1px solid var(--border);
-            margin-top: 60px;
-            padding: 24px 36px;
-            text-align: center;
+            border-top: 1px solid var(--glass-border);
+            padding: 28px 0;
+            background: var(--black-1);
+        }}
+
+        .footer-inner {{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            font-size: 12.5px;
             color: var(--text-muted);
-            font-size: 13px;
+        }}
+
+        .footer-inner strong {{
+            color: var(--text-secondary);
+        }}
+
+        /* Responsive Layout Breakpoints */
+        @media (max-width: 1280px) {{
+            .kpi-grid {{
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }}
+            .arch-grid, .interview-grid {{
+                grid-template-columns: 1fr;
+            }}
+            .arch-card-full, .interview-card-full {{
+                grid-column: auto;
+            }}
+        }}
+
+        @media (max-width: 900px) {{
+            .master-container {{
+                padding-left: 20px;
+                padding-right: 20px;
+            }}
+            .pbi-meta {{
+                grid-template-columns: 1fr;
+            }}
+            .kpi-grid {{
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }}
+            .dq-hero-card {{
+                flex-direction: column;
+                align-items: flex-start;
+            }}
+            .dq-stats-row {{
+                width: 100%;
+            }}
+            .dq-stat-box {{
+                flex: 1;
+            }}
+        }}
+
+        @media (max-width: 600px) {{
+            .kpi-grid {{
+                grid-template-columns: 1fr;
+            }}
+            .header-inner {{
+                height: auto;
+                padding-top: 14px;
+                padding-bottom: 14px;
+                flex-direction: column;
+                gap: 12px;
+                align-items: flex-start;
+            }}
+            .status-pill {{
+                width: 100%;
+                justify-content: center;
+            }}
         }}
     </style>
 </head>
 <body>
 
-    <!-- Header -->
+    <!-- Header Bar -->
     <header>
-        <div class="brand">
-            <div class="brand-logo">N</div>
-            <div class="brand-text">
-                <h1>Nexora Inventory Intelligence</h1>
-                <p>Enterprise Azure Retail Data Pipeline & Analytics Hub</p>
+        <div class="master-container header-inner">
+            <div class="brand">
+                <div class="brand-logo">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#FF7A00" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 17L12 22L22 17" stroke="#FF6A00" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 12L12 17L22 12" stroke="#FF8A1F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="brand-text">
+                    <span class="brand-title">NEXORA</span>
+                    <span class="brand-sub">Inventory Intelligence</span>
+                </div>
             </div>
-        </div>
-        <div class="status-badge">
-            <span class="pulse-dot"></span>
-            <span>Live Relational Warehouse Connected (178,851 records)</span>
+            <div class="status-pill">
+                <span class="pulse-orange"></span>
+                <span>LIVE WAREHOUSE</span>
+                <span class="status-sep">/</span>
+                <span class="status-count">178,851 records</span>
+            </div>
         </div>
     </header>
 
-    <!-- Navigation -->
-    <nav class="nav-container">
-        <button class="nav-tab active" onclick="switchTab('tab-dashboards', this)">📊 Power BI Dashboards</button>
-        <button class="nav-tab" onclick="switchTab('tab-architecture', this)">🏗️ Cloud Architecture</button>
-        <button class="nav-tab" onclick="switchTab('tab-warehouse', this)">🗄️ Warehouse Explorer</button>
-        <button class="nav-tab" onclick="switchTab('tab-quality', this)">🛡️ Data Quality Monitor</button>
-        <button class="nav-tab" onclick="switchTab('tab-interview', this)">🎯 Interview Guide</button>
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <div class="master-container nav-inner">
+            <button class="nav-tab active" onclick="switchTab('tab-dashboards', this)">📊 Power BI Dashboards</button>
+            <button class="nav-tab" onclick="switchTab('tab-architecture', this)">🏗️ Cloud Architecture</button>
+            <button class="nav-tab" onclick="switchTab('tab-warehouse', this)">🗄️ Warehouse Explorer</button>
+            <button class="nav-tab" onclick="switchTab('tab-quality', this)">🛡️ Data Quality Monitor</button>
+            <button class="nav-tab" onclick="switchTab('tab-interview', this)">🎯 Interview Guide</button>
+        </div>
     </nav>
 
-    <!-- Main Container -->
-    <main>
+    <!-- Main Workspace -->
+    <main class="master-container main-content">
 
-        <!-- KPI Metrics Banner -->
+        <!-- 5 KPI Cards (Exact Metrics, Same Height & Padding) -->
         <section class="kpi-grid">
-            <div class="kpi-card" style="--card-accent: var(--cyan);">
-                <div class="kpi-title">Total Sales Revenue</div>
-                <div class="kpi-value">₹55.61 Cr</div>
-                <div class="kpi-subtext">+119,856 Transactions Ingested</div>
+            <div class="kpi-card">
+                <span class="kpi-label">Total Sales Revenue</span>
+                <div class="kpi-num">₹55.61 Cr</div>
+                <span class="kpi-sub">+119,856 Transactions Ingested</span>
             </div>
-            <div class="kpi-card" style="--card-accent: var(--emerald);">
-                <div class="kpi-title">Gross Margin %</div>
-                <div class="kpi-value">{metrics["margin_pct"]}%</div>
-                <div class="kpi-subtext">₹17.96 Cr Total Gross Profit</div>
+            <div class="kpi-card">
+                <span class="kpi-label">Gross Margin %</span>
+                <div class="kpi-num">{metrics["margin_pct"]}%</div>
+                <span class="kpi-sub">₹17.96 Cr Total Gross Profit</span>
             </div>
-            <div class="kpi-card" style="--card-accent: var(--amber);">
-                <div class="kpi-title">Inventory Valuation</div>
-                <div class="kpi-value">₹675.89 Cr</div>
-                <div class="kpi-subtext">{metrics["closing_stock"]:,} Units Across 36 Stores</div>
+            <div class="kpi-card">
+                <span class="kpi-label">Inventory Valuation</span>
+                <div class="kpi-num">₹675.89 Cr</div>
+                <span class="kpi-sub">{metrics["closing_stock"]:,} Units Across 36 Stores</span>
             </div>
-            <div class="kpi-card" style="--card-accent: var(--coral);">
-                <div class="kpi-title">Stockout Prevention</div>
-                <div class="kpi-value">0 Critical</div>
-                <div class="kpi-subtext">14 High-Velocity Medium Alerts</div>
+            <div class="kpi-card">
+                <span class="kpi-label">Stockout Prevention</span>
+                <div class="kpi-num">0 Critical</div>
+                <span class="kpi-sub">14 High-Velocity Medium Alerts</span>
             </div>
-            <div class="kpi-card" style="--card-accent: var(--blue);">
-                <div class="kpi-title">Data Quality Score</div>
-                <div class="kpi-value">99.93%</div>
-                <div class="kpi-subtext">59 Pass | 16 Warnings | 0 Failures</div>
+            <div class="kpi-card">
+                <span class="kpi-label">Data Quality Score</span>
+                <div class="kpi-num">99.93%</div>
+                <span class="kpi-sub">59 Pass | 16 Warnings | 0 Failures</span>
             </div>
         </section>
 
         <!-- TAB 1: POWER BI DASHBOARDS -->
         <section id="tab-dashboards" class="tab-content active">
-            <div class="report-header">
-                <h2>Interactive Power BI Executive Dashboard Suite (6 Pages)</h2>
+            <div class="section-header">
+                <div>
+                    <div class="header-badge-row">
+                        <span class="badge-tag">POWER BI</span>
+                        <span class="header-sub-meta">6 analytical views • Executive • Inventory • Sales • Stores • Products • Pipeline</span>
+                    </div>
+                    <h2 class="section-title">Power BI Executive Dashboard Suite</h2>
+                </div>
             </div>
 
             <!-- Page Buttons -->
@@ -708,19 +1122,22 @@ def generate_html():
                 <button class="pbi-btn" onclick="loadPbi('06_data_pipeline_health', this)">6. Data Pipeline Health</button>
             </div>
 
+            <!-- Consistent 16:9 Viewport -->
             <div class="pbi-viewer-card">
-                <div class="pbi-image-frame" onclick="openModal(document.getElementById('pbi-img').src)">
-                    <img id="pbi-img" src="power-bi/screenshots/01_executive_overview.png" alt="Executive Overview">
-                    <span class="zoom-hint">🔍 Click image to enlarge full screen</span>
+                <div class="dashboard-frame" onclick="openModal(document.getElementById('pbi-img').src)">
+                    <img id="pbi-img" src="power-bi/screenshots/01_executive_overview.png" alt="Power BI Dashboard">
+                    <span class="zoom-hint">🔍 Click to enlarge full screen</span>
                 </div>
                 <div class="pbi-meta">
-                    <div class="pbi-insights">
-                        <h4 id="pbi-title">Executive Overview</h4>
-                        <p id="pbi-desc">High-level business telemetry covering revenue trajectory, gross profit margins, inventory value, and regional performance ranking.</p>
+                    <div class="info-card">
+                        <div>
+                            <h4 id="pbi-title">Executive Overview</h4>
+                            <p id="pbi-desc">High-level business telemetry covering revenue trajectory, gross profit margins, inventory value, and regional performance ranking.</p>
+                        </div>
                     </div>
-                    <div class="pbi-dax">
+                    <div class="info-card">
                         <h4>Core Production DAX</h4>
-                        <div class="dax-chip" id="pbi-dax">Total Revenue = SUM(dw_FactSales[Revenue])
+                        <div class="dax-terminal" id="pbi-dax">Total Revenue = SUM(dw_FactSales[Revenue])
 Gross Margin % = DIVIDE([Total Gross Profit], [Total Revenue], 0)</div>
                     </div>
                 </div>
@@ -729,32 +1146,50 @@ Gross Margin % = DIVIDE([Total Gross Profit], [Total Revenue], 0)</div>
 
         <!-- TAB 2: ARCHITECTURE -->
         <section id="tab-architecture" class="tab-content">
-            <div class="report-header">
-                <h2>End-to-End Enterprise Architecture & Data Flow</h2>
+            <div class="section-header">
+                <div>
+                    <div class="header-badge-row">
+                        <span class="badge-tag">AZURE DATA ARCHITECTURE</span>
+                        <span class="header-sub-meta">Native cloud integration • High-watermark pipeline • Kimball star schema</span>
+                    </div>
+                    <h2 class="section-title">End-to-End Enterprise Architecture & Data Flow</h2>
+                </div>
             </div>
             <div class="arch-grid">
                 <div class="arch-card">
-                    <h3>🏛️ Azure Cloud End-to-End Architecture</h3>
-                    <p style="font-size:13px; color:var(--text-secondary);">Native Azure integration: Blob Lakehouse -> ADF Metadata Orchestration -> Staging Layer -> Azure SQL DW -> Power BI.</p>
-                    <img src="architecture/architecture-diagram.png" alt="Architecture Diagram" onclick="openModal(this.src)">
+                    <h3>🏛️ Azure Cloud Architecture</h3>
+                    <p>Native Azure integration: Blob Lakehouse -> ADF Metadata Orchestration -> Staging Layer -> Azure SQL DW -> Power BI.</p>
+                    <div class="arch-frame" onclick="openModal('architecture/architecture-diagram.png')">
+                        <img src="architecture/architecture-diagram.png" alt="Architecture Diagram">
+                    </div>
                 </div>
                 <div class="arch-card">
-                    <h3>⭐ Dimensional Star Schema (Kimball Methodology)</h3>
-                    <p style="font-size:13px; color:var(--text-secondary);">4 Fact tables (Sales, Inventory, Purchases, Returns) with surrogate keys, conformed dimensions, and watermark audit control.</p>
-                    <img src="architecture/star-schema.png" alt="Star Schema" onclick="openModal(this.src)">
+                    <h3>⭐ Dimensional Star Schema</h3>
+                    <p>4 Fact tables (Sales, Inventory, Purchases, Returns) with surrogate keys, conformed dimensions, and watermark audit control.</p>
+                    <div class="arch-frame" onclick="openModal('architecture/star-schema.png')">
+                        <img src="architecture/star-schema.png" alt="Star Schema">
+                    </div>
                 </div>
-                <div class="arch-card" style="grid-column: 1 / -1;">
+                <div class="arch-card arch-card-full">
                     <h3>⚡ Data Pipeline Flow & Watermark Processing</h3>
-                    <p style="font-size:13px; color:var(--text-secondary);">High-watermark incremental ETL mechanism governed by stored procedures and automated Python DQ validation gate.</p>
-                    <img src="architecture/data-flow.png" alt="Data Flow" onclick="openModal(this.src)">
+                    <p>High-watermark incremental ETL mechanism governed by stored procedures and automated Python DQ validation gate.</p>
+                    <div class="arch-frame" onclick="openModal('architecture/data-flow.png')">
+                        <img src="architecture/data-flow.png" alt="Data Flow">
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- TAB 3: WAREHOUSE EXPLORER -->
         <section id="tab-warehouse" class="tab-content">
-            <div class="explorer-header">
-                <h2>Live Relational Warehouse Data Explorer</h2>
+            <div class="section-header">
+                <div>
+                    <div class="header-badge-row">
+                        <span class="badge-tag">AZURE SQL WAREHOUSE</span>
+                        <span class="header-sub-meta">Live relational tables • Star schema surrogate keys • Audit control</span>
+                    </div>
+                    <h2 class="section-title">Live Relational Warehouse Data Explorer</h2>
+                </div>
                 <div class="table-tabs">
                     <button class="table-tab-btn active" onclick="loadTable('dw_FactSales', this)">dw_FactSales</button>
                     <button class="table-tab-btn" onclick="loadTable('dw_FactInventory', this)">dw_FactInventory</button>
@@ -764,7 +1199,7 @@ Gross Margin % = DIVIDE([Total Gross Profit], [Total Revenue], 0)</div>
                 </div>
             </div>
 
-            <div class="table-container">
+            <div class="table-wrapper">
                 <table id="warehouse-table">
                     <thead id="table-head"></thead>
                     <tbody id="table-body"></tbody>
@@ -774,13 +1209,40 @@ Gross Margin % = DIVIDE([Total Gross Profit], [Total Revenue], 0)</div>
 
         <!-- TAB 4: DATA QUALITY MONITOR -->
         <section id="tab-quality" class="tab-content">
-            <div class="report-header">
-                <h2>Automated Data Quality & Validation Engine (75 Rules)</h2>
-                <div class="status-badge" style="background: rgba(0, 119, 182, 0.12); border-color: rgba(0, 119, 182, 0.4); color: var(--cyan);">
-                    Overall Score: 99.93% Compliant
+            <div class="section-header">
+                <div>
+                    <div class="header-badge-row">
+                        <span class="badge-tag">DATA OBSERVABILITY</span>
+                        <span class="header-sub-meta">Schema • Nullability • Uniqueness • Mathematical integrity</span>
+                    </div>
+                    <h2 class="section-title">Automated Data Quality Engine (75 Rules)</h2>
                 </div>
             </div>
-            <div class="table-container">
+
+            <!-- DQ Score Hero Banner -->
+            <div class="dq-hero-card">
+                <div class="dq-score-col">
+                    <span class="dq-badge">ENTERPRISE QUALITY METRIC</span>
+                    <div class="dq-big-score">99.93%</div>
+                    <span class="dq-sub">Comprehensive multi-layer validation passed across 178,851 records</span>
+                </div>
+                <div class="dq-stats-row">
+                    <div class="dq-stat-box">
+                        <span class="dq-stat-val text-pass">59</span>
+                        <span class="dq-stat-lbl">Rules Passed (100%)</span>
+                    </div>
+                    <div class="dq-stat-box">
+                        <span class="dq-stat-val text-warn">16</span>
+                        <span class="dq-stat-lbl">Warnings Caught</span>
+                    </div>
+                    <div class="dq-stat-box">
+                        <span class="dq-stat-val">0</span>
+                        <span class="dq-stat-lbl">Critical Failures</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-wrapper">
                 <table>
                     <thead>
                         <tr>
@@ -800,12 +1262,12 @@ Gross Margin % = DIVIDE([Total Gross Profit], [Total Revenue], 0)</div>
         pill_class = "pill-pass" if r["Status"] == "PASS" else "pill-warn"
         pct = round(r["PassPercentage"], 2)
         html_content += f"""                        <tr>
-                            <td><strong>{r['TableName']}</strong></td>
-                            <td><span style="font-family:'JetBrains Mono'; font-size:11px; color:var(--cyan);">{r['CheckType']}</span></td>
+                            <td><strong style="color:var(--text-primary);">{r['TableName']}</strong></td>
+                            <td><span style="font-family:'JetBrains Mono'; font-size:11px; color:var(--orange);">{r['CheckType']}</span></td>
                             <td>{r['RuleName']}</td>
                             <td>{r['TotalRecords']:,}</td>
                             <td>{r['FailedRecords']:,}</td>
-                            <td><strong>{pct}%</strong></td>
+                            <td><strong style="font-family:'JetBrains Mono';">{pct}%</strong></td>
                             <td><span class="pill {pill_class}">[{r['Status']}]</span></td>
                         </tr>\n"""
 
@@ -816,25 +1278,31 @@ Gross Margin % = DIVIDE([Total Gross Profit], [Total Revenue], 0)</div>
 
         <!-- TAB 5: INTERVIEW GUIDE -->
         <section id="tab-interview" class="tab-content">
-            <div class="report-header">
-                <h2>Data Engineering Technical Interview Story (STAR Framework)</h2>
+            <div class="section-header">
+                <div>
+                    <div class="header-badge-row">
+                        <span class="badge-tag">DATA ENGINEERING INTERVIEW</span>
+                        <span class="header-sub-meta">STAR framework • Architecture rationale • Operational trade-offs</span>
+                    </div>
+                    <h2 class="section-title">Technical Interview Architecture Story</h2>
+                </div>
             </div>
-            <div class="arch-grid">
-                <div class="arch-card">
+            <div class="interview-grid">
+                <div class="interview-card">
                     <h3>🎯 Project Pitch & Executive Summary</h3>
-                    <p style="font-size:14px; color:var(--text-secondary); line-height:1.7;">
+                    <p>
                         <em>"Nexora Inventory Intelligence is an enterprise-grade Azure data platform designed for multi-store retail operations. It ingests 178k+ transactions across POS, ERP, and Supplier feeds, enforces a high-watermark incremental loading pattern, validates data through a modular Python Data Quality framework (achieving 99.93% accuracy), and computes predictive stockout indicators in Azure SQL to power an executive Power BI reporting suite."</em>
                     </p>
                 </div>
-                <div class="arch-card">
+                <div class="interview-card">
                     <h3>⚖️ Key Architecture Decision: Azure SQL vs Synapse/Databricks</h3>
-                    <p style="font-size:14px; color:var(--text-secondary); line-height:1.7;">
+                    <p>
                         <strong>Why Azure SQL Database:</strong> For mid-market retail organizations processing 100k–2M daily transactions, dedicated Synapse DW or Databricks Spark clusters incur massive idle compute costs ($500–$2,000/month) with unnecessary distributed compute overhead. Azure SQL General Purpose serverless costs under $40/month while delivering sub-second queries via Columnstore Indexes and ACID stored procedures.
                     </p>
                 </div>
-                <div class="arch-card" style="grid-column: 1 / -1;">
+                <div class="interview-card interview-card-full">
                     <h3>⚡ High-Watermark Incremental Loading Mechanism</h3>
-                    <p style="font-size:14px; color:var(--text-secondary); line-height:1.7;">
+                    <p>
                         Governed by <code>audit.ETL_Control</code>: ADF checks <code>LastWatermarkValue</code> (e.g. <code>2025-10-31</code>), stages new files, invokes stored procedure <code>dw.sp_Load_FactSales</code>, resolves surrogate keys via dimension joins, deduplicates using <code>ROW_NUMBER()</code>, inserts new records, updates the high-watermark to <code>2025-12-31</code>, and commits within an explicit transaction.
                     </p>
                 </div>
@@ -843,17 +1311,20 @@ Gross Margin % = DIVIDE([Total Gross Profit], [Total Revenue], 0)</div>
 
     </main>
 
-    <!-- Image Zoom Modal -->
+    <!-- Modal Fullscreen View -->
     <div id="image-modal" class="modal" onclick="closeModal()">
         <div class="modal-content" onclick="event.stopPropagation()">
-            <button class="modal-close" onclick="closeModal()">✕</button>
+            <button class="modal-close" onclick="closeModal()" title="Close (Esc)">✕</button>
             <img id="modal-img" src="" alt="Enlarged View">
         </div>
     </div>
 
     <!-- Footer -->
     <footer>
-        <p>Nexora Inventory Intelligence • Enterprise Data Architecture • Built with Azure Data Factory, Azure SQL & Power BI</p>
+        <div class="master-container footer-inner">
+            <span><strong>Nexora Inventory Intelligence</strong> • Enterprise Azure Retail Data Pipeline & Analytics Platform</span>
+            <span>Architected with Azure Data Factory, Azure SQL Database & Power BI</span>
+        </div>
     </footer>
 
     <script>
@@ -862,7 +1333,7 @@ Gross Margin % = DIVIDE([Total Gross Profit], [Total Revenue], 0)</div>
         const pbiPages = {{
             '01_executive_overview': {{
                 title: 'Executive Overview',
-                desc: 'High-level business telemetry covering revenue trajectory, gross profit margins, inventory value, and regional performance ranking.',
+                desc: 'High-level business telemetry covering revenue trajectory, gross profit margins, inventory value, and regional performance ranking across 36 stores.',
                 dax: 'Total Revenue = SUM(dw_FactSales[Revenue])\\nGross Margin % = DIVIDE([Total Gross Profit], [Total Revenue], 0)'
             }},
             '02_inventory_intelligence': {{
@@ -877,7 +1348,7 @@ Gross Margin % = DIVIDE([Total Gross Profit], [Total Revenue], 0)</div>
             }},
             '04_store_performance': {{
                 title: 'Store Performance & Spatial',
-                desc: 'Comparative store throughput, sales per square foot efficiency, regional fulfillment, and return rate profiling across 36 stores.',
+                desc: 'Comparative store throughput, sales per square foot efficiency, regional fulfillment, and return rate profiling across 36 retail stores.',
                 dax: 'Sales Per SqFt = DIVIDE([Total Revenue], SUM(dw_DimStore[SquareFootage]), 0)\\nReturn Rate % = DIVIDE([Total Return Quantity], [Total Sales Quantity], 0)'
             }},
             '05_product_supplier_analysis': {{
@@ -922,7 +1393,7 @@ Gross Margin % = DIVIDE([Total Gross Profit], [Total Revenue], 0)</div>
 
             thead.innerHTML = '<tr>' + data.columns.map(c => '<th>' + c + '</th>').join('') + '</tr>';
             tbody.innerHTML = data.rows.map(row => 
-                '<tr>' + row.map(val => '<td>' + (val !== null ? val : '<span style=\"color:#64748B;\">NULL</span>') + '</td>').join('') + '</tr>'
+                '<tr>' + row.map(val => '<td>' + (val !== null ? val : '<span style="color:#71717A;">NULL</span>') + '</td>').join('') + '</tr>'
             ).join('');
         }}
 
@@ -934,6 +1405,11 @@ Gross Margin % = DIVIDE([Total Gross Profit], [Total Revenue], 0)</div>
         function closeModal() {{
             document.getElementById('image-modal').classList.remove('active');
         }}
+
+        // Keyboard ESC key closes modal
+        document.addEventListener('keydown', (e) => {{
+            if (e.key === 'Escape') closeModal();
+        }});
 
         // Initialize default table
         loadTable('dw_FactSales');
